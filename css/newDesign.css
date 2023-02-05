@@ -1,0 +1,1427 @@
+﻿	.requiredItem   
+	{
+		color: red;
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+        .textField
+        {
+            font-family: arial;
+            font-size: medium;
+            padding: 3px;
+            width:150px;
+            position:absolute;
+        }
+        .btnSmall
+        {
+            background-color: #3B5998;
+            border-color: #9FAECD #273B65 #273B65 #9FAECD;
+            border-style: solid;
+            border-width: 1px;
+            color: #FFFFFF;
+            font-size: small;
+            font-weight: bold;
+            margin-right: 8px;
+            padding: 6px 20px;    
+        }
+
+        .btnSmall:link, .btnSmall:hover, .btnSmall:visited 
+        {
+            text-decoration:none;
+            cursor:hand;
+            cursor:pointer;
+            color:white!important;
+        }
+      
+		div.divPatient {
+			background-color: White;
+			border: 1px solid;
+			color: #00156E;
+			display: none;
+			height: 300px;
+			list-style: none outside none;
+			overflow: auto;
+			position: absolute;
+			right: 7px;
+			top: 35px;
+			width: 200px;
+			z-index: 1 !important;
+		}          
+          div.divPatient ul
+          {
+      	    list-style: none outside none;
+      	    padding:0px;
+          }
+              
+        div.divPatient ul li a {
+	        padding:5px;
+	        display:block;
+        }
+
+        div.divPatient ul li a 
+        {
+			background: none repeat scroll 0 0 #EEEEEE;
+			border-bottom: 1px solid #FFFFFF;
+			display: block;
+			padding: 10px 0 10px 10px;
+			text-decoration: none;
+			color: #333333;
+		}
+
+        div.divPatient ul li a:hover {
+	        background-color:#CED4E0;
+        	text-decoration:none;
+        }
+        
+        
+        
+        .tree-structure {
+         margin-left:15px;
+        }
+        
+        .tree-structure ul{
+         margin-left:25px;
+        }
+
+        .tree-structure li {
+            margin: 0 0 5px;
+            padding: 5px 0 5px 30px;
+            
+        }
+
+        .collapse
+        {
+        	padding: 5px 0 5px 30px;
+            background: url("../images/collapse.png") no-repeat;
+        }
+
+        .expand
+        {
+        	padding: 5px 0 5px 30px;
+            background: url("../images/expand.png") no-repeat;
+        }
+
+        .list-unchecked 
+        {
+        	padding: 5px 0 5px 30px;
+            background: url("../images/unchecked.jpg") no-repeat left;
+        }            
+
+        .list-checked 
+        {
+        	padding: 5px 0 5px 30px;
+            background: url("../images/checked.jpg") no-repeat left;
+        }     
+             
+        .activity {
+	        padding:12px 0px 12px 12px;
+	        text-decoration:none;      	
+	        background-color:Transparent;
+        }
+        
+        .activity-selected {
+	        padding:12px 0px 12px 12px;
+	        text-decoration:none;      	
+	        background-color:Gray;
+        }
+
+ 
+
+    .tabs, .peopleTab, .divReportsTab {
+        border-bottom: 1px solid #CCCCCC;
+        margin: 0 auto;
+        max-width: 980px;
+        padding: 10px 10px 0;
+    }
+
+	.tabs a, .peopleTab a, .divReportsTab a, .tabs a:visited, .tabs a:hover
+	{
+		text-decoration: none;
+		border: 1px solid #DDDDDD;
+	    border-radius: 7px 7px 0 0;
+		display: inline-block;
+		border-bottom:0px none;
+		background: none repeat scroll 0 0 #F7F7F7;
+	}
+	
+    .tabs a span, .peopleTab a span, .divReportsTab a span {
+		border-radius: 7px 7px 0 0;
+        color: #666666;
+        display: inline-block;
+        padding: 15px 5px 12px 34px;
+        text-decoration: none;
+    }
+
+    .tabs a.liWorkbook span{
+        background:url("../images/icon-workbook.png") no-repeat scroll 7px 11px transparent;
+    }
+    .tabs a.liDailyPlanner span{
+        background:url("../images/icon-daily-planner.png") no-repeat scroll 7px 11px transparent;
+    }
+    .tabs a.liCurriculum span{
+        background:url("../images/icon-curriculum.png") no-repeat scroll 7px 11px transparent;
+    }
+
+    .tabs a.liCurriculum_Help span,.peopleTab a.liCurriculum_Help span,.divReportsTab a.liCurriculum_Help span,
+    .tabs a.liArchive span, .tabs a.lnkBehaviorPlan_Archive span
+    {
+        background:url("../images/cabinet.gif") no-repeat scroll 7px 11px transparent;
+    }
+
+    .tabs a.lnkBehaviorPlan span{
+        background:url("../images/Behaviors.gif") no-repeat scroll 7px 11px transparent;
+    }
+    .tabs a.lnkLibraryofBehaviors span{
+        background:url("../images/HappySad.gif") no-repeat scroll 3px 11px transparent;
+    }
+        
+    .tabs a.selectedTab, .peopleTab a.selectedTab, .divReportsTab a.selectedTab{
+        background: none repeat scroll 0 0 #DDDDDD;
+    }
+
+
+.divAddLibraryofBehaviors {
+    border: 1px solid #CCCCCC;
+    height: 400px;
+    left: 35%;
+    margin: 0 auto;
+    padding: 10px 10px 0;
+    position: absolute;
+    top: 75px;
+    width: 300px;
+}
+.divAddDomain
+{
+    width: 375px;
+    height:40px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -25px;
+	z-index: 9999999999999;
+	background: #F5F5F5;
+	border-radius: 12px;
+	padding: 15px 15px 5px 15px;
+	border: 4px solid #EEE;    
+}
+.divAddDomain input, .divAddLibraryofBehaviors input
+{
+	position:relative;
+}
+.divAddDomain a, .divAddLibraryofBehaviors a
+{
+	position:relative;
+}
+.lnkSave
+{
+	position:fixed;
+}
+.divSmallMenu a {
+background: none repeat scroll 0 0 #DDD;
+border: 1px solid #DDD;
+border-radius: 7px 7px 7px 7px;
+display: block;
+float: none;
+height: 25px;
+margin: 0 2px;
+padding: 9px 0px 0px 42px;
+width: 135px !important;
+text-decoration: none;
+background-position: 10px center !important;
+color: #666;
+text-shadow: 1px 1px 0px white;
+}
+
+
+.divSmallMenu {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0 0 3px;
+    padding: 3px 2px;
+    position: absolute;
+    right: 12px;
+    top: 65px;
+}
+
+a.sm_cabinet{
+    background:url("../images/cabinet.gif") no-repeat scroll center center #FFFFFF;
+}
+
+a.sm_DeleteFromDailyPlanner{
+    background:url("../images/icon-remove.png") no-repeat scroll center center #FFFFFF;
+}
+a.sm_CopyToDailyPlanner, a.sm_CurriculumToDailyPlanner{
+    background:url("../images/icon-copy-to-daily-planner.png") no-repeat scroll center center #FFFFFF;
+}
+
+a.sm_Properties{
+    background:url("../images/icon-properties.png") no-repeat scroll center center #FFFFFF;
+}
+
+a.sm_CurriculumToWorkbook {
+    background: url("../images/icon-copy-to-workbook.png") no-repeat scroll center center #FFFFFF;
+    width: 26px;
+}     
+
+a.sm_SaveDailyPlanner {
+    background: url("../images/Save1.gif") no-repeat scroll center center #FFFFFF;
+    width: 26px;
+}     
+a.sm_Tentative {
+    background: url("../images/Lock.png") no-repeat scroll center center #FFFFFF;
+    width: 26px;
+}     
+
+a.sm_CopyToBehaviorPlan, a.sm_MoveToDailyPlanner {
+    background: url("../images/CopyToPatient.gif") no-repeat scroll center center #FFFFFF;
+    width: 26px;
+}     
+
+a.sm_ReportComments {
+    background: url("../images/Pencil.gif") no-repeat scroll center center #FFFFFF;
+    width: 26px;
+}     
+
+a.sm_ReportExcel {
+    background: url("../images/Export.jpg") no-repeat scroll center center #FFFFFF;
+    width: 26px;
+}     
+
+a.sm_ReportCSV {
+    background: url("../images/month_table_behaviors.gif") no-repeat scroll center center #FFFFFF;
+    width: 26px;
+}     
+
+.divLibraryofBehaviors div, .divPropBeh_Duration div, .divProp div, .divPropBeh_Level div {
+    margin-bottom: 10px;
+}
+
+.divLibraryofBehaviors label, .divPropBeh_Duration label, .divProp label {
+    display: block;
+    padding: 10px 0 0;
+}
+.form-box-main{background: none repeat scroll 0 0 #E5E5E5;
+    display: block;
+    padding: 10px;
+}
+.form-box p {
+    float: left;
+    margin-right: 10px;
+} 
+
+.divLibraryofBehaviors, .divPropBeh_Duration, .divProp, .form-box {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC !important;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 0 10px 10px;
+}
+
+.divPropBeh_Level {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC !important;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 0 10px 10px;
+    text-align:left;
+}
+.divPropBeh_Level label
+{
+	float: left;
+	display: block; 	
+	vertical-align: middle;	
+}
+.divPropBeh_Level input
+{
+	float: left;
+	display: block; 	
+}
+.form-box .list-unchecked {
+    background: url("../images/unchecked.jpg") no-repeat scroll -10px center transparent;
+    padding: 5px 0 5px 17px;
+}
+
+.form-box .list-checked {
+    background: url("../images/checked.jpg") no-repeat scroll -10px center transparent;
+    padding: 5px 0 5px 17px;
+}
+
+
+.form-box-main input[type="button"],
+.form-box-main input[type="submit"],
+.form-box-main input[type="reset"]{
+background: #ffffff; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+background: linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+-webkit-box-shadow: 0px 0px 3px #ccc;
+-moz-box-shadow:    0px 0px 3px #ccc;
+box-shadow:         0px 0px 3px #ccc;
+border:1px solid #cccccc;
+padding:3px 10px;
+color:#333;
+text-shadow:1px 1px 0 #FFFFFF;
+cursor:pointer;
+}
+
+.form-box-main h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/*---------------------------------------------------Global Defaults*/
+
+.global-defaults h3 {
+    background: url("../images/globe-icon.png") no-repeat scroll 11px 7px transparent;
+    font-weight: bold;
+    padding: 10px 10px 10px 40px;
+}
+
+.global-defaults{
+    width:97.5%;
+}
+
+.accordion{
+    margin:10px 10px 10px 10px;
+}
+
+.accordion h3{
+    padding: 0px;
+    cursor:pointer;
+    border: 1px solid #e0e0e0!important;    
+    background: #ffffff; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+	}
+
+.ui-accordion-header a {
+    background: url("../images/expand.png") no-repeat scroll 6px 6px transparent;
+    color: inherit;
+    display: block;
+    padding: 10px 10px 10px 35px !important;
+    text-decoration: none;
+}
+
+.ui-state-active a{
+    background: url("../images/collapse.png") no-repeat scroll 6px 6px transparent;
+}
+
+.ui-accordion-content {
+    background:#e5e5e5;
+    padding:10px;
+}
+
+.ui-state-active {
+    border-bottom: 0 none !important;    
+}
+
+.global-defaults fieldset{
+        border: 1px solid #CCCCCC;
+        overflow:hidden;
+        margin:10px 0 10px 0;
+        background:#fff;
+	padding:10px 10px 0px 10px;
+	*padding:10px 10px 10px 10px;		
+	display:block;
+}
+
+.global-defaults fieldset label{
+    display:block;
+}
+
+.global-defaults fieldset p{
+    float:left;
+    margin:0 2% 10px 0;
+}
+
+.clear-both{
+    clear:both;
+}
+
+.data-table-grid{
+    width:100%;    
+    border:1px solid #ccc;
+    border-collapse:collapse;
+    margin:10px 0 0 0;
+	background:#ffffff;
+}
+
+.data-table-grid td, .data-table-grid th{
+    border:1px solid #ccc;
+    border-collapse:collapse;
+    padding:5px 10px;
+    text-align:left;
+}
+
+.data-table-grid th{
+    background: #ffffff; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+}
+
+.data-table-grid tr:hover{
+    background:#FFF2CE !important;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"], .user-profile a, a.sessionDelete, a.sessionEdit, .btn
+{
+	border-radius: 20px 20px 20px 20px;
+	font-size:13px;text-decoration:none; text-align:center;color:#333;
+background: #ffffff; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+background: linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+-webkit-box-shadow: 0px 0px 3px #ccc;
+-moz-box-shadow:    0px 0px 3px #ccc;
+box-shadow:         0px 0px 3px #ccc;
+border:1px solid #cccccc;
+padding:3px 10px;
+color:#333;
+text-shadow:1px 1px 0 #FFFFFF;
+cursor:pointer;
+}
+
+
+/*--- People page--------*/
+
+.people{
+    min-height: 350px;
+}
+
+.peopleTab a.lnkGeneral span{
+    background: url("../images/Person1.gif") no-repeat scroll 3px 3px;
+}
+
+.peopleTab a.lnkAddress span{
+    background: url("../images/home.gif") no-repeat scroll 4px 3px;
+}
+
+.peopleTab a.lnkContact span{
+    background: url("../images/Phone2.gif") no-repeat scroll 4px 3px;
+}
+
+.peopleTab a.lnkLocation span{
+    background: url("../images/Location2.gif") no-repeat scroll 5px 4px;
+}
+
+.tabs-container {
+    background: none repeat scroll 0 0 #F7F7F7;
+    margin: 0 10px;
+    padding: 1px 10px;
+}
+
+.people, .reports{
+    width:97.5%;
+    min-height:485px;
+}
+.people h3 {
+    background: url("../images/icon-people.png") no-repeat scroll 11px 5px;
+    font-weight: bold;
+    padding: 10px 10px 10px 50px;
+}
+.people h2 {
+    background: url("../images/icon-session-edit.png") no-repeat scroll 11px 5px;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 10px 10px 50px;
+}
+
+.people fieldset, .divReportComments fieldset, .divBehaviorGraph_Comments fieldset{
+    position: relative;
+    border: 0 none;
+    padding: 10px;
+    background: none;
+    margin: 0;
+}
+
+.people fieldset p , .divReportComments fieldset p, .divBehaviorGraph_Comments fieldset p{
+    margin: 0 3% 10px 0;
+    width: 200px;
+}
+
+.people fieldset p input[type="text"], .divReportComments fieldset p input[type="text"], .divBehaviorGraph_Comments  fieldset p input[type="text"]
+{
+    width: 200px;
+}
+
+.people fieldset p select, .divReportComments fieldset p select, .divBehaviorGraph_Comments fieldset p select
+{
+    width: 205px !important;
+}
+.peopleTab_Save {
+    float: right;
+    margin-top: -35px;
+    padding-right: 20px;
+}
+.people-actions {
+	float: right;
+    margin-top: -32px;
+    padding-right: 10px;
+}
+
+.people-actions .divAllPeople {
+   right: 276px;
+}
+.picture {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border: 7px solid #EEEEEE;
+    box-shadow: 0 0 1px #999999;
+    float: right;
+    height: 150px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 150px;
+}
+
+.star span
+{
+	color:Red;
+	font-weight:bold;
+}
+
+.divPeople_Save {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/*-------- Reports ------------*/
+
+.reports h3 {
+    background: url("../images/report.gif") no-repeat scroll 11px 7px transparent;
+    font-weight: bold;
+    padding: 10px 10px 10px 40px;
+}
+
+.divReportsTab a.lnkReports span{
+        background:url("../images/chart.gif") no-repeat scroll 6px 11px transparent;    
+}
+
+.divReportsTab a.lnkSkillsGraph span{
+        background:url("../images/graph1.gif") no-repeat scroll 6px 11px transparent;    
+    
+}
+
+.divReportsTab a.lnkBehaviorGraph span{
+        background:url("../images/behaviors_graphs.gif") no-repeat scroll 6px 11px transparent;        
+}
+
+.divReportCriteria
+{
+	width: 30%;
+	margin: 0 1% 0 0;
+	padding: 10px 3px;
+    border: 1px solid rgb(103, 136, 190);
+	float:left;
+}
+
+.divReportDetails
+{
+	width: 65%;
+	margin: 0 1% 0 0;
+	padding: 10px 0;
+    border: 1px solid rgb(103, 136, 190);
+    float:left;
+}
+
+.divReportCriteriaBox
+{
+	padding: 10px 0;
+	margin: 0 auto;
+    max-width: 980px;
+    overflow: hidden;
+    width: 100%;	
+}
+
+
+.panelWorkbook, .panelCur, .panelBehaviorPlan, .panelLibraryofBehaviors, .panelDP, .panelHelp, .panelArchive,
+.divReportComments, .divBehaviorGraph_Comments
+{
+	padding:10px;
+	min-height:485px;
+}
+
+.panelWorkbook td, .panelCur td, .panelBehaviorPlan td, .panelLibraryofBehaviors td, .panelDP td {
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px 5px !important;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size:16px;
+}
+
+.divReportCriteria select {
+margin: 0 0;
+width: 100% !important;
+font-size: 16px;
+padding: 2px;
+}
+.divReportCriteria input[type="text"] {
+margin: 0 0;
+width: 97% !important;
+font-size: 16px;
+padding: 2px;
+}
+
+
+.divReportCriteria {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 0 solid #6788BE !important;
+    float: left;
+    margin: 0px 0 0 !important;
+    padding: 0 0 10px !important;
+    width: 25% !important;
+	max-width:230px;
+	min-width:230px;    
+}
+
+.divReportCriteria p{
+ padding:10px 10px 0px 10px;
+        display:block
+}
+
+.divReportDetails {
+    border: 0 solid #6788BE !important;
+    box-shadow: 1px 2px 5px #999999;
+    float: left;
+    height: 300px;
+    margin: 0px 1% 0 0 !important;
+    max-width: 65%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px 0 !important;
+    width: auto !important;
+}
+
+.divReportDetails  td, .divReportViewer td {
+    border-bottom: 0px solid #DDDDDD !important;
+    padding: 0px 0;
+}
+
+.divReportBehavior
+{
+	overflow-y:scroll;
+}
+
+.divReportSkills
+{
+	overflow-y:scroll;
+}
+
+.water
+{
+	  color: #CCCCCC;
+    font-style: italic;
+}
+
+
+#ctl00_ContentPlaceHolder_Master_divAddLibraryofBehaviors {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 10px #CCCCCC;
+    padding: 10px 10px 60px 10px;
+    top: 65px;
+    min-height:280px;
+    margin: 10px 0px;
+    width:616px;
+}
+
+#ctl00_ContentPlaceHolder_Master_divAddLibraryofBehaviors label{
+ display:block;
+}
+
+_#ctl00_ContentPlaceHolder_Master_divAddLibraryofBehaviors input[type="text"], 
+#ctl00_ContentPlaceHolder_Master_divAddLibraryofBehaviors textarea {
+    margin-bottom: 10px;
+    margin-top: 3px;
+    width: 99%;
+}
+
+#ctl00_ContentPlaceHolder_Master_tvIcons {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border:1px solid #ccc !important;
+    height: 95px;
+    overflow-y: auto;
+    padding: 10px;
+    position:inherit;
+    right: 10px;
+    top: 175px;
+    width: 320px;
+}
+
+.properties-actionbuttons {
+    bottom: 9px;
+    position: absolute;
+}
+
+.div_ChkBehaviors, .div_ChkSkills, .div_ChkBehaviorGraph {
+    display: inline-block;
+    height: 210px;
+    overflow-y: scroll;
+}
+
+.divReportComments_Behaviors {
+    padding-top: 5px;
+}
+
+.divQuickHelp {
+background: none repeat scroll 0 0 whiteSmoke;
+border-color: #DDD;
+border-radius: 10px 10px 5px 0;
+border-style: solid;
+border-width: 1px 1px 1px 5px;
+bottom: 5px;
+box-shadow: 4px 4px 3px #EEE inset;
+padding: 10px;
+position: absolute;
+right: 10px;
+width: 168px;
+z-index: -1;
+}
+
+.divQuickHelp p span {
+    left: 0;
+    position: absolute;
+    top: 6px;
+}
+
+.divQuickHelp p {
+border-bottom: 1px dashed #DDD;
+padding: 8px 5px 8px 32px;
+position: relative;
+}
+
+.divQuickHelp p a{
+ color:#666;
+}
+
+.divQuickHelp h3 {
+    border-bottom: 1px dashed #DDDDDD;
+    letter-spacing: 0.1em;
+    padding-bottom: 4px;
+}
+
+.crtoolbar{
+vertical-align:middle !important;
+height:31px !important;
+width:917px !important;
+}
+
+.crtoolbar td{
+vertical-align: middle !important;	
+}
+
+#ctl00_ContentPlaceHolder_Master_ImageIcon
+{
+    border: 1px solid #CCCCCC !important;
+    border-radius: 5px 5px 5px 5px;
+    padding: 3px;
+    float:left;
+    margin-right:10px;
+}
+
+#ctl00_ContentPlaceHolder_Master_lblSelectedPerson_Name
+{
+    float: left;
+    margin-top: -26px;
+    padding-left: 120px;
+}
+
+#ctl00_ContentPlaceHolder_Master_lblSelectedRole_Name
+{
+	float:left;
+	margin-top: -26px;
+    padding-left: 250px;	
+}
+
+	#ctl00_UpdatePanel1
+	{
+	position:relative;
+	z-index:9999;
+	}
+	
+	#ctl00_ContentPlaceHolder_Master_UpdatePanel7
+	{
+		display:inline;
+	}
+
+.divReportViewer{
+overflow:scroll;
+}
+
+.crtoolbar{
+width: 100% !important;
+ }
+ 
+ .peopleTab a span{
+padding-left: 40px;
+}
+
+.hasClearButton{
+position:relative;
+}
+
+.clearDate {
+position: absolute;
+left: 167px;
+border-radius: 0px !important;
+padding: 0 !important;
+height: 26px;
+width: 54px;
+top:25px;
+z-index:5;
+}
+
+#ctl00_ContentPlaceHolder_Master_txtPeoples_BirthDate,
+#ctl00_ContentPlaceHolder_Master_txtPeoples_StartDate,
+#ctl00_ContentPlaceHolder_Master_txtPeoples_EndDate
+{
+height:20px;
+}
+
+#ctl00_ContentPlaceHolder_Master_divReportButtons div {
+	display:inline !important;
+}
+
+#div_ChkSkillsGraph{
+height: 242px;
+overflow-x: auto;
+}
+
+#div_ChkSkillsGraph td{
+border:0px none;
+}
+
+.divSkillsGraph_form p{
+    margin-bottom:7px;
+}
+
+.divSkillsGraph_form label{
+    float:left;
+    width:80px    
+}
+
+.divSkillsGraph_form .clearDate {
+top: 0px;
+left: auto;
+right: 2px;
+}
+
+.divSkillsGraph_form label[for="ctl00_ContentPlaceHolder_Master_chkSkillsGraph_VerticalLine"],
+.divSkillsGraph_form label[for="ctl00_ContentPlaceHolder_Master_chkSkillsGraph_VerticalLine_Dash"]
+{
+    float:none !important;
+}
+
+.divSkillsGraph_form {
+display: inline-block;
+}
+
+#ctl00_ContentPlaceHolder_Master_UpdatePanel8 {
+padding:0 10px;
+}
+
+/*-------- Edit Session -------*/
+#sessionsFilter p{    
+float:left;
+margin-right:1%;
+}
+
+#sessionsFilter{
+padding: 0 10px;
+border-bottom: 1px solid #eee;
+}
+
+#sessionsFilter p input[type="button"]{
+border-radius: 0;
+padding: 2px 7px;
+margin-left: -1px;
+}
+
+#sessionsFilter p input[type="text"]{   
+ width: 135px;
+ float:left
+} 
+
+#sessionsFilter #ctl00_ContentPlaceHolder_Master_btnSearch{
+float: right;
+margin-top: -35px;
+}
+
+#sessionsFilter p label{
+font-size: 13px;
+display: block;
+}
+
+#sessionsFilter p select{
+width:200px !important;
+}
+
+
+#ctl00_ContentPlaceHolder_Master_gvResult tr td {
+    border: 0 none;
+    display: block;
+   width: 100%;
+padding:0px;
+}
+
+#ctl00_ContentPlaceHolder_Master_gvResult {
+    margin: 0 2%;
+    width: 96%;
+}
+
+#ctl00_ContentPlaceHolder_Master_gvResult tr {
+display: block;
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+.sessionRecord{
+    width:100%;
+ display:block;
+}
+.sessionRecord {
+border-top: 3px solid #F1F1F1;
+border: 1px solid #F1F1F1;
+position: relative;
+border-bottom: 0px solid #F1F1F1;
+box-shadow: 2px 2px 2px #CCC;
+display: block!important;
+width: 100% !important;
+border-radius: 10px 10px 0 0;
+margin-bottom:20px;
+}
+
+.sessionRecord p {
+clear: both;
+overflow: hidden;
+position:relative;
+}
+
+ 
+.sessionRecord p a{
+color:#666;
+}
+
+.sessionRecord label {
+float: left;
+width: 16%;
+background: #F1F1F1;
+padding: .5% 1%;
+border-bottom: 1px solid #E6E6E6;
+}
+
+.sessionRecord span{
+float: left;
+width: 80%;
+padding: .5% 1%;
+border-bottom: 1px solid #F1F1F1;
+min-height: 20px;
+}
+
+a.sessionDelete, a.sessionEdit {
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px 10px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 5px;
+    width: 39px;
+}
+
+.sesstionTitle {
+background: #E4E4E4;
+padding: 8px;
+border-bottom: 1px solid #FFF;
+font-weight: bold;
+border-radius: 7px 7px 0 0;
+}
+
+
+.sessionDelete{
+border-radius: 0 15px 15px 0 !important;
+right: 4px;
+}
+
+.sessionEdit{
+border-radius: 15px 0 0 15px !important;
+margin-right: -9px;
+right: 68px;
+}
+
+
+
+
+#ctl00_ContentPlaceHolder_Master_gvSkills, #ctl00_ContentPlaceHolder_Master_gvBehaviors{
+ margin:5px;
+}
+
+#ctl00_ContentPlaceHolder_Master_gvSkills td span, #ctl00_ContentPlaceHolder_Master_gvBehaviors td span {
+width: 100% !important;
+}
+
+#ctl00_ContentPlaceHolder_Master_gvSkills th , #ctl00_ContentPlaceHolder_Master_gvBehaviors th{
+background: #eee;
+padding: 6px 0;
+}
+
+#ctl00_ContentPlaceHolder_Master_gvSkills td,
+#ctl00_ContentPlaceHolder_Master_gvBehaviors td{
+padding:10px 1px;
+}
+#ctl00_ContentPlaceHolder_Master_gvSkills select, #ctl00_ContentPlaceHolder_Master_gvSkills input, 
+#ctl00_ContentPlaceHolder_Master_gvBehaviors select, #ctl00_ContentPlaceHolder_Master_gvBehaviors input {
+width: 96% !important;
+}
+
+#ctl00_ContentPlaceHolder_Master_gvSkills a , #ctl00_ContentPlaceHolder_Master_gvBehaviors a{
+font-size: 13px;
+color:#333;
+}
+
+#ctl00_ContentPlaceHolder_Master_divNotes{
+    padding: 20px;
+    
+}
+#ctl00_ContentPlaceHolder_Master_divNotes p{
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+#ctl00_ContentPlaceHolder_Master_divNotes span,
+#ctl00_ContentPlaceHolder_Master_divNotes label
+{
+    float: left;
+    width: 16%;
+}
+#ctl00_ContentPlaceHolder_Master_divNotes select, 
+#ctl00_ContentPlaceHolder_Master_divNotes input[type=text]{
+    width: 20%;
+    
+} 
+
+#ctl00_ContentPlaceHolder_Master_divNotes textarea{
+    width: 50%;   
+}
+.paging{
+    /*float: right;
+    margin-bottom: -15px;*/
+    margin-top: 5px;
+    margin-bottom:-15px;
+}
+
+.paging tr{
+    clear: both;
+}
+
+.paging tr td{
+    /* float: left; */
+    display: inline-block !important;
+    width: auto !important;
+}
+
+.paging tr td a, .paging tr td span{
+    padding: 10px 15px !important;
+    display: inline-block;    
+    margin-left: 5px;
+    color: #333;
+    border: 1px solid #DFDFDF;
+}
+
+.paging tr td a{
+ background: #eee;   
+}
+
+
+
+
+/*--------- End of Edit Session ------*/
+
+/*------------LessonPlan Start -------*/
+
+
+
+/*Lesson plan CSS*/
+ .lesson-plans {
+    width:98%;
+}
+.lesson-plans a {
+    color:#333;
+}
+.lesson-plans h3 {
+    background:url("../images/icon-lesson-plan.png") no-repeat scroll 10px 6px;
+}
+.lesson-plans-grid {
+    float:left;
+    width:98%;
+    padding:1%;
+}
+.lesson-plans-grid-data {
+    max-height:300px;
+    overflow-y:scroll;
+    border-bottom:1px solid #f1f1f1;
+    border-left: 1px solid #f1f1f1;
+}
+.lesson-plans table td table {
+    border:0px;
+    border-top:1px solid #f1f1f1;    
+}
+.lesson-plans table td table td {
+    border:0px;
+    padding:5px !important;
+    vertical-align: middle !important;
+}
+
+.lesson-plans .data-table-grid td tr:hover {
+    background:#EAFFCA !important;
+}
+.lesson-plans-grid .data-table-grid {
+    margin:0;
+    border:0px;
+    padding:5px !important;
+}
+.lesson-plans-grid .data-table-grid td {
+    border:0px;
+    padding:5px;
+    vertical-align:top;
+}
+.lesson-plans-grid .data-table-grid tr {
+    border-bottom:1px solid #c9c9c9;
+}
+.lesson-plans-upload {
+    float: left;
+    width: 50%;
+    padding: 0 1%;
+}
+.lesson-plans-upload select {
+    width:100%;
+}
+.lesson-plans-upload input[type="file"] {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 1%;
+    width: 98%;
+    border-radius: 6px;
+    margin-bottom:10px;
+}
+.lesson-plans-upload .data-table-grid {
+    margin-bottom:10px;
+}
+.lesson-plans-upload .data-table-grid td, .lesson-plans-upload .data-table-grid {
+    border: 0px none;
+    padding:5px;
+    border-top:1px solid #f1f1f1;
+    vertical-align:middle;
+}
+.lesson-plans-upload .data-table-grid tr, .lesson-plans-grid .data-table-grid td table tr {
+    border-bottom:1px solid #eee;
+}
+.lesson-plans-upload fieldset {
+    border-radius: 10px;
+    padding-bottom:10px;
+}
+.lesson-plans-document-actions {
+    padding:10px;
+    overflow:hidden;
+}
+.pull-left {
+    float:left;
+}
+.pull-right {
+    float:right;
+}
+.nextDoc {
+    border-radius: 0px 15px 15px 0px;
+}
+.preDoc {
+    border-radius:15px 0px 0px 15px;
+    margin-right: -3px;
+}
+.lesson-plans-document-actions {
+    text-align:center;
+}
+.lesson-plans-document-container {
+    height:500px;
+    overflow-y:scroll;
+    margin:0 10px;
+    border:1px solid #eee;
+    background:#f9f9f9;
+    padding:10px;
+}
+
+.lessonName {
+background: #EEE;
+padding: 10px !important;
+font-weight: bold;
+}
+.lessonName td{
+background: url("../images/icon-lesson-plan-small.png") no-repeat scroll 8px 7px #eee;    
+padding: 10px 10px 10px 35px !important;
+font-weight: bold;
+}
+
+.lesson-plans .data-table-grid a{
+display:block;
+    text-align:center;
+}
+
+.lesson-plans .tabs a#lessonPlan span{
+background: url("../images/icon-lesson-plan.png") no-repeat scroll 8px 7px ;
+}
+
+.lesson-plans .tabs a#uploadDocument span{
+background: url("../images/document-upload.png") no-repeat scroll 8px 5px ;
+}
+
+
+.lesson-plans .tabs a#WMHelp span{
+background: url("../images/icon-help.png") no-repeat scroll 8px 5px ;
+}
+.lesson-plans .tabs a span{
+    padding:10px 10px 10px 40px;
+}
+
+.lesson-plans .tabs{
+    background:none;    
+}
+
+.lesson-plans-upload fieldset {
+border: 1px solid #CCC;
+overflow: hidden;
+margin: 10px 0 10px 0;
+background: #FFF;
+padding: 10px 10px 0px 10px;
+display: block;
+}
+
+/*------------LessonPlan End -------*/
+
+.student-docs-upload {
+    float: left;
+    width: 98%;
+    padding: 0 1%;
+}
+
+.lesson-plans .tabs a#backtopeople span{
+background: url("../images/icon-people.png") no-repeat scroll 8px 7px ;
+}
+ .tabs a.liStudentDocs span,.peopleTab a.liStudentDocs span,.divReportsTab a.liStudentDocs span{
+        background:url("../images//icon-lesson-plan.png") no-repeat scroll 7px 11px transparent;
+    }
+	.lesson-plans .tabs a#ViewAuditReport span{
+background: url("../images/icon-workbook.png") no-repeat scroll 8px 7px ;
+}
+
+
+
+
+.divGoalSorting a:link, .divGoalSorting a:visited, .divGoalSorting a:active,
+.divGoalSorting_Archive a:link, .divGoalSorting_Archive a:visited, .divGoalSorting_Archive a:active
+{
+    background: none repeat scroll 0 0 #333;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 12px;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    width: 18px;
+}
+
+.divGoalSorting, .divGoalSorting_Archive 
+{
+    border-bottom: 1px solid #7289BA;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    max-width: 100%;
+    padding-left:10px;
+}
+
+.divGoalSorting a:selected, .divGoalSorting_Archive a:selected
+{
+    background: none repeat scroll 0 0 #3B5998;
+    color: #00FFFF;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    width: 15px;
+    font-weight: bold;
+}
+
+
+.tvReportSkills td{
+ padding:0px 0px 5px 10px !important;
+ vertical-align:middle;
+}
+
+
+#ctl00_ContentPlaceHolder_Master_CrystalReportViewer1 table td
+{
+    background-color:#E4E4EC;
+    color:#000000;
+    font-size:8pt;
+    font-family:verdana,Arial;
+    border-bottom:1px solid #BEBED1;
+    border-top:1px solid #FFFFFF;
+}
+
+#ctl00_ContentPlaceHolder_Master_CrystalReportViewer1 table td A
+{
+	color:#000000;
+	cursor:hand;
+	text-decoration:none;
+}
+
+#ctl00_ContentPlaceHolder_Master_CrystalReportViewer1 table td A:hover
+{
+	color:#FF0000;
+	cursor:hand;
+	text-decoration:none;
+}
+
+#ctl00_ContentPlaceHolder_Master_CrystalReportViewer1 table td A IMG
+{
+	border-style:none; 
+	border-width:0
+}

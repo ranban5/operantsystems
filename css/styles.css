@@ -1,0 +1,283 @@
+body {
+	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
+	background: #fafafa;
+}
+
+html,
+body {
+	height: 100%;
+}
+/* THE OVERLAY COLORS WHICH WILL SHOW IN FRONT OF BACKGROUND IMAGES*/
+
+hr {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.nav {
+	text-transform: uppercase;
+}
+
+.home-carousel .carousel-item {
+	height: 65vh;
+	min-height: 350px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+  
+  .home-carousel  .carousel-indicators > li {
+	border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	width: 10px;
+	height: 10px;
+	margin: 0px 8px 0px 8px;
+  }
+
+  .navbar-dark .navbar-brand{
+  font-family: 'Source Serif Pro', serif;
+  
+  }
+  
+  .navbar-nav .nav-link{
+	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #fff !important;
+	font-weight: 400;
+	font-size: 14px;
+  
+  }
+  
+  .activeNav{
+	border-bottom: 3px solid orange;
+  }
+  
+  .display-4{
+	  font-family: 'Source Serif Pro', serif;
+  }
+  
+  .lead{
+	  font-family: 'Source Serif Pro', serif;
+  }
+
+
+  
+  .navbar.scrolled {
+	  background: #01405B;
+	  transition: background 500ms;
+  }
+  
+  .font-weight-light{
+	  font-family: 'Source Serif Pro', serif;
+  }
+
+  .home-carousel .carousel-inner .carousel-item .carousel-caption {
+	right: auto;
+	text-align: left;
+	width: 530px; 
+	top:0px;
+	margin-top: 130px;
+  }
+
+  .home-navbar {
+	/* padding-top: 30px !important; */
+	margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .home-navbar .navbar-brand {
+	width: 120px;
+  }
+
+  .home-navbar.scrolled {
+	margin-left: 0rem;
+    margin-right: 0rem;
+	padding-right: 4rem;
+	padding-left: 4rem;
+  }
+  .home-navbar.scrolled .navbar-brand {
+	margin-bottom: 10px;
+  }
+
+  .home-navbar .navbar-brand  > img {
+	width: 115px;
+	
+  }
+ 
+
+  .margin-bottom-spacing {
+	margin-bottom: 20px;
+  }
+
+  .engaging_videos,.dynamic_curriculum,.personalized_tech,.assessment_programs,.about-us,.contact-u {
+	margin-top: 25px;
+  }
+
+  .engaging-videos-list > .list-group-item ,.assessment-programs-list > ul > .list-group-item, .app-store-images >ul > li {
+	border: none;
+    background: transparent;
+  }
+
+  .app-store-images >ul > li  {
+	display: inline-block;
+  }
+
+  .margin-bottom-25 {
+	margin-bottom: 25px;
+  }
+
+
+  .powerful_sights {
+	margin-top: 40px;
+  }
+
+.staff_timesheet > img {
+	max-width: 100%;
+  }
+
+  .personalized_tech_img_pdf img{
+	width: 80%;
+  }
+
+  .app-store-images > ul > li > img {
+    width: 120px;
+    height: 40px;
+  }
+
+  .inner-contact-us {
+	background-color: #01405B;
+	border-radius: 10px;
+	padding:25px 25px;
+  }
+
+  .inner-contact-us > div > h1 {
+	color: #fff;
+  }
+
+  .inner-contact-us > div > p {
+	color: #fff;
+  }
+
+  .input-box {
+	border-radius: 50px;
+	background-color: #fff;
+	padding: 15px 15px;
+  }
+
+  .mainfooter {  
+	background: #FEEEE2;  
+	 color: white;  
+	 margin-top:100px;
+	 padding: 50px 0px 0px 0px; 
+   } 
+   
+   .copyRight {
+	background: #fff;
+	color: #000;
+	padding-top: 25px;
+   }
+
+   .footer-list > li >  a {
+	color: #02415C;
+	text-decoration: none;
+   }
+
+   .footer-list > li >  a:hover {
+	text-decoration: none;
+   }
+   .footer-addr > p {
+	color: #02415C;
+   }
+
+  
+  /* Add padding BETWEEN each column */
+  .imageLists .row,
+  .imageLists .row > .column {
+	padding: 16px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .imageLists .column {
+	float: left;
+	width: 18%;
+	border: 1px solid #000;
+	margin: 11px;
+  }
+  
+  /* Clear floats after rows */ 
+  .imageLists .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  .imageLists .content  h3 {
+	font-size: 15px;
+	margin-top: 15px;
+  }
+  
+  /* Content */
+  .imageLists .content {
+	background-color: white;
+	padding: 10px;
+	text-align: center;
+	height: 190px;
+    line-height: 21px;
+  }
+
+  .features-banner-container {
+	position: relative;
+  }
+
+  .banner-computer {
+	width: 31%;
+    position: absolute;
+    right: 4%;
+    bottom: -40px;
+    z-index: 1;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px)  {
+
+	  .imageLists .column {
+		width: 45%;
+		text-align: center;
+  }
+
+  .imageLists .content {
+	height: auto;
+  }
+	/* Put your CSS here for 768px to 1024px width devices(covers all width between 768px to 1024px  */
+}
+
+@media only screen and (max-width: 768px) {
+	.hideInMobile {
+		display: none;
+	}
+	.home-navbar {
+		padding-top: 20px !important;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.imageLists .column {
+		width: 45%;
+  }
+
+  .imageLists .content {
+	height: auto;
+  }
+
+  .personalized_tech_img_pdf {
+	margin-top: 50px;
+  }
+
+  .personalized_tech_img_pdf img{
+	width: 100%;
+  }
+
+}
+
+ 

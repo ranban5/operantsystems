@@ -1,0 +1,111 @@
+﻿/*
+/*
+Theme name: Operant Systems
+Description: Custom Theme
+*/
+
+/* WordPress Default styles */
+@import url('wp-default.css');
+
+* { margin: 0; padding: 0; outline:0; }
+
+body {
+    background: #fff;
+	color:#65737E;
+	font-family:arial;
+	font-size:12px;
+	line-height:16px;
+	text-align:justify;
+}
+
+a { color: #ea4808; text-decoration: none; cursor:pointer; }
+a:hover { text-decoration: none; }
+
+a img { border: 0; }
+
+input, textarea, select { font-family: Arial, Helvetica, sans-serif; font-size:12px; }
+textarea { overflow:hidden; }
+
+.cl { display: block; height: 0; font-size: 0; line-height: 0; text-indent: -4000px; clear: both; }
+.notext { font-size: 0; line-height: 0; text-indent: -4000px; }
+
+.left, .alignleft { float: left; display: inline; }
+.right, .alignright { float: right; display: inline; }
+
+a.green-arrow { float:right; font-size:13px; text-decoration:none !important; background:url(images/contacts-link.gif) no-repeat right 3px; padding-right:14px; line-height: 16px !important}
+
+.shell { width:780px; margin:0 auto; }
+#header { height:121px; background:url(../images/header.gif) repeat-x; }
+#header .shell { padding-top:39px; }
+#header h1#logo a { height:37px; width:219px; background:url(../images/logo.gif) no-repeat; float:left; margin-left:30px; }
+
+#navigation { height:38px; width:467px; background:url(../images/navigation.gif) no-repeat; float:left; margin:1px 0 0 30px ; }
+#navigation ul { list-style:none; line-height:38px; font-size:13px; padding-left:30px; }
+#navigation ul li { float:left; background:url(images/li-background.gif) no-repeat right 17px; padding:0 14px 0 9px; }
+#navigation ul li.last { background:transparent; }
+#navigation ul li a { color:#b4b8bb; }
+#navigation ul li a:hover { border-bottom:1px solid #e14000; }
+#navigation ul li a.active { color:#fff; font-weight:bold; }
+
+#main {background: #fff; padding:44px 33px 52px;}
+#main .post h2 {padding-bottom: 10px;}
+
+.home-page .content { width:467px; float:right; }
+
+.entry-item { height:84px; background:url(../images/entry.gif) no-repeat; margin-bottom:8px; padding:9px 0 0 19px; }
+.how-does-it-work { background:url(images/bg1.gif) no-repeat 0 2px; }
+.who-is-it-for { background:url(images/bg2.gif) no-repeat 0 2px; padding-top:6px; }
+.demo-and-sign-up-now { background:url(images/bg3.gif) no-repeat 0 2px; padding-top:6px; }
+.entry-content { padding-left:90px; height:84px; width:294px; float:left; display:inline; }
+#main h2 { font-family:arial, sans-serif; font-weight:normal; font-size:18px; color:#070707; text-transform:uppercase; }
+#main h2 a { color:#070707; }
+#main h2 a:hover { color:#ea4808; }
+
+#main hr { margin:5px; }
+
+a.arr span { background:url(images/arr.gif) no-repeat; height:57px; width:35px; float:left; display:inline; margin:10px 0 0 3px; }
+a:hover.arr span { background:url(images/arr-hover.gif) no-repeat;  }
+
+#sidebar-cnt { background:#fff url(images/sidebar.gif) repeat-x 0 top; padding-bottom:11px; }
+#sidebar-cnt a { text-decoration:underline; }
+#sidebar-cnt a:hover { color:#852c09; }
+#sidebar-cnt .shell { padding:22px 0 0 0; }
+
+.box { background:#fff url(../images/box.gif) no-repeat 0 top; width:196px; float:left; display:inline; margin:0 0 0 18px; padding:24px 20px 0; min-height: 112px;}
+.box h2 { font-size:20px; color:#4a545d; padding-bottom:4px; font-family:arial, sans-serif; font-weight:normal; }
+.box p { line-height:30px; padding-left:8px; }
+.box ul { list-style:none; width:151px; padding-left:11px; }
+.box ul li { border-bottom:1px solid #e8e8e4; padding:7px 0 7px 10px; background: url(images/hyphen-bullet.gif) no-repeat 0 15px; line-height: 16px !important;}
+.box ul li a {color: #4a545d; text-decoration: none !important}
+.box ul li a:hover {color: #ea4808 !important; text-decoration: underline !important;}
+.box a img {display: block; margin: 0 auto;}
+
+#footer { height:37px; width:719px; background:url(../images/footer.gif) no-repeat; margin:30px auto 0 auto; text-align:center; padding-top:11px; color:#fff; font-family:tahoma, arial, sans-serif; font-size:9px; }
+#footer a { color:#ff9164; }
+#footer a:hover {color: #ff9164; text-decoration: none;	}
+p.copy { font-size:11px; }
+
+img.centered { display: block; margin-left: auto; margin-right: auto; }
+img.alignright { margin: 2px 0 2px 7px; display: inline; float: right; }
+i
+	dnone !important;
+border: none;
+padding: 0 !important;
+}
+
+.wpfp_custom_popup input
+{
+width: 80%;
+margin: 5px;
+}
+
+.popup_controls
+{
+text-align: center;
+font-size: 100%;
+}
+
+
+
+
+/**/

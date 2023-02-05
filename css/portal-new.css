@@ -1,0 +1,330 @@
+
+body{
+    font-family:arial;
+    font-size:13px;
+    color:#666666;
+}
+.header, .filter-bar, .action-buttons, .footer, .box-container, .content
+{ width:100%; max-width:980px; margin:0 auto; overflow:hidden;}
+
+.header{ height:90px;
+    background: url("../images/portal-header-bg.png") no-repeat 25px bottom #f1f2f4;
+}
+.header .logo
+    {
+    float: left;
+    margin: 15px 0 0 15px;
+    height:62px;
+    width:210px;
+    }
+    
+.user-profile {
+    float: right;
+    height: 58px;
+    margin: 16px 15px;
+    padding: 5px 10px 0;
+    width: 180px;
+}
+
+.user-profile .user-profile-pic{
+    float:left;
+    margin: 0 7px 7px 0;
+}
+.user-profile a {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 2px #CCCCCC !important;
+    color: #333333;
+    display: inline-block;
+    padding: 3px 9px 5px !important;
+    text-decoration: none;
+    margin-top: 4px;
+}
+.filter-bar {
+    background: url("../images/portal-filter-bar-bg.png") repeat-x scroll center bottom #565C64;
+    overflow: visible;
+    padding: 8px 0;
+    position: relative;
+}
+
+.participant label, .filter label{
+    display:none;
+}
+
+.filter {
+    background: url("../images/icon-filter.png") no-repeat scroll left center transparent;
+    float: right;
+    padding: 3px 0 3px 69px;
+    width: 195px;
+}
+
+.filter input {
+    border: 0 none;
+    height: 18px;
+    margin: 1px 0 0 5px;
+    width: 159px;
+}
+
+.participant {
+    background: url("../images/icon-participant.png") no-repeat scroll left center transparent;
+    float: right;
+    padding: 0 8px 0 75px;
+    width: 175px;
+    position:absolute;
+    right:0px;
+    top:8px;
+}
+
+.participant input {
+    border: 0 none;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 5px #000000 inset;
+    height: 18px;
+    margin: 1px 0 0 8px;
+    padding: 4px 10px;
+    width: 141px;
+}
+.action-buttons{
+    padding:11px 0 0 0;
+}
+.action-buttons input ,.action-buttons img{
+    margin:0 0 10px 10px;
+    float:left;
+}
+.box-container{
+    padding:10px 0;
+}
+.box{
+    background: url("../images/box-title-bg.png") repeat-x top #fff;
+    position:relative;
+    border:1px solid #ccc;
+    border-radius:7px;
+    -mox-border-radius:7px;
+    -webkit-border-radius:7px;
+    margin:0 1%;
+    float:left;
+    padding: 0 0 1% 0;
+}
+
+.box h3{
+    font-size:1em;
+    font-weight:normal;
+    padding:10px 10px 10px 44px;
+    border-bottom:1px solid #ddd;
+}
+
+.lesson-plan{
+    width:32%;    
+}
+
+.lesson-plan table{
+    width:94%;
+    margin: 0 3%; 
+    }
+
+.lesson-plan h3{
+    background: url("../images/icon-lesson-plan.png") no-repeat scroll 10px 5px transparent;
+}
+
+.box td {
+    border-bottom:1px solid #ddd;
+    padding: 5px 0;    
+}
+
+.messages{        
+    width:32%;
+    margin: 0 1% 0 0;
+}
+
+.messages table{    
+    width:96%;
+    margin: 0 2%; 
+}
+
+.messages h3{
+    background: url("../images/icon-messages.png") no-repeat scroll 10px 5px transparent;
+}
+
+.help-tip {
+    color: #CCCCCC;
+    padding: 0 1em;
+    text-align:right;
+}
+
+.content{
+    background:#f0f0f0;
+}
+
+.content-container{
+    background: url("../images/box-title-bg.png") repeat-x top #fff;
+    border-radius:7px;
+    -mox-border-radius:7px;
+    -webkit-border-radius:7px;
+    margin:1%;
+    padding:0 1%;
+    min-height: 350px;
+    z-index:0;
+    position: relative;
+}
+
+.footer {
+    background: url("../images/portal-footer-bg.png") repeat-x scroll center top transparent;
+    color: #000000;
+    font-size: 0.75em;
+    height: 100px;
+    padding: 19px 0;
+    text-align: center;
+}
+
+#imgHome, #imgHelp, #imgGotoMobile {
+    background: url("../images/icon-home.png") no-repeat scroll left center transparent !important;
+    filter:none;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    box-shadow: 0 0 0;
+    color: #B4B4B4;
+    margin-left: 15px;
+    padding: 5px 0 4px 25px;
+    text-shadow: 0 0 0;
+}
+
+#imgGotoMobile {
+    background: url("../images/icon-mobile.png") no-repeat scroll left center transparent !important;
+}
+
+#imgHelp {
+    background: url("../images/icon-help.png") no-repeat scroll left center transparent !important;
+}
+
+#ctl00_PageUpdateProgress {
+    background: url("../images/transparentBg.png");
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 999999999;
+}
+
+#ctl00_PageUpdateProgress div {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 21px 21px 21px 21px;
+    box-shadow: 0 0 25px;
+    display: inline-block;
+    left: 49%;
+    padding: 5px 7px;
+    position: absolute;
+    top: 35%;
+    margin-left: -30px;
+}
+
+#ctl00_PageUpdateProgress div img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.sub_tabs a{
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #666;
+    margin-top: 10px;
+    border-bottom: 0px solid #CCC;
+    border-radius:10px 10px 0px 0px;
+}
+
+.sub_tabs{
+    border-bottom: 1px solid #CCC;
+
+}
+
+.sub_tabs a.sub_tabs_active{
+  background:#ddd;  
+}
+
+/* For search on curriculum*/
+#ctl00_ContentPlaceHolder_Master_divSearch{
+min-height:600px;
+font-size: 16px;
+padding-bpttpm:10px;
+}
+
+#ctl00_ContentPlaceHolder_Master_divSearch fieldset p{
+margin-top:10px;
+}
+#ctl00_ContentPlaceHolder_Master_divSearch .chkDoamin td,
+#ctl00_ContentPlaceHolder_Master_divSearch .chkGoal td
+{
+	display:block;
+	position:relative;
+}
+
+#ctl00_ContentPlaceHolder_Master_divSearch .chkDoamin td,
+#ctl00_ContentPlaceHolder_Master_divSearch .chkGoal td
+{
+padding: 12px 12px 12px 22px;
+cursor:pointer;
+}
+
+#ctl00_ContentPlaceHolder_Master_divSearch .chkDoamin td:hover,
+#ctl00_ContentPlaceHolder_Master_divSearch .chkGoal td:hover
+{
+background:#eee;
+}
+
+#ctl00_ContentPlaceHolder_Master_divSearch .chkDoamin td input,
+#ctl00_ContentPlaceHolder_Master_divSearch .chkGoal td input
+{
+position:absolute;
+top:12px;
+left:0;
+}
+
+.divSmallMenu a.sm_Search{
+background: url("../images/icon-search-cur.png") no-repeat scroll center center #FFFFFF;
+}
+
+.divSmallMenu a.sm_ReturnToCurriculum {
+background: url("../images/icon-return-cur.png") no-repeat scroll center center #FFFFFF;
+}
+
+.divSearch_ResultContainer {
+border: 1px solid #ddd;
+padding: 10px;
+min-height: 100px;
+width: 450px;
+overflow-y: scroll;
+max-height: 200px;
+}
+
+.videos{
+width: 32%;
+margin: 0 0 0 0;
+}
+
+.videos h3 {
+background: url("../images/icon-videos.png") no-repeat scroll 7px 0px transparent;
+}
+
+.coming-soon-title{
+text-align: center;
+font-weight: normal;
+padding: 56px;
+font-style: italic;
+}
+
+.lesson-plan {
+background: url("../images/lesson-plan-img.png") no-repeat bottom left;
+}
+
+.messages {
+background: url("../images/meaages-img.png") no-repeat bottom left;
+}
+
+.videos {
+background: url("../images/video-img.png") no-repeat bottom left;
+}
+

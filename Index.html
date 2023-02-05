@@ -1,0 +1,2102 @@
+﻿<!doctype html>
+<html lang="en" ng-app="indexApp">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Simple, Yet Powerful Practice Management Solution">
+	<meta name="keywords"
+		content="Stamp, Startup, Multipurpose, Bootstrap, Landing page, Template, Registration, Landing">
+	<meta name="author" content="operantSys">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="Pragma" content="no-cache">
+	<!-- SITE TITLE -->
+	<title>Operant Systems Inc.</title>
+
+	<!-- =========================
+     FAV AND TOUCH ICONS AND FONT
+    ============================== -->
+	<link rel="icon" href="operantsystems/images/favicons/Favicon-1.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="operantsystems/images/favicons/favicon-152.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="operantsystems/images/favicons/favicon-120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="operantsystems/images/favicons/favicon-72.png">
+	<link rel="apple-touch-icon-precomposed" href="operantsystems/images/favicons/favicon-57.png">
+
+	<link href='https://fonts.googleapis.com/css?family=Cabin:400,600|Open+Sans:300,600,400' rel='stylesheet'>
+
+	<!-- =========================
+     STYLESHEETS
+    ============================== -->
+	<!-- BOOTSTRAP AND ANIMATION AND COLORS-->
+
+
+	<link rel="stylesheet" href="operantsystems/css/colors/orange.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- <link rel="stylesheet" href="operantsystems/css/bootstrap.min.css"> -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="stylesheet" href="operantsystems/css/styles.css?ver=Oct232021">
+
+	<!-- <link rel="stylesheet" href="operantsystems/css/animate.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	
+
+	<!-- FONT ICONS -->
+	<link rel="stylesheet" href="operantsystems/assets/icons/icons.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+	<!-- CAROUSEL AND LIGHTBOX -->
+	<!--<link rel="stylesheet" href="operantsystems/css/owl.theme.css">
+	Access-Control-Allow-Origin: *
+	<link rel="stylesheet" href="operantsystems/css/owl.carousel.css">
+	<link rel="stylesheet" href="operantsystems/css/nivo-lightbox.css">
+	<link rel="stylesheet" href="operantsystems/css/nivo_themes/default/default.css"-->
+
+	<!-- RESPONSIVE FIXES -->
+	<link rel="stylesheet" href="operantsystems/css/responsive.css">
+
+	<!-- CUSTOM STYLESHEETS -->
+
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,500&display=swap"
+		rel="stylesheet">
+
+
+	<!--[if lt IE 9]>
+	<script src="operantsystems/js/html5shiv.min.js"></script>
+	<![endif]-->
+	<!--[if gte IE 9]>
+	<style type="text/css">
+		.standard-button,
+		.navbar-register-button {
+			filter: none;
+		}
+	</style>
+	<![endif]-->
+	<!-- ****************
+      After neccessary customization/modification, Please minify HTML/CSS according to http://browserdiet.com/en/ for better performance
+     **************** -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://cdn.rawgit.com/indrimuska/angular-moment-picker/master/dist/angular-moment-picker.min.css"
+		rel="stylesheet">
+	<!-- End of datepicker -->
+
+
+</head>
+
+<body ng-controller="indexController" class="top-ribbon">
+
+	<!-- =========================
+ PRE LOADER
+============================== -->
+	<div class="preloader">
+	<div class="status">
+		&nbsp;
+	</div>
+</div>
+
+	<!-- =========================
+ SECTION: HOME / HEADER
+============================== -->
+	<!-- <a id="scroll-button"><i class="fas fa-arrow-circle-up"></i></a> -->
+	<!-- COLOR OVER IMAGE -->
+	<nav id="mainNavbar" class="navbar navbar-dark  navbar-expand-md py-0 fixed-top home-navbar home1" id="home" data-stellar-background-ratio="3.5">
+		<div class="container home-menu px-0">
+			<a href="#" class="navbar-brand"><img src="operantsystems/images/new_images/Log1.png" class="showWithScroll"/>
+				<img src="operantsystems/images/Operant-1.png" class="showWithoutScroll"/></a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks">
+				<!-- <span class="icon-software-layout-header-bar"></span> -->
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navLinks">
+				<ul class="navbar-nav ml-auto nav navbar-right small-text pr-2">
+					<li class="nav-item activeNav custom-menu menuBarItem">
+						<a href="#home" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Home</a>
+					</li>
+					<li class="nav-item custom-menu menuBarItem features-menu">
+						<a href="#features"
+							class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Features</a>
+					</li>
+					<li class="nav-item custom-menu menuBarItem" ng-click="linkClick('team')">
+						<a href="#team" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Team</a>
+					</li>
+					<li class="nav-item custom-menu menuBarItem" ng-click="linkClick('news')">
+						<a href="#news" class="nav-link poppins-FontFamily font-weight-500-poppins">News</a>
+					</li>
+					<li class="nav-item custom-menu menuBarItem" ng-click="linkClick('contactus')">
+						<a href="#contactus"
+							class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Contact Us</a>
+					</li>
+					<!-- <li class="nav-item" id="goToContactUs">
+							<a class="nav-link poppins-FontFamily text-white font-weight-bold">Contact Us</a>
+						</li> -->
+					<li class="nav-item enrollment-menu custom-menu">
+						<a href=""
+							class="nav-link poppins-FontFamily text-white font-weight-500-poppins enroll-link">Enroll
+							Know</a>
+						<!-- <span class="nav-link poppins-FontFamily text-white font-size-14 font-weight-500-poppin enroll-link">Enroll
+							Know</span> -->
+
+						<div class="enrollment-link">
+							<div class="formCSS">
+								<div class="horizontal-subscribe-form">
+									<form name="formMail"
+										class="form-inline  ng-pristine ng-valid-email ng-invalid ng-invalid-required"
+										ng-submit="chkGetStarted()">
+
+										<div id="gs1" class="">
+											<label class="poppins-FontFamily text-left font-12 font-weight-normal-poppins" style="width: 100%;display: block;">Enter E-Mail ID for Enroll</label>
+											<input type="email" id="cf-email" name="email" ng-model="emailId"
+												class="form-control input-box  placeholder ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required"
+												 required="">
+												 <div class="error-container ng-hide"
+											ng-show="formMail.email.$dirty &amp;&amp; formMail.email.$invalid">
+											<small class="text-danger" ng-show="formMail.email.$error.required">
+												Your email is required.
+											</small>
+											<small class="text-danger ng-hide" ng-show="formMail.email.$error.email">
+												Your email is not valid
+											</small>
+										</div>
+											<button type="submit" class="btn btn-primary standard-button">Get
+												Started</button>
+										</div>
+										
+										<div id="gs2" class="hide">
+											<p class="poppins-FontFamily font-12 text-dark"><strong class="mb-1 d-block poppins-FontFamily text-dark font-size-14">Thanks! We will contact you soon.</strong>
+												<small class="poppins-FontFamily font-12 text-dark">
+													To schedule a DEMO please enter the data and time below.
+												</small></p>
+												<label class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins d-block">Name</label>
+											<input type="text" id="cf-name" class="form-control placeholder enroll-know-form-fields">
+												<label class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins d-block">Phone Number</label>
+											<input type="text" id="cf-phone" class="form-control placeholder enroll-know-form-fields">
+											<br>
+											<p class="input-group ng-isolate-scope demo-date-time-container"
+												moment-picker="demoDate" format="MM-DD-YYYY">
+												<label class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins d-block mb-1">Select Date</label>
+												<input
+													class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins form-control placeholder ng-pristine ng-untouched ng-valid ng-scope moment-picker-input poppins-FontFamily font-12 text-dark font-weight-normal-poppins select-date-field"
+													placeholder="Demo Date" ng-model="demoDate"
+													ng-model-options="{ updateOn: 'blur' }" tabindex="0">
+												<span class="input-group-btn ng-scope select-date-icon">
+													<button type="button" class="btn btn-default">
+														<i class="material-icons">event</i>
+													</button>
+												</span>
+												
+											</p>
+
+											<p class="input-group ng-isolate-scope demo-date-time-container"
+												moment-picker="demoTime" format="HH:mm">
+												<label class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins d-block mb-1">Select Date</label>
+												<input
+													class="form-control placeholder ng-pristine ng-untouched ng-valid ng-scope moment-picker-input select-date-fieldpoppins-FontFamily font-12 text-dark font-weight-normal-poppins"
+													placeholder="Demo Time" ng-model="demoTime"
+													ng-model-options="{ updateOn: 'blur' }" tabindex="0">
+												<span class="input-group-btn ng-scope select-date-icon">
+													<button type="button" class="btn btn-default">
+														<i class="material-icons">access_time</i>
+													</button>
+												</span>
+
+												
+											</p>
+											<div>
+											<span style="color:#ffffff" class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins d-block"><strong>EST time Only</strong></span>
+											<button class="btn poppins-FontFamily font-12 white-colorfont-weight-normal-poppins" type="button" ng-click="saveNamePhone()">SUBMIT</button>
+											</div>
+										</div>
+										<div id="gs3" class="hide">
+											<p class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins d-block">Thanks! <br>We will get back to you soon.</p>
+										</div>
+									</form>
+									<p class="mailchimp-success white-text"><span
+											class="icon-check-alt2 colored-text"></span>Thanks! Please confirm your
+										subscription from your email inbox</p>
+									<p class="mailchimp-error white-text"><span class="icon-close-alt2"></span>Error!
+										Please enter correct email</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+
+				<ul class="navbar-nav mr-right signIn-dropdown">
+					<li class="nav-item dropdown ">
+						<a class="poppins-FontFamily nav-link text-center dropdown-toggle py-0 font-weight-400-poppins font-size-14"
+							href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false" ng-click="loginPage()">
+							User Login
+						</a>
+						<div class="login-container hide dropdown-menu p-3">
+							<form class="form-horizontal" method="post" accept-charset="UTF-8">
+								<p class="error hide poppins-FontFamily font-12 font-weight-normal-poppins">Invalid User Id and Password</p>
+								<div class="form-group">
+									<label class="poppins-FontFamily font-12 font-weight-normal-poppins m-0">Enter User ID</label>
+									<input id="login_UserId" type="text" class="form-control poppins-FontFamily font-12">
+								</div>
+								<div class="form-group mb-0">
+									<label class="poppins-FontFamily font-12 font-weight-normal-poppins m-0">Enter Password</label>
+									<input id="login_Psd" type="password" class="form-control poppins-FontFamily font-12">
+								</div>
+								<br>
+								<div class="text-center">
+									<input type="submit" id="btnLoingSubmit"
+										class="btn btn-primary navbar-register-button btn-lg btn-block poppins-FontFamily font-14" value="login"
+										ng-click="loginPage_CheckUserIdPassword()">
+										
+									<!-- <input type="button" id="btnLoingCancel" class="btn btn-block" value="Cancel"
+										data-toggle="dropdown" ng-click="loginPage_Hide()" /> -->
+								</div>
+							</form>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+
+
+	<section class="home2 subSections" id="home">
+
+		<header class="header  home1" data-stellar-background-ratio="3.5">
+			<div id="indicators" class="carousel slide home-carousel" data-ride="carousel" data-interval="false">
+				<ol class="carousel-indicators">
+					<li data-target="#indicators" data-slide-to="0" class="active"></li>
+					<li data-target="#indicators" data-slide-to="1"></li>
+					<li data-target="#indicators" data-slide-to="2"></li>
+					<li data-target="#indicators" data-slide-to="3"></li>
+					<li data-target="#indicators" data-slide-to="4"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<!-- Slide One - Set the background image for this slide in the line below -->
+					<div class="carousel-item active"
+						style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2114.png')">
+
+						<!-- <div class="carousel-caption">
+							<h2 class="my-1 poppins-FontFamily blue-color">Customize Your Skills & <br />Behavior
+								Programs</h2>
+							<p class="poppins-FontFamily blue-color mt-3">Define Operational Definition And Sends Assign
+								Program To Multiple Students View Frequency Duration & Interval Data Add Unlimited
+								Programs</p>
+							<button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg">Explore More
+								&nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button>
+						</div> -->
+						<div class="carousel-caption">
+							<div class="simple-logo"><img
+									src="operantsystems/images/new_images/logo_carosuel.png"
+									class="img-fluid" /></div>
+							<h2 class="pb-2 poppins-FontFamily m-0 orange-color">Simple, Yet Powerful</h2>
+							<p class="poppins-FontFamily m-0 text-dark font-weight-bold-poppins">ABA Practice Management
+								Solution</p>
+							<p class="text-right  mb-1 font-italic child-priority text-dark font-bold"> Making your
+								child our priority</p>
+							<div class="simple-logos-list">
+								<span class="d-inline-block pr-1"><img
+										src="operantsystems/images/microsoft-case-study.jpg" class="img-fluid" style="width:100px" /></span>
+								<span class="d-inline-block pr-1"><img
+										src="operantsystems/images/new_images/SIIA-logo.png" class="img-fluid" /></span>
+								<span class="d-inline-block"><img
+										src="operantsystems/images/new_images/pma-logo-shirnked.png"
+										class="img-fluid" /></span>
+							</div>
+						</div>
+					</div>
+					<!-- Slide Two - Set the background image for this slide in the line below -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2118.png')">
+						<div class="carousel-caption">
+							<h2 class="my-1 poppins-FontFamily blue-color">Customize Your Skills & <br />Behavior
+								Programs</h2>
+							<p class="poppins-FontFamily blue-color mt-3">Define Operational Definition And Sends Assign
+								Program To Multiple Students View Frequency Duration & Interval Data Add Unlimited
+								Programs</p>
+							<!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Explore More
+								&nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button> -->
+						</div>
+					</div>
+					<!-- Slide Three - Set the background image for this slide in the line below -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2115.png')">
+						<div class="carousel-caption">
+							<h2 class="pb-2 poppins-FontFamily blue-color">Built-In <br />Scheduling <br />System</h2>
+							<p class="poppins-FontFamily blue-color">Manage time using our built-in <br /> single
+								entry scheduling system</p>
+							<!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+						</div>
+					</div>
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2116.png')">
+						<div class="carousel-caption">
+							<h2 class="pb-2 poppins-FontFamily blue-color">Data Collection</h2>
+							<ul class="poppins-FontFamily data-collection-list">
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+										class="d-inline-block align-middle">Collect-session data on ipad,<br />phone or
+										laptop</span></li>
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+										class="d-inline-block align-middle">Record data without internet <br />using pad
+										and phone</span></li>
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+										class="d-inline-block align-middle">Resume unsaved data on ABA <br />Poacketbook
+										app</span></li>
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+										class="d-inline-block align-middle">Edit & Update data using the<br />WEB
+										app</span></li>
+							</ul>
+							<!-- <button class="btn poppins-FontFamily orange-bg white-color schedule-demo-btn">Schedule a Demo</button> -->
+							<!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+						</div>
+					</div>
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2117.png')">
+						<div class="carousel-caption">
+							<h2 class="pb-2 poppins-FontFamily blue-color">Dynamic<br />Dashboard</h2>
+							<ul class="poppins-FontFamily">
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Instantly
+									view daily sessions</li>
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Access to
+									previous session data</li>
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>View
+									skills and behaviour graph</li>
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Export
+									session data to excel</li>
+							</ul>
+							<!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev hideInMobile" href="#indicators" role="button" data-slide="prev">
+					<i class="fas fa-chevron-left" aria-hidden="true" style="font-size:32px;"></i>
+					<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next hideInMobile" href="#indicators" role="button" data-slide="next">
+					<i class="fas fa-chevron-right" aria-hidden="true" style="font-size:32px;"></i>
+					<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</header>
+		<!-- Page Content -->
+
+
+		<div class="py-5 dynamic_curriculum medium-grey home-sections best_pratices">
+			<div class="container px-0">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing mt-4">
+						<h2 class="text-center">Best Practice. Powerful Insights. Hundreds Of Features</h2>
+						<p class="text-center">ABA Pocketbook Comes With A Bundle Of Clinical And Educational Features
+							In A Data Driven Process</p>
+					</div>
+				</div>
+
+				<div class="imageLists">
+
+					<div class="row">
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 15.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Skills Acquisition</p>
+								</div>
+							</div>
+						</div>
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 16.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Curriculum (Customizable)</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 17.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Behavior Duration</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 18.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Interval Data</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 19.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Phase Change Line</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 14.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Advanced Reporting</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 13.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Session Notes</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 14.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Signatures</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 11.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Time Tracking & Attendance</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 10.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Auto Sync/ Auto Recovery</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<p class="pl-3 mt-lg-3 py-lg-3 py-sm-0 mt-sm-3 text-center d-block"> <button
+					class="btn poppins-FontFamily more-buttons white-bg text-center"><a href="#features"
+						class="blue-color read-more-anchor goToFeatures">Read More&nbsp;<img
+							src="operantsystems/images/arrow-right.svg"
+							style="width: 30px;margin-left:15px" /></a></button></p>
+			</div>
+		</div>
+
+		<div class="py-5 dynamic_curriculum home-sections">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing order-shift">
+						<h2 class="text-center">Dynamic Curriculum & Behavior Programs</h2>
+						<p class="text-center">Lorem ipsum is Simply Dummy Text of the Printing And Typesetting
+							Industry.</p>
+					</div>
+
+					<div class="col-md-6 order-shift ">
+
+						<ul
+							class="list-group engaging-videos-list  text-lg-left text-md-left text-sm-center home-sections-list">
+							<li class="list-group-item pt-0 pb-2">Build And Integrate With Your Current Programs</li>
+							<li class="list-group-item pb-2">Modify Programs To Meet Each Students Needs.</li>
+							<li class="list-group-item pb-2">Manage Criteria of Success On Individual Targets Or
+								Standardized Criteria Across All Targets.</li>
+							<li class="list-group-item pb-2">Define Levels Of Intensity Changes in Behavior.</li>
+						</ul>
+						<p class="pl-3 mt-lg-3 py-lg-3 py-sm-0 mt-sm-3"> <button
+								class="btn poppins-FontFamily more-buttons white-bg text-center"><a href="#"
+									 class="blue-color read-more-anchor goToFeatures">Schedule a Demo&nbsp;<img
+										src="operantsystems/images/arrow-right.svg"
+										style="width: 30px;margin-left:15px" /></a></button></p>
+					</div>
+					<div class="col-md-6 order-shift mb-sm-4 home-sections-img-container no-zindex">
+						<img src="operantsystems/images/new_images/features/Image 34/Group 2001.png"
+							class="img-fluid dynamic_curriculum_img" alt="Responsive image">
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="py-5 personalized_tech home-sections">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-md-12 text-center margin-bottom-spacing">
+						<h2 class="text-center">Personalized Tech Services Making Your Life Easier</h2>
+						<p class="text-center mb-0">We build Your Basic Dream Website And Set You Up For Success.</p>
+						<p class="text-center mb-5">Convert Pdf Forms To Fillable Forms Via Data Entry</p>
+					</div>
+
+					<div class="col-md-6  personalized_tech_img">
+						<img src="operantsystems/images/new_images/Image 20.png" class="img-fluid" />
+						<p class="pt-5"> <button class="btn poppins-FontFamily more-buttons white-bg text-center goToFeatures" >
+							Explore More&nbsp;<img src="operantsystems/images/arrow-right.svg"
+									style="width: 30px;margin-left:15px" /></button></p>
+					</div>
+					<div
+						class="col-md-6 personalized_tech_img text-left personalized_tech_img_pdf home-sections-img-container personalized-image-right-padding">
+						<img src="operantsystems/images/new_images/Image 21.png" class="img-fluid" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="py-4 engaging_videos medium-grey home-sections">
+
+			<div class="container">
+				<div class="row  my-4">
+
+					<div id="first" class="col-md-12 col-sm-12  text-center margin-bottom-spacing order-shift">
+						<h2 class="text-center mt-3 mb-3 pt-4 poppins-FontFamily">Engaging Entertaining Videos</h2>
+						<!--<p class="text-center pt-0 poppins-FontFamily">Lorem ipsum is Simply Dummy Text of the Printing And Typesetting Industry.</p>-->
+					</div>
+					<div id="second" class="col-md-6 col-sm-12 order-shift ">
+						<!-- <div class="embed-responsive embed-responsive-16by9"> 
+						<video width="320" height="240" controls controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar" poster=
+						"images/new_images/Group 1998.png">
+							<source src="operantsystems/images/video.mp4" type="video/mp4">
+						</video>
+					</div>  -->
+						<div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+							<img src="operantsystems/images/new_images/features/Image 34/Group 1998.png"
+								style="cursor:pointer" class="img-fluid" />
+						</div>
+
+						<div class="embed-responsive embed-responsive-16by9" style="display:none">
+							<iframe class="embed-responsive-item"
+								src="https://www.youtube.com/embed/scmj3D8UeNM?&modestbranding=0&rel=0&autoplay=1"></iframe>
+						</div>
+					</div>
+
+					<div id="third" class="col-md-6 col-sm-12 pl-5 mt-sm-1 mt-lg-0 mg-md-0 order-shift">
+
+						<ul
+							class="list-group engaging-videos-list text-lg-left text-md-left text-sm-center home-sections-list">
+							<li class="list-group-item pt-0 pb-2 ">Motivating & Customizable Training Programs</li>
+							<li class="list-group-item pb-2">Reduce Training Time</li>
+							<li class="list-group-item pb-2">Improve Care</li>
+							<li class="list-group-item pb-2">Eliminate Staff Turnover</li>
+						</ul>
+						<p class="pl-3 mt-lg-5 py-lg-5  py-sm-0 mt-sm-3"> <button
+								class="btn text-center poppins-FontFamily more-buttons white-bg">Schedule a
+								Demo&nbsp;<img src="operantsystems/images/arrow-right.svg"
+									style="width: 30px;margin-left:15px" /></button></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="py-5 staff_timesheet d-none d-md-block d-lg-block d-xl-block medium-blue home-sections">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing mt-4">
+						<h2 class="text-center poppins-FontFamily">Staff Timesheet - Compare V/S Actual Hours</h2>
+						<p class="text-center my-0 text-height-20 poppins-FontFamily"><small>Time Tracking Software For
+								Recording Actual Start Time, End Time, Service Type & Session Notes. Manage The
+								Payroll</small></p>
+						<p class="text-center my-0 text-height-20 poppins-FontFamily"><small>With Accurate Timesheets &
+								Productivity Reports Get Actual Logs To Analyze Employee Performance. 40%
+								Improvement</small></p>
+						<p class="text-center my-0 text-height-20 poppins-FontFamily"><small>In Employee's Focus &
+								Productivity. Reduce Operational Cost By 35%</small></p>
+
+					</div>
+
+					<div class="col-md-12  staff_timesheet_img mt-3 mb-4">
+						<img src="operantsystems/images/new_images/Image 22.png" class="img-fluid" />
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="pt-5 pb-2 assessment_programs d-none d-md-block d-lg-block d-xl-block home-sections">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing">
+						<h2 class="text-center poppins-FontFamily">Assessment Programs</h2>
+						<h3 class="text-center poppins-FontFamily">Aligned With Common Assessment Tools</h3>
+						<p class="text-center my-0 poppins-FontFamily font-size-16">The Data Collected Demonstrates The
+							Progress An Individual Is Making In Areas Of Socialization Skills, Language</p>
+						<p class="text-center my-0 poppins-FontFamily font-size-16">Acuqistion, Basic Academic Areas,
+							Fine And Gross Motor Acitivies And Their IERP Goals</p>
+
+					</div>
+
+					<div class="col-md-6  assessment-programs-list mt-5">
+						<ul class="list-group home-sections-list">
+							<li class="list-group-item pt-0 poppins-FontFamily pb-1"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i> Ability To Create PCL And
+								Intervention Lines</li>
+							<li class="list-group-item pb-1 poppins-FontFamily"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i> Ability To Add Maintenance Levels</li>
+							<li class="list-group-item pb-1 poppins-FontFamily"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i> Can Also Be Used To Insert Daily
+								Session.</li>
+							<li class="list-group-item pb-1 poppins-FontFamily"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i> Add/Edit Session Data Using The WEB</li>
+							<li class="list-group-item pb-1 poppins-FontFamily"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i> Generate Unlimited Reports Like Skills,
+								Master Data, Weekly, Monthly</li>
+						</ul>
+					</div>
+
+					<div class="col-md-6  assessment-programs-list mt-4 personalized-image-right-padding">
+						<img src="operantsystems/images/new_images/Image 23.png" class="img-fluid" />
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="subSections home-sections aboutUs">
+		<div class="py-5 about-us d-none d-md-block d-lg-block d-xl-block medium-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing">
+						<h1 class="text-center poppins-FontFamily">Who We Are (About Us)</h1>
+						<h3 class="text-center poppins-FontFamily">Aligned With Common Assessment Tools</h3>
+					</div>
+
+					<div class="col-md-6 text-center aboutUs-image">
+						<img src="operantsystems/images/new_images/home-team-bg-images/Mask Group 30.png" alt="image"
+							class="img-fuild" />
+					</div>
+
+					<div class="col-md-6">
+						<p class="poppins-FontFamily font-size-16">
+							Operant Systems Provides A Practice Management Solution That
+							Run Across Multiple Hardware Platforms Which Is Used By
+							Therapists Who Care For Children And Adults With Special Needs
+							Like Autism.
+
+						</p>
+						<p class="poppins-FontFamily font-size-16">
+							Operant Systems Allows You To Implement Skills Acquisition
+							Programs, Behavior Management Strategies, And Behavior
+							Management Plans. Operant Systems Autism Software Tools Can
+							Be Used By Behavior Analysts, Speech Therapists, Occupational
+							Therapists, And Physical Therapists.
+						</p>
+
+						<p class="poppins-FontFamily font-size-16">
+							Operant Systems has a dynamic curriculum and behavior management library. Operant Systems is
+							software has
+							an open flexible design that supports all behavior therapies.
+							The data collection solution records both in a one-on-one and group settings and generates
+							billing.
+							Patent 8,182,267
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="home" class="subSections home-sections teamContainer">
+		<div class="py-5 our-team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing">
+						<h1 class="text-center poppins-FontFamily">Our Team</h1>
+						<div class="sub-team-tite">
+							<p class="text-center poppins-FontFamily font-weight-regular-poppins blue-color">
+								BOARD OF ADVISORS</p>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-lg-3  mx-1 text-center team-InnerContainer mb-4">
+								<div class="team-image">
+									<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Andy.png"
+										class="img-fluid" />
+								</div>
+								<div class="team-content">
+									<h3 class="poppins-FontFamily blue-color p-0 mb-0 mt-3">Andy Bondy</h3>
+									<p class="poppins-FontFamily blue-color p-0 m-0">Board of Advisors</p>
+								</div>
+							</div>
+							<div class="col-lg-2  mx-1 text-center team-InnerContainer mb-4">
+								<div class="team-image">
+									<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Cindy.png"
+										class="img-fluid" />
+								</div>
+								<div class="team-content">
+									<h3 class="poppins-FontFamily blue-color p-0 mb-0 mt-3">Cindy Aliterson</h3>
+									<p class="poppins-FontFamily blue-color p-0 m-0">Board Of Advisors</p>
+								</div>
+							</div>
+							<div class="col-lg-2  mx-1 text-center team-InnerContainer mb-4">
+								<div class="team-image">
+									<img src="operantsystems/images/new_images/home-team-bg-images/Photo-saul.png"
+										class="img-fluid" />
+								</div>
+								<div class="team-content">
+									<h3 class="poppins-FontFamily blue-color p-0 m-0 mb-0 mt-3">Saul Axelrod</h3>
+									<p class="poppins-FontFamily blue-color p-0 m-0">Board Of Advisors</p>
+								</div>
+							</div>
+							<div class="col-lg-2  mx-1 text-center team-InnerContainer mb-4">
+								<div class="team-image">
+									<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Kevin.png"
+										class="img-fluid" />
+								</div>
+								<div class="team-content">
+									<h3 class="poppins-FontFamily blue-color p-0 m-0 mb-0 mt-3">Kevin Custer</h3>
+									<p class="poppins-FontFamily blue-color p-0 m-0">Board Of Advisors</p>
+								</div>
+							</div>
+							<div class="col-lg-2  mx-1 text-center team-InnerContainer mb-4">
+								<div class="team-image">
+									<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Sarah.png"
+										class="img-fluid" />
+								</div>
+								<div class="team-content">
+									<h3 class="poppins-FontFamily blue-color p-0 m-0 mb-0 mt-3">Sarah Walker, BCBA</h3>
+									<p class="poppins-FontFamily blue-color p-0 m-0">Board Of Advisors</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="subSections contactUsContainer" id="home">
+		<div class="py-md-5 py-lg-5 contact-us">
+			<div class="container">
+				<div class="row  mx-sm-0">
+					<div class="col-md-12 margin-bottom-spacing">
+						<div class="row inner-contact-us poppins-FontFamily">
+							<div class="col-md-5 contact-us-content">
+								<h3 class="text-white text-lg-left text-md-left text-sm-center">
+									Contact Us!
+								</h3>
+								<p
+									class="text-left small-text py-2 poppins-FontFamily text-lg-left text-md-left text-sm-center desktopView contactUs-text">
+									There are many variations of passages of Lorem Ipsum
+									but the majority have suffered alteration.</p>
+							</div>
+							<div class="col-md-7">
+
+								<div class="contact-form" id="divContactUs">
+									<form name="formContactUs" class="form-horizontal" ng-submit="chkContactUs()" autocomplete="off">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control poppins-FontFamily font-weight-normal-poppins" placeholder="Name *" name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="email" class="form-control poppins-FontFamily font-weight-normal-poppins" placeholder="Email *" name="contactUs_emailId" ng-model="contactUs_emailId" required onpaste="return false;">
+												</div>
+
+												<div class="error-container"
+													ng-show="formContactUs.contactUs_emailId.$dirty && formContactUs.contactUs_emailId.$invalid">
+													<small class="text-danger" ng-show="formContactUs.contactUs_emailId.$error.required">
+														Your email is required.
+													</small>
+													<small class="text-danger" ng-show="formContactUs.contactUs_emailId.$error.email">
+														Your email is not valid
+													</small>
+												</div>
+											</div>
+			
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea class="form-control poppins-FontFamily font-weight-normal-poppins" id="exampleFormControlTextarea1" rows="3"
+														placeholder="Message *" name="contactUs_message" ng-model="contactUs_message" required onpaste="return false;"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12 text-right contact-us-send-btn">
+												<button type="submit" class="btn navbar-register-button">Send</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="row hide" id="divContactUsThankyou" style="color:#fff">
+									<p class="text-left poppins-FontFamily font-weight-normal-poppins">Thank you for contacting us.  We will get back to you by close of next business day.</p>
+								</div>
+							</div>
+							<div class="col-12 mobileView mt-4">
+								<p class="text-center py-2 poppins-FontFamily contactUs-text">There are many variations
+									of passages of Lorem Ipsum
+									but the majority have suffered alteration.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="app-store-images pt-md-5 pt-lg-5 pt-sm-1 mt-3">
+							<ul class="text-center">
+								<li class="text-center"><img
+										src="operantsystems/images/background-images/home2-1b.png" /></li>
+								<li class="text-center"><img
+										src="operantsystems/images/background-images/home2-1a1.png" /></li>
+								<li class="text-center"><img
+										src="operantsystems/images/background-images/home2-1c3.png" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="hide subSections" id="contactus">
+		<div class="contactUs-carousel-container">
+			<div id="contactcarousel" class="carousel slide contact-us-carousel" data-ride="carousel">
+
+				<!-- Indicators -->
+				<!-- <ul class="carousel-indicators">
+				  <li data-target="#contactcarousel" data-slide-to="0" class="active"></li>
+				</ul> -->
+				<ol class="carousel-indicators">
+					<li data-target="#contactcarousel" data-slide-to="0" class="active"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<!-- The slideshow -->
+					<div class="carousel-item active"
+						style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2114.png')">
+						<div class="carousel-caption">
+							<h2 class="my-1 poppins-FontFamily blue-color">Contact Us</h2>
+							<p class="poppins-FontFamily blue-color mt-3 font-weight-normal-poppins">845 Third Avenue,
+								8th Flr Suite Osterlink,<br />
+								Max M., New York, NY 10022</p>
+							<p class="poppins-FontFamily blue-color font-weight-normal-poppins">Voice 737-261-0462</p>
+							<p class="poppins-FontFamily blue-color my-0 py-0 font-weight-normal-poppins">
+								Support@Operantsystems.Com</p>
+							<p class="poppins-FontFamily blue-color my-0 py-0 font-weight-normal-poppins">
+								Sales@Operantsystems.Com</p>
+						</div>
+					</div>
+
+
+
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev hideInMobile" href="#contactcarousel" data-slide="prev">
+						<i class="fas fa-chevron-left" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+					<a class="carousel-control-next hideInMobile" href="#contactcarousel" data-slide="next">
+						<i class="fas fa-chevron-right" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="contactus-form ight-bg">
+
+		</div>
+
+		<div class="container my-4">
+			<div class="row">
+				<div class="col-md-6 text-center my-4">
+					<div class="mapouter">
+						<div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+								marginheight="0" marginwidth="0"
+								src="https://maps.google.com/maps?width=600&amp;height=300&amp;hl=en&amp;q=845 Third Avenue, 8th Flr Suite Osterlink,&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+								href="https://pdflist.com/" alt="pdflist.com">Pdflist.com</a></div>
+					</div>
+				</div>
+
+				<div class="col-md-6 text-center my-4">
+					<div class="contact-form">
+						<form name="formContactUs" class="form-horizontal" ng-submit="chkContactUs()" autocomplete="off">
+						<!-- <form action="" autocomplete="off"> -->
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control poppins-FontFamily font-weight-normal-poppins" placeholder="Name *" name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="email" class="form-control poppins-FontFamily font-weight-normal-poppins" placeholder="Email *" name="contactUs_emailId" ng-model="contactUs_emailId" required onpaste="return false;">
+									</div>
+
+									<div class="error-container"
+									 ng-show="formContactUs.contactUs_emailId.$dirty && formContactUs.contactUs_emailId.$invalid">
+									<small class="text-danger"
+										   ng-show="formContactUs.contactUs_emailId.$error.required">
+										Your email is required.
+									</small>
+									<small class="text-danger"
+										   ng-show="formContactUs.contactUs_emailId.$error.email">
+										Your email is not valid
+									</small>
+								</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="form-control poppins-FontFamily font-weight-normal-poppins" id="exampleFormControlTextarea1" rows="4"
+											placeholder="Message *" name="contactUs_message" ng-model="contactUs_message" required onpaste="return false;"></textarea>
+									</div>
+								</div>
+								<div class="col-md-12 text-right contact-us-send-btn">
+									<button type="submit" class="btn navbar-register-button">Send</button>
+								</div>
+							</div>
+						</form>
+						<div class="row hide" id="divContactUsThankyou" style="color:#fff">
+							<p class="text-left poppins-FontFamily font-weight-normal-poppins">Thank you for contacting us.  We will get back to you by close of next business day.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="app-store-images pt-md-5 pt-lg-5 pt-sm-1 mt-3">
+								<ul class="text-center">
+									<li class="text-center"><img
+											src="operantsystems/images/background-images/home2-1b.png"></li>
+									<li class="text-center"><img
+											src="operantsystems/images/background-images/home2-1a1.png"></li>
+									<li class="text-center"><img
+											src="operantsystems/images/background-images/home2-1c3.png"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="hide subSections" id="news">
+		<div class="news-carousel-container">
+			<div id="newscarousel" class="carousel slide contact-us-carousel" data-ride="carousel">
+
+				<!-- Indicators -->
+
+				<ol class="carousel-indicators">
+					<li data-target="#newscarousel" data-slide-to="0" class="active"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<!-- The slideshow -->
+					<div class="carousel-item active"
+						style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2114.png')">
+						<!-- <div class="carousel-caption">
+							<h2 class="my-1 poppins-FontFamily text-dark">Contact Us</h2>
+							<p class="poppins-FontFamily text-dark mt-3 font-weight-normal-poppins">845 Third Avenue, 8th Flr Suite Osterlink,<br/>
+							Max M., New York, NY 10022</p>
+							<p class="poppins-FontFamily text-dark font-weight-normal-poppins">Voice 737-261-0462</p>
+							<p class="poppins-FontFamily text-dark my-0 py-0 font-weight-normal-poppins">Support@Operantsystems.Com</p>
+							<p class="poppins-FontFamily text-dark my-0 py-0 font-weight-normal-poppins">Sales@Operantsystems.Com</p>
+						</div> -->
+					</div>
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev hideInMobile" href="#newscarousel" data-slide="prev">
+						<i class="fas fa-chevron-left" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+					<a class="carousel-control-next hideInMobile" href="#newscarousel" data-slide="next">
+						<i class="fas fa-chevron-right" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="container my-5">
+			<div class="row">
+				<div class="col-md-5 mt-2 mb-5">
+					<div class="border-black p-3 mb-2">
+						<span class="d-block text-center"><img src="operantsystems/images/microsoft-case-study@2x.jpg" alt="microsoft-logo" class="img-fluid"></span>
+					</div>
+					<div class="border-black p-3 poppins-FontFamily mb-2">
+						<div class="d-md-inline-block d-lg-inline-block text-lg-left text-md-left text-center col-md-3 px-0 align-top">
+							<span>
+								<a href="https://siia162.eduvision.tv/Default.aspx?q=h%252bbv42DLMWzyD9i65lI44Q%253d%253d">
+									<img id="imgBlueBanner" class="pull-left"  alt="Blue Ribbon Award"
+										 onclick="javascript:window.open('https://siia162.eduvision.tv/Default.aspx?q=h%252bbv42DLMWzyD9i65lI44Q%253d%253d','_blank')">
+								</a>
+							</span>
+						</div>
+
+						<div class="d-md-inline-block d-lg-inline-block text-lg-left text-md-left text-center mt-lg-0 mt-md-0 mt-2 col-md-8 px-0">
+							<h3 class="font-18-news-content blue-color">Blue Ribbon Award</h3>
+							<p class="font-16-news-content blue-color font-weight-400-poppins">this product has met or
+								exceeds the rigiorous standards of the international Board of Credentialing and
+								Continuing Education Standards (IBCCES) and has been recognized for its alignment to the
+								needs of special
+								education classrooms
+							</p>
+						</div>
+					</div>
+					<div class="border-black p-3 poppins-FontFamily mb-2">
+						<div class="d-md-inline-block d-lg-inline-block text-lg-left text-md-left text-center col-md-3 px-0 align-top">
+							<span>
+								<a href="http://www.abainternational.org/events/education.aspx">
+									<img id="imgInnovation" class="pull-left" alt="Innovation in education: Apps, Games, Technology, and the Science of Behavior Nov 8-10, Hyatt Regency, McCormick Place Chicago" >
+								</a>
+							</span>
+						</div>
+
+						<div class="d-md-inline-block d-lg-inline-block text-lg-left text-md-left text-center mt-lg-0 mt-md-0 mt-2 col-md-8 px-0">
+							<h3 class="font-18-news-content blue-color">Innovation in education</h3>
+							<p class="font-16-news-content blue-color font-weight-400-poppins">Apps, Games, Technology,
+								and the Science of Behaviour Nov 8-10, Hyatt Regency, McCormick Place Chicago
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="poppins-FontFamily text-lg-left text-md-left text-center">
+						<h3 class="font-18-news-content line-height-30 blue-color">ABAI CONVENTION - A COMPARISON OF TWO
+							DATA COLLECTION AND GRAPHING SYSTEMS: PAPER AND PENCIL AND TEACHME</h3>
+						<p class="font-16-news-content font-weight-400-poppins blue-color">A Comparison of Two Data
+							Collection and Graphing Systems: Paper and Pencil and Teach MeTM ERIN B. RICHARD
+							(Alpine Learning Group), Bridget A. Taylor (Alpine Learning Group), Jaime DeQuinzio (Alpine
+							Learning Group), Barry
+							Katz (Operant Systems, Inc.) Abstract: Data collection and graphing are an essential, yet
+							time consuming, component
+							of programs using Applied Behavior Analysis. It would be beneficial to investigate options
+							to decrease time spent
+							completing paperwork in order to increase time available to staff for other tasks such as
+							training and problem solving.
+							This study used an alternating treatment design to compare the duration of time spent
+							graphing data, analyzing
+							those data, and planning for the next teaching session using traditional paper and pencil
+							methods and the Teach
+							MeTM.</p>
+						<hr class="news-hr" />
+					</div>
+
+					<div class="poppins-FontFamily text-lg-left text-md-left text-center">
+						<h3 class="font-18-news-content line-height-30 blue-color">NOMINATED BY SIAA/ED TECH 2012 - TOP
+							10 INNOVATIVE SOFTWARE</h3>
+						<p class="font-16-news-content font-weight-400-poppins blue-color">On behalf of the SIIA
+							Education Division and the Innovation Incubator Program panel of judges, I am pleased to
+							inform
+							you that you have been selected as one of the 10 participants that will present their
+							innovation at this year's Ed Tech
+							Industry Summit.</p>
+						<hr class="news-hr" />
+					</div>
+
+					<div class="poppins-FontFamily text-lg-left text-md-left text-center">
+						<h3 class="font-18-news-content line-height-30 blue-color">TEMPLE UNIVERSITY PSYCHOLOGY
+							DEPARTMENT AND THE DELAWARE VALLEY ASSOCIATION FOR BEHAVIOR ANALYSIS (DVABA)</h3>
+						<p class="font-16-news-content font-weight-400-poppins blue-color">On behalf of the SIIA
+							Education Division and the Innovation Incubator Program panel of judges, I am pleased to
+							inform
+							you that you have been selected as one of the 10 participants that will present their
+							innovation at this year's Ed Tech
+							Industry Summit.</p>
+					</div>
+				</div>
+
+				<!-- <div class="col-md-12">
+					<div class="row news-form">
+						<div class="col-md-5 text-left">
+							<h3 class="poppins-FontFamily white-color">Contact Us!</h3>
+							<p class="poppins-FontFamily white-color font-weight-normal-poppins contactUs-text">There
+								are many variations of passages of Lorem Ipsum but the majority have suffered alteration
+							</p>
+						</div>
+						<div class="col-md-7">
+							<div class="" id="divContactUs">
+								<form name="formContactUs" class="form-horizontal" ng-submit="chkContactUs()">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Name *" id="name"
+												name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="email" class="form-control" placeholder="Email *"
+													id="email"  name="contactUs_emailId" ng-model="contactUs_emailId" required onpaste="return false;">
+											</div>
+
+											<div class="error-container"
+												ng-show="formContactUs.contactUs_emailId.$dirty && formContactUs.contactUs_emailId.$invalid">
+												<small class="text-danger" ng-show="formContactUs.contactUs_emailId.$error.required">
+													Your email is required.
+												</small>
+												<small class="text-danger" ng-show="formContactUs.contactUs_emailId.$error.email">
+													Your email is not valid
+												</small>
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+													placeholder="Message *" name="contactUs_message" ng-model="contactUs_message" required onpaste="return false;"></textarea>
+											</div>
+										</div>
+										<div class="col-md-12 text-right contact-us-send-btn">
+											<button type="submit" class="btn navbar-register-button" style="margin-top:5px;">Send</button>
+										</div>
+									</div>
+								</form>
+								<div class="row hide" id="divContactUsThankyou" style="color:#ea8825">
+									<p class="text-left">Thank you for contacting us.  We will get back to you by close of next business day.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="app-store-images pt-md-5 pt-lg-5 pt-sm-1 mt-3">
+								<ul class="text-center">
+									<li class="text-center"><img
+											src="operantsystems/images/background-images/home2-1b.png"></li>
+									<li class="text-center"><img
+											src="operantsystems/images/background-images/home2-1a1.png"></li>
+									<li class="text-center"><img
+											src="operantsystems/images/background-images/home2-1c3.png"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+	</section>
+
+	<section class="hide subSections" id="team">
+		<div class="team-carousel-container">
+			<div id="teamcarousel" class="carousel slide team-carousel" data-ride="carousel">
+
+				<!-- Indicators -->
+				<!-- <ul class="carousel-indicators">
+				  <li data-target="#contactcarousel" data-slide-to="0" class="active"></li>
+				</ul> -->
+				<ol class="carousel-indicators">
+					<li data-target="#teamcarousel" data-slide-to="0" class="active"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<!-- The slideshow -->
+					<div class="carousel-item active"
+						style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2114.png')">
+						<div class="carousel-caption text-left">
+							<h2 class="my-1 poppins-FontFamily blue-color">Team</h2>
+							<p class="poppins-FontFamily blue-color mt-3 font-weight-normal-poppins">
+								Operant Systems Inc.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container my-4">
+			<div class="row">
+				<div class="col-md-6 text-center my-4 team-parent">
+					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2013.png" class="team-parent-image1"/>
+					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Andy.png" class="team-parent-image2"/>
+				</div>
+
+				<div class="col-md-6 my-4 text-md-left text-lg-left text-center">
+					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Andy Bondy</h4>
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
+
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily">Andy Bondy, Ph.D., has over 40 years of experience working with children and adults 
+						with autism and related developmental disabilities. He served as the 
+						Director of the Statewide Delaware Autistic Program for more than a 
+						dozen years. He and his wife, Lori Frost, pioneered the development 
+						of the Picture Exchange Communication System (PECS). He has designed 
+						the Pyramid Approach to Education (with Beth Sulzer-Azaroff) as a 
+						comprehensive combination of broad-spectrum behavior analysis and 
+						functional communication strategies.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 my-4 move-down text-md-left text-lg-left text-center">
+					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Cindy Alterson</h4>
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
+
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily">Cindy Alterson, Ph.D BCBA, has over 20 years experience working with 
+						children and adults who are diagnosed with autism spectrum disorders 
+						and other developmental disabilities across a wide range of settings. 
+						She is currently the Clinical Director of the Devereux Foundation in 
+						New York and the Principal of Devereux NY CARES. Dr. Alterson is a 
+						consultant for a school for the deaf, on the Advisory Board of Autism 
+						Spectrum News, and is a current board member of NYSABA. She has been 
+						an adjunct faculty teaching graduate coursework for Behavior Analysis 
+						in both on-site and on- line programs. Her expertise is in the area 
+						of assessment and treatment of behavior disorders as well as development 
+						of educational plans towards less restrictive settings.</p>
+				</div>
+
+				<div class="col-md-6 text-center  my-4 team-parent move-up">
+					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2013.png" class="team-parent-image1"/>
+					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Cindy.png" class="team-parent-image2"/>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6  text-center  my-4 team-parent">
+					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2013.png" class="team-parent-image1"/>
+					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Kevin.png" class="team-parent-image2"/>
+				</div>
+
+				<div class="col-md-6 my-4 text-md-left text-lg-left text-center">
+					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Kevin Custer</h4>
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
+
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily">Kevin Custer; Founding Principal, Arc Capital Development, an early stage venture firm 
+						for education and special needs healthcare markets. Arc has invested and been responsible 
+						for more than $8 million in 28 companies around the world that provide products and 
+						technology for educators and people with special needs or autism. Previously he was 
+						the primary architect of six startups all achieving $20 million in revenues, two 
+						went public. His products have been installed in more than half of the K-12 schools 
+						in the North America with more than 10 million online users weekly, generating over 
+						$100 million in revenue and serving over one million people with a disability. Over 
+						the last 10 years he has visited over 400 autism and special needs programs around 
+						the world and seen many of the best practices for people with disabilities. He has 
+						served on the national board for Autism Society of America and for over eighteen 
+						years as a volunteer ski instructor for the National Sports Center for the Disabled.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 my-4 move-down text-md-left text-lg-left text-center">
+					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Saul Axelrod</h4>
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
+
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily">Saul Axelrod is Professor of Education at Temple University. He received his 
+						doctorate from Florida State University in Special Education in 1970 His major 
+						interests include applying behavior analysis principles to behavioral problems 
+						exhibited by people with handicaps and increasing the academic development of 
+						children of poverty. Dr. Axelrod has served on the boards of editor of several 
+						journals, including Journal of Applied Behavior Analysis, Journal of Behavioral 
+						Education, and Behavior Modification. He has written numerous journal articles 
+						and book reviews. He is an author or editor of Behavior Modification for the 
+						Classroom Teacher, Behavior Analysis and Treatment, and How to Improve Classroom 
+						Behavior. In 2006, Dr. Axelrod was the first recipient of the Behavior Analyst
+						 Certification Board's Michael Hemingway Award for Distinguished Service to Behavior Analysis. 
+						 In 1991 he was elected Fellow of the American Psychological Association. In 2007, 
+						 he was elected Fellow of the Association for Behavior Analysis. In 2009, he received 
+						 Florida State University's Distinguished Alumnus Award, Distinguished Educator category.</p>
+				</div>
+
+				<div class="col-md-6 text-center  my-4 team-parent move-up">
+					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2013.png" class="team-parent-image1"/>
+					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-saul.png" class="team-parent-image2"/>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 text-center  my-4 team-parent">
+					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2013.png" class="team-parent-image1"/>
+					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Sarah.png" class="team-parent-image2"/>
+				</div>
+
+				<div class="col-md-6 my-4 text-md-left text-lg-left text-center">
+					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Sarah Walker</h4>
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
+
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily">Sarah Walker, BCBA, has over 10 years of experience working in the field of applied 
+						behavior analysis. Sarah obtained her Masters degree at Nicholls State University 
+						in Louisiana and gained extensive experience working in two of the UK's ABA schools. 
+						She is the founder and director of acornABA, an independent provider of ABA services 
+						in nurseries, schools and home settings.
+						Sarah specialises in children with autism spectrum disorder and actively oversees 
+						a caseload of programs, as well as providing supervision to aspiring BCBAs and practitioners. 
+						She is passionate about the dissemination of ABA in the UK, and supporting more families in 
+						England to access services.</p>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section id="features" class="hide subSections">
+
+		<div class="container-fluid features-banner-container px-0">
+			<div class="banner features-banner">
+				<div class="image-content row">
+					<!-- Placehoder for feature banner content -->
+					<!-- <div class="col-md-5 col-sm-8 col-8">
+						<h2 class="poppins-FontFamily white-color font-weight-bold-poppins">Product Features</h2>
+						<div class="blue-border my-4"></div>
+						<p class="m-0 poppins-FontFamily white-color font-weight-bold-poppins">Create Unlimited Behavior Intervention</p>
+						<p class="m-0 poppins-FontFamily white-color font-weight-bold-poppins">Lines Unlimited Access To Ipad/Android/Fire Tablets</p>
+						<p class="m-0 poppins-FontFamily white-color font-weight-bold-poppins">Define Unlimited ABC Data And Intensity Levels</p>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper features-margin white-bg">
+			<div class="container">
+				<div class="row features-padding">
+					<div class="col-md-6 mb-5">
+						<div class="banner-computer features-comp-section">
+							<img src="operantsystems/images/new_images/features/img-1.png" class="img-fluid" />
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="features-links">
+							<!-- <img src="images/new_images/features/img-1.png" class="img-fluid"/> -->
+							<div class="app-store-images text-center middle-aligned-image features-image-section">
+								<img src="operantsystems/images/new_images/features/Group 2080.png" class="img-fluid" />
+								<!-- <ul class="text-center">
+									<li class="text-center"><img src="operantsystems/images/background-images/home2-1b.png"/></li>
+									<li class="text-center"><img src="operantsystems/images/background-images/home2-1a1.png"/></li>
+									<li class="text-center"><img src="operantsystems/images/background-images/home2-1c3.png"/></li>
+								  </ul> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="features_thumbnail light-bg py-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="features-thumbnail text-center">
+								<div class="row">
+									<div class="col-md-4  equal margin-bottom-spacing ">
+										<div class="white-bg rounded borderRadiusFeaturePage mx-1 ">
+											<div class="content-image text-center">
+												<img src="operantsystems/images/new_images/features/PLAN.png"
+													alt="Mountains" class="img-fluid">
+											</div>
+											<div class="content">
+												<h2 class="pb-3 poppins-FontFamily">Plan</h2>
+												<p class="py-0 poppins-FontFamily">Assign Goals/Programs Based On A
+													Dynamic Curriculum Aligned With
+													Common Assessment Tools From</p>
+												<!-- <button type="button" class="read-more poppins-FontFamily white-bg">Read More >></button> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4  equal margin-bottom-spacing">
+										<div class="white-bg rounded borderRadiusFeaturePage mx-1">
+											<div class="content-image text-center">
+												<img src="operantsystems/images/new_images/features/OBSERVE.png"
+													alt="Mountains" class="img-fluid">
+											</div>
+											<div class="content">
+												<h2 class="pb-3 poppins-FontFamily">Observe</h2>
+												<p class="py-0 poppins-FontFamily">Manage In Real-Time The Results Of
+													Your Skills Acquisition And Behavior
+													Management Plans Aligned With Your</p>
+												<!-- <button type="button" class="read-more poppins-FontFamily white-bg">Read More >></button> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4  equal margin-bottom-spacing">
+										<div class="white-bg rounded borderRadiusFeaturePage mx-1">
+											<div class="content-image text-center">
+												<img src="operantsystems/images/new_images/features/RECORD.png"
+													alt="Mountains" class="img-fluid">
+											</div>
+											<div class="content">
+												<h2 class="pb-3 poppins-FontFamily">Record</h2>
+												<p class="py-0 poppins-FontFamily">Document The Results Of Your
+													Programs, Fluency, Accuracy, Prompt
+													Levels, Task Analysis, Baseline,</p>
+												<!-- <button type="button read-more poppins-FontFamily"  class="read-more poppins-FontFamily white-bg">Read More >></button> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4  equal margin-bottom-spacing">
+										<div class="white-bg rounded borderRadiusFeaturePage mx-1">
+											<div class="content-image text-center">
+												<img src="operantsystems/images/new_images/features/ANALYZE.png"
+													alt="Mountains" class="img-fluid">
+											</div>
+											<div class="content">
+												<h2 class="pb-3 poppins-FontFamily">Analyze</h2>
+												<p class="py-0 poppins-FontFamily">Provide Reports, Graphs, Session
+													Notes, Quarterly Progress Reports,
+													Billing Data To Your Educational,</p>
+												<!-- <button type="button" class="read-more poppins-FontFamily white-bg">Read More >></button> -->
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4 equal margin-bottom-spacing">
+										<div class="white-bg rounded borderRadiusFeaturePage mx-1">
+											<div class="content-image text-center">
+												<img src="operantsystems/images/new_images/features/MODIFY.png"
+													alt="Mountains" class="img-fluid">
+											</div>
+											<div class="content">
+												<h2 class="pb-3 poppins-FontFamily">Modify</h2>
+												<p class="py-0 poppins-FontFamily">Manage Educational And Clinical
+													Goals In A Timely And Reliable Way
+													Reducing Human Errors And Audit</p>
+												<!-- <button type="button" class="read-more poppins-FontFamily white-bg">Read More >></button> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 equal margin-bottom-spacing">
+										<div class="white-bg rounded borderRadiusFeaturePage mx-1">
+											<div class="content-image text-center">
+												<img src="operantsystems/images/new_images/features/REPORT.png"
+													alt="Mountains" class="img-fluid">
+											</div>
+											<div class="content">
+												<h2 class="pb-3 poppins-FontFamily">Report</h2>
+												<p class="py-0 poppins-FontFamily">Share Your Results With Parents And
+													Demonstrate Real Progress And
+													Achievements Of Your Students.</p>
+												<!-- <button type="button" class="read-more poppins-FontFamily white-bg">Read More >></button> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="features_list">
+				<div class="row">
+
+				</div>
+			</div>
+
+			<div class="skill_acquistion features-margin features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-5">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Skills Acquisition
+							</h2>
+							<p
+								class="poppins-FontFamily font-size-16 pt-4 mt-5 text-sm-center text-md-left text-lg-left">
+								A Skill Acquisition Plan Includes An Operational Definition Of The
+								Target Skill Being Taught, And The Materials Needed For The
+								Teaching Of A Skill, What Strategies Needs To Be Used And The
+								Consequences For Its Correct Or Incorrect Response Along With
+								Mastery Criteria And Reinforcing Strategies With A Plan For
+								Generalization And Maintenance.
+							</p>
+							<div
+								class="text-sm-center text-md-left  text-lg-left text-xl-left text-center margin-top-bottom-20 ">
+								<button class="btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg">Schedule a
+									Demo &nbsp;<img src="operantsystems/images/arrow-right.svg"
+										style="width: 30px;" /></button>
+							</div>
+						</div>
+
+						<div class="col-md-6 text-center feature-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/skills.png" alt="skill acquistion"
+								class="img-fluid features-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="customizable_curriculum light-bg features-margin features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6 text-center order-3 feature-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/cirricumlum.png"
+								alt="customizable curriculum" class="img-fluid features-img" />
+						</div>
+
+						<div class="col-md-5 order-2 order-md-6 mt-4">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Customizable
+								Curriculum</h2>
+							<p
+								class="poppins-FontFamily font-size-16 pt-4 mt-3 text-sm-center text-md-left text-lg-left">
+								A Skill Acquisition Plan Includes An Operational Definition Of The
+								Target Skill Being Taught, And The Materials Needed For The
+								Teaching Of A Skill, What Strategies Needs To Be Used And The
+								Consequences For Its Correct Or Incorrect Response Along With
+								Mastery Criteria And Reinforcing Strategies With A Plan For
+								Generalization And Maintenance.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="duration_behaviour_graph features-margin features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Behavior Graph</h2>
+							<p
+								class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left blue-color">
+								Duration Recording Documents How Long A Student Engages In A
+								Specified Behavior. This Type Of Data Collection Is Appropriate For
+								Behaviors That Have A Distinct Beginning And Ending Or For Those That
+								Occur At Very High Rates (E.G., Tantrumming, Being Out Of Seat, Not
+								Completing A Task). To Collect Data On The Duration Of A Behavior:
+							</p>
+
+							<ul class="features-section-list text-md-left text-sm-center mt-5 pt-3">
+								<li class="mb-2"><span class="pr-1"><i class="fas fa-chevron-right" aria-hidden="true"
+											style="font-size:15px;"></i></span> Start The Stopwatch When The Behavior
+									Begins.</li>
+								<li class="mb-2"><span class="pr-1"><i class="fas fa-chevron-right" aria-hidden="true"
+											style="font-size:15px;"></i></span>Stop The Stopwatch When The Behavior
+									Ends.</li>
+								<li class="mb-2"><span class="pr-1"><i class="fas fa-chevron-right" aria-hidden="true"
+											style="font-size:15px;"></i></span>Automatically Records The Length Of Time
+									The Behavior Occurred.</li>
+								<li class="mb-2"><span class="pr-1"><i class="fas fa-chevron-right" aria-hidden="true"
+											style="font-size:15px;"></i></span>Repeat The Above Steps Until The End Of
+									The Observation Period.</li>
+								<li class="mb-2"><span class="pr-1"><i class="fas fa-chevron-right" aria-hidden="true"
+											style="font-size:15px;"></i></span>Automatically Calculates The Total
+									Duration By Adding The Duration Of
+									Each Episode During The Observation Period.</li>
+							</ul>
+
+							<div
+								class="text-sm-center text-md-left  text-lg-left text-xl-left text-center margin-top-bottom-20 ">
+								<button class="btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg">Schedule a
+									Demo &nbsp;<img src="operantsystems/images/arrow-right.svg"
+										style="width: 30px;" /></button>
+							</div>
+						</div>
+
+						<div class="col-md-6 text-center text-sm-center middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/duration.png"
+								alt="duration behaviour graph" class="img-fluid features-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="interval_data features-margin light-bg features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6 text-center order-3 feature-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/interval-data.png" alt="interval data"
+								class="img-fluid features-img" />
+						</div>
+
+						<div class="col-md-6 order-2 order-md-6">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Interval Data</h2>
+							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left">
+								Interval Recording Documents Whether A Behavior Occurred During A
+								Particular Period. There Are Two Types Of Interval Recording: Whole
+								Interval (An Observer Indicates Whether The Behavior Occurred For The
+								Entire Time Interval) And Partial Interval (An Observer Indicates Whether
+								The Behavior Occurred At Any Point During The Time Interval). To Record
+								Interval Data:</p>
+							<p class="poppins-FontFamily font-size-16 text-lg-left text-md-left text-sm-center">Divide
+								The Observation Period Into Equal Intervals (Usually Between Five
+								And Fifteen Seconds Long).</p>
+
+							<p class="poppins-FontFamily font-size-16 text-lg-left text-md-left text-sm-center">At The
+								End Of Each Interval, Record Whether Or Not The Behavior
+								Occurred. Note: For Whole Interval Recording, The Behavior Must Occur For
+								The Entire Interval. For Partial Interval Recording, The Behavior Must Occur
+								During Some Portion Of The Interval.</p>
+
+							<p class="poppins-FontFamily font-size-16 text-lg-left text-md-left text-sm-center">After
+								The Session Is Over, It Automatically Counts The Number Of lIntervals
+								During Which The Behavior Occurred.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="phase_change_line features-margin features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-5">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Phase Change Line
+							</h2>
+							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left">
+								Monitor And View The Effects of Your Programs And
+								Interventions.
+								<br /><br />
+								Demonstration The Improvement Of Your Service.
+							</p>
+						</div>
+
+						<div class="col-md-6 text-center text-sm-center  feature-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/Image 34/Image 34.png"
+								alt="phase change line" class="img-fluid features-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="advance_reporting features-margin light-bg features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6 mt-5 text-center order-3 feature-xl-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/advance-reporting.png"
+								alt="advance reporting" class="img-fluid" />
+						</div>
+
+						<div
+							class="col-md-6 features-padding-left order-2 order-md-6 text-lg-left text-md-left text-sm-center">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Advance Reporting
+							</h2>
+							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left">
+								Custom Built Automated Reports & Easily Export Data</p>
+							<br />
+							<p class="my-0 poppins-FontFamily font-size-16 ">Skills Progress Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16">Session Note Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16">ABC Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16">Monthly Behavior Session Note Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16">Monthly Behavior Summary Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16">Weekly Skills & Behavior Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16">Mastered History Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16">Weekly Session Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16">Interval Weekly Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16">Therapist Progress Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16">Timesheet Report</p>
+
+							<div
+								class="text-sm-center text-md-left  text-lg-left text-xl-left text-center margin-top-bottom-20 ">
+								<button class="btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg">Schedule a
+									Demo &nbsp;<img src="operantsystems/images/arrow-right.svg"
+										style="width: 30px;" /></button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="session_notes features-margin features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-5">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Session Notes</h2>
+							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left">
+								Staff Can Insert Detailed Notes For The Days Session Up To 1000
+								Characters Using WEB Or ABA Pocketbook.
+								<br /><br />
+								Session Notes Are Also Viewable On Dashboard For A Swift
+								Review.
+								<br /><br />
+								For Any Changes Or Corrections, Therapists Can Also Edit And
+								Update Session Notes Using The WEB.
+							</p>
+						</div>
+
+						<div
+							class="col-md-6 text-center text-sm-center feature-xl-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/sesssion-notes.png" alt="session notes"
+								class="img-fluid features-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="signatures features-margin light-bg features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6 text-center  order-3 feature-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/signature.png" alt="signatures"
+								class="img-fluid features-img" />
+						</div>
+
+						<div class="col-md-5  order-2  order-md-6">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Signature</h2>
+							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left">
+								Smart Feature That Was Much Awaited By Any Parent Or
+								Caregiver, Especially During Their Service At Home.
+								<br /><br />
+								This Feature To Record Signature, Comes In Handy To The
+								Caregivers. No Hassle Of Printing, Then Signing, And Scanning To
+								Upload It Back To The Web. Just One Scribble, Updates The
+								Session With Staff And Parents Acknowledgment.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="time_tracking_attendance features-margin features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Time Tracking &
+								Attendance</h2>
+							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left">
+								Time Tracking System Built In Our Application Helps Supervisor
+								To Tracking Time Spent By The Staff Spent With Their Respective
+								Client. And The Attendance Tracker Keeps An Update On The
+								Clients Presence/Absence For The Session Which I Later Produce
+								In The Form A Report And Graph.
+								<br /><br />
+								Also Reduces Administrative Costs, Time And Paperwork Spent
+								Managing Session Data.
+								<br /><br />
+								And Reduces Preparation Time For Government And Regulatory
+								Audits.
+							</p>
+
+							<div
+								class="text-sm-center text-md-left  text-lg-left text-xl-left text-center margin-top-bottom-20 ">
+								<button class="btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg">Schedule a
+									Demo &nbsp;<img src="operantsystems/images/arrow-right.svg"
+										style="width: 30px;" /></button>
+							</div>
+						</div>
+
+						<div class="col-md-6 text-center feature-md-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/time-tracking.png"
+								alt="time tracking attendance" class="img-fluid features-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="auto_sync_recovery features-margin light-bg features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6 text-center order-3 feature-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/recovery.png" alt="auto sync recovery"
+								class="img-fluid features-img" />
+						</div>
+
+						<div class="col-md-5  order-2 order-md-6">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Auto Sync / Auto
+								Recovery</h2>
+							<br />
+							<br />
+							<p class="poppins-FontFamily font-size-16 text-sm-center text-md-left text-lg-left">
+								From The End User Stand Point Our Business Team In Operant
+								Systems Gathered A Use Case Where The Staff Are Losing Data
+								And Unable To Recover It In A Timely Manner. That Is When "Sync"
+								Feature In ABA Pocketbook Was Implemented.
+								<br /><br />
+								Most Of The Missing Data And Recovery Issues Are Caused By
+								User Error. In Order To Over Come The Problem, The Sync And
+								Auto Recovery Features Was Introduced.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-12 footer-container">
+						<div class="footer-pad text-lg-left text-md-left text-sm-center">
+
+							<p class="m-0 footer-logo"><img src="operantsystems/images/Operant-1.png"
+									class="img-fluid" /></p>
+							<ul class="list-inline footer-list">
+								<li class="list-inline-item"><a
+										class="social-icon text-xs-center rounded-circle border border-secondary facebook-icon-padding"
+										target="_blank" href="#"><i class='fab fa-facebook-f'
+											style='font-size:16px'></i></a></li>
+								<li class="list-inline-item"><a
+										class="social-icon text-xs-center rounded-circle border border-secondary twitter-icon-padding"
+										target="_blank" href="#"><i class='fab fa-twitter'
+											style='font-size:16px'></i></a></li>
+								<li class="list-inline-item"><a
+										class="social-icon text-xs-center rounded-circle border border-secondary linkedin-icon-padding"
+										target="_blank" href="#"><i class='fab fa-linkedin-in'
+											style='font-size:16px'></i></a></li>
+								<li class="list-inline-item"><a
+										class="social-icon text-xs-center rounded-circle border border-secondary pincest-icon-padding"
+										target="_blank" href="#"><i class='fab fa-pinterest-p'
+											style='font-size:16px'></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-6 col-6">
+						<div class="footer-pad">
+
+							<ul
+								class="list-unstyled footer-list text-lg-left text-md-left text-sm-center poppins-FontFamily">
+								<li class="py-1"><a href="#"> Home</a> </li>
+								<li class="py-1"><a href="#">News</a> </li>
+								<li class="py-1"><a href="#">Team</a></li>
+								<li class="py-1"><a href="#">About Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div
+						class="col-lg-3 col-md-3 col-sm-6 col-6  text-lg-left text-md-left text-sm-center text-xs-center">
+						<div class="footer-pad">
+							<ul class="list-unstyled footer-list poppins-FontFamily">
+								<li class="py-1"> <a href="#"> FAQ </a> </li>
+								<li class="py-1"> <a href="#"> How it Work </a> </li>
+								<li class="py-1"> <a href="#">Features</a> </li>
+								<li class="py-1"> <a href="#"> Contact Us </a> </li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-3 footer-addr text-lg-left text-md-left text-sm-center">
+						<p class="poppins-FontFamily">
+							845 Third Avenue, 8Th FIr Suite Osterlink,
+							Max M., New York, NY 10022</p>
+						<p class="poppins-FontFamily">Voice 737-261-0462</p>
+						<p class="py-0 my-0 poppins-FontFamily">Support@Operantsystems.com</p>
+						<p class="mb-sm-5 poppins-FontFamily">Sales@operantsystems.com</p>
+						</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="row copyRight">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 copy ">
+							<p class="text-lg-left text-md-right text-sm-center mb-0 poppins-FontFamily"> <small
+									class="copyRight-text">© 2011 Operant Systems. All Rights Reserved</small> </p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 text-lg-right text-md-right text-sm-center">
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item poppins-FontFamily"><small
+										class="border-right border-secondary pr-2 copyRight-text">Teams Of Use</small>
+								</li>
+								<li class="list-inline-item poppins-FontFamily"><small
+										class="border-right border-secondary pr-2 copyRight-text">Privacy</small></li>
+								<li class="list-inline-item poppins-FontFamily"><small class="copyRight-text">HIPAA
+										information</small></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- =========================
+ SCRIPTS
+============================== -->
+	<!-- <script src="operantsystems/js/jquery.min.js"></script> -->
+	<!-- moment datepicker -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.js"></script>
+	<script
+		src="https://cdn.rawgit.com/indrimuska/angular-moment-picker/master/dist/angular-moment-picker.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+	<script>
+
+		/* PRE LOADER */
+		$(window).on("load", function () {
+			"use strict";
+			$(".status").fadeOut();
+			$(".preloader").delay(1000).fadeOut("slow");
+		});
+
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		};
+
+		// $("#goToContactUs").click(function() {
+		// $('html,body').animate({
+		// 	scrollTop: $(".contactUsContainer").offset().top - 50},
+		// 	'slow');
+		// });	
+		
+		$(".goToFeatures").click(function () {
+			debugger;
+			$(".nav").find(".activeNav").removeClass("activeNav");
+			$(".features-menu").addClass("activeNav");
+
+			$('#home,#news,.aboutUs').hide();
+			$('#features').show();
+
+			setTimeout($('html, body').animate({
+				scrollTop: $(".teamContainer").offset().top - 50
+			},
+				'slow'), 2000);
+		});
+
+		// $("#goToTeam").click(function() {
+		// 	$('#features').hide();
+		// 	$('#team,#home').show();
+		// 	// $('#home,#goToContactUs').show()
+
+		// 	setTimeout($('html, body').animate({
+		// 	scrollTop: $(".teamContainer").offset().top - 50},
+		// 	'slow'), 2000);	
+		// });
+
+		$(function () {
+			$(document).scroll(function () {
+				var $nav = $("#mainNavbar");
+				$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+			});
+		});
+
+
+		$(".nav > .menuBarItem > a").on("click", function () {
+			$(".nav").find(".activeNav").removeClass("activeNav");
+			$(this).parent().addClass("activeNav");
+		});
+
+		$(document).on('click', '.nav a[href^="#"]', function (e) {
+			// target element id
+			var id = $(this).attr('href');
+			if (id === "#home") $('#home').show();
+			if(id === "#enrolllink") return;
+			var _target = $(this).attr("href").split("#")[1];
+			$(".subSections").hide();
+			$(".subSections[id=" + _target + "]").show();
+			// target element
+			var $id = $(id);
+			if ($id.length === 0) {
+				return;
+			}
+			// prevent standard hash navigation (avoid blinking in IE)
+			e.preventDefault();
+			// top position relative to the document
+			var pos = $id.offset().top - 50;
+
+			// animated top scrolling
+			$('body, html').animate({ scrollTop: pos });
+		});
+
+		var btn = $('#scroll-button');
+
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > 300) {
+				btn.addClass('show');
+			} else {
+				btn.removeClass('show');
+			}
+		});
+
+		btn.on('click', function (e) {
+			e.preventDefault();
+			$('html, body').animate({ scrollTop: 0 }, '300');
+		});
+
+		$(".enroll-link").click(function () {
+			$('.login-container').hide();
+			$('.signIn-dropdown > li').removeClass('addBgColor');
+			
+			$('.enrollment-link').toggle();
+			$(".enroll-link").toggleClass('addBgColor addPaddingTop');
+		});
+		//santosh
+		$(window).scroll(function(){
+			
+			if($(window).scrollTop() <= 1000){
+
+				$('.features-comp-section > img').addClass('animate__animated  animate__backInLeft');
+				$('.features-image-section > img').addClass('animate__animated  animate__backInRight');
+			} else {
+				$('.features-comp-section > img').removeClass('animate__animated  animate__backInLeft');
+				$('.features-image-section > img').removeClass('animate__animated  animate__backInRight');
+			}
+		});
+
+
+	</script>
+	<script src="operantsystems/js/smoothscroll.js"></script>
+	<script src="operantsystems/js/jquery.nav.js"></script>
+	<script src="operantsystems/js/wow.min.js"></script>
+	<script src="operantsystems/js/nivo-lightbox.min.js"></script>
+	<script src="operantsystems/js/owl.carousel.min.js"></script>
+	<script src="operantsystems/js/jquery.stellar.min.js"></script>
+	<script src="operantsystems/js/retina.min.js"></script>
+	<script src="operantsystems/js/jquery.ajaxchimp.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+	<!-- GOGLE MAP -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+
+	<!-- CUSTOM JS  -->
+	<!-- <script src="operantsystems/js/custom.js"></script> -->
+
+	<script src="operantsystems/index.js?ver=Dec312022"></script>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-25693049-2', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+</body>
+
+</html>

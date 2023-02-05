@@ -1,0 +1,544 @@
+﻿.StatusMessageArea
+{
+  width: 100%;
+  margin-top: 1px;
+  border-top: #6788be 1px solid;
+  border-bottom: #6788be 1px solid;
+  height: 24px;
+  background-color: #ffffcc;
+  text-align: center;
+}
+.StatusMessage
+{
+  font-size: 0.8em;
+  font-family: Tahoma, Arial;
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 2px;
+}
+.MenuLabel
+{
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.MenuData
+{
+  background-color: #DDEEFF;
+  border-style: solid;
+  border-width: 1px;
+  padding:2px;
+  color:Black;
+  font-weight:bold;
+}
+.RadPane
+{
+  padding-left:10px;
+  padding-top:5px;
+  padding-right:10px;
+  padding-bottom:50px;
+}
+.PanelTabStrip
+{
+  margin-left:10px;
+  margin-right:20px;
+}
+.Labels
+{
+  font-family: Verdana, Arial;
+  color: #000080;
+  font-size: 0.8em;
+  
+}
+.LabelsSmall
+{
+  padding: 0px;
+  font-family: Verdana, Arial;
+  color: #336699;
+  font-size: 0.7em;
+  margin:0px;
+}
+.LabelsSmallForCharacterLeft
+{
+  
+  font-family: Verdana, Arial;  
+  font-size: 0.6em;
+  
+}
+.DataInput
+{
+  font-size: 0.8em;
+  font-family: Verdana, Arial;
+  border-right: #999999 1px solid;
+  border-top: #999999 1px solid;
+  border-left: #999999 1px solid;
+  border-bottom: #999999 1px solid;
+}
+.MandatoryDataInput
+{
+  font-size: 0.8em;
+  font-family: Verdana, Arial;
+  background-color: #ffff99;
+}
+.NormalText
+{
+  font-size: 0.8em;
+  font-family: Verdana, Arial;
+}
+.TableColumnSpacing
+{
+  width: 25px;
+}
+.TableRowSpacing
+{
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+.Treeview_ActivityGroup
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  border-right: tan 1px solid;
+  border-top: tan 1px solid;
+  border-left: tan 1px solid;
+  border-bottom: tan 1px solid;
+  background-color: #f5f5dc;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  text-decoration: underline;
+}
+.Treeview_ActivityGroupSelected
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  border-right: #3cb371 2px solid;
+  border-top: #3cb371 2px solid;
+  border-left: #3cb371 2px solid;
+  border-bottom: #3cb371 2px solid;
+  background-color: #ccffcc;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  text-decoration: underline;
+}
+.Treeview_Category, .Treeview_Folder
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;  
+}
+.Treeview_Patient
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;  
+}
+.Treeview_Default
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;  
+}
+.Treeview_ActiveWorkplan
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  color: #339900;
+  text-decoration: underline;
+}
+.Treeview_ActiveWorkplanSelected
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  border-right: #3cb371 2px solid;
+  border-top: #3cb371 2px solid;
+  border-left: #3cb371 2px solid;
+  border-bottom: #3cb371 2px solid;
+  background-color: #ccffcc;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  color: #009900;
+  text-decoration: underline;
+}
+.Treeview_Activity, .Treeview_Behavior
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;  
+}
+.Bold
+{
+  font-weight: bold;
+}
+.Treeview_ActivityTentative, .Treeview_BehaviorTentative
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  color: #cc0000;
+}
+.Treeview_SelectedNode
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  border-right: #3cb371 2px solid;
+  border-top: #3cb371 2px solid;
+  border-left: #3cb371 2px solid;
+  border-bottom: #3cb371 2px solid;
+  background-color: #ccffcc;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.Treeview_EmptyGoals, .Treeview_EmptyFolder
+{
+  color: #0066ff;
+  text-decoration: underline;
+  font-size: 0.7em;
+  font-family: Arial;
+}
+.TableHeader
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  background-color: #b0c4de;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+.TableHeaderWorkplan
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  background-color: #b0c4de;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 3px;
+  border-bottom: #a9a9a9 1px solid;
+}
+.TableHeaderCurriculum
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  background-color: #8fe6c9;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 3px;
+  border-bottom: #a9a9a9 1px solid;
+  width:100%;
+}
+.TableHeaderPatients
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  background-color: #fbffab;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 3px;
+  border-bottom: #a9a9a9 1px solid;
+  width:100%;
+}
+.TableHeaderCentered
+{
+  font-size: 0.8em;
+  vertical-align: middle;
+  font-family: Verdana, Arial;
+  background-color: #faebd7;
+  text-align: center;
+  border-right: #999999 1px solid;
+  border-top: #999999 1px solid;
+  border-left: #999999 1px solid;
+  border-bottom: #999999 1px solid;
+}
+.ReadOnlyData
+{
+  color: #696969;
+  font-family: Verdana, Arial;
+  background-color: #e0e0e0;
+  font-size: 0.8em;
+  border-right: #006699 1px solid;
+  border-top: #006699 1px solid;
+  border-left: #006699 1px solid;
+  border-bottom: #006699 1px solid;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.ContentFooter
+{
+  border-top: #6788be 1px solid;
+  border-right: #6788be 1px solid;
+  width: 100%;
+  height: 20px;
+}
+.LanguageGridTable
+{
+  border-right: #6788be 1px solid;
+  border-top: #6788be 1px solid;
+  border-left: #6788be 1px solid;
+  border-bottom: #6788be 1px solid;
+  background-color: #f2f9ff;
+  text-align: center;
+}
+.HyperlinkLabel
+{
+  color: #336699;
+  font-family: Verdana, Arial;
+  text-decoration: underline;
+}
+.EmptyPanel
+{
+  border-right: #6788be 1px solid;
+  border-top: #6788be 1px solid;
+  border-left: #6788be 1px solid;
+  border-bottom: #6788be 1px solid;
+}
+.DropDownListSmall
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+}
+.PanelIndicator
+{
+  float: left;
+}
+.TableCellsWithResizableTextBoxes
+{
+  font-size: 0.8em;
+  font-family: Verdana, Arial;
+  border-right: #999999 1px solid;
+  border-top: #999999 1px solid;
+  border-left: #999999 1px solid;
+  border-bottom: #999999 1px solid;
+  width: 100%;
+}
+.TableCellSpacing
+{
+  padding-right: 5px; 
+  padding-left: 2px; 
+  padding-bottom: 2px; 
+  padding-top: 2px
+}
+.PanelForTable
+{
+  
+}
+.ScrollableTreeview
+{
+  overflow: auto;
+}
+.Tree_ActivityGroup_ActivePane
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  border-right: #990033 2px solid;
+  border-top: #990033 2px solid;
+  border-left: #990033 2px solid;
+  border-bottom: #990033 2px solid;
+  background-color: #ffcccc;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  text-decoration: underline;
+}
+.Tree_ActiveWorkplan_ActivePane
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  border-right: #990033 2px solid;
+  border-top: #990033 2px solid;
+  border-left: #990033 2px solid;
+  border-bottom: #990033 2px solid;
+  background-color: #ffcccc;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  color: #000000;
+  text-decoration: underline;
+}
+.Tree_ActivePane
+{
+  font-size: 0.7em;
+  font-family: Verdana, Arial;
+  cursor: hand;
+  border-right: #990033 2px solid;
+  border-top: #990033 2px solid;
+  border-left: #990033 2px solid;
+  border-bottom: #990033 2px solid;
+  background-color: #ffcccc;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.SaveStatus, StatusBar
+{
+  font-family: Tahoma, Arial;
+  font-size: 10pt;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  vertical-align: middle;
+  font-weight: bold;
+  text-align: left;
+}
+.HorizontalPH
+{
+  float: left;
+  padding-right: 10px;
+  padding-top:0px;
+}
+.StatusMessage
+{
+  padding: 2px 5px 2px 5px;
+  font-size: 0.8em;
+  font-family: Tahoma, Arial;
+}
+.LoadingPanel
+{
+  top: 5px;
+  left: 20px;
+  position: absolute;
+}
+.MenuLabels
+{
+  font-family: Verdana, Arial;
+  color: #336699;
+  font-size: 1.0em;
+}
+.MenuLabels2
+{
+  font-family: Verdana, Arial;
+  color: #336699;
+  font-size: 0.70em;
+}
+.MenuReadOnlyData
+{
+  padding: 2px;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Verdana, Arial;
+  color: #336699;
+  font-size: 1.0em;
+  background-color: #CCCCCC;
+}
+.MenuReadOnlyData2
+{
+  border-style: solid;
+  border-width: 1px;
+  font-family: Verdana, Arial;
+  color: #336699;
+  font-size: .7em;
+  background-color: #CCCCCC;
+}
+.StatusAreaTop
+{
+  vertical-align:middle;
+  background-color:#ffffcc;
+  text-align:center;
+  font-family: Verdana, Arial;
+  font-size: 0.8em;
+  height:24px;
+}
+.StatusMessageNormal
+{
+  padding: 2px 5px 2px 5px;
+  font-size: 1.0em;
+  font-family: Tahoma, Arial;
+  height:14px;
+}
+.VerticallyStackedControls
+{
+  display: block;
+}
+.VerticalLabelControlPair
+{
+  padding-bottom: 10px;
+}
+.OverlayOuter
+{
+  top: 26px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  z-index: 998;
+  filter: alpha(opacity=85);
+  -moz-opacity: 0.85;
+}
+
+.OverlayInner
+{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  background-color: #eee;
+  z-index: 999;
+  filter: alpha(opacity=100);
+  -moz-opacity: 1.00;
+  padding-top:20px; 
+}
+.PostbackLoadingPanel
+{
+  margin-top: -15px;
+}
+.TreenodeCut
+{
+  border: thin dashed #FF0000;
+}
+.ModalDialogOuter
+{
+  top: 26px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+}
+.ModalDialogDisabledArea
+{
+  background-color: #eee;
+  filter: alpha(opacity=85);
+  -moz-opacity: 0.85;
+}
