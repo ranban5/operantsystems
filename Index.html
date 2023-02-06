@@ -107,28 +107,28 @@
 	<!-- COLOR OVER IMAGE -->
 	<nav id="mainNavbar" class="navbar navbar-dark  navbar-expand-md py-0 fixed-top home-navbar home1" id="home" data-stellar-background-ratio="3.5">
 		<div class="container home-menu px-0">
-			<a href="#" class="navbar-brand"><img src="operantsystems/images/new_images/Log1.png" class="showWithScroll"/>
-				<img src="operantsystems/images/Operant-1.png" class="showWithoutScroll"/></a>
+			<a href="#" class="navbar-brand" ng-click="linkClick('home')"><img src="operantsystems/images/new_images/transparent_logos/logo_carosuel.png" class="showWithScroll"/>
+				<img src="operantsystems/images/new_images/transparent_logos/logo_carosuel.png" class="showWithoutScroll"/></a>
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks">
 				<!-- <span class="icon-software-layout-header-bar"></span> -->
 				<i class="fas fa-bars"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navLinks">
 				<ul class="navbar-nav ml-auto nav navbar-right small-text pr-2">
-					<li class="nav-item activeNav custom-menu menuBarItem">
+					<li class="nav-item activeNav custom-menu menuBarItem homes-menu">
 						<a href="#home" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Home</a>
 					</li>
 					<li class="nav-item custom-menu menuBarItem features-menu">
 						<a href="#features"
 							class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Features</a>
 					</li>
-					<li class="nav-item custom-menu menuBarItem" ng-click="linkClick('team')">
+					<li class="nav-item custom-menu menuBarItem team-menu" ng-click="linkClick('team')">
 						<a href="#team" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Team</a>
 					</li>
-					<li class="nav-item custom-menu menuBarItem" ng-click="linkClick('news')">
+					<li class="nav-item custom-menu menuBarItem news-menu" ng-click="linkClick('news')">
 						<a href="#news" class="nav-link poppins-FontFamily font-weight-500-poppins">News</a>
 					</li>
-					<li class="nav-item custom-menu menuBarItem" ng-click="linkClick('contactus')">
+					<li class="nav-item custom-menu menuBarItem contactus-menu" ng-click="linkClick('contactus')">
 						<a href="#contactus"
 							class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Contact Us</a>
 					</li>
@@ -226,23 +226,17 @@
 						</div>
 					</li>
 
-				</ul>
+					<li class="nav-item user-login-menu custom-menu">
+						<a href="" class="nav-link poppins-FontFamily text-white font-weight-500-poppins user-login-btn" ng-click="loginPage()">User Login</a>
 
-				<ul class="navbar-nav mr-right signIn-dropdown">
-					<li class="nav-item dropdown ">
-						<a class="poppins-FontFamily nav-link text-center dropdown-toggle py-0 font-weight-400-poppins font-size-14"
-							href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false" ng-click="loginPage()">
-							User Login
-						</a>
-						<div class="login-container hide dropdown-menu p-3">
+						<div class="login-container hide  p-3" style="display: none;">
 							<form class="form-horizontal" method="post" accept-charset="UTF-8">
-								<p class="error hide poppins-FontFamily font-12 font-weight-normal-poppins">Invalid User Id and Password</p>
-								<div class="form-group">
+								<p class="error hide poppins-FontFamily font-12 font-weight-normal-poppins text-left">Invalid User Id and Password</p>
+								<div class="form-group text-left">
 									<label class="poppins-FontFamily font-12 font-weight-normal-poppins m-0">Enter User ID</label>
 									<input id="login_UserId" type="text" class="form-control poppins-FontFamily font-12">
 								</div>
-								<div class="form-group mb-0">
+								<div class="form-group mb-0 text-left">
 									<label class="poppins-FontFamily font-12 font-weight-normal-poppins m-0">Enter Password</label>
 									<input id="login_Psd" type="password" class="form-control poppins-FontFamily font-12">
 								</div>
@@ -251,9 +245,6 @@
 									<input type="submit" id="btnLoingSubmit"
 										class="btn btn-primary navbar-register-button btn-lg btn-block poppins-FontFamily font-14" value="login"
 										ng-click="loginPage_CheckUserIdPassword()">
-										
-									<!-- <input type="button" id="btnLoingCancel" class="btn btn-block" value="Cancel"
-										data-toggle="dropdown" ng-click="loginPage_Hide()" /> -->
 								</div>
 							</form>
 						</div>
@@ -294,7 +285,7 @@
 						</div> -->
 						<div class="carousel-caption">
 							<div class="simple-logo"><img
-									src="operantsystems/images/new_images/logo_carosuel.png"
+									src="operantsystems/images/new_images/transparent_logos/Logo_homePage_carousel.png"
 									class="img-fluid" /></div>
 							<h2 class="pb-2 poppins-FontFamily m-0 orange-color">Simple, Yet Powerful</h2>
 							<p class="poppins-FontFamily m-0 text-dark font-weight-bold-poppins">ABA Practice Management
@@ -398,7 +389,7 @@
 		<!-- Page Content -->
 
 
-		<div class="py-5 dynamic_curriculum medium-grey home-sections best_pratices">
+		<div class="py-5 medium-grey home-sections best_pratices">
 			<div class="container px-0">
 				<div class="row">
 					<div class="col-md-12 text-center margin-bottom-spacing mt-4">
@@ -567,10 +558,10 @@
 							<li class="list-group-item pb-2">Define Levels Of Intensity Changes in Behavior.</li>
 						</ul>
 						<p class="pl-3 mt-lg-3 py-lg-3 py-sm-0 mt-sm-3"> <button
-								class="btn poppins-FontFamily more-buttons white-bg text-center"><a href="#"
-									 class="blue-color read-more-anchor goToFeatures">Schedule a Demo&nbsp;<img
+								class="btn poppins-FontFamily more-buttons white-bg text-center blue-color read-more-anchor openEnrollmentBox">
+									Schedule a Demo&nbsp;<img
 										src="operantsystems/images/arrow-right.svg"
-										style="width: 30px;margin-left:15px" /></a></button></p>
+										style="width: 30px;margin-left:15px" /></button></p>
 					</div>
 					<div class="col-md-6 order-shift mb-sm-4 home-sections-img-container no-zindex">
 						<img src="operantsystems/images/new_images/features/Image 34/Group 2001.png"
@@ -594,7 +585,7 @@
 
 					<div class="col-md-6  personalized_tech_img">
 						<img src="operantsystems/images/new_images/Image 20.png" class="img-fluid" />
-						<p class="pt-5"> <button class="btn poppins-FontFamily more-buttons white-bg text-center goToFeatures" >
+						<p class="pt-5"> <button class="btn poppins-FontFamily more-buttons white-bg text-center" data-toggle="modal" data-target="#exploreMore-NewModal">
 							Explore More&nbsp;<img src="operantsystems/images/arrow-right.svg"
 									style="width: 30px;margin-left:15px" /></button></p>
 					</div>
@@ -716,7 +707,7 @@
 		</div>
 	</section>
 
-	<section class="subSections home-sections aboutUs">
+	<section class="subSections home-sections aboutUs" id="home">
 		<div class="py-5 about-us d-none d-md-block d-lg-block d-xl-block medium-grey">
 			<div class="container">
 				<div class="row">
@@ -761,7 +752,7 @@
 		</div>
 	</section>
 
-	<section id="home" class="subSections home-sections teamContainer">
+	<section id="home" class="subSections home-sections teamContainer" id="home">
 		<div class="py-5 our-team">
 			<div class="container">
 				<div class="row">
@@ -838,7 +829,7 @@
 				<div class="row  mx-sm-0">
 					<div class="col-md-12 margin-bottom-spacing">
 						<div class="row inner-contact-us poppins-FontFamily">
-							<div class="col-md-5 contact-us-content">
+							<div class="col-md-4 col-lg-5 contact-us-content">
 								<h3 class="text-white text-lg-left text-md-left text-sm-center">
 									Contact Us!
 								</h3>
@@ -847,7 +838,7 @@
 									There are many variations of passages of Lorem Ipsum
 									but the majority have suffered alteration.</p>
 							</div>
-							<div class="col-md-7">
+							<div class="col-md-8 col-lg-7">
 
 								<div class="contact-form" id="divContactUs">
 									<form name="formContactUs" class="form-horizontal" ng-submit="chkContactUs()" autocomplete="off">
@@ -900,12 +891,17 @@
 					<div class="col-md-12">
 						<div class="app-store-images pt-md-5 pt-lg-5 pt-sm-1 mt-3">
 							<ul class="text-center">
-								<li class="text-center"><img
-										src="operantsystems/images/background-images/home2-1b.png" /></li>
-								<li class="text-center"><img
-										src="operantsystems/images/background-images/home2-1a1.png" /></li>
-								<li class="text-center"><img
-										src="operantsystems/images/background-images/home2-1c3.png" /></li>
+								<li class="text-center">
+									<a href="#" ng-click="availableLink('ios_sb_sessions')"><img
+									src="operantsystems/images/background-images/home2-1b.png" /></a></li>
+								<li class="text-center">
+									<a href="#" ng-click="availableLink('android_sb_sessions')"><img
+										src="operantsystems/images/background-images/home2-1a1.png" /></a>
+									</li>
+								<li class="text-center">
+									<a href="#" ng-click="availableLink('amazon_fire')"><img
+										src="operantsystems/images/background-images/home2-1c3.png" /></a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -916,18 +912,146 @@
 
 	<section class="hide subSections" id="contactus">
 		<div class="contactUs-carousel-container">
-			<div id="contactcarousel" class="carousel slide contact-us-carousel" data-ride="carousel">
+
+			<div id="contactuscarousel" class="carousel slide team-carousel" data-ride="carousel">
 
 				<!-- Indicators -->
 				<!-- <ul class="carousel-indicators">
 				  <li data-target="#contactcarousel" data-slide-to="0" class="active"></li>
 				</ul> -->
 				<ol class="carousel-indicators">
-					<li data-target="#contactcarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#contactuscarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#contactuscarousel" data-slide-to="1"></li>
+					<li data-target="#contactuscarousel" data-slide-to="2"></li>
+					<li data-target="#contactuscarousel" data-slide-to="3"></li>
+					<li data-target="#contactuscarousel" data-slide-to="4"></li>
 				</ol>
 
 				<div class="carousel-inner" role="listbox">
 					<!-- The slideshow -->
+					 <!-- Slide One - Set the background image for this slide in the line below -->
+					 <div class="carousel-item active"
+					 style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2114.png')">
+
+					 <!-- <div class="carousel-caption">
+						 <h2 class="my-1 poppins-FontFamily blue-color">Customize Your Skills & <br />Behavior
+							 Programs</h2>
+						 <p class="poppins-FontFamily blue-color mt-3">Define Operational Definition And Sends Assign
+							 Program To Multiple Students View Frequency Duration & Interval Data Add Unlimited
+							 Programs</p>
+						 <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg">Explore More
+							 &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button>
+					 </div> -->
+					 <div class="carousel-caption">
+						<div class="simple-logo"><img
+							src="operantsystems/images/new_images/transparent_logos/Logo_homePage_carousel.png"
+							class="img-fluid" /></div>
+						 <h2 class="pb-2 poppins-FontFamily m-0 orange-color">Simple, Yet Powerful</h2>
+						 <p class="poppins-FontFamily m-0 text-dark font-weight-bold-poppins">ABA Practice Management
+							 Solution</p>
+						 <p class="text-right  mb-1 font-italic child-priority text-dark font-bold"> Making your
+							 child our priority</p>
+						 <div class="simple-logos-list">
+							 <span class="d-inline-block pr-1"><img
+									 src="operantsystems/images/microsoft-case-study.jpg" class="img-fluid" style="width:100px" /></span>
+							 <span class="d-inline-block pr-1"><img
+									 src="operantsystems/images/new_images/SIIA-logo.png" class="img-fluid" /></span>
+							 <span class="d-inline-block"><img
+									 src="operantsystems/images/new_images/pma-logo-shirnked.png"
+									 class="img-fluid" /></span>
+						 </div>
+					 </div>
+				 </div>
+				 <!-- Slide Two - Set the background image for this slide in the line below -->
+				 <div class="carousel-item"
+					 style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2118.png')">
+					 <div class="carousel-caption">
+						 <h2 class="my-1 poppins-FontFamily blue-color">Customize Your Skills & <br />Behavior
+							 Programs</h2>
+						 <p class="poppins-FontFamily blue-color mt-3">Define Operational Definition And Sends Assign
+							 Program To Multiple Students View Frequency Duration & Interval Data Add Unlimited
+							 Programs</p>
+						 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Explore More
+							 &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button> -->
+					 </div>
+				 </div>
+				 <!-- Slide Three - Set the background image for this slide in the line below -->
+				 <div class="carousel-item"
+					 style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2115.png')">
+					 <div class="carousel-caption">
+						 <h2 class="pb-2 poppins-FontFamily blue-color">Built-In <br />Scheduling <br />System</h2>
+						 <p class="poppins-FontFamily blue-color">Manage time using our built-in <br /> single
+							 entry scheduling system</p>
+						 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+					 </div>
+				 </div>
+				 <div class="carousel-item"
+					 style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2116.png')">
+					 <div class="carousel-caption">
+						 <h2 class="pb-2 poppins-FontFamily blue-color">Data Collection</h2>
+						 <ul class="poppins-FontFamily data-collection-list">
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+									 class="d-inline-block align-middle">Collect-session data on ipad,<br />phone or
+									 laptop</span></li>
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+									 class="d-inline-block align-middle">Record data without internet <br />using pad
+									 and phone</span></li>
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+									 class="d-inline-block align-middle">Resume unsaved data on ABA <br />Poacketbook
+									 app</span></li>
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+									 class="d-inline-block align-middle">Edit & Update data using the<br />WEB
+									 app</span></li>
+						 </ul>
+						 <!-- <button class="btn poppins-FontFamily orange-bg white-color schedule-demo-btn">Schedule a Demo</button> -->
+						 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+					 </div>
+				 </div>
+				 <div class="carousel-item"
+					 style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2117.png')">
+					 <div class="carousel-caption">
+						 <h2 class="pb-2 poppins-FontFamily blue-color">Dynamic<br />Dashboard</h2>
+						 <ul class="poppins-FontFamily">
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Instantly
+								 view daily sessions</li>
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Access to
+								 previous session data</li>
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>View
+								 skills and behaviour graph</li>
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Export
+								 session data to excel</li>
+						 </ul>
+						 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+					 </div>
+				 </div>
+			 </div>
+
+					
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev hideInMobile" href="#contactuscarousel" data-slide="prev">
+						<i class="fas fa-chevron-left" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+					<a class="carousel-control-next hideInMobile" href="#contactuscarousel" data-slide="next">
+						<i class="fas fa-chevron-right" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+				</div>
+			<!-- <div id="contactcarousel" class="carousel slide contact-us-carousel" data-ride="carousel">
+
+
+				<ol class="carousel-indicators">
+					<li data-target="#contactcarousel" data-slide-to="0" class="active"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+				
 					<div class="carousel-item active"
 						style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2114.png')">
 						<div class="carousel-caption">
@@ -945,7 +1069,6 @@
 
 
 
-					<!-- Left and right controls -->
 					<a class="carousel-control-prev hideInMobile" href="#contactcarousel" data-slide="prev">
 						<i class="fas fa-chevron-left" aria-hidden="true" style="font-size:32px;"></i>
 					</a>
@@ -953,7 +1076,7 @@
 						<i class="fas fa-chevron-right" aria-hidden="true" style="font-size:32px;"></i>
 					</a>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<div class="contactus-form ight-bg">
 
@@ -1017,12 +1140,17 @@
 						<div class="col-md-12">
 							<div class="app-store-images pt-md-5 pt-lg-5 pt-sm-1 mt-3">
 								<ul class="text-center">
-									<li class="text-center"><img
-											src="operantsystems/images/background-images/home2-1b.png"></li>
-									<li class="text-center"><img
-											src="operantsystems/images/background-images/home2-1a1.png"></li>
-									<li class="text-center"><img
-											src="operantsystems/images/background-images/home2-1c3.png"></li>
+									<li class="text-center">
+										<a href="#" ng-click="availableLink('ios_sb_sessions')"><img
+										src="operantsystems/images/background-images/home2-1b.png" /></a></li>
+									<li class="text-center">
+										<a href="#" ng-click="availableLink('android_sb_sessions')"><img
+											src="operantsystems/images/background-images/home2-1a1.png" /></a>
+										</li>
+									<li class="text-center">
+										<a href="#" ng-click="availableLink('amazon_fire')"><img
+											src="operantsystems/images/background-images/home2-1c3.png" /></a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -1035,27 +1163,75 @@
 
 	<section class="hide subSections" id="news">
 		<div class="news-carousel-container">
-			<div id="newscarousel" class="carousel slide contact-us-carousel" data-ride="carousel">
+			<div id="newscarousel" class="carousel slide team-carousel" data-ride="carousel">
 
 				<!-- Indicators -->
 
 				<ol class="carousel-indicators">
 					<li data-target="#newscarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#newscarousel" data-slide-to="1"></li>
+					<li data-target="#newscarousel" data-slide-to="2"></li>
+					<li data-target="#newscarousel" data-slide-to="3"></li>
+					<li data-target="#newscarousel" data-slide-to="4"></li>
+					<li data-target="#newscarousel" data-slide-to="5"></li>
+					<li data-target="#newscarousel" data-slide-to="6"></li>
+					<li data-target="#newscarousel" data-slide-to="7"></li>
+					<li data-target="#newscarousel" data-slide-to="8"></li>
+					<li data-target="#newscarousel" data-slide-to="9"></li>
+					<li data-target="#newscarousel" data-slide-to="10"></li>
 				</ol>
 
 				<div class="carousel-inner" role="listbox">
-					<!-- The slideshow -->
+					<!-- The slideshow #1 -->
 					<div class="carousel-item active"
-						style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2114.png')">
-						<!-- <div class="carousel-caption">
-							<h2 class="my-1 poppins-FontFamily text-dark">Contact Us</h2>
-							<p class="poppins-FontFamily text-dark mt-3 font-weight-normal-poppins">845 Third Avenue, 8th Flr Suite Osterlink,<br/>
-							Max M., New York, NY 10022</p>
-							<p class="poppins-FontFamily text-dark font-weight-normal-poppins">Voice 737-261-0462</p>
-							<p class="poppins-FontFamily text-dark my-0 py-0 font-weight-normal-poppins">Support@Operantsystems.Com</p>
-							<p class="poppins-FontFamily text-dark my-0 py-0 font-weight-normal-poppins">Sales@Operantsystems.Com</p>
-						</div> -->
+						style="background-image: url('operantsystems/images/new_images/news_images/news_1.png')">
 					</div>
+
+					<!-- The slideshow #2 -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_2.png')">
+					</div>
+
+					<!-- The slideshow #3 -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_3.png')">
+					</div>
+
+					<!-- The slideshow #4 -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_4.png')">
+					</div>
+
+					<!-- The slideshow #5 -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_5.png')">
+					</div>
+
+					<!-- The slideshow #6 -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_6.png')">
+					</div>
+
+					<!-- The slideshow #7 -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_7.png')">
+					</div>
+
+					<!-- The slideshow #8 -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_8.png')">
+					</div>
+
+					<!-- The slideshow #9 -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_9.png')">
+					</div>
+
+					<!-- The slideshow #10 -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_10.png')">
+					</div>
+
 					<!-- Left and right controls -->
 					<a class="carousel-control-prev hideInMobile" href="#newscarousel" data-slide="prev">
 						<i class="fas fa-chevron-left" aria-hidden="true" style="font-size:32px;"></i>
@@ -1238,18 +1414,127 @@
 				</ul> -->
 				<ol class="carousel-indicators">
 					<li data-target="#teamcarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#teamcarousel" data-slide-to="1"></li>
+					<li data-target="#teamcarousel" data-slide-to="2"></li>
+					<li data-target="#teamcarousel" data-slide-to="3"></li>
+					<li data-target="#teamcarousel" data-slide-to="4"></li>
 				</ol>
 
 				<div class="carousel-inner" role="listbox">
 					<!-- The slideshow -->
-					<div class="carousel-item active"
-						style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2114.png')">
-						<div class="carousel-caption text-left">
-							<h2 class="my-1 poppins-FontFamily blue-color">Team</h2>
-							<p class="poppins-FontFamily blue-color mt-3 font-weight-normal-poppins">
-								Operant Systems Inc.</p>
-						</div>
-					</div>
+					 <!-- Slide One - Set the background image for this slide in the line below -->
+					 <div class="carousel-item active"
+					 style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2114.png')">
+
+					 <!-- <div class="carousel-caption">
+						 <h2 class="my-1 poppins-FontFamily blue-color">Customize Your Skills & <br />Behavior
+							 Programs</h2>
+						 <p class="poppins-FontFamily blue-color mt-3">Define Operational Definition And Sends Assign
+							 Program To Multiple Students View Frequency Duration & Interval Data Add Unlimited
+							 Programs</p>
+						 <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg">Explore More
+							 &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button>
+					 </div> -->
+					 <div class="carousel-caption">
+						<div class="simple-logo"><img
+							src="operantsystems/images/new_images/transparent_logos/Logo_homePage_carousel.png"
+							class="img-fluid" /></div>
+						 <h2 class="pb-2 poppins-FontFamily m-0 orange-color">Simple, Yet Powerful</h2>
+						 <p class="poppins-FontFamily m-0 text-dark font-weight-bold-poppins">ABA Practice Management
+							 Solution</p>
+						 <p class="text-right  mb-1 font-italic child-priority text-dark font-bold"> Making your
+							 child our priority</p>
+						 <div class="simple-logos-list">
+							 <span class="d-inline-block pr-1"><img
+									 src="operantsystems/images/microsoft-case-study.jpg" class="img-fluid" style="width:100px" /></span>
+							 <span class="d-inline-block pr-1"><img
+									 src="operantsystems/images/new_images/SIIA-logo.png" class="img-fluid" /></span>
+							 <span class="d-inline-block"><img
+									 src="operantsystems/images/new_images/pma-logo-shirnked.png"
+									 class="img-fluid" /></span>
+						 </div>
+					 </div>
+				 </div>
+				 <!-- Slide Two - Set the background image for this slide in the line below -->
+				 <div class="carousel-item"
+					 style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2118.png')">
+					 <div class="carousel-caption">
+						 <h2 class="my-1 poppins-FontFamily blue-color">Customize Your Skills & <br />Behavior
+							 Programs</h2>
+						 <p class="poppins-FontFamily blue-color mt-3">Define Operational Definition And Sends Assign
+							 Program To Multiple Students View Frequency Duration & Interval Data Add Unlimited
+							 Programs</p>
+						 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Explore More
+							 &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button> -->
+					 </div>
+				 </div>
+				 <!-- Slide Three - Set the background image for this slide in the line below -->
+				 <div class="carousel-item"
+					 style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2115.png')">
+					 <div class="carousel-caption">
+						 <h2 class="pb-2 poppins-FontFamily blue-color">Built-In <br />Scheduling <br />System</h2>
+						 <p class="poppins-FontFamily blue-color">Manage time using our built-in <br /> single
+							 entry scheduling system</p>
+						 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+					 </div>
+				 </div>
+				 <div class="carousel-item"
+					 style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2116.png')">
+					 <div class="carousel-caption">
+						 <h2 class="pb-2 poppins-FontFamily blue-color">Data Collection</h2>
+						 <ul class="poppins-FontFamily data-collection-list">
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+									 class="d-inline-block align-middle">Collect-session data on ipad,<br />phone or
+									 laptop</span></li>
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+									 class="d-inline-block align-middle">Record data without internet <br />using pad
+									 and phone</span></li>
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+									 class="d-inline-block align-middle">Resume unsaved data on ABA <br />Poacketbook
+									 app</span></li>
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+									 class="d-inline-block align-middle">Edit & Update data using the<br />WEB
+									 app</span></li>
+						 </ul>
+						 <!-- <button class="btn poppins-FontFamily orange-bg white-color schedule-demo-btn">Schedule a Demo</button> -->
+						 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+					 </div>
+				 </div>
+				 <div class="carousel-item"
+					 style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2117.png')">
+					 <div class="carousel-caption">
+						 <h2 class="pb-2 poppins-FontFamily blue-color">Dynamic<br />Dashboard</h2>
+						 <ul class="poppins-FontFamily">
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Instantly
+								 view daily sessions</li>
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Access to
+								 previous session data</li>
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>View
+								 skills and behaviour graph</li>
+							 <li class="blue-color font-weight-regular-poppins"><span
+									 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Export
+								 session data to excel</li>
+						 </ul>
+						 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+					 </div>
+				 </div>
+			 </div>
+
+					
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev hideInMobile" href="#teamcarousel" data-slide="prev">
+						<i class="fas fa-chevron-left" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+					<a class="carousel-control-next hideInMobile" href="#teamcarousel" data-slide="next">
+						<i class="fas fa-chevron-right" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -1400,20 +1685,32 @@
 				<div class="row features-padding">
 					<div class="col-md-6 mb-5">
 						<div class="banner-computer features-comp-section">
-							<img src="operantsystems/images/new_images/features/img-1.png" class="img-fluid" />
+							<img src="operantsystems/images/new_images/features/img-1.png" class="img-fluid openEnrollmentBox" />
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="features-links">
 							<!-- <img src="images/new_images/features/img-1.png" class="img-fluid"/> -->
-							<div class="app-store-images text-center middle-aligned-image features-image-section">
-								<img src="operantsystems/images/new_images/features/Group 2080.png" class="img-fluid" />
-								<!-- <ul class="text-center">
-									<li class="text-center"><img src="operantsystems/images/background-images/home2-1b.png"/></li>
-									<li class="text-center"><img src="operantsystems/images/background-images/home2-1a1.png"/></li>
-									<li class="text-center"><img src="operantsystems/images/background-images/home2-1c3.png"/></li>
-								  </ul> -->
+							<div class="app-store-images text-center  features-image-section">
+								<a href="#" ng-click="availableLink('ios_sb_sessions')"><img src="operantsystems/images/background-images/home2-2.png" class="img-fluid"></a>
+								<a href="#" ng-click="availableLink('ios_sb_ipad')"><img src="operantsystems/images/background-images/home2-1.png" class="img-fluid"></a>
+								
+								<ul class="text-center mt-3">
+									<li class="text-center">
+										<a href="#" ng-click="availableLink('ios_sb_sessions')"><img
+										src="operantsystems/images/background-images/home2-1b.png" /></a></li>
+									<li class="text-center">
+										<a href="#" ng-click="availableLink('android_sb_sessions')"><img
+											src="operantsystems/images/background-images/home2-1a1.png" /></a>
+										</li>
+									<li class="text-center">
+										<a href="#" ng-click="availableLink('amazon_fire')"><img
+											src="operantsystems/images/background-images/home2-1c3.png" /></a>
+									</li>
+								</ul>
+								<!-- <img src="operantsystems/images/new_images/features/Group 2080.png" class="img-fluid" /> -->
+								
 							</div>
 						</div>
 					</div>
@@ -1881,25 +2178,25 @@
 						</div>
 					</div>
 					<div class="col-lg-2 col-md-2 col-sm-6 col-6">
-						<div class="footer-pad">
+						<div class="footer-pad" id="footerNavLinks">
 
 							<ul
 								class="list-unstyled footer-list text-lg-left text-md-left text-sm-center poppins-FontFamily">
-								<li class="py-1"><a href="#"> Home</a> </li>
-								<li class="py-1"><a href="#">News</a> </li>
-								<li class="py-1"><a href="#">Team</a></li>
-								<li class="py-1"><a href="#">About Us</a></li>
+								<li class="py-1"><a  href="#home"> Home</a> </li>
+								<li class="py-1"><a href="#news">News</a> </li>
+								<li class="py-1"><a href="#team">Team</a></li>
+								<li class="py-1 goToAboutUs"><a href="">About Us</a> </li>
 							</ul>
 						</div>
 					</div>
 					<div
 						class="col-lg-3 col-md-3 col-sm-6 col-6  text-lg-left text-md-left text-sm-center text-xs-center">
-						<div class="footer-pad">
-							<ul class="list-unstyled footer-list poppins-FontFamily">
-								<li class="py-1"> <a href="#"> FAQ </a> </li>
-								<li class="py-1"> <a href="#"> How it Work </a> </li>
-								<li class="py-1"> <a href="#">Features</a> </li>
-								<li class="py-1"> <a href="#"> Contact Us </a> </li>
+						<div class="footer-pad" id="footerNavLinks">
+							<ul class="list-unstyled footer-list poppins-FontFamily blue-color">
+								<!-- <li class="py-1"> <a href="#"> FAQ </a> </li>
+								<li class="py-1"> <a href="#"> How it Work </a> </li> -->
+								<li class="py-1"> <a href="#features">Features</a> </li>
+								<li class="py-1"> <a href="#contactus"> Contact Us </a> </li>
 							</ul>
 						</div>
 					</div>
@@ -1925,12 +2222,12 @@
 						<div class="col-lg-6 col-md-6 col-sm-12 text-lg-right text-md-right text-sm-center">
 							<ul class="list-inline mb-0">
 								<li class="list-inline-item poppins-FontFamily"><small
-										class="border-right border-secondary pr-2 copyRight-text">Teams Of Use</small>
+										class="border-right border-secondary pr-2 copyRight-text blue-color">
+										<a href="" data-toggle="modal" data-target="#myModal" ng-click="footerLinkClick('terms')" class="text-decoration-none blue-color">Terms of Use</a></small>
 								</li>
 								<li class="list-inline-item poppins-FontFamily"><small
-										class="border-right border-secondary pr-2 copyRight-text">Privacy</small></li>
-								<li class="list-inline-item poppins-FontFamily"><small class="copyRight-text">HIPAA
-										information</small></li>
+										class="border-right border-secondary pr-2 copyRight-text"><a href="" data-toggle="modal" data-target="#myModal" ng-click="footerLinkClick('privacy')" class="text-decoration-none blue-color">Privacy</a></small></li>
+								<li class="list-inline-item poppins-FontFamily"><small class="copyRight-text"><a href="" data-toggle="modal" data-target="#myModal" ng-click="footerLinkClick('hipaa')" class="text-decoration-none blue-color">HIPAA Information</a></small></li>
 							</ul>
 						</div>
 					</div>
@@ -1938,6 +2235,302 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- santosh -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<ul class="nav nav-tabs w-100" role="tablist" id="tabLinkName">
+						<li role="presentation" class="nav-item poppins-FontFamily font-weight-normal-poppins font-14">
+							<a href="#terms" aria-controls="terms" role="tab" data-toggle="tab" class="nav-link active">Terms of Use</a>
+						</li>
+						<li role="presentation" class="nav-item poppins-FontFamily font-weight-normal-poppins font-14">
+							<a href="#privacy" aria-controls="privacy" role="tab" data-toggle="tab" class="nav-link">Privacy</a>
+						</li>
+						<li role="presentation" class="nav-item poppins-FontFamily font-weight-normal-poppins font-14">
+							<a href="#hipaa" aria-controls="hipaa" role="tab" data-toggle="tab" class="nav-link">HIPAA Information</a>
+						</li>
+					</ul>
+					<button type="button" class="close poppins-FontFamily" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	
+				</div>
+				<div class="modal-body">
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="terms" >
+							<div class="post poppins-FontFamily">
+								<h2>Terms and Use</h2>
+	
+								<h3>General Provisions</h3>
+								<p class="font-weight-normal-poppins font-14">
+									By using this Internet web site you agree to be subject to and agree to be bound by the following Internet Web Site Terms of Use and Conditions.  You represent that you are of legal age to form a binding contract.
+								</p>
+								<p class="font-weight-normal-poppins font-14">
+									If you do not agree to all of the terms and conditions set forth in this Internet Web Site Terms of Use and Conditions, you may not use this Internet web site.  Operant Systems, INC., (“COMPANY”) owner of this Internet web site, reserves the right, at any time, to modify, alter, or update these Internet Web Site Terms of Use and Conditions.  By accepting these Internet Web Site Terms of Use and Conditions, you agree to be bound by such modifications, alterations, or updates.
+								</p>
+								<p class="font-weight-normal-poppins font-14">
+									This Internet web site may include hyperlinks to third party Internet web sites that are not owned or operated by COMPANY  Those Internet web sites may have respective Terms of Use and Conditions, and visitors to those pages may be required to agree to those respective Terms of Use and Conditions.  COMPANY is not responsible for the content, terms of use or privacy practices of other Internet web sites to which this Internet web site may link to or is linked from.
+								</p>
+	
+	
+								<h3>Description of Services</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									The purpose of this Internet web site is to provide information in connection with services and products offered by and for COMPANY.
+								</p>
+	
+	
+								<h3>Intellectual Property</h3>
+	
+								<u>Patent</u>
+								<p class="font-weight-normal-poppins font-14">
+									COMPANY is the owner of one or more issued U.S. Patents and/or pending U.S. Patent Applications, which may apply to one or more parts of this Internet web site.
+								</p>
+								<p class="font-weight-normal-poppins font-14">
+									<b>Confidential Information:</b> For the purpose of this agreement, the term ‘Confidential Information’ shall mean the following:
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									Any information or know how, idea, application data, process technique, program, design drawing formula or test data work in  process, engineering, manufacturing, marketing, financial or personal matter, sales information, suppliers, customer, employees, investors, or business plan, whether in oral, written form, graphic or electronic form, or any document, diagram, drawing, computer program or other communication which is either marked confidential or reasonably known by the licensee to be confidential, or is of a proprietary nature and is learned or disclosed in the course of discussions, studies, or work undertaken between the parties.  (including the terms and conditions of this Agreement), will be treated as confidential by the receiving party. The receiving party will not disclose to a third party any of such information, or use such information other than for the purpose for which it was provided, without the prior written consent of the other party.
+								</p>
+	
+								<u>Copyright</u>
+								<p class="font-weight-normal-poppins font-14">
+									Except as otherwise set forth and provided herein, all material including but not limited to text, pictures, graphics and flash animations, data, icons and arrangement thereof that is displayed, and any hypertext markup language or any programming code included in or as a function of this Internet web site, is protected under the copyright laws of the United States of America and international conventions.  It is the exclusive property of COMPANY, COMPANY’s content suppliers and/or other respective owners, and any exclusive property of COMPANY may not be copied, modified or distributed in any form or for any reason without the express written consent of COMPANY.
+								</p>
+	
+	
+								<u>Trademarks</u>
+								<p class="font-weight-normal-poppins font-14">
+									The trademarks TeachMe are registered trademarks of COMPANY.  All trademarks, service marks, and trade names appearing in this Internet web site (collectively, the “Marks”) are trademarks or registered trademarks of and are proprietary to COMPANY, or other respective owners that have granted COMPANY the right and license to use the Marks.  Any trademarks, service marks, trade names, trade dress and products appearing in this Internet web site are reserved by the respective owners and may be afforded protection in the United States and internationally.
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									You expressly understand and agree that any of COMPANY’s Marks are the property of COMPANY.
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									Any questions concerning the use of these trademarks or whether a trademark that does not appear on this list is a trademark of COMPANY should be referred to COMPANY at  support@operantsystems.com.
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									No license or right to use is granted to you in any way in connection with any of the above trademarks, or with any other trademark appearing in connection with this Internet web site in any manner or for any purpose.
+								</p>
+	
+	
+								<h3>Warranty</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									COMPANY provides this Internet web site and its contents exclusively on an “as is” basis.  COMPANY makes no representations or warranties of any kind, express or implied, as to the operation of this Internet web site, or any information regarding COMPANY or any service or product described in this Internet web site with regard to the accuracy and completeness of the information.
+								</p>
+	
+								<h3>
+									COMPANY EXPRESSLY DISCLAIMS AND YOU EXPRESSLY UNDERSTAND AND AGREE THAT ALL WARRANTIES, INCLUDING WARRANTIES OF MERCHANTABILITY AND FITNESS OF THIS INTERNET WEB SITE FOR ANY PURPOSE, TO THE EXTENT PERMITTED BY LAW.  COMPANY EXPRESSLY DISCLAIMS ANY AND ALL LIABILITY FOR ANY DAMAGE OF ANY KIND FROM USE OF THIS INTERNET WEB SITE, INCLUDING BUT NOT LIMITED TO DIRECT AND INDIRECT DAMAGES, CONSEQUENTIAL DAMAGES, SPECIAL DAMAGES AND PUNITIVE DAMAGES.
+								</h3>
+	
+	
+								<h3>User Registration</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									Users may be required to submit identifying information, for example, to receive information about COMPANY, to receive information about services we provide, or about upcoming scheduled events.  COMPANY does not knowingly collect any personally identifiable information from anyone under eighteen (18) years of age.
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									All submissions to this Internet web site are governed by these Internet Web Site Terms of Use and Conditions and/or the COMPANY Privacy Policy, which is incorporated by reference in its entirety herein.
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									COMPANY reserves the right to block or otherwise take down any advertisement or promotion from this Internet web site, at COMPANY’s discretion.
+								</p>
+	
+	
+								<h3>Intellectual Property Protection</h3>
+	
+								<p>
+									COMPANY takes its intellectual property very seriously, and will take any and all measures necessary to protect its intellectual property, including but not limited to inventions (whether patentable or not), trademarks, copyright and trade secret.  This Internet web site and COMPANY grants no license rights for any intellectual property owned or licensed by COMPANY.
+								</p>
+	
+	
+								<h3>Governing Law</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									These Internet Web Site Terms of Use and Conditions shall be interpreted and enforced in accordance with the laws of the State of New York, with no regard to conflicts of law principles.  By using this Internet site, you agree that any dispute, claim or cause of action in connection with use of this Internet web site be resolved without resorting to a class action or any form thereof.  Each user of this Internet web site consents to exclusive jurisdiction of the Courts of the State of New York, and, when applicable, the Southern District of New York.
+								</p>
+	
+	
+								<h3>User Supplied Content and Submissions</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									Users hereby grant to COMPANY a nonexclusive, irrevocable, worldwide, perpetual, unlimited, assignable, sublicenseable, fully paid up and royalty-free right license to use, copy, make derivative works of, distribute, publish, commercialize, retain, and/or save in any way now known or in the future discovered, any content that is submitted to COMPANY, without any further consent, notice and/or compensation to you or to any third parties.
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									You hereby warrant and represent to COMPANY that any information you provide or submit in connection with this Internet web site, including information which may be posted on this Internet web site is accurate, is truthful, and does not violate any confidentiality rights, contractual restrictions, including related rights of any other third party, and/or any law.  You also warrant that all information you submit about yourself is truthful, and that you will not provide any false personal information on this Internet web site.  You also agree to modify any information you have submitted that is no longer accurate or is obsolete, including any information that relates to any registration information you have submitted to COMPANY.
+								</p>
+	
+	
+								<h3>Control Over Content</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									COMPANY exercises no control over any content any user submits.  COMPANY has no obligation to supervise any content submitted by any users.  You agree to inform COMPANY of any misappropriated content, or any inappropriate or illegal of any content posted on or by COMPANY that you are or become aware of.
+								</p>
+	
+	
+								<h3>Indemnification</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									You agree to indemnify COMPANY and to hold COMPANY harmless from any damages, losses and costs (including, but not limited to, reasonable attorneys’ fees), including any charges that relate to any claims by any third party, or any charge related to your non-compliance with these Internet web site Terms and Conditions.
+								</p>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="privacy">
+							<div class="post poppins-FontFamily">
+								<h2>Privacy</h2>
+								<h3>
+									General Provisions:  </h3>
+	
+								<p class="font-weight-normal-poppins font-14">Operant Systems INC. (“COMPANY”) is committed to respecting the privacy of users of this Internet web site.</p>
+	
+								<p class="font-weight-normal-poppins font-14">Data collected and used by COMPANY, its affiliates, and agents (collectively “COMPANY”), including all personal information COMPANY collects that pertains to and identifies a person in connection with this Internet web site, are governed by and subject to this Internet Web Site Privacy Policy (the “Privacy Policy”), as amended from time to time.  </p>
+	
+								<p class="font-weight-normal-poppins font-14">Accordingly, data collected and used by COMPANY may or may not be subject to previous versions of any privacy policy that may have been in effect at the time that such data were collected.</p>
+	
+								<p class="font-weight-normal-poppins font-14">COMPANY reserves the right change the Privacy Policy from time to time at its sole discretion and will provide link(s) to the most current version of the Privacy Policy on this Internet web site.  By using this Internet web site, you agree to accept the terms set forth in the Privacy Policy, and you agree to be bound by modifications, alterations, or updates made to the Privacy Policy over time.  Please regularly review the Privacy Policy.  </p>
+	
+								<p class="font-weight-normal-poppins font-14">If, as the result of modifications, alterations, or updates made to the Privacy Policy, you want to alter information COMPANY may have regarding you, you may do so by following the procedure described in the section below entitled “Updating Your Personal Information And Privacy Preferences.”  </p>
+	
+								<p class="font-weight-normal-poppins font-14">By using this Internet web site, you agree to be subject to and agree to be bound by the Privacy Policy.  You represent that you are of legal age to form a binding contract.</p>
+	
+								<p class="font-weight-normal-poppins font-14">If you have objections to the Privacy Policy, you should immediately discontinue use of this Internet web site.  </p>
+	
+								<p class="font-weight-normal-poppins font-14">The Privacy Policy does not govern practices associated with activities provided by Internet web sites other than this Internet web site, or associated with products and services not available or enabled via this Internet web site. </p>
+	
+								<p class="font-weight-normal-poppins font-14">To the extent that any term of the Privacy Policy conflicts with the terms of an existing written (including electronic) agreement between you and COMPANY regarding the use of specific areas of the Internet web site or specific products, offers and promotions (including specific promotion rules, offers, terms of use, or privacy disclosures), the terms of the respective agreement(s) shall govern.</p>
+	
+								<p class="font-weight-normal-poppins font-14">This Internet web site is intended for adult audiences, and COMPANY does not knowingly collect any personal information from anyone under eighteen (18) years of age.</p>
+	
+								<p class="font-weight-normal-poppins font-14">If COMPANY sells assets (or the assets of a division or subsidiary) to another entity, or COMPANY (or a division or subsidiary) is acquired by or merged with another entity, you agree that COMPANY may provide to such entity personal information that is related to that part of COMPANY business that was sold to or merged with the other entity without obtaining your further consent.</p>
+	
+	
+								<h3>Updating Your Personal Information and Privacy Preferences:  </h3>
+	
+								<p class="font-weight-normal-poppins font-14">You may request access to and may correct your personal information and privacy preferences at any time.  </p>
+	
+								<p class="font-weight-normal-poppins font-14">Please e-mail your request to access and correct your personal information to: support@operantsystems.com.  Please include your name, address, and e-mail address when you contact us.  No specific form is required to notify COMPANY of changes to your personal information.  </p>
+	
+	
+								<h3>Collection of Personal Information:  </h3>
+	
+								<p class="font-weight-normal-poppins font-14">COMPANY may ask that you provide personally identifiable information, such as your first and last name, mailing address (including zip code), country of residence, e-mail address, telephone and facsimile numbers, and other personally identifying information (collectively, “personal information”).  By submitting personal information to COMPANY, you agree and acknowledge that such personal information may be transferred across national boundaries.  You also acknowledge that in certain countries or with respect to certain activities, the collection, transfer, storage, and processing of your personal information may be undertaken by third parties.  </p>
+	
+	
+								<h3>How Your Personal Information Is Used:   </h3>
+	
+								<p class="font-weight-normal-poppins font-14">COMPANY collects your personal information in order to record, support and facilitate services provided in this Internet web site.  For example, your personal information is used to provide you with information that you have indicated that you would like sent to you by COMPANY.</p>
+	
+	
+								<h3>Your Choices With Respect To Personal Information: </h3>
+	
+								<p class="font-weight-normal-poppins font-14">COMPANY recognizes and appreciates the importance of responsible use of personal information collected, such as in connection with providing services and information, or in connection with promotion(s) or special offer(s).  COMPANY respects your legal rights regarding access to and correction and deletion of your personal information.  COMPANY may communicate information to you regarding products, services, and special offers available from COMPANY or selected third parties.</p>
+	
+								<p class="font-weight-normal-poppins font-14">There are other instances in which COMPANY may divulge your personal information, such as where required by law, regulation, or litigation.  COMPANY may also disclose personal information about you in a determination made solely by COMPANY that such disclosure should be made for reasons of national security, law enforcement, or other issues of public importance.</p>
+	
+								<p class="font-weight-normal-poppins font-14">Access by you to your personal may be provided upon request, subject to COMPANY’s sole and exclusive granting of such request.  COMPANY expressly reserves the right to deny any request for your personal information for any purpose. </p>
+	
+	
+								<h3>Protection of Your Personal Information:</h3>
+	
+								<p class="font-weight-normal-poppins font-14">The personal information that you provide in connection with this Internet web site is protected in several ways.  Your personal information resides on secure servers that only selected COMPANY personnel and contractors have access to via password.  COMPANY strives to prevent unauthorized parties from viewing such personal information when it is transmitted to and stored by COMPANY</p>
+	
+	
+								<h3>Privacy complaints:</h3>
+	
+								<p class="font-weight-normal-poppins font-14">COMPANY takes its users’ privacy concerns seriously.  If you believe that COMPANY has not complied with the Privacy Policy with respect to your personal information, please contact COMPANY and report such non-compliance.</p>
+	
+								<p class="font-weight-normal-poppins font-14">COMPANY is not responsible for the content or privacy practices of other web sites to which this Internet web site may link to or is linked from.  You should review the privacy policy of such Internet web sites before using the sites.</p>
+	
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade poppins-FontFamily" id="hipaa"><div class="post">
+							<h2>HIPAA Information</h2>
+	
+	
+							<p class="font-weight-normal-poppins font-14">The Standards for Privacy of Individually Identifiable Health Information (“Privacy Rule”) establishes, for the first time, a set of national standards for the protection of certain health information. The U.S. Department of Health and Human Services (“HHS”) issued the Privacy Rule to implement the requirement of the Health Insurance Portability and Accountability Act of 1996 (“HIPAA”). The Privacy Rule standards address the use and disclosure of individuals’ health information—called “protected health information” by organizations subject to the Privacy Rule — called “covered entities,” as well as standards for individuals’ privacy rights to understand and control how their health information is used. Within HHS, the Office for Civil Rights (“OCR”) has responsibility for implementing and enforcing the Privacy Rule with respect to voluntary compliance activities and civil money penalties.</p>
+							<h2>What Information is Protected</h2>
+							<p class="font-weight-normal-poppins font-14">
+								<strong>Protected Health Information</strong>. The Privacy Rule protects all “individually identifiable health information” held or transmitted by a covered entity or its business associate, in any form or media, whether electronic, paper, or oral. The Privacy Rule calls this information “protected health information (PHI).”
+							</p>
+							<p class="font-weight-normal-poppins font-14">“Individually identifiable health information” is information, including demographic data, that relates to:</p>
+							<ul class="font-weight-normal-poppins font-14">
+								<li> the individual’s past, present or future physical or mental health or condition,</li>
+								<li>the provision of health care to the individual, or</li>
+								<li>the past, present, or future payment for the provision of health care to the individual,</li>
+							</ul>
+							<p class="font-weight-normal-poppins font-14">and that identifies the individual or for which there is a reasonable basis to believe it can be used to identify the individual.  Individually identifiable health information includes many common identifiers (e.g., name, address, birth date, Social Security Number).</p>
+							<p class="font-weight-normal-poppins font-14">The Privacy Rule excludes from protected health information employment records that a covered entity maintains in its capacity as an employer and education and certain other records subject to, or defined in, the Family Educational Rights and Privacy Act, 20 U.S.C. §1232g.</p>
+							<p class="font-weight-normal-poppins font-14">
+								<strong>De-Identified Health Information</strong>. There are no restrictions on the use or disclosure of de-identified health information.14 De-identified health information neither identifies nor provides a reasonable basis to identify an individual. There are two ways to de-identify information; either: (1) a formal determination by a qualified statistician; or (2) the removal of specified identifiers of the individual and of the individual’s relatives, household members, and employers is required, and is adequate only if the covered entity has no actual knowledge that the remaining information could be used to identify the individual.
+							</p>
+	
+	
+						</div>
+	
+						</div>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<!-- The Modal -->
+<div class="modal" id="exploreMore-NewModal" tabindex="-1" role="dialog" aria-labelledby="exploreMoreModalLabel" aria-hidden="true">
+	<div class="modal-dialog mw-100 custom-templates-w-85 modal-dialog-centered" role="document">
+	  <div class="modal-content">
+  
+		<!-- Modal Header -->
+		<div class="modal-header">
+		  <!-- <h4 class="modal-title">Modal Heading</h4> -->
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		</div>
+  
+		<!-- Modal body -->
+		<div class="modal-body container-fluid">
+			<div class="row">
+				<div class="col-md-4 my-2">
+					<img src="operantsystems/images/new_images/templates/Template01.jpeg" class="img-fluid"/>
+				</div>
+				<div class="col-md-4 my-2">
+					<img src="operantsystems/images/new_images/templates/Template02.jpeg" class="img-fluid"/>
+				</div>
+				<div class="col-md-4 my-2">
+					<img src="operantsystems/images/new_images/templates/Template03.jpeg" class="img-fluid"/>
+				</div>
+
+				<div class="col-md-4 my-2">
+					<img src="operantsystems/images/new_images/templates/Template04.jpeg" class="img-fluid"/>
+				</div>
+
+				<div class="col-md-4 my-2">
+					<img src="operantsystems/images/new_images/templates/Template05.jpeg" class="img-fluid"/>
+				</div>
+
+				<div class="col-md-4 my-2">
+					<img src="operantsystems/images/new_images/templates/Template06.jpeg" class="img-fluid"/>
+				</div>
+			</div>
+		 
+		</div>
+  
+		<!-- Modal footer -->
+		<!-- <div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div> -->
+  
+	  </div>
+	</div>
+  </div>
 
 	<!-- =========================
  SCRIPTS
@@ -1962,15 +2555,8 @@
 		window.onbeforeunload = function () {
 			window.scrollTo(0, 0);
 		};
-
-		// $("#goToContactUs").click(function() {
-		// $('html,body').animate({
-		// 	scrollTop: $(".contactUsContainer").offset().top - 50},
-		// 	'slow');
-		// });	
 		
 		$(".goToFeatures").click(function () {
-			debugger;
 			$(".nav").find(".activeNav").removeClass("activeNav");
 			$(".features-menu").addClass("activeNav");
 
@@ -1983,15 +2569,18 @@
 				'slow'), 2000);
 		});
 
-		// $("#goToTeam").click(function() {
-		// 	$('#features').hide();
-		// 	$('#team,#home').show();
-		// 	// $('#home,#goToContactUs').show()
+		$(".goToAboutUs").click(function () {
+			$("#navLinks > ul").find(".activeNav").removeClass("activeNav");
+			$(".homes-menu").addClass("activeNav");
 
-		// 	setTimeout($('html, body').animate({
-		// 	scrollTop: $(".teamContainer").offset().top - 50},
-		// 	'slow'), 2000);	
-		// });
+			$('#features,#news,#team,#contactus').hide();
+			$('#home,.aboutUs,.teamContainer').show();
+
+			setTimeout($('html, body').animate({
+				scrollTop: $(".aboutUs").offset().top - 50
+			},
+				'slow'), 2000);
+		});
 
 		$(function () {
 			$(document).scroll(function () {
@@ -2005,8 +2594,9 @@
 			$(".nav").find(".activeNav").removeClass("activeNav");
 			$(this).parent().addClass("activeNav");
 		});
+		
 
-		$(document).on('click', '.nav a[href^="#"]', function (e) {
+		$(document).on('click', '#footerNavLinks > ul   > li a[href^="#"]', function (e) {
 			// target element id
 			var id = $(this).attr('href');
 			if (id === "#home") $('#home').show();
@@ -2023,6 +2613,49 @@
 			e.preventDefault();
 			// top position relative to the document
 			var pos = $id.offset().top - 50;
+
+			if (id === "#team") {
+				$(".nav").find(".activeNav").removeClass("activeNav");
+				$(".team-menu").addClass("activeNav");
+			} else if (id === "#news") {
+				$(".nav").find(".activeNav").removeClass("activeNav");
+				$(".news-menu").addClass("activeNav");
+			} else if (id === "#home") {
+				$(".nav").find(".activeNav").removeClass("activeNav");
+				$(".homes-menu").addClass("activeNav");
+			} else if (id === "#features") {
+				$(".nav").find(".activeNav").removeClass("activeNav");
+				$(".features-menu").addClass("activeNav");
+			} else if (id === "#contactus") {
+				$(".nav").find(".activeNav").removeClass("activeNav");
+				$(".contactus-menu").addClass("activeNav");
+			}
+			
+
+			// animated top scrolling
+			$('body, html').animate({ scrollTop: pos });
+		});
+
+		$(document).on('click', '#navLinks > ul  a[href^="#"]', function (e) {
+			// target element id
+			var id = $(this).attr('href');
+			if (id === "#home") $('#home').show();
+			if(id === "#enrolllink") return;
+			var _target = $(this).attr("href").split("#")[1];
+			$(".subSections").hide();
+			$(".subSections[id=" + _target + "]").show();
+			// target element
+			var $id = $(id);
+			if ($id.length === 0) {
+				return;
+			}
+			// prevent standard hash navigation (avoid blinking in IE)
+			e.preventDefault();
+			// top position relative to the document
+			var pos = $id.offset().top - 50;
+
+			// $(this).parent().parent().find(".activeNav").removeClass("activeNav");
+			// $(this).parent().addClass("activeNav");
 
 			// animated top scrolling
 			$('body, html').animate({ scrollTop: pos });
@@ -2044,13 +2677,22 @@
 		});
 
 		$(".enroll-link").click(function () {
-			$('.login-container').hide();
-			$('.signIn-dropdown > li').removeClass('addBgColor');
+			
+			$('.user-login-menu > a').removeClass("addBgColor");
+			$(".login-container").addClass("hide");
+			$(".login-container").attr("style","display:none !important");
+			$("#stamp-navigation").removeClass("in");
+			$("#stamp-navigation").attr("aria-expanded","false");
+			$('.user-login-menu > a').removeClass('addBgColor');
 			
 			$('.enrollment-link').toggle();
 			$(".enroll-link").toggleClass('addBgColor addPaddingTop');
 		});
-		//santosh
+		
+		$(".user-login-btn").click(function () {
+			$(this).toggleClass('addBgColor addPaddingTop');
+		});
+		
 		$(window).scroll(function(){
 			
 			if($(window).scrollTop() <= 1000){
@@ -2063,6 +2705,12 @@
 			}
 		});
 
+		$(document).on('click', '.openEnrollmentBox', function () {
+			$('.enrollment-link').toggle();
+			$(".enroll-link").toggleClass('addBgColor addPaddingTop');
+		});
+
+		
 
 	</script>
 	<script src="operantsystems/js/smoothscroll.js"></script>

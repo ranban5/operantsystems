@@ -327,6 +327,10 @@ strong,
   font-size: 12px;
 }
 
+.custom-templates-w-85 {
+  width: 85%;
+}
+
 ::-webkit-input-placeholder {
   /* Edge */
   font-size: 14px;
@@ -1458,7 +1462,7 @@ strong,
   padding: 15px;
   border: 1px solid #ddd;
   top: 55px;
-  left: -175px;
+  /*   */
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -3337,7 +3341,7 @@ h1 {
   display: none;
 }
 
-.home-carousel .carousel-indicators > li {
+.home-carousel .carousel-indicators > li, .team-carousel .carousel-indicators > li {
   border-radius: 100%;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -3346,7 +3350,7 @@ h1 {
   margin: 0px 8px 0px 8px;
 }
 
-.home-carousel .carousel-indicators {
+.home-carousel .carousel-indicators ,.team-carousel .carousel-indicators {
   bottom: 20%;
 }
 
@@ -3391,13 +3395,18 @@ h1 {
 }
 
 .activeNav {
-  border-bottom: 3px solid #fff;
+  /* border-bottom: 3px solid #fff; */
+  border-bottom: 3px solid transparent;
   background-color: #ff6600;
   border-radius: 10px;
   -webkt-border-radius: 10px;
   -moz-border-raidus: 10px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+.home-navbar.scrolled .activeNav {
+  border-bottom: 3px solid #fff;
 }
 
 .display-4 {
@@ -3410,7 +3419,7 @@ h1 {
 
 .navbar.scrolled {
   /* background: #01405b; */
-  background: #ff6600;
+  background: #e36626;
   transition: background 500ms;
 }
 
@@ -3436,9 +3445,10 @@ h1 {
   margin-top: 130px;
 }
 
-.home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+.home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,.team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
   width: 385px;
 }
+
 
 .contact-us-carousel .carousel-inner .carousel-item .carousel-caption {
   right: auto;
@@ -3453,7 +3463,7 @@ h1 {
   width: 392px;
 } */
 
-.home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+.home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption p ,.team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
   font-size: 20px;
   width: 100%;
   text-align: right;
@@ -3473,12 +3483,12 @@ h1 {
 }
 
 .home-carousel .carousel-caption > h2,
-.contact-us--carousel .carousel-caption > h2 {
+.contact-us-carousel .carousel-caption > h2,.team-carousel .carousel-caption > h2 {
   font-size: 38px;
   line-height: 45px;
 }
 .home-carousel .carousel-caption > p,
-.contact-us--carousel .carousel-caption > p {
+.contact-us-carousel .carousel-caption > p,.team-carousel .carousel-caption > p {
   font-size: 17px;
   font-weight: normal;
   width: 350px;
@@ -3521,8 +3531,11 @@ h1 {
   font-size: 15px;
   padding-bottom: 6px;
   margin-top: 50px;
-  text-shadow: 0px 0px 5px #333;
+  /* text-shadow: 0px 0px 5px #333; */
+  text-shadow: 0px 0px 3px #000;
+  color: #fff;
 }
+
 
 .home-navbar .enrollment-menu > span {
   display: inline-block;
@@ -3558,6 +3571,7 @@ h1 {
   -moz-border-top-left-radius: 10px;
   -moz-border-top-right-radius: 10px;
   background-color: #ececec;
+  text-shadow: none !important;
 }
 
 .font-12 {
@@ -3592,11 +3606,12 @@ h1 {
 
 .home-navbar.scrolled {
   margin-left: 0rem;
-  padding-top: 0px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
   margin-right: 0rem;
   padding-right: 4rem;
   padding-left: 4rem;
-  height: 60px;
+  height: 70px;
 }
 
 .home-navbar.scrolled > .home-menu ul.navbar-nav {
@@ -3629,6 +3644,7 @@ h1 {
 
 .home-navbar .navbar-brand > img {
   width: 130px;
+  padding-top: 22px;
 }
 
 .medium-blue {
@@ -3707,7 +3723,7 @@ h1 {
   display: list-item; */
 }
 
-.app-store-images > img {
+.app-store-images > li > a > img {
   width: 70%;
 }
 
@@ -3745,12 +3761,12 @@ h1 {
   padding-top: 10px;
 }
 
-.app-store-images > ul > li > img {
+.app-store-images > ul > li > a > img {
   width: 120px;
   height: 40px;
 }
 
-.app-store-images > ul > li:nth-child(3) > img {
+.app-store-images > ul > li:nth-child(3) > a > img {
   height: 33px;
 }
 
@@ -4049,6 +4065,43 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .best_pratices {
+    background-position: -28px 450px ;
+  }
+
+  .dynamic_curriculum {
+    background-position: right -80px center;
+  }
+
+  .personalized_tech {
+    background-position: right -58px center;
+  }
+
+  .assessment_programs {
+    background-position: right -73px center;
+  }
+
+  .about-us {
+    background-position: -20px 112px;
+  }
+
+  .teamContainer {
+    background-position: right -68px top 25px;
+  }
+
+  .contact-us > .container {
+    max-width: 634px;
+  }
+
+  .contact-form {
+    padding: 35px 6px 35px 6px;
+  }
+
+  .dynamic_curriculum .no-zindex {
+    z-index: -1 !important;
+  }
+
   .team-carousel .carousel-item .carousel-caption {
     width: 90%;
     margin-top: 20px;
@@ -4075,11 +4128,11 @@ h1 {
     min-height: 430px;
   }
 
-  .home-carousel .carousel-inner .carousel-item .carousel-caption {
+  .home-carousel .carousel-inner .carousel-item .carousel-caption,  .team-carousel .carousel-inner .carousel-item .carousel-caption {
     margin-top: 85px;
   }
 
-  .home-carousel .carousel-caption > p {
+  .home-carousel .carousel-caption > p, .team-carousel .carousel-caption > p {
     width: 100%;
     font-size: 14px;
   }
@@ -4111,7 +4164,7 @@ h1 {
     width: 60%;
   }
 
-  .home-carousel .carousel-inner .carousel-item:nth-child(2) .carousel-caption {
+  .home-carousel .carousel-inner .carousel-item:nth-child(2) .carousel-caption,  .team-carousel .carousel-inner .carousel-item:nth-child(2) .carousel-captio {
     margin-top: 90px;
   }
 
@@ -4124,7 +4177,7 @@ h1 {
     padding-top: 0px !important;
   }
 
-  .app-store-images > img {
+  .app-store-images > li > a  > img {
     position: relative;
     width: 90%;
   }
@@ -4146,7 +4199,7 @@ h1 {
     max-width: 100% !important;
   }
 
-  .home-carousel .carousel-caption > h2 {
+  .home-carousel .carousel-caption > h2,.team-carousel .carousel-caption > h2 {
     font-size: 25px;
     line-height: 38px;
   }
@@ -4251,8 +4304,24 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) {
+
+  .home-navbar .navbar-brand > img {
+    padding-top: 0px;
+  }
+
+  .home-navbar.scrolled {
+    height: auto;
+  }
+
+  .navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,1);
+    border-color: rgba(255,255,255,1);
+  }
+
   .activeNav {
     background-color: transparent;
+    border-bottom: 3px solid #fff;
+    border-radius: 0px;
   }
 
   .simple-logos-list > span {
@@ -4341,11 +4410,11 @@ h1 {
     margin-bottom: 15px;
   }
 
-  .home-carousel .carousel-inner .carousel-item:nth-child(2) .carousel-caption {
+  .home-carousel .carousel-inner .carousel-item:nth-child(2) .carousel-caption,  .team-carousel .carousel-inner .carousel-item:nth-child(2) .carousel-caption {
     margin-top: 40px;
   }
 
-  .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+  .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption, .team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
     width: 260px;
     margin-top: 15px;
     padding-top: 0px;
@@ -4540,7 +4609,7 @@ h1 {
     font-size: 14px !important;
   }
 
-  .home-carousel .carousel-caption > p {
+  .home-carousel .carousel-caption > p, .team-carousel .carousel-caption > p {
     width: 70%;
     font-size: 14px;
     line-height: 21px;
@@ -4550,7 +4619,7 @@ h1 {
     display: none;
   }
 
-  .home-carousel .carousel-caption > h2 {
+  .home-carousel .carousel-caption > h2 ,.team-carousel .carousel-caption > h2 {
     font-size: 20px;
     line-height: 30px;
   }
@@ -4566,11 +4635,7 @@ h1 {
     width: 80px;
   }
 
-  .home-carousel
-    .carousel-inner
-    .carousel-item:nth-child(1)
-    .carousel-caption
-    p {
+  .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption p ,  .team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
     font-size: 14px;
   }
 
@@ -4602,7 +4667,7 @@ h1 {
     padding-right: 2rem;
     margin-left: 0rem;
     margin-right: 0rem;
-    background-color: #01405b;
+    background-color: #ff6600;
   }
 
   .home-carousel .carousel-inner .carousel-item .carousel-caption {
@@ -4618,10 +4683,16 @@ h1 {
     margin-bottom: 0px;
   }
 
+  .home-navbar.scrolled .showWithScroll {
+    padding-top: 0px;
+  }
+
   .home-navbar.scrolled .navbar-brand > img {
     padding-left: 0px;
     width: 70%;
     margin-left: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
   .home-navbar .navbar-brand > img {
     width: 70%;
@@ -5257,7 +5328,7 @@ h1 {
 .fas {
   text-shadow: 0px 0px 5px #333;
 }
-.navbar-dark .navbar-nav .nav-link:focus,
+/* .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
   text-shadow: none;
-}
+} */

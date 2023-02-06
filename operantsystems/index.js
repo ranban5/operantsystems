@@ -510,26 +510,27 @@ indexApp.controller("indexController", function($scope, $http, $window) {
   };
 
   //Login button re-direct to home page of site
-    $scope.loginPage = function() {
-      $(".enrollment-link").hide();
-      $(".enroll-link").removeClass('addBgColor addPaddingTop');
-        $(".enrollment-link").hide();
-        $(".signIn-dropdown > li").addClass("addBgColor");
-        $(".login-container .error").addClass("hide");
-        if ($(".login-container").hasClass("hide")) {
-          $(".login-container").removeClass("hide");
-          // $(".login-container").attr("style","display:block !important;top:140%");
-          $(".login-container").attr("style","display:block !important;top:90%;border-top:none;background-color: #ececec;");
+  $scope.loginPage = function () {
+    debugger;
+    $(".enrollment-link").hide();
+    $(".enroll-link").removeClass('addBgColor addPaddingTop');
+    $(".enrollment-link").hide();
+    $('.user-login-menu > a').addClass('addBgColor');
+    $(".login-container .error").addClass("hide");
+    if ($(".login-container").hasClass("hide")) {
+      $(".login-container").removeClass("hide");
+      // $(".login-container").attr("style","display:block !important;top:140%");
+      $(".login-container").attr("style", "display:block !important;top:90%;border-top:none;background-color: #ececec;");
 
-          $("#stamp-navigation").addClass("in");
-          $("#stamp-navigation").attr("aria-expanded","true");
-        }
-        else {
-          $(".signIn-dropdown > li").removeClass("addBgColor");
-          $(".login-container").addClass("hide");
-          $(".login-container").attr("style","display:none !important");
-          $("#stamp-navigation").removeClass("in");
-          $("#stamp-navigation").attr("aria-expanded","false");
+      $("#stamp-navigation").addClass("in");
+      $("#stamp-navigation").attr("aria-expanded", "true");
+    }
+    else {
+      $('.user-login-menu > a').removeClass("addBgColor");
+      $(".login-container").addClass("hide");
+      $(".login-container").attr("style","display:none !important");
+      $("#stamp-navigation").removeClass("in");
+      $("#stamp-navigation").attr("aria-expanded","false");
         }
     };
 
@@ -958,7 +959,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
         callingWS("contactUs", jsonStr);
 
         $("#divContactUsThankyou").removeClass("hide");
-        $("#divContactUs").addClass("hide");
+        // $("#divContactUs").addClass("hide");
     };
 
 });
