@@ -327,8 +327,14 @@ strong,
   font-size: 12px;
 }
 
-.custom-templates-w-85 {
-  width: 85%;
+.custom-templates-w-95 {
+  width: 95%;
+}
+
+#exploreMore-NewModal .modal-content {
+  border-radius: 0px;
+  -webkit-border-radius:0px;
+  -moz-border-radius: 0px;
 }
 
 ::-webkit-input-placeholder {
@@ -1789,10 +1795,50 @@ strong,
 }
 
 #idModalHome3Close {
-  border: 3px solid;
+  /* border: 3px solid;
   padding: 15px;
+  border-radius: 50px; */
+  border: 3px solid #00405b;
+  color: #00405b;
+  padding: 5px 6px 5px 6px;
   border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  margin-right: 0px;
+  margin-top: 0px;
+  display: inline-block;
+  margin-bottom: 0px;
+  -webkit-box-shadow: 0 4px 10px -2px #000;
+  -moz-box-shadow: 0 4px 10px -2px #000;
+  box-shadow: 0 4px 10px -2px #000;
 }
+
+.templates-modal-header {
+  border-bottom: none;
+}
+
+.teamplates-box-shadow {
+  -webkit-box-shadow: 0 4px 10px -2px #000;
+  -moz-box-shadow: 0 4px 10px -2px #000;
+  box-shadow: 0 4px 10px -2px #000;
+}
+
+.gallery {
+  /* overflow: hidden; */
+}
+
+.gallery img {
+  transition: 1s ease;
+}
+
+.gallery:hover img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+
+
 
 #idModalHome3Body {
   background-image: url(../images/background-images/1old.jpg);
@@ -4305,7 +4351,7 @@ h1 {
 
 @media only screen and (max-width: 767px) {
 
-  .custom-templates-w-85 {
+  .custom-templates-w-95 {
     width: 97%;
   }
 
