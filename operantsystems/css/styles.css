@@ -4125,7 +4125,7 @@ h1 {
   .contact-us-carousel .carousel-item,
   .team-carousel .carousel-item {
     height: auto;
-    min-height: 430px;
+    min-height: 460px;
   }
 
   .home-carousel .carousel-inner .carousel-item .carousel-caption,  .team-carousel .carousel-inner .carousel-item .carousel-caption {
