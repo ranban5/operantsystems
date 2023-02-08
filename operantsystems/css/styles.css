@@ -4436,11 +4436,11 @@ span.active {
 .features-banner-container .image-content {
   position: absolute;
   width: 100%;
-  top: 25%;
+  top:40%;
   left: 10;
   bottom: 0px;
   right: auto;
-  left: 5%;
+  left: 13%;
 }
 
 .features-banner-container .image-content > div p {
