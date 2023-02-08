@@ -3761,6 +3761,15 @@ span.active {
   bottom: 150px;
 }
 
+.home-carousel .carousel-control-prev i,
+.home-carousel .carousel-control-next i,
+.team-carousel .carousel-control-prev i,
+.team-carousel .carousel-control-next i,
+.contact-us-carousel .carousel-control-prev i,
+.contact-us-carousel .carousel-control-next i {
+  text-shadow: 0px 0px 5px #333;
+} 
+
 .navbar-dark .navbar-brand {
   font-family: "Source Serif Pro", serif;
 }
