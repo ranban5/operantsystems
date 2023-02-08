@@ -118,9 +118,8 @@
 					<li class="nav-item activeNav custom-menu menuBarItem homes-menu">
 						<a href="#home" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Home</a>
 					</li>
-					<li class="nav-item custom-menu menuBarItem features-menu">
-						<a href="#features"
-							class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Features</a>
+					<li class="nav-item custom-menu menuBarItem features-menu" ng-click="linkClick('features')">
+						<a href="#features" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Features</a>
 					</li>
 					<li class="nav-item custom-menu menuBarItem team-menu" ng-click="linkClick('team')">
 						<a href="#team" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Team</a>
@@ -137,8 +136,7 @@
 						</li> -->
 					<li class="nav-item enrollment-menu custom-menu">
 						<a href=""
-							class="nav-link poppins-FontFamily text-white font-weight-500-poppins enroll-link">Enroll
-							Know</a>
+							class="nav-link poppins-FontFamily blue-color font-weight-500-poppins enroll-link">Demo</a>
 						<!-- <span class="nav-link poppins-FontFamily text-white font-size-14 font-weight-500-poppin enroll-link">Enroll
 							Know</span> -->
 
@@ -261,7 +259,7 @@
 	<section class="home2 subSections" id="home">
 
 		<header class="header  home1" data-stellar-background-ratio="3.5">
-			<div id="indicators" class="carousel slide home-carousel" data-ride="carousel" data-interval="5000" data-pause="false">
+			<div id="indicators" class="carousel slide home-carousel" data-ride="carousel" data-interval="false">
 				<ol class="carousel-indicators">
 					<li data-target="#indicators" data-slide-to="0" class="active"></li>
 					<li data-target="#indicators" data-slide-to="1"></li>
@@ -284,14 +282,16 @@
 								&nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button>
 						</div> -->
 						<div class="carousel-caption">
-							<div class="simple-logo"><img
-									src="operantsystems/images/new_images/transparent_logos/Logo_homePage_carousel.png"
-									class="img-fluid" /></div>
+							<div class="simple-logo">
+								<!-- <img src="operantsystems/images/new_images/transparent_logos/Logo_homePage_carousel.png"
+									class="img-fluid" /> -->
+									<h1 class="pb-1 poppins-FontFamily m-0 blue-color child_pripority_title">Making your child our priority</h1>
+								</div>
 							<h2 class="pb-2 poppins-FontFamily m-0 orange-color">Simple, Yet Powerful</h2>
 							<p class="poppins-FontFamily m-0 text-dark font-weight-bold-poppins">ABA Practice Management
 								Solution</p>
-							<p class="text-right  mb-1 font-italic child-priority text-dark font-bold"> Making your
-								child our priority</p>
+							<!-- <p class="text-right  mb-1 font-italic child-priority text-dark font-bold"> Making your
+								child our priority</p> -->
 							<div class="simple-logos-list">
 								<span class="d-inline-block pr-1"><img
 										src="operantsystems/images/microsoft-case-study.jpg" class="img-fluid" style="width:100px" /></span>
@@ -531,10 +531,9 @@
 				</div>
 
 				<p class="pl-3 mt-lg-3 py-lg-3 py-sm-0 mt-sm-3 text-center d-block"> <button
-					class="btn poppins-FontFamily more-buttons white-bg text-center"><a href="#features"
-						class="blue-color read-more-anchor goToFeatures">Read More&nbsp;<img
+					class="btn poppins-FontFamily more-buttons white-bg text-center goToFeaturesFirstSection">Learn More&nbsp;<img
 							src="operantsystems/images/arrow-right.svg"
-							style="width: 30px;margin-left:15px" /></a></button></p>
+							style="width: 30px;margin-left:15px" /></button></p>
 			</div>
 		</div>
 
@@ -543,19 +542,23 @@
 				<div class="row">
 					<div class="col-md-12 text-center margin-bottom-spacing order-shift">
 						<h2 class="text-center">Dynamic Curriculum & Behavior Programs</h2>
-						<p class="text-center">Lorem ipsum is Simply Dummy Text of the Printing And Typesetting
-							Industry.</p>
+						<!-- <p class="text-center">Lorem ipsum is Simply Dummy Text of the Printing And Typesetting
+							Industry.</p> -->
 					</div>
 
 					<div class="col-md-6 order-shift ">
 
 						<ul
 							class="list-group engaging-videos-list  text-lg-left text-md-left text-sm-center home-sections-list">
-							<li class="list-group-item pt-0 pb-2">Build And Integrate With Your Current Programs</li>
-							<li class="list-group-item pb-2">Modify Programs To Meet Each Students Needs.</li>
-							<li class="list-group-item pb-2">Manage Criteria of Success On Individual Targets Or
+							<li class="list-group-item pt-0 pb-2"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Build And Integrate With Your Current Programs</li>
+							<li class="list-group-item pb-2"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Modify Programs To Meet Each Students Needs.</li>
+							<li class="list-group-item pb-2"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Manage Criteria of Success On Individual Targets Or
 								Standardized Criteria Across All Targets.</li>
-							<li class="list-group-item pb-2">Define Levels Of Intensity Changes in Behavior.</li>
+							<li class="list-group-item pb-2"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Define Levels Of Intensity Changes in Behavior.</li>
 						</ul>
 						<p class="pl-3 mt-lg-3 py-lg-3 py-sm-0 mt-sm-3"> <button
 								class="btn poppins-FontFamily more-buttons white-bg text-center blue-color read-more-anchor openEnrollmentBox">
@@ -583,14 +586,22 @@
 						<p class="text-center mb-5">Convert Pdf Forms To Fillable Forms Via Data Entry</p>
 					</div>
 
+						<!-- progress bar santosh -->
+					<div class="col-md-12 text-center">
+						
+					</div>
+
 					<div class="col-md-6  personalized_tech_img">
 						<img src="operantsystems/images/new_images/Image 20.png" class="img-fluid" />
 						<p class="pt-5"> <button class="btn poppins-FontFamily more-buttons white-bg text-center" data-toggle="modal" data-target="#exploreMore-NewModal">
-							Explore More&nbsp;<img src="operantsystems/images/arrow-right.svg"
+							Coming Soon&nbsp;<img src="operantsystems/images/arrow-right.svg"
 									style="width: 30px;margin-left:15px" /></button></p>
 					</div>
 					<div
 						class="col-md-6 personalized_tech_img text-left personalized_tech_img_pdf home-sections-img-container personalized-image-right-padding">
+						<p class="pt-0"> <button class="btn poppins-FontFamily more-buttons white-bg text-center" data-toggle="modal" data-target="#learnMore-NewModal">
+							Learn More&nbsp;<img src="operantsystems/images/arrow-right.svg"
+									style="width: 30px;margin-left:15px" /></button></p>
 						<img src="operantsystems/images/new_images/Image 21.png" class="img-fluid" />
 					</div>
 				</div>
@@ -628,15 +639,22 @@
 
 						<ul
 							class="list-group engaging-videos-list text-lg-left text-md-left text-sm-center home-sections-list">
-							<li class="list-group-item pt-0 pb-2 ">Motivating & Customizable Training Programs</li>
-							<li class="list-group-item pb-2">Reduce Training Time</li>
-							<li class="list-group-item pb-2">Improve Care</li>
-							<li class="list-group-item pb-2">Eliminate Staff Turnover</li>
+							<li class="list-group-item pt-0 pb-2"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Motivating & Customizable Training Programs</li>
+							<li class="list-group-item pb-2"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Reduce Training Time</li>
+							<li class="list-group-item pb-2"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Improve Care</li>
+							<li class="list-group-item pb-2"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Eliminate Staff Turnover</li>
 						</ul>
-						<p class="pl-3 mt-lg-5 py-lg-5  py-sm-0 mt-sm-3"> <button
+						<!-- <p class="pl-3 mt-lg-5 py-lg-5  py-sm-0 mt-sm-3"> <button
 								class="btn text-center poppins-FontFamily more-buttons white-bg openEnrollmentBox">Schedule a
 								Demo&nbsp;<img src="operantsystems/images/arrow-right.svg"
-									style="width: 30px;margin-left:15px" /></button></p>
+									style="width: 30px;margin-left:15px" /></button></p> -->
+									<p class="pl-3 mt-lg-5 py-lg-5  py-sm-0 mt-sm-3"> <button
+										class="btn text-center poppins-FontFamily more-buttons white-bg" data-toggle="modal" data-target="#EngaginglearnMore-modal">Learn More&nbsp;<img src="operantsystems/images/arrow-right.svg"
+											style="width: 30px;margin-left:15px" /></button></p>
 					</div>
 				</div>
 			</div>
@@ -1078,11 +1096,8 @@
 				</div>
 			</div> -->
 		</div>
-		<div class="contactus-form ight-bg">
 
-		</div>
-
-		<div class="container my-4">
+		<div class="container my-4 contact-us-form-content">
 			<div class="row">
 				<div class="col-md-6 text-center my-4">
 					<div class="mapouter">
@@ -1539,7 +1554,7 @@
 			</div>
 		</div>
 
-		<div class="container my-4">
+		<div class="container my-4 team-parent-container">
 			<div class="row">
 				<div class="col-md-6 text-center my-4 team-parent">
 					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2013.png" class="team-parent-image1"/>
@@ -1668,6 +1683,9 @@
 		<div class="container-fluid features-banner-container px-0">
 			<div class="banner features-banner">
 				<div class="image-content row">
+					<div class="col-md-12">
+						<h1 class="poppins-FontFamily white-color font-weight-bold-poppins text-center optimize_tag">Optimize your time <br/> ABA Pocketbook</h1>
+					</div>
 					<!-- Placehoder for feature banner content -->
 					<!-- <div class="col-md-5 col-sm-8 col-8">
 						<h2 class="poppins-FontFamily white-color font-weight-bold-poppins">Product Features</h2>
@@ -1685,7 +1703,7 @@
 				<div class="row features-padding">
 					<div class="col-md-6 mb-5">
 						<div class="banner-computer features-comp-section">
-							<img src="operantsystems/images/new_images/features/img-1.png" class="img-fluid openEnrollmentBox" />
+							<img src="operantsystems/images/new_images/features/img-1.png " class="img-fluid openEnrollmentBox" />
 						</div>
 					</div>
 
@@ -2008,17 +2026,28 @@
 							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left">
 								Custom Built Automated Reports & Easily Export Data</p>
 							<br />
-							<p class="my-0 poppins-FontFamily font-size-16 ">Skills Progress Report</p>
-							<p class="my-0 poppins-FontFamily font-size-16">Session Note Report</p>
-							<p class="my-0 poppins-FontFamily font-size-16">ABC Report</p>
-							<p class="my-0 poppins-FontFamily font-size-16">Monthly Behavior Session Note Report</p>
-							<p class="my-0 poppins-FontFamily font-size-16">Monthly Behavior Summary Report</p>
-							<p class="my-0 poppins-FontFamily font-size-16">Weekly Skills & Behavior Report</p>
-							<p class="my-0 poppins-FontFamily font-size-16">Mastered History Report</p>
-							<p class="my-0 poppins-FontFamily font-size-16">Weekly Session Report</p>
-							<p class="my-0 poppins-FontFamily font-size-16">Interval Weekly Report</p>
-							<p class="my-0 poppins-FontFamily font-size-16">Therapist Progress Report</p>
-							<p class="my-0 poppins-FontFamily font-size-16">Timesheet Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16 "><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Skills Progress Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Session Note Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;ABC Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Monthly Behavior Session Note Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Monthly Behavior Summary Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Weekly Skills & Behavior Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Mastered History Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Weekly Session Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Interval Weekly Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Therapist Progress Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16"><i class="fas fa-check" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Timesheet Report</p>
 
 							<div
 								class="text-sm-center text-md-left  text-lg-left text-xl-left text-center margin-top-bottom-20 ">
@@ -2499,6 +2528,72 @@
 		<!-- Modal body -->
 		<div class="modal-body container-fluid">
 			<div class="row">
+
+				<!-- santosh -->
+				<!-- <div class="col-md-12">
+					<div class='progress'>
+						<div class='progress_inner'>
+						  <div class='progress_inner__step'>
+							<label for='step-1'>Start order</label>
+						  </div>
+						  <div class='progress_inner__step'>
+							<label for='step-2'>Prepare gift</label>
+						  </div>
+						  <div class='progress_inner__step'>
+							<label for='step-3'>Pack gift</label>
+						  </div>
+						  <div class='progress_inner__step'>
+							<label for='step-4'>Decorate box</label>
+						  </div>
+						  <div class='progress_inner__step'>
+							<label for='step-5'>Send gift</label>
+						  </div>
+						  <input checked='checked' id='step-1' name='step' type='radio'>
+						  <input id='step-2' name='step' type='radio'>
+						  <input id='step-3' name='step' type='radio'>
+						  <input id='step-4' name='step' type='radio'>
+						  <input id='step-5' name='step' type='radio'>
+						  <div class='progress_inner__bar'></div>
+						  <div class='progress_inner__bar--set'></div>
+						  <div class='progress_inner__tabs'>
+							<div class='tab tab-0'>
+							  <h1>Start order</h1>
+							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor ipsum, eleifend vitae massa non, dignissim finibus eros. Maecenas non eros tristique nisl maximus sollicitudin.</p>
+							</div>
+							<div class='tab tab-1'>
+							  <h1>Prepare gift</h1>
+							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor ipsum, eleifend vitae massa non, dignissim finibus eros. Maecenas non eros tristique nisl maximus sollicitudin.</p>
+							</div>
+							<div class='tab tab-2'>
+							  <h1>Pack gift</h1>
+							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor ipsum, eleifend vitae massa non, dignissim finibus eros. Maecenas non eros tristique nisl maximus sollicitudin.</p>
+							</div>
+							<div class='tab tab-3'>
+							  <h1>Decorate box</h1>
+							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor ipsum, eleifend vitae massa non, dignissim finibus eros. Maecenas non eros tristique nisl maximus sollicitudin.</p>
+							</div>
+							<div class='tab tab-4'>
+							  <h1>Send gift</h1>
+							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor ipsum, eleifend vitae massa non, dignissim finibus eros. Maecenas non eros tristique nisl maximus sollicitudin.</p>
+							</div>
+						  </div>
+						  <div class='progress_inner__status'>
+							<div class='box_base'></div>
+							<div class='box_lid'></div>
+							<div class='box_ribbon'></div>
+							<div class='box_bow'>
+							  <div class='box_bow__left'></div>
+							  <div class='box_bow__right'></div>
+							</div>
+							<div class='box_item'></div>
+							<div class='box_tag'></div>
+							<div class='box_string'></div>
+						  </div>
+						</div>
+					  </div>
+					  
+				</div> -->
+
 				<div class="col-md-6 col-lg-4 my-2 gallery">
 					<div class="teamplates-box-shadow">
 						<img src="operantsystems/images/new_images/templates/Template01.jpeg" class="img-fluid"/>
@@ -2545,6 +2640,38 @@
 	</div>
   </div>
 
+
+  	<!-- The Modal -->
+<div class="modal fade" id="EngaginglearnMore-modal" tabindex="-1" role="dialog" aria-labelledby="EngaginglearnMoreModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable mw-100 w-75 modal-dialog-centered" role="document">
+	  <div class="modal-content">
+  
+		<!-- Modal Header -->
+		<div class="modal-header templates-modal-header">
+		  <span id="idModalHome3Close" class="close" data-dismiss="modal">×</span>
+		</div>
+  
+		<!-- Modal body -->
+		<div class="modal-body container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="poppins-FontFamily font-weight-normal-poppins font-16-news-content text-center mb-3 blue-color">Easy and simple entertaining training video for staffs and parents</h2>
+					<p class="poppins-FontFamily font-weight-normal-poppins font-14 text-center blue-color">Subject-&nbsp;The most FAQ's from staffs and parents</p>
+					<p class="poppins-FontFamily font-weight-normal-poppins font-14 text-center blue-color">Script-&nbsp;Brief script that doesn't take more than 2-3 min video</p>
+					<p class="poppins-FontFamily font-weight-normal-poppins font-14 text-center blue-color">All videos will be caption based.</p>
+				</div>
+			</div>
+		</div>
+  
+		<!-- Modal footer -->
+		<!-- <div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div> -->
+  
+	  </div>
+	</div>
+  </div>
+
 	<!-- =========================
  SCRIPTS
 ============================== -->
@@ -2568,6 +2695,19 @@
 		window.onbeforeunload = function () {
 			window.scrollTo(0, 0);
 		};
+
+		$(".goToFeaturesFirstSection").click(function () {
+			$(".nav").find(".activeNav").removeClass("activeNav");
+			$(".features-menu").addClass("activeNav");
+
+			$('#home,#news,.aboutUs').hide();
+			$('#features').show();
+
+			setTimeout($('html, body').animate({
+				scrollTop: $(".skill_acquistion").offset().top - 50
+			},
+				'slow'), 2000);
+		});
 		
 		$(".goToFeatures").click(function () {
 			$(".nav").find(".activeNav").removeClass("activeNav");
@@ -2591,8 +2731,7 @@
 
 			setTimeout($('html, body').animate({
 				scrollTop: $(".aboutUs").offset().top - 50
-			},
-				'slow'), 2000);
+			},'slow'), 2000);
 		});
 
 		$(function () {
@@ -2669,9 +2808,20 @@
 
 			// $(this).parent().parent().find(".activeNav").removeClass("activeNav");
 			// $(this).parent().addClass("activeNav");
+			if(id === '#team') {
+				setTimeout($('html, body').animate({
+				scrollTop: $(".team-parent-container").offset().top - 50
+			},'slow'), 2000);
+			} else if(id === '#contactus') {
+				setTimeout($('html, body').animate({
+				scrollTop: $(".contact-us-form-content").offset().top - 50
+			},'slow'), 2000);
+			} else {
+				// animated top scrolling
+				$('body, html').animate({ scrollTop: pos });
+			}
 
-			// animated top scrolling
-			$('body, html').animate({ scrollTop: pos });
+			
 		});
 
 		var btn = $('#scroll-button');
@@ -2699,7 +2849,7 @@
 			$('.user-login-menu > a').removeClass('addBgColor');
 			
 			$('.enrollment-link').toggle();
-			$(".enroll-link").toggleClass('addBgColor addPaddingTop');
+			// $(".enroll-link").toggleClass('addBgColor addPaddingTop');
 		});
 		
 		$(".user-login-btn").click(function () {
@@ -2711,10 +2861,10 @@
 			if($(window).scrollTop() <= 1000){
 
 				$('.features-comp-section > img').addClass('animate__animated  animate__backInLeft');
-				$('.features-image-section > img').addClass('animate__animated  animate__backInRight');
+				$('.features-image-section img').addClass('animate__animated  animate__backInRight');
 			} else {
 				$('.features-comp-section > img').removeClass('animate__animated  animate__backInLeft');
-				$('.features-image-section > img').removeClass('animate__animated  animate__backInRight');
+				$('.features-image-section img').removeClass('animate__animated  animate__backInRight');
 			}
 		});
 

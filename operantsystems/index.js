@@ -715,40 +715,42 @@ indexApp.controller("indexController", function($scope, $http, $window) {
     //Different links present in the product drop down
     $scope.availableLink = function(link) {
         if (link === "ios_sb_ipad") {
-            location.href = "https://itunes.apple.com/in/app/aba-data-notebook-skills-behaviors/id1008564477?mt=8";
+          window.open("https://itunes.apple.com/in/app/aba-data-notebook-skills-behaviors/id1008564477?mt=8", '_blank');
         }
         else if (link === "android_sb_ipad") {
-            location.href = "https://play.google.com/store/apps/details?id=com.operantsystems.abanotebook";
+          window.open("https://play.google.com/store/apps/details?id=com.operantsystems.abanotebook", '_blank');
+            // location.href = "https://play.google.com/store/apps/details?id=com.operantsystems.abanotebook";
         }
         else if (link === "ios_sb_iphone") {
-            location.href = "https://itunes.apple.com/in/app/teachme-skills-platinum/id598392255?mt=8";
+          window.open("https://itunes.apple.com/in/app/teachme-skills-platinum/id598392255?mt=8", '_blank');
+            // location.href = "https://itunes.apple.com/in/app/teachme-skills-platinum/id598392255?mt=8";
         }
         else if (link === "web") {
             location.href = $scope.urlNameForMobile;
         }
         else if (link === "ios_sb_skills") {
-            location.href = "https://itunes.apple.com/us/app/aba-data-notepad-skills/id1248744125";
+          window.open("hhttps://itunes.apple.com/us/app/aba-data-notepad-skills/id1248744125", '_blank');
         }
         else if (link === "ios_sb_behaviors") {
-            location.href = "https://itunes.apple.com/us/app/aba-data-notepad-behaviors/id1248782710";
+          window.open("https://itunes.apple.com/us/app/aba-data-notepad-behaviors/id1248782710", '_blank');
         }
         else if (link === "ios_sb_iphone_language") {
-            location.href = "https://itunes.apple.com/in/app/speech-language-notepad-tracking/id1076457868?mt=8";
+          window.open("https://itunes.apple.com/in/app/speech-language-notepad-tracking/id1076457868?mt=8", '_blank');
         }
         else if (link === "ios_sb_pecshome") {
-            location.href = "https://itunes.apple.com/us/app/pecs-data-sheet-home/id1216665162";
+          window.open("https://itunes.apple.com/us/app/pecs-data-sheet-home/id1216665162", '_blank');
         }
         else if (link === "ios_sb_pecsschool") {
-            location.href = "https://itunes.apple.com/us/app/pecs-data-sheet-school/id1314334951";
+            window.open("https://itunes.apple.com/us/app/pecs-data-sheet-school/id1314334951", '_blank');
         }
         else if (link === "ios_sb_sessions") {
-            location.href = "https://apps.apple.com/in/app/aba-pocketbook/id1513788097";
+          window.open("https://apps.apple.com/in/app/aba-pocketbook/id1513788097", '_blank');
         }
         else if (link === "android_sb_sessions") {
-            location.href = "https://play.google.com/store/apps/details?id=com.operantsystems.abanotebookphoneappoffline";
+          window.open("https://play.google.com/store/apps/details?id=com.operantsystems.abanotebookphoneappoffline", '_blank');
         }
         else if (link === "amazon_fire") {
-          location.href = "https://www.amazon.com/gp/product/B0839FJD2D";
+          window.open("https://www.amazon.com/gp/product/B0839FJD2D", '_blank');
         }
 
     };
