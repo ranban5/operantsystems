@@ -520,7 +520,9 @@ indexApp.controller("indexController", function($scope, $http, $window) {
     if ($(".login-container").hasClass("hide")) {
       $(".login-container").removeClass("hide");
       // $(".login-container").attr("style","display:block !important;top:140%");
-      $(".login-container").attr("style", "display:block !important;top:90%;border-top:none;background-color: #ececec;");
+      $(".login-container").attr("style", "display:block !important;");
+      $(".login-container").addClass('addFixedStyling');
+      
 
       $("#stamp-navigation").addClass("in");
       $("#stamp-navigation").attr("aria-expanded", "true");
