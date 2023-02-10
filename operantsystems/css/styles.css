@@ -3945,7 +3945,7 @@ span.active {
   margin: 20px 0px 20px 0px;
 }
 
-.home-carousel .carousel-inner .carousel-item .carousel-caption,
+
 .team-carousel .carousel-item .carousel-caption {
   right: auto;
   text-align: left;
@@ -3955,9 +3955,24 @@ span.active {
   margin-top: 130px;
 }
 
+.home-carousel .carousel-inner .carousel-item .carousel-caption {
+  right: auto;
+  text-align: left;
+  width: 470px;
+  top: 0px;
+  left: 8%;
+}
+
+
+
 .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,
 .team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
   width: 570px;
+  margin-top: 160px;
+}
+
+.contact-us-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+  margin-top: 160px;
 }
 
 .contact-us-carousel .carousel-inner .carousel-item .carousel-caption {
@@ -4823,6 +4838,13 @@ span.active {
 }
 
 @media only screen and (max-width: 767px) {
+
+  .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,
+  .team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,
+  .contact-us-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+    margin-top: 30px;
+  }
+
   .simple-logos-list {
     width: auto;
   }
@@ -5891,7 +5913,7 @@ span.active {
   font-size: 60px;
 }
 .carouselPad {
-  margin-top: 160px !important;
+  /* margin-top: 160px !important; */
 }
 .websiteBuilderHeading {
   text-align: right;
