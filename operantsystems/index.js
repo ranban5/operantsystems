@@ -753,13 +753,17 @@ indexApp.controller("indexController", function($scope, $http, $window) {
         }
         else if (link === "amazon_fire") {
           window.open("https://www.amazon.com/gp/product/B0839FJD2D", '_blank');
-        }
+        } else if (link === "amazon_orange_fire") {
+          window.open("https://www.amazon.com/Operant-Systems-Inc-ABA-Pocketbook/dp/B08LGQMF5N/ref=sr_1_2?qid=1676010664&refinements=p_4%3AOperant+Systems+Inc&s=mobile-apps&search-type=ss&sr=1-2", '_blank');
+          
+        }   
 
     };
 
 
     //Get Start button click 
     $scope.chkGetStarted = function() {
+      debugger;
         if (!$scope.formMail.email.$valid) {
           return false;
         }
@@ -907,6 +911,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
         $("#gs1").addClass("hide");
         $("#gs2").addClass("hide");
         $("#gs3").removeClass("hide");
+    
 
       $("#gs1M").addClass("hide");
       $("#gs2M").addClass("hide");
@@ -936,6 +941,12 @@ indexApp.controller("indexController", function($scope, $http, $window) {
 
 
     };
+
+    $scope.reset = function() {
+      var original = $scope.email;
+      $scope.email= angular.copy(original)
+      $scope.formMail.$setPristine()
+  };
 
     //In different links are present according to which tab should be open
     $scope.footerLinkClick = function(tabName) {
