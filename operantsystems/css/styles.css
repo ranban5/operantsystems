@@ -5893,3 +5893,12 @@ span.active {
 .carouselPad {
   margin-top: 160px !important;
 }
+.websiteBuilderHeading {
+  text-align: right;
+  margin: 0 auto;
+  position: relative;
+  left: 10%;
+  color: #00405b;
+  font-family: "Poppins";
+  font-size: 30px;
+}
