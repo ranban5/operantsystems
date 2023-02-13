@@ -3780,7 +3780,7 @@ span.active {
   background-color: #ff6600
 }
 
-.template-sendbtn:hover {
+.template-sendbtn:hover, .template-sendbtn:focus {
   background-color: #ff6600;
   color: #ffffff;
 }

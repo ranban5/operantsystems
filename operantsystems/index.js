@@ -511,7 +511,6 @@ indexApp.controller("indexController", function($scope, $http, $window) {
 
   //Login button re-direct to home page of site
   $scope.loginPage = function () {
-    debugger;
     $(".enrollment-link").hide();
     $(".enroll-link").removeClass('addBgColor addPaddingTop');
     $(".enrollment-link").hide();
@@ -543,11 +542,9 @@ indexApp.controller("indexController", function($scope, $http, $window) {
         "strServiceData": JSON.stringify(data),
         "deviceId": "angularWS"
       };
-
       var url = webSiteName + sendRequestURL;
 
       //return $http.post(url, dataString);
-
       return $http({
         method: 'POST',
         url: url,
@@ -557,6 +554,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
           'Content-Type': 'application/json'
         }
       });
+     
     }
     else {
       let url = webSiteName + loginURL;
@@ -763,7 +761,6 @@ indexApp.controller("indexController", function($scope, $http, $window) {
 
     //Get Start button click 
     $scope.chkGetStarted = function() {
-      debugger;
         if (!$scope.formMail.email.$valid) {
           return false;
         }
@@ -974,6 +971,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
         callingWS("contactUs", jsonStr);
 
         $("#divContactUsThankyou").removeClass("hide");
+        $('.template-sendbtn').addClass('hasBeenSend');
         // $("#divContactUs").addClass("hide");
     };
 

@@ -2635,7 +2635,8 @@ data-keyboard="false" data-backdrop="static">
 							<img src="operantsystems/images/new_images/templates/Template01.jpeg" class="img-fluid"/>
 						</div>
 						
-						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check1" name="templates" value="check1" datasrc="Template 1" /> <span>Template 1</span></span>
+						<span class="mt-2 d-inline-block pt-1">
+							<input type="radio" class="radiobutton" id="check1" name="templates" value="check1" datasrc="Template 1" /> <span>Template 1</span></span>
 					</div>
 					
 				</div>
@@ -2645,7 +2646,7 @@ data-keyboard="false" data-backdrop="static">
 						<div class="teamplates-box-shadow">
 							<img src="operantsystems/images/new_images/templates/Template02.jpeg" class="img-fluid"/>
 						</div>
-						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check2" name="templates" value="check2" datasrc="Template 2"/> <span>Template 2</span></span>
+						<span class="mt-2 d-inline-block pt-1"><input type="radio" class="radiobutton" id="check2" name="templates" value="check2" datasrc="Template 2"/> <span>Template 2</span></span>
 					</div>
 					
 				</div>
@@ -2654,7 +2655,7 @@ data-keyboard="false" data-backdrop="static">
 						<div class="teamplates-box-shadow">
 							<img src="operantsystems/images/new_images/templates/Template03.jpeg" class="img-fluid"/>
 						</div>
-						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check3" name="templates" value="check3" datasrc="Template 3"/> <span>Template 3</span></span>
+						<span class="mt-2 d-inline-block pt-1"><input type="radio" class="radiobutton" id="check3" name="templates" value="check3" datasrc="Template 3"/> <span>Template 3</span></span>
 					</div>
 					
 				</div>
@@ -2664,7 +2665,7 @@ data-keyboard="false" data-backdrop="static">
 						<div class="teamplates-box-shadow">
 							<img src="operantsystems/images/new_images/templates/Template04.jpeg" class="img-fluid"/>
 						</div>
-						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check4" name="templates" value="check4" datasrc="Template 4"/> <span>Template 4</span></span>
+						<span class="mt-2 d-inline-block pt-1"><input type="radio" class="radiobutton" id="check4" name="templates" value="check4" datasrc="Template 4"/> <span>Template 4</span></span>
 					</div>
 					
 				</div>
@@ -2674,7 +2675,7 @@ data-keyboard="false" data-backdrop="static">
 						<div class="teamplates-box-shadow">
 							<img src="operantsystems/images/new_images/templates/Template05.jpeg" class="img-fluid"/>
 						</div>
-						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check5" name="templates" value="check5" datasrc="Template 5"/> <span>Template 5</span></span>
+						<span class="mt-2 d-inline-block pt-1"><input type="radio" class="radiobutton" id="check5" name="templates" value="check5" datasrc="Template 5"/> <span>Template 5</span></span>
 					</div>
 					
 				</div>
@@ -2684,7 +2685,7 @@ data-keyboard="false" data-backdrop="static">
 						<div class="teamplates-box-shadow">
 							<img src="operantsystems/images/new_images/templates/Template06.jpeg" class="img-fluid"/>
 						</div>
-						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check6" name="templates" value="check6" datasrc="Template 6"/> <span>Template 6</span></span>
+						<span class="mt-2 d-inline-block pt-1"><input type="radio" class="radiobutton" id="check6" name="templates" value="check6" datasrc="Template 6"/> <span>Template 6</span></span>
 					</div>
 					
 				</div>
@@ -2745,12 +2746,12 @@ data-keyboard="false" data-backdrop="static">
 			 </div>
 			<div class="modal-body">
 
-				<form name="formContactUs" class="form-horizontal" ng-submit="chkContactUs()" autocomplete="off">
+				<form name="formContactUs" class="form-horizontal templateForm" ng-submit="chkContactUs()" autocomplete="off">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
 								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Selected Template:</label>
-								<input type="text" class="form-control poppins-FontFamily font-weight-normal-poppins templateName font-14" placeholder="Name *" name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;">
+								<input type="text" class="form-control poppins-FontFamily font-weight-normal-poppins templateName font-14" placeholder="Name *" name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;" readonly>
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -2772,7 +2773,7 @@ data-keyboard="false" data-backdrop="static">
 
 						<div class="col-md-12">
 							<div class="form-group">
-								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Comments:</label>
+								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Comments:<span class="red-color pl-1">*</span></label>
 								<textarea class="form-control poppins-FontFamily font-weight-normal-poppins font-14" id="exampleFormControlTextarea1" rows="3"
 									placeholder="Message *" name="contactUs_message" ng-model="contactUs_message" required onpaste="return false;"></textarea>
 							</div>
@@ -3020,7 +3021,9 @@ data-keyboard="false" data-backdrop="static">
 			$("[name=templates]").prop("checked",false);
 			$('.selectedTemplate').val();
 			$('.templateName').val();
-			$("#MyTemplateForm").modal("hide");
+			if($(this).hasClass('hasBeenSend')) {
+				$("#MyTemplateForm").modal("hide");
+			}
 		});
 
 		
