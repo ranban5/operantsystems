@@ -151,6 +151,7 @@
 						<div class="enrollment-link">
 							<div class="formCSS">
 								<div class="horizontal-subscribe-form">
+									
 									<form name="formMail"
 										class="form-inline  ng-pristine ng-valid-email ng-invalid ng-invalid-required"
 										ng-submit="chkGetStarted()">
@@ -664,7 +665,7 @@
 								Demo&nbsp;<img src="operantsystems/images/arrow-right.svg"
 									style="width: 30px;margin-left:15px" /></button></p> -->
 									<p class="pl-3 mt-lg-5 py-lg-5  py-sm-0 mt-sm-3"> <button
-										class="btn text-center poppins-FontFamily more-buttons white-bg" data-toggle="modal" data-target="#EngaginglearnMore-modal">Learn More&nbsp;<img src="operantsystems/images/arrow-right.svg"
+										class="btn text-center poppins-FontFamily more-buttons white-bg" data-toggle="modal" data-target="#engaginglearnMore-modal">Learn More&nbsp;<img src="operantsystems/images/arrow-right.svg"
 											style="width: 30px;margin-left:15px" /></button></p>
 					</div>
 				</div>
@@ -2547,14 +2548,15 @@
 	<!-- The Modal -->
 
 	
-<div class="modal fade" id="exploreMore-NewModal" tabindex="-1" role="dialog" aria-labelledby="exploreMoreModalLabel" aria-hidden="true">
+<div class="modal fade" id="exploreMore-NewModal" tabindex="-1" role="dialog" aria-labelledby="exploreMoreModalLabel" aria-hidden="true"
+data-keyboard="false" data-backdrop="static">
 	<div class="modal-dialog modal-dialog-scrollable mw-100 custom-templates-w-95 modal-dialog-centered" role="document">
 	  <div class="modal-content">
   
 		<!-- Modal Header -->
 		<div class="modal-header templates-modal-header">
 		   <h4 class="modal-title websiteBuilderHeading">We build your dream website</h4> 
-		  <span id="idModalHome3Close" class="close" data-dismiss="modal">×</span>
+		  <span id="idModalHome3Close" class="close resetSelectedRadioButtons" data-dismiss="modal">×</span>
 		  <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
 		</div>
   
@@ -2633,16 +2635,17 @@
 							<img src="operantsystems/images/new_images/templates/Template01.jpeg" class="img-fluid"/>
 						</div>
 						
-						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check1" name="templates" value="check1" /> <span>Template 1</span></span>
+						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check1" name="templates" value="check1" datasrc="Template 1" /> <span>Template 1</span></span>
 					</div>
 					
 				</div>
+				<input type="hidden" class="selectedTemplate"/>
 				<div class="col-md-6 col-lg-4  my-2 gallery">
 					<div class="thumbnails">
 						<div class="teamplates-box-shadow">
 							<img src="operantsystems/images/new_images/templates/Template02.jpeg" class="img-fluid"/>
 						</div>
-						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check2" name="templates" value="check2"/> <span>Template 2</span></span>
+						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check2" name="templates" value="check2" datasrc="Template 2"/> <span>Template 2</span></span>
 					</div>
 					
 				</div>
@@ -2651,7 +2654,7 @@
 						<div class="teamplates-box-shadow">
 							<img src="operantsystems/images/new_images/templates/Template03.jpeg" class="img-fluid"/>
 						</div>
-						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check3" name="templates" value="check3"/> <span>Template 3</span></span>
+						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check3" name="templates" value="check3" datasrc="Template 3"/> <span>Template 3</span></span>
 					</div>
 					
 				</div>
@@ -2661,7 +2664,7 @@
 						<div class="teamplates-box-shadow">
 							<img src="operantsystems/images/new_images/templates/Template04.jpeg" class="img-fluid"/>
 						</div>
-						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check4" name="templates" value="check4"/> <span>Template 4</span></span>
+						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check4" name="templates" value="check4" datasrc="Template 4"/> <span>Template 4</span></span>
 					</div>
 					
 				</div>
@@ -2671,7 +2674,7 @@
 						<div class="teamplates-box-shadow">
 							<img src="operantsystems/images/new_images/templates/Template05.jpeg" class="img-fluid"/>
 						</div>
-						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check5" name="templates" value="check5"/> <span>Template 5</span></span>
+						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check5" name="templates" value="check5" datasrc="Template 5"/> <span>Template 5</span></span>
 					</div>
 					
 				</div>
@@ -2681,7 +2684,7 @@
 						<div class="teamplates-box-shadow">
 							<img src="operantsystems/images/new_images/templates/Template06.jpeg" class="img-fluid"/>
 						</div>
-						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check6" name="templates" value="check6"/> <span>Template 6</span></span>
+						<span class="mt-2 d-inline-block"><input type="radio" class="radiobutton" id="check6" name="templates" value="check6" datasrc="Template 6"/> <span>Template 6</span></span>
 					</div>
 					
 				</div>
@@ -2700,7 +2703,7 @@
 
 
   	<!-- The Modal -->
-<div class="modal fade" id="EngaginglearnMore-modal" tabindex="-1" role="dialog" aria-labelledby="EngaginglearnMoreModalLabel" aria-hidden="true">
+<div class="modal fade" id="engaginglearnMore-modal" tabindex="-1" role="dialog" aria-labelledby="EngaginglearnMoreModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-scrollable mw-100 w-75 modal-dialog-centered" role="document">
 	  <div class="modal-content">
   
@@ -2729,6 +2732,66 @@
 	  </div>
 	</div>
   </div>
+
+  <!-- Modal Popup -->
+  <div id="MyTemplateForm" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog engaginglearnMore-modal-dialog ">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header templates-modal-header">
+				<!-- <h4 class="modal-title websiteBuilderHeading">Form</h4>  -->
+			   <span id="idModalHome3Close" class="close resetSelectedRadioButtons" data-dismiss="modal">×</span>
+			   <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+			 </div>
+			<div class="modal-body">
+
+				<form name="formContactUs" class="form-horizontal" ng-submit="chkContactUs()" autocomplete="off">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Selected Template:</label>
+								<input type="text" class="form-control poppins-FontFamily font-weight-normal-poppins templateName font-14" placeholder="Name *" name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Email<span class="red-color pl-1">*</span>:</label>
+								<input type="email" class="form-control poppins-FontFamily font-weight-normal-poppins font-14" placeholder="Email *" name="contactUs_emailId" ng-model="contactUs_emailId" required onpaste="return false;">
+							</div>
+
+							<div class="error-container"
+								ng-show="formContactUs.contactUs_emailId.$dirty && formContactUs.contactUs_emailId.$invalid">
+								<small class="text-danger" ng-show="formContactUs.contactUs_emailId.$error.required">
+									Your email is required.
+								</small>
+								<small class="text-danger" ng-show="formContactUs.contactUs_emailId.$error.email">
+									Your email is not valid
+								</small>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Comments:</label>
+								<textarea class="form-control poppins-FontFamily font-weight-normal-poppins font-14" id="exampleFormControlTextarea1" rows="3"
+									placeholder="Message *" name="contactUs_message" ng-model="contactUs_message" required onpaste="return false;"></textarea>
+							</div>
+						</div>
+						<div class="col-md-12 text-right">
+							<button type="submit" class="btn btn-primary template-sendbtn poppins-FontFamily font-14 white-color">Send</button>
+							<!-- <button type="submit" class="btn navbar-register-button">Send</button> -->
+						</div>
+					</div>
+				</form>
+
+			</div>
+			<!-- <div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">
+					Close</button>
+			</div> -->
+		</div>
+	</div>
+</div>
 
 	<!-- =========================
  SCRIPTS
@@ -2936,7 +2999,22 @@
 			$('.enrollment-link').toggle();
 			// $(".enroll-link").toggleClass('addBgColor addPaddingTop');
 		});
-		
+
+		$('.radiobutton').on('change', function() {
+			var $this = $(this),
+			name = $this.attr('datasrc');
+			if ($(this).prop('checked')) {
+				var selectedTemplateValue = $('.selectedTemplate').val(name);
+				$('.templateName').val(selectedTemplateValue.attr('value'));
+				$("#MyTemplateForm").modal("show");
+			}
+		});
+
+		$(document).on('click', '.resetSelectedRadioButtons', function () {
+			$("[name=templates]").prop("checked",false);
+			$('.selectedTemplate').val();
+			$('.templateName').val();
+		});
 
 	</script>
 	<script src="operantsystems/js/smoothscroll.js"></script>
