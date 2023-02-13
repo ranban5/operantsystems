@@ -3016,6 +3016,15 @@ data-keyboard="false" data-backdrop="static">
 			$('.templateName').val();
 		});
 
+		$(document).on('click', '.template-sendbtn', function () {
+			$("[name=templates]").prop("checked",false);
+			$('.selectedTemplate').val();
+			$('.templateName').val();
+			$("#MyTemplateForm").modal("hide");
+		});
+
+		
+
 	</script>
 	<script src="operantsystems/js/smoothscroll.js"></script>
 	<script src="operantsystems/js/jquery.nav.js"></script>
