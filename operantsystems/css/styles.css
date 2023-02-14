@@ -323,6 +323,15 @@ strong,
   border-bottom: 1px solid #eaebec;
 }
 
+.sampleTemplate-links  > span{
+ text-decoration: underline;
+ margin: 0px 15px;
+}
+
+.sampleTemplate-images  img{
+  cursor: pointer;
+}
+
 .optimize_tag {
   font-size: 46px;
 }
@@ -2237,7 +2246,7 @@ body .progress_inner input[type="radio"] {
   padding: 15px;
   border-radius: 50px; */
   /* border: 3px solid #00405b; */
-  color: #00405b;
+  /* color: #00405b; */
   padding: 5px 6px 5px 6px;
   /* border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -2246,9 +2255,14 @@ body .progress_inner input[type="radio"] {
   margin-top: 0px;
   display: inline-block;
   margin-bottom: 0px;
+  opacity: 1;
   /* -webkit-box-shadow: 0 4px 10px -2px #000;
   -moz-box-shadow: 0 4px 10px -2px #000;
   box-shadow: 0 4px 10px -2px #000; */
+}
+
+.sendEnquiryBtn:hover {
+  color: #fff;
 }
 
 .templates-modal-header {
@@ -3751,6 +3765,10 @@ span.active {
   overflow: auto;
 }
 
+.engaginglearnMore-modal-dialog .modal-content {
+  background-color: #00405b;
+}
+
 .text-height-20 {
   line-height: 20px;
 }
@@ -3765,24 +3783,28 @@ span.active {
 
 
 .template-sendbtn {
-  border-radius: 3px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 12px;
   line-height: 1.6;
   border: none;
   padding: 10px 10px 10px 10px;
-  color: #ffffff;
+  color: #00405b;
   width: 120px;
   -webkit-transition: none;
   transition: none;
   margin-top: 15px;
-  background-color: #ff6600
+  background-color: #fff;
+  margin-bottom: 15px;
 }
 
+
 .template-sendbtn:hover, .template-sendbtn:focus {
-  background-color: #ff6600;
-  color: #ffffff;
+  background-color: #fff;
+  color: #00405b;
 }
 
 .enroll-link {
@@ -5962,7 +5984,6 @@ span.active {
   margin: 0 auto;
   position: relative;
   left: 10%;
-  color: #00405b;
   font-family: "Poppins";
   font-size: 30px;
 }

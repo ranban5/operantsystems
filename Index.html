@@ -610,7 +610,7 @@
 									style="width: 30px;margin-left:15px" /></button></p>
 					</div>
 					<div
-						class="col-md-6 personalized_tech_img text-left personalized_tech_img_pdf home-sections-img-container personalized-image-right-padding">
+						class="col-md-6 personalized_tech_img text-left personalized_tech_img_pdf  personalized-image-right-padding">
 						<p class="pt-0"> <button class="btn poppins-FontFamily more-buttons white-bg text-center" data-toggle="modal" data-target="#learnMore-NewModal">
 							Learn More&nbsp;<img src="operantsystems/images/arrow-right.svg"
 									style="width: 30px;margin-left:15px" /></button></p>
@@ -2556,7 +2556,7 @@ data-keyboard="false" data-backdrop="static">
 		<!-- Modal Header -->
 		<div class="modal-header templates-modal-header">
 		   <h4 class="modal-title websiteBuilderHeading">We build your dream website</h4> 
-		  <span id="idModalHome3Close" class="close resetSelectedRadioButtons" data-dismiss="modal">×</span>
+		  <span id="idModalHome3Close" class="close resetSelectedRadioButtons blue-color" data-dismiss="modal">×</span>
 		  <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
 		</div>
   
@@ -2710,7 +2710,7 @@ data-keyboard="false" data-backdrop="static">
   
 		<!-- Modal Header -->
 		<div class="modal-header templates-modal-header">
-		  <span id="idModalHome3Close" class="close" data-dismiss="modal">×</span>
+		  <span id="idModalHome3Close" class="close blue-color" data-dismiss="modal">×</span>
 		</div>
   
 		<!-- Modal body -->
@@ -2734,27 +2734,66 @@ data-keyboard="false" data-backdrop="static">
 	</div>
   </div>
 
+    	<!-- The Modal -->
+<div class="modal fade" id="learnMore-NewModal" tabindex="-1" role="dialog" aria-labelledby="LearnMoreModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable mw-100 w-75 modal-dialog-centered" role="document">
+	  <div class="modal-content">
+  
+		<!-- Modal Header -->
+		<div class="modal-header templates-modal-header">
+			<h4 class="modal-title websiteBuilderHeading text-left ml-0 blue-color">Convert Pdf Forms to Fillable Forms Via Data Entry</h4> 
+		  <span id="idModalHome3Close" class="close blue-color" data-dismiss="modal">×</span>
+		</div>
+  
+		<!-- Modal body -->
+		<div class="modal-body container-fluid">
+			<div class="row">
+				<div class="col-md-12 mb-4">
+					<p class="poppins-FontFamily font-weight-normal-poppins font-14 text-center blue-color sampleTemplate-links"><span class="d-inline-block">Use Form 1500</span><span class="d-inline-block">Bill Client</span><span class="d-inline-block">Bill Insurance</span></p>
+				</div>
+
+				<div class="col-md-6 sampleTemplate-images">
+					<img src="operantsystems/images/new_images/home-team-bg-images/PDF_Form01.png" class="img-fluid"/>
+				</div>
+
+				<div class="col-md-6 sampleTemplate-images">
+					<img src="operantsystems/images/new_images/home-team-bg-images/PDF_Form02.png" class="img-fluid"/>
+				</div>
+			</div>
+		</div>
+  
+		<!-- Modal footer -->
+		<!-- <div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div> -->
+  
+	  </div>
+	</div>
+  </div>
+
+
+  
   <!-- Modal Popup -->
   <div id="MyTemplateForm" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
-	<div class="modal-dialog engaginglearnMore-modal-dialog ">
+	<div class="modal-dialog engaginglearnMore-modal-dialog">
 		<!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header templates-modal-header">
-				<!-- <h4 class="modal-title websiteBuilderHeading">Form</h4>  -->
-			   <span id="idModalHome3Close" class="close resetSelectedRadioButtons" data-dismiss="modal">×</span>
+				<h4 class="modal-title websiteBuilderHeading white-color">Send Enquiry</h4> 
+			   <span id="idModalHome3Close" class="close resetSelectedRadioButtons white-color sendEnquiryBtn" data-dismiss="modal">×</span>
 			   <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
 			 </div>
 			<div class="modal-body">
 
 				<form name="formContactUs" class="form-horizontal templateForm" ng-submit="chkContactUs()" autocomplete="off">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 white-color">
 							<div class="form-group">
 								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Selected Template:</label>
 								<input type="text" class="form-control poppins-FontFamily font-weight-normal-poppins templateName font-14" placeholder="Name *" name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;" readonly>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 white-color">
 							<div class="form-group">
 								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Email<span class="red-color pl-1">*</span>:</label>
 								<input type="email" class="form-control poppins-FontFamily font-weight-normal-poppins font-14" placeholder="Email *" name="contactUs_emailId" ng-model="contactUs_emailId" required onpaste="return false;">
@@ -2771,7 +2810,7 @@ data-keyboard="false" data-backdrop="static">
 							</div>
 						</div>
 
-						<div class="col-md-12">
+						<div class="col-md-12 white-color">
 							<div class="form-group">
 								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Comments:<span class="red-color pl-1">*</span></label>
 								<textarea class="form-control poppins-FontFamily font-weight-normal-poppins font-14" id="exampleFormControlTextarea1" rows="3"
