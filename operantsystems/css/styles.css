@@ -2542,7 +2542,7 @@ span.active {
 }
 
 /* Fading animation */
-.fade {
+/* .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -2565,7 +2565,7 @@ span.active {
   to {
     opacity: 1;
   }
-}
+} */
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
