@@ -334,6 +334,7 @@ strong,
 
 .optimize_tag {
   font-size: 46px;
+  text-shadow: -2px 4px 4px rgba(0,0,0,0.6);
 }
 
 .copyRight-text {
@@ -6003,6 +6004,7 @@ span.active {
 .abaPocketBook {
   font-size: 60px;
   margin-left: 140px;
+  text-shadow: -2px 4px 4px rgba(0,0,0,0.6);
 }
 .carouselPad {
   /* margin-top: 160px !important; */
