@@ -2022,7 +2022,7 @@ body .progress_inner__step:hover:before {
 }
 
 body .progress_inner {
-  height: 200px;
+  height: 265px;
   /* width: 700px; */
   width: 90%;
 }
@@ -2222,7 +2222,7 @@ body .progress_inner input[type=radio] {
 }
 
 .custom-progress {
-  height: 405px;
+  height: 355px;
 }
 
 /* @import url("https://fonts.googleapis.com/css?family=Nunito:400,900");
@@ -5097,7 +5097,7 @@ span.active {
   }
 
   .contact-form {
-    padding: 35px 6px 35px 6px;
+    padding: 35px 12px 35px 12px;
   }
 
   .dynamic_curriculum .no-zindex {
@@ -5311,9 +5311,19 @@ span.active {
 
 @media only screen and (max-width: 767px) {
 
+  body .progress_inner {
+    height: 230px;
+    width: 95%;
+    margin-top: 10px;
+  }
+
+  .custom-progress {
+    height: 440px;
+  }
+
   .abaPocketBook {
-    font-size: 30px;
-    margin-left: 68px;
+    font-size: 30px !important;
+    margin-left: 68px !important;
   }
 
   .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
@@ -5437,7 +5447,7 @@ span.active {
   }
 
   .features-banner-container .image-content {
-    top: 28%;
+    top: 55%;
   }
 
   .features-banner-container .image-content > div > h2 {
