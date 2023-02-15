@@ -5311,6 +5311,14 @@ span.active {
 
 @media only screen and (max-width: 767px) {
 
+  .websiteBuilderHeading {
+    font-size: 20px !important;
+    left: 0% !important;
+    text-align: center !important;
+    margin-top: 10px !important;
+    width: 100%;
+  }
+
   body .progress_inner {
     height: 230px;
     width: 95%;
