@@ -115,7 +115,7 @@
 	<!-- COLOR OVER IMAGE -->
 	<nav id="mainNavbar" class="navbar navbar-dark  navbar-expand-md py-0 fixed-top home-navbar home1" id="home" data-stellar-background-ratio="3.5">
 		<div class="container home-menu px-0">
-			<a href="#" class="navbar-brand" ng-click="linkClick('home')"><img src="operantsystems/images/new_images/Log1.png" class="showWithScroll"/>
+			<a href="#" class="navbar-brand goToHome" ><img src="operantsystems/images/new_images/Log1.png" class="showWithScroll"/>
 				<img src="operantsystems/images/new_images/transparent_logos/logo_carosuel.png" class="showWithoutScroll"/></a>
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks">
 				<!-- <span class="icon-software-layout-header-bar"></span> -->
@@ -2900,6 +2900,18 @@ data-keyboard="false" data-backdrop="static">
 
 			setTimeout($('html, body').animate({
 				scrollTop: $(".aboutUs").offset().top - 50
+			},'slow'), 2000);
+		});
+
+		$(".goToHome").click(function () {
+			$(".nav").find(".activeNav").removeClass("activeNav");
+			$(".homes-menu").addClass("activeNav");
+
+			$('#features,#news,#team,#contactus').hide();
+			$('#home, .teamContainer,.contactUsContainer').show();
+
+			setTimeout($('html, body').animate({
+				scrollTop: $("#home").offset().top
 			},'slow'), 2000);
 		});
 
