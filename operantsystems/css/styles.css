@@ -323,6 +323,12 @@ strong,
   border-bottom: 1px solid #eaebec;
 }
 
+
+.goToHome {
+  cursor: pointer;
+}
+
+
 .sampleTemplate-links  > span{
  text-decoration: underline;
  margin: 0px 15px;
@@ -5703,7 +5709,6 @@ body .progress_inner__step {
     margin-top: 10px;
     width: auto;
   }
-
   .font-size-16,
   .features-section-list {
     font-size: 14px !important;
