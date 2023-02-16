@@ -1646,7 +1646,37 @@
 			</div>
 
 			<div class="row">
+
+
 				<div class="col-md-6 my-4 move-down text-md-left text-lg-left text-center">
+					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Sarah Walker</h4>
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
+
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily">Sarah Walker, BCBA, has over 10 years of experience working in the field of applied 
+						behavior analysis. Sarah obtained her Masters degree at Nicholls State University 
+						in Louisiana and gained extensive experience working in two of the UK's ABA schools. 
+						She is the founder and director of acornABA, an independent provider of ABA services 
+						in nurseries, schools and home settings.
+						Sarah specialises in children with autism spectrum disorder and actively oversees 
+						a caseload of programs, as well as providing supervision to aspiring BCBAs and practitioners. 
+						She is passionate about the dissemination of ABA in the UK, and supporting more families in 
+						England to access services.</p>
+				</div>
+				
+
+				<div class="col-md-6 text-center  my-4 team-parent move-up">
+					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2012.png" class="team-parent-image1"/>
+					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Sarah.png" class="team-parent-image2"/>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 text-center  my-4 team-parent">
+					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2013.png" class="team-parent-image1"/>
+					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-saul.png" class="team-parent-image2"/>
+				</div>
+
+				<div class="col-md-6 my-4 text-md-left text-lg-left text-center">
 					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Saul Axelrod</h4>
 					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
 
@@ -1664,33 +1694,6 @@
 						 In 1991 he was elected Fellow of the American Psychological Association. In 2007, 
 						 he was elected Fellow of the Association for Behavior Analysis. In 2009, he received 
 						 Florida State University's Distinguished Alumnus Award, Distinguished Educator category.</p>
-				</div>
-
-				<div class="col-md-6 text-center  my-4 team-parent move-up">
-					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2012.png" class="team-parent-image1"/>
-					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Sarah.png" class="team-parent-image2"/>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6 text-center  my-4 team-parent">
-					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2013.png" class="team-parent-image1"/>
-					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-saul.png" class="team-parent-image2"/>
-				</div>
-
-				<div class="col-md-6 my-4 text-md-left text-lg-left text-center">
-					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Sarah Walker</h4>
-					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
-
-					<p class="font-weight-normal-poppins blue-color poppins-FontFamily">Sarah Walker, BCBA, has over 10 years of experience working in the field of applied 
-						behavior analysis. Sarah obtained her Masters degree at Nicholls State University 
-						in Louisiana and gained extensive experience working in two of the UK's ABA schools. 
-						She is the founder and director of acornABA, an independent provider of ABA services 
-						in nurseries, schools and home settings.
-						Sarah specialises in children with autism spectrum disorder and actively oversees 
-						a caseload of programs, as well as providing supervision to aspiring BCBAs and practitioners. 
-						She is passionate about the dissemination of ABA in the UK, and supporting more families in 
-						England to access services.</p>
 				</div>
 			</div>
 
@@ -2287,9 +2290,9 @@
 
 	<div class="container mt-4">
 		<div class="row">
-			<div class="col-md-12 text-lg-left text-md-left text-sm-center text-center">
-				<p class="poppins-FontFamily blue-color font-12 font-weight-normal-poppins">Operant Systems provides a Practice Management Solution that run across multiple hardware platforms which is used by 
-					therapists who care for children and adults with special needs like autism. Operant Systems allows you to implement
+			<div class="col-md-12 text-lg-left text-md-left text-sm-center text-center px-2">
+				<p class="poppins-FontFamily blue-color font-12 font-weight-normal-poppins more mb-2 minimize">Operant Systems provides a Practice Management Solution that run across multiple hardware platforms which is used by 
+					therapists who care for children and adults with special needs like autism.Operant Systems allows you to implement
 					 skills acquisition programs, behavior management strategies, and behavior management plans. Operant Systems autism 
 					 software tools can be used by behavior analysts, speech therapists, occupational therapists, and physical therapists.
 					  Operant Systems has a dynamic curriculum and behavior management library. Operant Systems is software has an open 
@@ -3113,7 +3116,34 @@ data-keyboard="false" data-backdrop="static">
 			}
 		});
 
-		
+		$(function() {
+
+		var minimized_elements = $('p.minimize');
+
+		minimized_elements.each(function() {
+		var t = $(this).text();
+		if (t.length < 197) return;
+
+		$(this).html(
+			t.slice(0, 197) + '<span>... </span><a href="#" class="more">Read more</a>' +
+			'<span style="display:none;">' + t.slice(100, t.length) + ' <a href="#" class="less">Read less</a></span>'
+		);
+
+		});
+
+		$('a.more', minimized_elements).click(function(event) {
+		event.preventDefault();
+		$(this).hide().prev().hide();
+		$(this).next().show();
+		});
+
+		$('a.less', minimized_elements).click(function(event) {
+		event.preventDefault();
+		$(this).parent().hide().prev().show().prev().show();
+		});
+
+		});
+
 
 	</script>
 	<script src="operantsystems/js/smoothscroll.js"></script>
