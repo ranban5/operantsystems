@@ -1853,7 +1853,60 @@ strong,
   color: black;
 }
 
-/* santosh */
+/* custom radio buttons */
+
+.radiobutton:checked,
+.radiobutton:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.radiobutton:checked + label,
+.radiobutton:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #00405b;
+}
+.radiobutton:checked + label:before,
+.radiobutton:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #00405b;
+    border-radius: 100%;
+    background: #fff;
+}
+.radiobutton:checked + label:after,
+.radiobutton:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #e36626;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.radiobutton:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.radiobutton:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* progress bar */
 
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,900");
 body .progress_inner #step-1:checked+input+input+input+div+div+div+div>.box_base,
