@@ -5329,7 +5329,7 @@ body .progress_inner__step {
   }
 
   .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
-    top: 0px;
+    top: 20px;
   }
 
   .engaginglearnMore-modal-dialog{
