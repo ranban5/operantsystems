@@ -3144,6 +3144,11 @@ data-keyboard="false" data-backdrop="static">
 
 		});
 
+		$(document).on('click', '.teamplates-box-shadow', function () {
+			var img_to_load = $(this).find('img')[0].src,
+        	imgWindow = window.open(img_to_load, 'imgWindow');
+		});
+
 
 	</script>
 	<script src="operantsystems/js/smoothscroll.js"></script>
