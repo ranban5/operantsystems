@@ -598,6 +598,10 @@ strong,
   color: #e36626;
 }
 
+.new-container-content >  .row > div >div > div:last-child {
+  margin-left: 15px;
+} 
+
 .white-color {
   color: #fff;
 }
