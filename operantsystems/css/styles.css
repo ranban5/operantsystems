@@ -2004,7 +2004,7 @@ body .progress_inner__step:hover:before {
 body .progress_inner {
   height: 265px;
   /* width: 700px; */
-  width: 90%;
+  width: 60%;
 }
 
 
