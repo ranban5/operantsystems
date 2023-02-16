@@ -5059,6 +5059,10 @@ span.active {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
+  body .progress_inner__tabs .tab {
+    margin-top: 90px;
+  }
+
   .optimize_tag {
     font-size: 30px;
   }
@@ -5335,7 +5339,7 @@ body .progress_inner__step label {
 }
 
 body .progress_inner__step {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 
@@ -5778,7 +5782,7 @@ body .progress_inner__step {
   }
 
   .home-carousel .carousel-inner .carousel-item .carousel-caption {
-    margin-top: 15px;
+    margin-top: 15px !important;
   }
 
   .home-navbar.scrolled {
