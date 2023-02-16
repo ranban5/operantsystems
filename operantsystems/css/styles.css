@@ -5008,6 +5008,13 @@ span.active {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
+
+  .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,
+.team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,
+.contact-us-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+  top: 0% !important;
+}
+
   body .progress_inner__tabs .tab {
     margin-top: 90px;
   }
@@ -5090,7 +5097,6 @@ span.active {
 
   .home-carousel .carousel-caption > p,
   .team-carousel .carousel-caption > p {
-    width: 100%;
     font-size: 14px;
   }
 
@@ -5263,7 +5269,6 @@ span.active {
 }
 
 @media only screen and (max-width: 767px) {
-
 
 #divContactUs {
   padding: 22px 14px 22px 14px;
