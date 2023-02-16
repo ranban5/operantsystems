@@ -5445,7 +5445,7 @@ body .progress_inner__step {
     left: 0px;
     margin-left: 29px;
     bottom: 0px;
-    top: -9px;
+    top: 5%;
   }
 
   .team-parent-image1 {
@@ -5711,7 +5711,6 @@ body .progress_inner__step {
 
   .home-carousel .carousel-caption > p,
   .team-carousel .carousel-caption > p {
-    width: 100%;
     font-size: 14px;
     line-height: 21px;
   }
