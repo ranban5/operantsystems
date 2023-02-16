@@ -323,6 +323,10 @@ strong,
   border-bottom: 1px solid #eaebec;
 }
 
+.contactUsContainer {
+  margin: 0px 10px;
+}
+
 
 .goToHome {
   cursor: pointer;
