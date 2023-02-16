@@ -2853,6 +2853,7 @@ data-keyboard="false" data-backdrop="static">
 		};
 
 		$(".goToFeaturesFirstSection").click(function () {
+			$('.navbar-collapse').collapse('hide');
 			$(".nav").find(".activeNav").removeClass("activeNav");
 			$(".features-menu").addClass("activeNav");
 
@@ -2866,6 +2867,7 @@ data-keyboard="false" data-backdrop="static">
 		});
 		
 		$(".goToFeatures").click(function () {
+			$('.navbar-collapse').collapse('hide');
 			$(".nav").find(".activeNav").removeClass("activeNav");
 			$(".features-menu").addClass("activeNav");
 
@@ -2879,6 +2881,7 @@ data-keyboard="false" data-backdrop="static">
 		});
 
 		$(".goToAboutUs").click(function () {
+			$('.navbar-collapse').collapse('hide');
 			$("#navLinks > ul").find(".activeNav").removeClass("activeNav");
 			$(".homes-menu").addClass("activeNav");
 
@@ -2891,6 +2894,7 @@ data-keyboard="false" data-backdrop="static">
 		});
 
 		$(".goToHome").click(function () {
+			$('.navbar-collapse').collapse('hide');
 			$(".nav").find(".activeNav").removeClass("activeNav");
 			$(".homes-menu").addClass("activeNav");
 
@@ -2917,6 +2921,7 @@ data-keyboard="false" data-backdrop="static">
 		
 
 		$(document).on('click', '#footerNavLinks > ul   > li a[href^="#"]', function (e) {
+			$('.navbar-collapse').collapse('hide');
 			// target element id
 			var id = $(this).attr('href');
 			if (id === "#home") $('#home').show();
@@ -2957,6 +2962,7 @@ data-keyboard="false" data-backdrop="static">
 		});
 
 		$(document).on('click', '#navLinks > ul  a[href^="#"]', function (e) {
+			$('.navbar-collapse').collapse('hide');
 			// target element id
 			var id = $(this).attr('href');
 			if (id === "#home") $('#home').show();
