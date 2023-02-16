@@ -1986,7 +1986,7 @@ body .progress_inner__step:before {
   height: 30px;
   color: #70afd0;
   background: white;
-  line-height: 30px;
+  line-height: 27px;
   border: 3px solid #a6cde2;
   font-size: 12px;
   top: 3px;
@@ -5311,6 +5311,34 @@ span.active {
 
 @media only screen and (max-width: 767px) {
 
+
+#divContactUs {
+  padding: 22px 14px 22px 14px;
+}
+
+#divContactUs > form >div > div > div > input {
+  padding: 10px 10px;
+}
+
+#divContactUs > form >div > div > div > textarea { 
+  padding: 15px 15px  ;
+}
+
+body .progress_inner__step label {
+  padding-top: 40px;
+  top: -18px;
+  line-height: 15px;
+}
+
+.custom-thumbnailSelection {
+  margin-top: 50px;
+}
+
+body .progress_inner__step {
+  font-size: 10px;
+}
+
+
   .websiteBuilderHeading {
     font-size: 20px !important;
     left: 0% !important;
@@ -5322,11 +5350,15 @@ span.active {
   body .progress_inner {
     height: 230px;
     width: 95%;
-    margin-top: 10px;
+    margin-top: 0px;
+  }
+
+  body .progress_inner__step:before {
+    line-height: 27px;
   }
 
   .custom-progress {
-    height: 440px;
+    height: 320px;
   }
 
   .abaPocketBook {
