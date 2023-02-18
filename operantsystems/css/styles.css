@@ -327,24 +327,23 @@ strong,
   margin: 0px 10px;
 }
 
-
 .goToHome {
   cursor: pointer;
 }
 
-
-.sampleTemplate-links  > span{
- text-decoration: underline;
- margin: 0px 15px;
+.sampleTemplate-links > span {
+  text-decoration: underline;
+  margin: 0px 15px;
 }
 
-.sampleTemplate-images  img{
+.sampleTemplate-images img {
   cursor: pointer;
 }
 
 .optimize_tag {
   font-size: 46px;
-  text-shadow: -2px 4px 4px rgba(0,0,0,0.6);
+  /*text-shadow: -2px 4px 4px rgba(0, 0, 0, 0.6);*/
+  color: #00405b;
 }
 
 .copyRight-text {
@@ -602,9 +601,9 @@ strong,
   color: #e36626;
 }
 
-.new-container-content >  .row > div >div > div:last-child {
+.new-container-content > .row > div > div > div:last-child {
   margin-left: 15px;
-} 
+}
 
 .white-color {
   color: #fff;
@@ -1857,125 +1856,212 @@ strong,
 
 .radiobutton:checked,
 .radiobutton:not(:checked) {
-    position: absolute;
-    left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
 .radiobutton:checked + label,
-.radiobutton:not(:checked) + label
-{
-    position: relative;
-    padding-left: 28px;
-    cursor: pointer;
-    line-height: 20px;
-    display: inline-block;
-    color: #00405b;
+.radiobutton:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #00405b;
 }
 .radiobutton:checked + label:before,
 .radiobutton:not(:checked) + label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 18px;
-    height: 18px;
-    border: 1px solid #00405b;
-    border-radius: 100%;
-    background: #fff;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #00405b;
+  border-radius: 100%;
+  background: #fff;
 }
 .radiobutton:checked + label:after,
 .radiobutton:not(:checked) + label:after {
-    content: '';
-    width: 10px;
-    height: 10px;
-    background: #e36626;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    border-radius: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #e36626;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .radiobutton:not(:checked) + label:after {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 .radiobutton:checked + label:after {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 /* progress bar */
 
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,900");
-body .progress_inner #step-1:checked+input+input+input+div+div+div+div>.box_base,
-body .progress_inner #step-4:checked+div+div+div+div>.box_base,
-body .progress_inner #step-3:checked+input+div+div+div+div>.box_base,
-body .progress_inner #step-2:checked+input+input+div+div+div+div>.box_base {
+body
+  .progress_inner
+  #step-1:checked
+  + input
+  + input
+  + input
+  + div
+  + div
+  + div
+  + div
+  > .box_base,
+body .progress_inner #step-4:checked + div + div + div + div > .box_base,
+body
+  .progress_inner
+  #step-3:checked
+  + input
+  + div
+  + div
+  + div
+  + div
+  > .box_base,
+body
+  .progress_inner
+  #step-2:checked
+  + input
+  + input
+  + div
+  + div
+  + div
+  + div
+  > .box_base {
   top: 50%;
   left: 0px;
   opacity: 1;
 }
 
-body .progress_inner #step-1:checked+input+input+input+div+div+div+div>.box_item,
-body .progress_inner #step-4:checked+div+div+div+div>.box_item,
-body .progress_inner #step-3:checked+input+div+div+div+div>.box_item,
-body .progress_inner #step-2:checked+input+input+div+div+div+div>.box_item {
+body
+  .progress_inner
+  #step-1:checked
+  + input
+  + input
+  + input
+  + div
+  + div
+  + div
+  + div
+  > .box_item,
+body .progress_inner #step-4:checked + div + div + div + div > .box_item,
+body
+  .progress_inner
+  #step-3:checked
+  + input
+  + div
+  + div
+  + div
+  + div
+  > .box_item,
+body
+  .progress_inner
+  #step-2:checked
+  + input
+  + input
+  + div
+  + div
+  + div
+  + div
+  > .box_item {
   top: -30px;
   left: 0px;
   opacity: 0;
 }
 
-body .progress_inner #step-2:checked+input+input+div+div+div+div>.box_lid,
-body .progress_inner #step-4:checked+div+div+div+div>.box_lid {
+body
+  .progress_inner
+  #step-2:checked
+  + input
+  + input
+  + div
+  + div
+  + div
+  + div
+  > .box_lid,
+body .progress_inner #step-4:checked + div + div + div + div > .box_lid {
   top: -20px;
   left: 0px;
   opacity: 0;
 }
 
-body .progress_inner #step-2:checked+input+input+div+div+div+div>.box_item,
-body .progress_inner #step-4:checked+div+div+div+div>.box_item {
+body
+  .progress_inner
+  #step-2:checked
+  + input
+  + input
+  + div
+  + div
+  + div
+  + div
+  > .box_item,
+body .progress_inner #step-4:checked + div + div + div + div > .box_item {
   top: -10px;
   left: 0px;
   opacity: 1;
 }
 
-body .progress_inner #step-3:checked+input+div+div+div+div>.box_item,
-body .progress_inner #step-4:checked+div+div+div+div>.box_item {
+body
+  .progress_inner
+  #step-3:checked
+  + input
+  + div
+  + div
+  + div
+  + div
+  > .box_item,
+body .progress_inner #step-4:checked + div + div + div + div > .box_item {
   top: 10px;
   left: 0px;
   opacity: 1;
 }
 
-body .progress_inner #step-3:checked+input+div+div+div+div>.box_lid,
-body .progress_inner #step-4:checked+div+div+div+div>.box_lid {
+body .progress_inner #step-3:checked + input + div + div + div + div > .box_lid,
+body .progress_inner #step-4:checked + div + div + div + div > .box_lid {
   top: -1px;
   left: 0px;
   opacity: 1;
 }
 
-body .progress_inner #step-3:checked+input+div+div+div+div>.box_ribbon,
-body .progress_inner #step-4:checked+div+div+div+div>.box_ribbon {
+body
+  .progress_inner
+  #step-3:checked
+  + input
+  + div
+  + div
+  + div
+  + div
+  > .box_ribbon,
+body .progress_inner #step-4:checked + div + div + div + div > .box_ribbon {
   top: 70%;
   left: 0px;
   opacity: 0;
 }
 
-body .progress_inner #step-3:checked+input+div+div+div+div>.box_bow,
-body .progress_inner #step-4:checked+div+div+div+div>.box_bow {
+body .progress_inner #step-3:checked + input + div + div + div + div > .box_bow,
+body .progress_inner #step-4:checked + div + div + div + div > .box_bow {
   top: 0px;
   left: 0px;
   opacity: 0;
 }
 
-body .progress_inner #step-4:checked+div+div+div+div>.box_ribbon{
+body .progress_inner #step-4:checked + div + div + div + div > .box_ribbon {
   top: 50%;
   left: 0px;
   opacity: 1;
 }
 
-body .progress_inner #step-4:checked+div+div+div+div>.box_bow {
+body .progress_inner #step-4:checked + div + div + div + div > .box_bow {
   top: -10px;
   left: 0px;
   opacity: 1;
@@ -2003,10 +2089,17 @@ body .progress_inner__step:before {
   margin: auto;
 }
 
-body .progress_inner__bar--set, body .progress_inner__bar {
+body .progress_inner__bar--set,
+body .progress_inner__bar {
   height: 6px;
   left: 12%;
-  background: repeating-linear-gradient(45deg, #1ea4ec, #1ea4ec 4px, #1f8bc5 4px, #1f8bc5 10px);
+  background: repeating-linear-gradient(
+    45deg,
+    #1ea4ec,
+    #1ea4ec 4px,
+    #1f8bc5 4px,
+    #1f8bc5 10px
+  );
   transition: width 800ms cubic-bezier(0.915, 0.015, 0.3, 1.005);
   border-radius: 6px;
   width: 0;
@@ -2060,45 +2153,77 @@ body .progress_inner {
   width: 60%;
 }
 
-
-body .progress_inner #step-4:checked  + div {
+body .progress_inner #step-4:checked + div {
   width: 45%;
 }
-body .progress_inner #step-4:checked  div + div + div > .tab:nth-of-type(4) {
+body .progress_inner #step-4:checked div + div + div > .tab:nth-of-type(4) {
   opacity: 1;
   top: 0;
 }
-body .progress_inner #step-4:checked  + div + div + div + div {
+body .progress_inner #step-4:checked + div + div + div + div {
   right: 30%;
 }
-body .progress_inner #step-3:checked + input  + div {
+body .progress_inner #step-3:checked + input + div {
   width: 30%;
 }
-body .progress_inner #step-3:checked + input  + div + div + div > .tab:nth-of-type(3) {
+body
+  .progress_inner
+  #step-3:checked
+  + input
+  + div
+  + div
+  + div
+  > .tab:nth-of-type(3) {
   opacity: 1;
   top: 0;
 }
-body .progress_inner #step-3:checked + input  + div + div + div + div {
+body .progress_inner #step-3:checked + input + div + div + div + div {
   right: 50%;
 }
-body .progress_inner #step-2:checked + input + input  + div {
+body .progress_inner #step-2:checked + input + input + div {
   width: 15%;
 }
-body .progress_inner #step-2:checked + input + input + div + div + div > .tab:nth-of-type(2) {
+body
+  .progress_inner
+  #step-2:checked
+  + input
+  + input
+  + div
+  + div
+  + div
+  > .tab:nth-of-type(2) {
   opacity: 1;
   top: 0;
 }
-body .progress_inner #step-2:checked + input + input  + div + div + div + div {
+body .progress_inner #step-2:checked + input + input + div + div + div + div {
   right: 70%;
 }
-body .progress_inner #step-1:checked + input + input + input  + div {
+body .progress_inner #step-1:checked + input + input + input + div {
   width: 0%;
 }
-body .progress_inner #step-1:checked + input + input + input + div + div + div > .tab:nth-of-type(1) {
+body
+  .progress_inner
+  #step-1:checked
+  + input
+  + input
+  + input
+  + div
+  + div
+  + div
+  > .tab:nth-of-type(1) {
   opacity: 1;
   top: 0;
 }
-body .progress_inner #step-1:checked + input + input + input  + div + div + div + div {
+body
+  .progress_inner
+  #step-1:checked
+  + input
+  + input
+  + input
+  + div
+  + div
+  + div
+  + div {
   right: 90%;
 }
 body .progress_inner__step:nth-of-type(1):before {
@@ -2157,7 +2282,13 @@ body .progress_inner__status div {
   position: absolute;
 }
 body .progress_inner__status .box_base {
-  background: repeating-linear-gradient(45deg, #986c5d, #986c5d 2px, #775144 2px, #775144 4px);
+  background: repeating-linear-gradient(
+    45deg,
+    #986c5d,
+    #986c5d 2px,
+    #775144 2px,
+    #775144 4px
+  );
   width: 36px;
   height: 40px;
   z-index: 1;
@@ -2186,7 +2317,8 @@ body .progress_inner__status .box_ribbon {
   z-index: 4;
   border-radius: 1px;
 }
-body .progress_inner__status .box_bow__right, body .progress_inner__status .box_bow__left {
+body .progress_inner__status .box_bow__right,
+body .progress_inner__status .box_bow__left {
   width: 6px;
   height: 10px;
   background: #be0c21;
@@ -2224,7 +2356,7 @@ body .progress_inner__status .box_string {
   z-index: 4;
   transform: rotate(-39deg) translateX(-22px) translateY(-12px);
 }
-body .progress_inner input[type=radio] {
+body .progress_inner input[type="radio"] {
   display: none;
 }
 
@@ -2638,7 +2770,8 @@ body .progress_inner__status .box_string {
 }
 body .progress_inner input[type="radio"] {
   display: none;
-} */
+}
+*/
 
 /* santosh */
 
@@ -4183,7 +4316,6 @@ span.active {
   color: #f00;
 }
 
-
 .template-sendbtn {
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -4203,8 +4335,8 @@ span.active {
   margin-bottom: 15px;
 }
 
-
-.template-sendbtn:hover, .template-sendbtn:focus {
+.template-sendbtn:hover,
+.template-sendbtn:focus {
   background-color: #fff;
   color: #00405b;
 }
@@ -4219,12 +4351,12 @@ span.active {
   padding: 2px 4px !important;
   color: #00405b !important;
   text-shadow: none !important;
-  box-shadow: 2px 5px 7px -3px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 2px 5px 7px -3px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 5px 7px -3px rgba(0,0,0,0.75);
+  box-shadow: 2px 5px 7px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 5px 7px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 5px 7px -3px rgba(0, 0, 0, 0.75);
 }
 
-.home-navbar.scrolled .enroll-link  {
+.home-navbar.scrolled .enroll-link {
   box-shadow: none;
 }
 
@@ -4406,7 +4538,6 @@ span.active {
   margin: 20px 0px 20px 0px;
 }
 
-
 .team-carousel .carousel-item .carousel-caption {
   right: auto;
   text-align: left;
@@ -4427,7 +4558,10 @@ span.active {
 
 .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,
 .team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,
-.contact-us-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+.contact-us-carousel
+  .carousel-inner
+  .carousel-item:nth-child(1)
+  .carousel-caption {
   top: 10%;
 }
 
@@ -4441,7 +4575,10 @@ span.active {
   /* margin-top: 160px; */
 }
 
-.contact-us-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+.contact-us-carousel
+  .carousel-inner
+  .carousel-item:nth-child(1)
+  .carousel-caption {
   margin-top: 160px;
 }
 
@@ -5024,7 +5161,7 @@ span.active {
 
 .features-banner-container {
   position: relative;
-  background-image: url("../../operantsystems/images/new_images/features/feature-banner.png");
+  background-image: url("../../operantsystems/images/new_images/features/Group_2169.png");
   background-position: center center;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -5036,13 +5173,14 @@ span.active {
 .features-banner-container .image-content {
   position: absolute;
   width: 100%;
-  bottom: 18%;
+  /* bottom: 18%; */
   top: auto;
-  /* top:50%; */
+  top: 40%;
   left: 10;
   /* bottom: 0px; */
-  right: auto;
-  left: 13%;
+  /* right: auto; */
+  left: 10%;
+  color: #00405b;
 }
 
 .features-banner-container .image-content > div p {
@@ -5066,17 +5204,18 @@ span.active {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
   body .progress_inner {
     width: 80%;
   }
 
-
   .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,
-.team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,
-.contact-us-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
-  top: 0% !important;
-}
+  .team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,
+  .contact-us-carousel
+    .carousel-inner
+    .carousel-item:nth-child(1)
+    .carousel-caption {
+    top: 0% !important;
+  }
 
   body .progress_inner__tabs .tab {
     margin-top: 90px;
@@ -5332,33 +5471,31 @@ span.active {
 }
 
 @media only screen and (max-width: 767px) {
+  #divContactUs {
+    padding: 22px 14px 22px 14px;
+  }
 
-#divContactUs {
-  padding: 22px 14px 22px 14px;
-}
+  #divContactUs > form > div > div > div > input {
+    padding: 10px 10px;
+  }
 
-#divContactUs > form >div > div > div > input {
-  padding: 10px 10px;
-}
+  #divContactUs > form > div > div > div > textarea {
+    padding: 15px 15px;
+  }
 
-#divContactUs > form >div > div > div > textarea { 
-  padding: 15px 15px  ;
-}
+  body .progress_inner__step label {
+    padding-top: 40px;
+    top: -18px;
+    line-height: 15px;
+  }
 
-body .progress_inner__step label {
-  padding-top: 40px;
-  top: -18px;
-  line-height: 15px;
-}
+  .custom-thumbnailSelection {
+    margin-top: 50px;
+  }
 
-.custom-thumbnailSelection {
-  margin-top: 50px;
-}
-
-body .progress_inner__step {
-  font-size: 12px;
-}
-
+  body .progress_inner__step {
+    font-size: 12px;
+  }
 
   .websiteBuilderHeading {
     font-size: 20px !important;
@@ -5391,13 +5528,16 @@ body .progress_inner__step {
     top: 20px;
   }
 
-  .engaginglearnMore-modal-dialog{
+  .engaginglearnMore-modal-dialog {
     min-height: calc(100vh - 20px);
   }
 
   .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,
   .team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption,
-  .contact-us-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+  .contact-us-carousel
+    .carousel-inner
+    .carousel-item:nth-child(1)
+    .carousel-caption {
     margin-top: 30px;
   }
 
@@ -6465,8 +6605,9 @@ body .progress_inner__step {
 
 .abaPocketBook {
   font-size: 60px;
-  margin-left: 140px;
-  text-shadow: -2px 4px 4px rgba(0,0,0,0.6);
+  margin-left: 0px;
+  /* text-shadow: -2px 4px 4px rgba(0, 0, 0, 0.6);*/
+  color: #e36626;
 }
 .carouselPad {
   /* margin-top: 160px !important; */
