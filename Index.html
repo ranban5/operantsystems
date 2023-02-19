@@ -117,7 +117,7 @@
 		<div class="container home-menu px-0">
 			<a href="#" class="navbar-brand goToHome" ><img src="operantsystems/images/new_images/Log1.png" class="showWithScroll"/>
 				<img src="operantsystems/images/new_images/transparent_logos/logo_carosuel.png" class="showWithoutScroll"/></a>
-			<button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks">
+			<button class="navbar-toggler navBar-menu" data-toggle="collapse" data-target="#navLinks">
 				<!-- <span class="icon-software-layout-header-bar"></span> -->
 				<i class="fas fa-bars"></i>
 			</button>
@@ -3088,6 +3088,7 @@ data-keyboard="false" data-backdrop="static">
 
 		$(document).on('click', '.openEnrollmentBox', function () {
 			$('.enrollment-link').toggle();
+			$('.navbar-collapse').collapse('show');
 			// $(".enroll-link").toggleClass('addBgColor addPaddingTop');
 		});
 
@@ -3148,6 +3149,13 @@ data-keyboard="false" data-backdrop="static">
 			var img_to_load = $(this).find('img')[0].src,
         	imgWindow = window.open(img_to_load, 'imgWindow');
 		});
+
+		$(document).on('click', '.navBar-menu', function () {
+			$('.enrollment-link').hide();
+			// $('.navbar-collapse').collapse('hide');	
+		});
+
+		
 
 
 	</script>
