@@ -2365,6 +2365,10 @@ body .progress_inner input[type="radio"] {
   background-color: #fff;
 }
 
+#learnMore-NewModal  > .modal-dialog {
+  max-width: 80%;
+}
+
 /* @import url("https://fonts.googleapis.com/css?family=Nunito:400,900");
 
 .custom-progress {
@@ -5204,6 +5208,16 @@ span.active {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  #learnMore-NewModal .websiteBuilderHeading {
+    left: auto !important;
+    text-align: center !important;
+  }
+
+  #learnMore-NewModal  > .modal-dialog {
+    max-width: 100%;
+  }
+
   body .progress_inner {
     width: 80%;
   }
@@ -5471,6 +5485,11 @@ span.active {
 }
 
 @media only screen and (max-width: 767px) {
+
+  #learnMore-NewModal  > .modal-dialog {
+    max-width: 100%;
+  }
+
   #divContactUs {
     padding: 22px 14px 22px 14px;
   }
