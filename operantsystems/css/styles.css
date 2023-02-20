@@ -5620,6 +5620,7 @@ span.active {
   .home-navbar .navbar-nav > .custom-menu > a {
     margin-top: 10px;
     width: 100%;
+    margin-left: 0px;
   }
 
   .home-navbar .enrollment-menu > span {
@@ -5850,12 +5851,13 @@ span.active {
     width: 100%;
     margin-top: 10px;
     top: auto;
-    bottom: -30%;
+    bottom: -31%;
   }
 
   .home-navbar.scrolled .login-container {
     top: auto;
     right: 0px;
+    bottom: -35%;
 
   }
 
