@@ -5881,22 +5881,36 @@ span.active {
   }
 
   .home-sections .container > .row > div > h2,
-  .home-sections .container > .row > div > h1,
-  .features-section .container > .row > div > h2 {
+  .home-sections .container > .row > div > h1 {
     font-size: 21px !important;
     margin-top: 25px;
     margin-bottom: 20px;
     line-height: 30px;
   }
 
+  .features-section .container > .row > div > h2 {
+    font-size: 21px !important;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+
+  .duration_behaviour_graph  > div > div {
+    padding-top: 25px;
+  }
+
   .home-sections .container > .row > div > h3 {
     font-size: 20px;
   }
 
-  .home-sections > .container > .row > div > p,
-  .home-sections-list > li {
+  .home-sections > .container > .row > div > p {
     font-size: 14px;
     text-align: center;
+  }
+
+  .home-sections-list > li {
+    font-size: 14px;
+    text-align: left;
   }
 
   .home-sections-list {
@@ -5910,6 +5924,14 @@ span.active {
   .font-size-16,
   .features-section-list {
     font-size: 14px !important;
+  }
+
+  .features-section-list {
+    text-align: left;
+  }
+
+  .features-section-list > li {
+    margin-bottom: 15px !important;
   }
 
   .home-carousel .carousel-caption > p,
