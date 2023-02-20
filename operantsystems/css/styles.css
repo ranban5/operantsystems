@@ -5544,7 +5544,7 @@ span.active {
   }
 
   .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
-    top: 20px;
+    top: 0px;
   }
 
   .engaginglearnMore-modal-dialog {
@@ -5562,6 +5562,7 @@ span.active {
 
   .simple-logos-list {
     width: auto;
+    margin-top: 0px;
   }
 
   .child_pripority_title {
@@ -5595,8 +5596,17 @@ span.active {
     border-radius: 0px;
   }
 
-  .simple-logos-list > span {
-    width: 30%;
+  .simple-logos-list > span:nth-child(1) {
+    width: 25%;
+  }
+
+  .simple-logos-list > span:nth-child(2) {
+    width: 25%;
+  }
+
+  .simple-logos-list > span:nth-child(3) {
+    /* width: 30%; */
+    width: 20%;
   }
 
   .move-down {
@@ -5621,7 +5631,8 @@ span.active {
     left: 0px;
     margin-left: 29px;
     bottom: 0px;
-    top: 5%;
+    /* top: 5%; */
+    top: 0%;
   }
 
   .team-parent-image1 {
@@ -5683,7 +5694,8 @@ span.active {
 
   .home-carousel .carousel-inner .carousel-item:nth-child(2) .carousel-caption,
   .team-carousel .carousel-inner .carousel-item:nth-child(2) .carousel-caption {
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin-top: 0px;
   }
 
   .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
@@ -5692,7 +5704,8 @@ span.active {
 
   .team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
     width: 260px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    margin-top: 0px;
     padding-top: 0px;
   }
 
@@ -5822,6 +5835,11 @@ span.active {
 
   .data-collection-list > li {
     margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .data-collection-list > li > span:last-child  br{
+    display: none;
   }
 
   .schedule-demo-btn {
@@ -5936,8 +5954,8 @@ span.active {
   .contact-us-carousel .carousel-item,
   .team-carousel .carousel-item {
     height: auto;
-    /* min-height: 265px; */
-    min-height: 338px;
+    min-height: 265px;
+    /* min-height: 338px; */
   }
 
   .contact-us-carousel .carousel-item {
@@ -5956,7 +5974,8 @@ span.active {
   }
 
   .home-carousel .carousel-inner .carousel-item .carousel-caption {
-    margin-top: 15px !important;
+    /* margin-top: 15px !important; */
+    margin-top: 0px !important;
   }
 
   .home-navbar.scrolled {
