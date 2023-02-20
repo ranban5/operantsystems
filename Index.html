@@ -3153,6 +3153,9 @@ data-keyboard="false" data-backdrop="static">
 
 		$(document).on('click', '.navBar-menu', function () {
 			$('.enrollment-link').hide();
+			$('.user-login-menu > a').removeClass("addBgColor");
+			$(".login-container").attr("style","display:none !important");
+			$(".login-container").addClass("hide");
 		});
 	</script>
 	<script src="operantsystems/js/smoothscroll.js"></script>
