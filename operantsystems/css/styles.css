@@ -5171,7 +5171,7 @@ span.active {
   background-repeat: no-repeat;
   background-size: cover;
   height: 95vh;
-  min-height: 350px;
+  min-height: 490px;
 }
 
 .features-banner-container .image-content {
@@ -5303,7 +5303,7 @@ span.active {
   .contact-us-carousel .carousel-item,
   .team-carousel .carousel-item {
     height: auto;
-    min-height: 460px;
+    min-height: 490px;
   }
 
   .home-carousel .carousel-inner .carousel-item .carousel-caption,
@@ -5675,7 +5675,9 @@ span.active {
 
   .features-banner-container {
     height: 45vh;
-    margin-top: 55px;
+    margin-top: 70px;
+    /* margin-top: 55px; */
+    min-height: 250px;
   }
 
   .features-banner-container .image-content {
