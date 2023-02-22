@@ -2672,6 +2672,7 @@ body .progress_inner__tabs .tab {
   background: white;
   border-radius: 10px;
   transition: all 0.2s;
+  width: 100%;
 }
 body .progress_inner__tabs .tab h1 {
   margin: 0;
@@ -5485,6 +5486,11 @@ span.active {
 }
 
 @media only screen and (max-width: 767px) {
+
+  body .progress_inner__tabs .tab {
+    padding: 20px;
+    height: 100%;
+  }
 
   #learnMore-NewModal  > .modal-dialog {
     max-width: 100%;
