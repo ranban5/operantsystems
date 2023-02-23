@@ -111,7 +111,7 @@
 	<!-- =========================
  SECTION: HOME / HEADER
 ============================== -->
-	<a id="scroll-button"><i class="fas fa-arrow-circle-up"></i></a>
+	<!-- <a id="scroll-button"><i class="fas fa-arrow-circle-up"></i></a> -->
 	<!-- COLOR OVER IMAGE -->
 	<nav id="mainNavbar" class="navbar navbar-dark  navbar-expand-md py-0 fixed-top home-navbar home1" id="home" data-stellar-background-ratio="3.5">
 		<div class="container home-menu px-0">
@@ -402,9 +402,9 @@
 			</div>
 		</header>
 		<!-- Page Content -->
+		<a class="arrow-wrap bounce-arrow"><span class="arrow"></span></a>
 
-
-		<div class="py-5 medium-grey home-sections best_pratices">
+		<div class="py-5 medium-grey home-sections best_pratices" id="best_pratices">
 			<div class="container px-0">
 				<div class="row">
 					<div class="col-md-12 text-center margin-bottom-spacing mt-4">
@@ -556,9 +556,9 @@
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-md-12 text-center margin-bottom-spacing">
-						<h2 class="text-center">Personalized Tech Services Making Your Life Easier</h2>
-						<p class="text-center mb-0">We build Your Dream Website And Setting You Up For Success.</p>
-						<p class="text-center mb-5">Customize fillable forms for billing and more...</p>
+						<h2 class="text-center">Setting You Up For Success</h2>
+						<p class="text-center mb-0">We build Your Dream Website</p>
+						<p class="text-center mb-5">Customize fillable forms for billing and more</p>
 					</div>
 
 						<!-- progress bar santosh -->
@@ -2630,6 +2630,8 @@ data-keyboard="false" data-backdrop="static">
 									style="font-size:15px;"></i>&nbsp;Review the website before launching</p>
 								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
 									style="font-size:15px;"></i>&nbsp;Set a go-live date for the website</p>
+									<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+										style="font-size:15px;"></i>&nbsp;Get started with your practice management program "ABA Pocketbook"</p>
 							</div>
 						  </div>
 						  <!-- <div class='progress_inner__status'>
@@ -3184,6 +3186,30 @@ data-keyboard="false" data-backdrop="static">
 			$(".login-container").attr("style","display:none !important");
 			$(".login-container").addClass("hide");
 		});
+
+				//this is where we apply opacity to the arrow
+		$(window).scroll( function(){
+
+		//get scroll position
+		var topWindow = $(window).scrollTop();
+		//multipl by 1.5 so the arrow will become transparent half-way up the page
+		var topWindow = topWindow * 1.5;
+
+		//get height of window
+		var windowHeight = $(window).height();
+			
+		//set position as percentage of how far the user has scrolled 
+		var position = topWindow / windowHeight;
+		//invert the percentage
+		position = 1 - position;
+
+		//define arrow opacity as based on how far up the page the user has scrolled
+		//no scrolling = 1, half-way up the page = 0
+		$('.arrow-wrap').css('opacity', position);
+
+		});
+
+
 	</script>
 	<script src="operantsystems/js/smoothscroll.js"></script>
 	<script src="operantsystems/js/jquery.nav.js"></script>
