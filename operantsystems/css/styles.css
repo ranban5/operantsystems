@@ -5629,6 +5629,10 @@ border-color: #00405b transparent transparent transparent;
 
 @media only screen and (max-width: 767px) {
 
+  .arrow-wrap {
+    display: none;
+  }
+
   body .progress_inner__tabs .tab {
     padding: 20px;
     height: 100%;
