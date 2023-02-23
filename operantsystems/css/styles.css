@@ -609,6 +609,20 @@ strong,
   color: #fff;
 }
 
+.horizontal-subscribe-form .close-button {
+  margin-top: -8px;
+  position: relative;
+  right: -10px;
+  top: -8px;
+}
+
+.login-container .close-button {
+  margin-top: -8px;
+  position: relative;
+  right: -6px;
+  top: -2px;
+}
+
 .font-weight-regular-poppins {
   font-weight: 400;
 }

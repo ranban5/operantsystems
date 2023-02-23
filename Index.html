@@ -151,7 +151,7 @@
 						<div class="enrollment-link">
 							<div class="formCSS">
 								<div class="horizontal-subscribe-form">
-									
+									<span id="idModalHome3Close" class="close close-button blue-color">×</span>
 									<form name="formMail"
 										class="form-inline  ng-pristine ng-valid-email ng-invalid ng-invalid-required"
 										ng-submit="chkGetStarted()">
@@ -239,6 +239,7 @@
 						<a href="" class="nav-link poppins-FontFamily text-white font-weight-500-poppins user-login-btn" ng-click="loginPage()">User Login</a>
 
 						<div class="login-container hide  p-3" style="display: none;">
+							<span id="idModalHome3Close" class="close close-button blue-color">×</span>
 							<form class="form-horizontal" method="post" accept-charset="UTF-8">
 								<p class="error hide poppins-FontFamily font-12 font-weight-normal-poppins text-left">Invalid User Id and Password</p>
 								<div class="form-group text-left">
@@ -270,7 +271,7 @@
 	<section class="home2 subSections" id="home">
 
 		<header class="header  home1" data-stellar-background-ratio="3.5">
-			<div id="indicators" class="carousel slide home-carousel" data-ride="carousel" data-interval="5000" data-pause="false">
+			<div id="indicators" class="carousel slide home-carousel" data-ride="carousel" data-interval="false" data-pause="false">
 				<ol class="carousel-indicators">
 					<li data-target="#indicators" data-slide-to="0" class="active"></li>
 					<li data-target="#indicators" data-slide-to="1"></li>
@@ -3185,6 +3186,19 @@ data-keyboard="false" data-backdrop="static">
 			$('.user-login-menu > a').removeClass("addBgColor");
 			$(".login-container").attr("style","display:none !important");
 			$(".login-container").addClass("hide");
+		});
+
+		$(document).on('click', '.horizontal-subscribe-form .close-button', function () {
+			$(this).parent().parent().parent().hide();
+		});
+
+		$(document).on('click', '.login-container .close-button', function () {
+			$(".login-container").addClass("hide");
+			$('.user-login-menu > a').removeClass("addBgColor");
+			$(".login-container").attr("style","display:none !important");
+			$("#stamp-navigation").removeClass("in");
+			$("#stamp-navigation").attr("aria-expanded","false");
+			$('.user-login-menu > a').removeClass('addBgColor');
 		});
 
 				//this is where we apply opacity to the arrow
