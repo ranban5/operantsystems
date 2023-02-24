@@ -2844,6 +2844,10 @@ body .progress_inner input[type="radio"] {
   width: 100%;
 }
 
+.carousel-image-br {
+  display: none;
+}
+
 .gallery img {
   transition: transform 1s ease;
 }
@@ -5654,6 +5658,11 @@ border-color: #00405b transparent transparent transparent;
 
 @media only screen and (max-width: 767px) {
 
+  .carousel-image-br {
+    display: block;
+  }
+  
+
   .arrow-wrap {
     display: none;
   }
@@ -5745,7 +5754,7 @@ border-color: #00405b transparent transparent transparent;
   }
 
   .child_pripority_title {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .optimize_tag {
@@ -5879,10 +5888,16 @@ border-color: #00405b transparent transparent transparent;
   .team-carousel .carousel-inner .carousel-item:nth-child(2) .carousel-caption {
     /* margin-top: 40px; */
     margin-top: 0px;
+    width: 100%;
+    text-align: left;
+    top: 1%;
   }
 
   .home-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
-    width: 300px;
+    /* width: 300px; */
+    width: 100%;
+    text-align: left;
+    top: 1%;
   }
 
   .team-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
@@ -6128,7 +6143,7 @@ border-color: #00405b transparent transparent transparent;
 
   .home-carousel .carousel-caption > h2,
   .team-carousel .carousel-caption > h2 {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 30px;
   }
   .showWithoutScroll {
@@ -6167,8 +6182,9 @@ border-color: #00405b transparent transparent transparent;
   .home-carousel .carousel-item,
   .contact-us-carousel .carousel-item,
   .team-carousel .carousel-item {
-    height: auto;
-    min-height: 265px;
+    height: 100%;
+    min-height: 250px;
+    height: 250px;
     /* min-height: 338px; */
   }
 
