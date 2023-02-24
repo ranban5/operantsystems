@@ -2837,19 +2837,22 @@ body .progress_inner input[type="radio"] {
   right: 0px; */
 }
 
-.gallery {
-  /* overflow: hidden; */
+.gallery:nth-child(2) .thumbnails .teamplates-box-shadow > img,
+.gallery:nth-child(3) .thumbnails .teamplates-box-shadow > img,
+.gallery:nth-child(4) .thumbnails .teamplates-box-shadow > img {
+  height: 1000px;
+  width: 100%;
 }
 
 .gallery img {
-  transition: 1s ease;
+  transition: transform .1s;
 }
 
-.gallery:hover img {
+.gallery img:hover{
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  transition: 1s ease;
+  transition: transform .1s;
 }
 
 #idModalHome3Body {
@@ -5045,6 +5048,7 @@ span.active {
   border-radius:50%;
   font-size:0.5em;
   display:block;
+  cursor: pointer;
   box-shadow:0px 0px 5px 0px #333;
   margin-bottom: 10px;
   /* -webkit-transform:rotate(360deg) */
@@ -5366,6 +5370,13 @@ border-color: #00405b transparent transparent transparent;
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
+  .gallery:nth-child(2) .thumbnails .teamplates-box-shadow > img,
+  .gallery:nth-child(3) .thumbnails .teamplates-box-shadow > img,
+  .gallery:nth-child(4) .thumbnails .teamplates-box-shadow > img {
+    height: 600px;
+    width: 100%;
+}
+
   #learnMore-NewModal .websiteBuilderHeading {
     left: auto !important;
     text-align: center !important;
@@ -5650,6 +5661,8 @@ border-color: #00405b transparent transparent transparent;
   body .progress_inner__tabs .tab {
     padding: 20px;
     height: 100%;
+    left: 20px;
+    width: 90%;
   }
 
   #learnMore-NewModal  > .modal-dialog {
