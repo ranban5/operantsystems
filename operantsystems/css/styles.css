@@ -2837,10 +2837,14 @@ body .progress_inner input[type="radio"] {
   right: 0px; */
 }
 
+.carousel-indicators li {
+  border: 1px solid #00405b;
+}
+
 .gallery:nth-child(2) .thumbnails .teamplates-box-shadow > img,
 .gallery:nth-child(3) .thumbnails .teamplates-box-shadow > img,
 .gallery:nth-child(4) .thumbnails .teamplates-box-shadow > img {
-  height: 1000px;
+  /* height: 1000px; */
   width: 100%;
 }
 
@@ -4400,10 +4404,11 @@ span.active {
 }
 
 .demo-date-time-container {
-  width: 170px !important;
+  width: 160px !important;
   display: inline-block;
   margin-top: 10px !important;
 }
+
 
 .demo-date-time-container > input {
   width: 115px !important;
@@ -5377,7 +5382,6 @@ border-color: #00405b transparent transparent transparent;
   .gallery:nth-child(2) .thumbnails .teamplates-box-shadow > img,
   .gallery:nth-child(3) .thumbnails .teamplates-box-shadow > img,
   .gallery:nth-child(4) .thumbnails .teamplates-box-shadow > img {
-    height: 600px;
     width: 100%;
 }
 
@@ -5658,6 +5662,7 @@ border-color: #00405b transparent transparent transparent;
 
 @media only screen and (max-width: 767px) {
 
+
   .carousel-image-br {
     display: block;
   }
@@ -5775,7 +5780,8 @@ border-color: #00405b transparent transparent transparent;
 
   .navbar-dark .navbar-toggler {
     color: rgba(255, 255, 255, 1);
-    border-color: rgba(255, 255, 255, 1);
+    border: none;
+    /* border-color: rgba(255, 255, 255, 1); */
   }
 
   .activeNav {
