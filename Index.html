@@ -2660,6 +2660,7 @@ data-keyboard="false" data-backdrop="static">
 								<input type="radio" id="check1" name="templates" class="radiobutton" value="check1" datasrc="Template 1">
 								<label for="check1">Template 1</label></span>
 							<div class="teamplates-box-shadow">
+								<img src="operantsystems/images/new_images/templates/Template01.jpg" class="img-fluid d-none"/>
 								<img src="operantsystems/images/new_images/templates/Template01_small.jpg" class="img-fluid"/>
 							</div>
 							
@@ -2675,6 +2676,7 @@ data-keyboard="false" data-backdrop="static">
 								<input type="radio" id="check2" name="templates" class="radiobutton" value="check2" datasrc="Template 2">
 								<label for="check2">Template 2</label></span>
 							<div class="teamplates-box-shadow">
+								<img src="operantsystems/images/new_images/templates/Template02.jpg" class="img-fluid d-none"/>
 								<img src="operantsystems/images/new_images/templates/Template02_small.jpg" class="img-fluid"/>
 							</div>
 							
@@ -2691,6 +2693,7 @@ data-keyboard="false" data-backdrop="static">
 								<input type="radio" id="check3" name="templates" class="radiobutton" value="check3" datasrc="Template 3">
 								<label for="check3">Template 3</label></span>
 							<div class="teamplates-box-shadow">
+								<img src="operantsystems/images/new_images/templates/Template03.jpg" class="img-fluid d-none"/>
 								<img src="operantsystems/images/new_images/templates/Template03_small.jpg" class="img-fluid"/>
 							</div>
 							
@@ -3212,8 +3215,14 @@ data-keyboard="false" data-backdrop="static">
 
 		$(document).on('click', '.teamplates-box-shadow', function () {
 			debugger;
-			var img_to_load = $(this).find('img')[0].src,
-        	imgWindow = window.open(img_to_load, 'imgWindow');
+			
+			if($(this).children('img').hasClass('d-none')) {
+				var img_to_load = $(this).find('img')[0].src;
+				var imgWindow = window.open(img_to_load, 'imgWindow');
+			} else {
+				var img_to_load = $(this).find('img')[0].src;
+				var imgWindow = window.open(img_to_load, 'imgWindow');
+			}
 		});
 
 		$(document).on('click', '.navBar-menu', function () {
