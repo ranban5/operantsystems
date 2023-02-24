@@ -5322,7 +5322,7 @@ border-color: #00405b transparent transparent transparent;
 
 .features-banner-container {
   position: relative;
-  background-image: url("../../operantsystems/images/new_images/features/Group_2169.png");
+  background-image: url("../../operantsystems/images/new_images/home-team-bg-images/Group_2114.png");
   background-position: center center;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -5840,14 +5840,15 @@ border-color: #00405b transparent transparent transparent;
   }
 
   .features-banner-container {
-    height: 45vh;
+    /* height: 45vh; */
+    height: 100%;
     margin-top: 70px;
     /* margin-top: 55px; */
     min-height: 250px;
   }
 
   .features-banner-container .image-content {
-    top: 55%;
+    top: 48%;
   }
 
   .features-banner-container .image-content > div > h2 {
