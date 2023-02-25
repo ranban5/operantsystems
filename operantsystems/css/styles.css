@@ -5662,6 +5662,16 @@ border-color: #00405b transparent transparent transparent;
 
 @media only screen and (max-width: 767px) {
 
+  .horizontal-subscribe-form .close-button {
+    right: 2px;
+    top: 11px;
+  }
+
+  .login-container .close-button {
+    right: -6px;
+    top: 0px;
+  }
+
 
   .carousel-image-br {
     display: block;
