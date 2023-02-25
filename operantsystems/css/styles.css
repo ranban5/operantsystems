@@ -2379,7 +2379,7 @@ body .progress_inner input[type="radio"] {
   background-color: #fff;
 }
 
-#learnMore-NewModal  > .modal-dialog {
+#learnMore-NewModal > .modal-dialog {
   max-width: 80%;
 }
 
@@ -2856,7 +2856,7 @@ body .progress_inner input[type="radio"] {
   transition: transform 1s ease;
 }
 
-.gallery img:hover{
+.gallery img:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -4409,7 +4409,6 @@ span.active {
   margin-top: 10px !important;
 }
 
-
 .demo-date-time-container > input {
   width: 115px !important;
   border-radius: 5px !important;
@@ -4674,6 +4673,9 @@ span.active {
   border-radius: 10px;
   /* width: 200px; */
   text-align: left;
+}
+.more-buttons:hover {
+  background: #fffaf6;
 }
 
 .home-navbar {
@@ -5040,73 +5042,73 @@ span.active {
   text-align: center;
 }
 
-
-
 /* the important styles */
 
 .arrow-wrap {
-  position:absolute;
-  z-index:1;
-  left:50%;
-  bottom:0em;
-  margin-left:-5em;
-  background:#00405b;
-  width:8em;
-  height:8em;
-  padding:3em 2em;
-  border-radius:50%;
-  font-size:0.5em;
-  display:block;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 0em;
+  margin-left: -5em;
+  background: #00405b;
+  width: 8em;
+  height: 8em;
+  padding: 3em 2em;
+  border-radius: 50%;
+  font-size: 0.5em;
+  display: block;
   cursor: pointer;
-  box-shadow:0px 0px 5px 0px #333;
+  box-shadow: 0px 0px 5px 0px #333;
   margin-bottom: 10px;
   /* -webkit-transform:rotate(360deg) */
 }
 
 .arrow {
-  float:left;
-  position:relative;
+  float: left;
+  position: relative;
   width: 0px;
   height: 0px;
   border-style: solid;
   border-width: 2em 2em 0 2em;
   border-color: #ffffff transparent transparent transparent;
-    /* -webkit-transform:rotate(360deg) */
-}
-
-.arrow:after {
-  content:'';
-  position:absolute;
-  top:-3.3em;
-  left:-3em;
-  width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 3em 3em 0 3em;
-border-color: #00405b transparent transparent transparent;
   /* -webkit-transform:rotate(360deg) */
 }
 
-
-.hint {
-  position:absolute;
-  top:0.6em;
-  width:100%;
-  left:0;
-  font-size:2em;
-  font-style:italic;
-  text-align:center;
-  color:#fff;
-  opacity:0;
+.arrow:after {
+  content: "";
+  position: absolute;
+  top: -3.3em;
+  left: -3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #00405b transparent transparent transparent;
+  /* -webkit-transform:rotate(360deg) */
 }
 
+.hint {
+  position: absolute;
+  top: 0.6em;
+  width: 100%;
+  left: 0;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+}
 
 .arrow-wrap:hover .hint {
-  opacity:1;
+  opacity: 1;
 }
 
 @-moz-keyframes bounce-arrow {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
   }
@@ -5120,7 +5122,11 @@ border-color: #00405b transparent transparent transparent;
   }
 }
 @-webkit-keyframes bounce-arrow {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -5134,7 +5140,11 @@ border-color: #00405b transparent transparent transparent;
   }
 }
 @keyframes bounce-arrow {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -5179,7 +5189,6 @@ border-color: #00405b transparent transparent transparent;
     -webkit-animation: arrows 2.8s 0.4s;
     -webkit-animation-delay: 3s;
   } */
-
 
 #scroll-button {
   display: inline-block;
@@ -5378,19 +5387,18 @@ border-color: #00405b transparent transparent transparent;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
   .gallery:nth-child(2) .thumbnails .teamplates-box-shadow > img,
   .gallery:nth-child(3) .thumbnails .teamplates-box-shadow > img,
   .gallery:nth-child(4) .thumbnails .teamplates-box-shadow > img {
     width: 100%;
-}
+  }
 
   #learnMore-NewModal .websiteBuilderHeading {
     left: auto !important;
     text-align: center !important;
   }
 
-  #learnMore-NewModal  > .modal-dialog {
+  #learnMore-NewModal > .modal-dialog {
     max-width: 100%;
   }
 
@@ -5661,12 +5669,9 @@ border-color: #00405b transparent transparent transparent;
 }
 
 @media only screen and (max-width: 767px) {
-
-
   .carousel-image-br {
     display: block;
   }
-  
 
   .arrow-wrap {
     display: none;
@@ -5679,7 +5684,7 @@ border-color: #00405b transparent transparent transparent;
     width: 90%;
   }
 
-  #learnMore-NewModal  > .modal-dialog {
+  #learnMore-NewModal > .modal-dialog {
     max-width: 100%;
   }
 
@@ -6042,7 +6047,7 @@ border-color: #00405b transparent transparent transparent;
     font-size: 13px;
   }
 
-  .data-collection-list > li > span:last-child  br{
+  .data-collection-list > li > span:last-child br {
     display: none;
   }
 
@@ -6061,7 +6066,6 @@ border-color: #00405b transparent transparent transparent;
     top: auto;
     right: 0px;
     bottom: -35%;
-
   }
 
   .margin-bottom-spacing {
@@ -6098,7 +6102,7 @@ border-color: #00405b transparent transparent transparent;
     line-height: 30px;
   }
 
-  .duration_behaviour_graph  > div > div {
+  .duration_behaviour_graph > div > div {
     padding-top: 25px;
   }
 
