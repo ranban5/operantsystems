@@ -2852,35 +2852,38 @@ data-keyboard="false" data-backdrop="static">
 			   <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
 			 </div>
 			<div class="modal-body">
-
-				<form name="formContactUs" class="form-horizontal templateForm" ng-submit="chkContactUs()" autocomplete="off">
+				<form name="formMail"
+				class="form-inline  ng-pristine ng-valid-email ng-invalid ng-invalid-required"
+				ng-submit="chkGetTemplateStarted()" autocomplete="off">
+				<!-- <form name="formContactUs" class="form-horizontal templateForm" ng-submit="chkContactUs()" autocomplete="off"> -->
 					<div class="row">
 						<div class="col-md-6 white-color">
 							<div class="form-group">
 								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Selected Template:</label>
-								<input type="text" class="form-control poppins-FontFamily font-weight-normal-poppins templateName font-14" placeholder="Name *" name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;" readonly>
+								<input type="text" class="form-control sendEnquiryfields poppins-FontFamily font-weight-normal-poppins templateName font-14" placeholder="Name *" name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;" readonly>
 							</div>
 						</div>
+
 						<div class="col-md-6 white-color">
 							<div class="form-group">
 								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Email<span class="red-color pl-1">*</span>:</label>
-								<input type="email" class="form-control poppins-FontFamily font-weight-normal-poppins font-14" placeholder="Email *" name="contactUs_emailId" ng-model="contactUs_emailId" required onpaste="return false;">
+								<input type="email" class="form-control  sendEnquiryfields poppins-FontFamily font-weight-normal-poppins font-14" placeholder="Email *"  id="cf-email" name="email" ng-model="emailId" required onpaste="return false;">
 							</div>
 
 							<div class="error-container"
-								ng-show="formContactUs.contactUs_emailId.$dirty && formContactUs.contactUs_emailId.$invalid">
-								<small class="text-danger" ng-show="formContactUs.contactUs_emailId.$error.required">
+							ng-show="formMail.email.$dirty &amp;&amp; formMail.email.$invalid">
+								<small class="text-danger" ng-show="formMail.email.$error.required">
 									Your email is required.
 								</small>
-								<small class="text-danger" ng-show="formContactUs.contactUs_emailId.$error.email">
+								<small class="text-danger"  ng-show="formMail.email.$error.email">
 									Your email is not valid
 								</small>
 							</div>
 						</div>
-<!-- 
+
 						<div class="col-md-12 white-color">
 
-							<div class="col-md-6 input-group ng-isolate-scope demo-date-time-container"
+							<div class=" input-group ng-isolate-scope sendEnquiry-date-time-container"
 							moment-picker="demoDate" format="MM-DD-YYYY">
 							<label class="poppins-FontFamily font-12 white-color font-weight-normal-poppins d-block mb-1">Select Date</label>
 							<input
@@ -2895,7 +2898,7 @@ data-keyboard="false" data-backdrop="static">
 							
 						</div>
 
-						<div class="col-md-6 input-group ng-isolate-scope demo-date-time-container"
+						<div class=" input-group ng-isolate-scope sendEnquiry-date-time-container"
 							moment-picker="demoTime" format="HH:mm">
 							<label class="poppins-FontFamily font-12 white-color font-weight-normal-poppins d-block mb-1">Select Date</label>
 							<input
@@ -2908,19 +2911,20 @@ data-keyboard="false" data-backdrop="static">
 								</button>
 							</span>	
 						</div>
-						</div> -->
+						</div>
 
 						
 
 						<div class="col-md-12 white-color">
 							<div class="form-group">
 								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Comments:<span class="red-color pl-1">*</span></label>
-								<textarea class="form-control poppins-FontFamily font-weight-normal-poppins font-14" id="exampleFormControlTextarea1" rows="3"
-									placeholder="Message *" name="contactUs_message" ng-model="contactUs_message" required onpaste="return false;"></textarea>
+								<textarea class="form-control sendEnquiryfields poppins-FontFamily font-weight-normal-poppins font-14" id="sendEnquiry_message" rows="3"
+									placeholder="Message *" name="message" ng-model="sendEnquiry_message" required onpaste="return false;"></textarea>
 							</div>
 						</div>
-						<div class="col-md-12 text-right">
-							<button type="submit" class="btn btn-primary template-sendbtn poppins-FontFamily font-14 white-color">Send</button>
+						<div class="col-md-12 text-right mt-3">
+							<button type="button" class="btn btn-primary  poppins-FontFamily template-sendbtn font-14 white-color" ng-click="saveNamePhoneComments()">Send</button>
+							<!-- <button type="submit" class="btn btn-primary template-sendbtn poppins-FontFamily font-14 white-color">Send</button> -->
 							<!-- <button type="submit" class="btn navbar-register-button">Send</button> -->
 						</div>
 					</div>

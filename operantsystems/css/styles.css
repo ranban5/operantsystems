@@ -728,6 +728,10 @@ strong,
   box-shadow: none;
 }
 
+.sendEnquiryfields {
+  width: 100% !important;
+}
+
 /* --------------------------------------
 =========================================
    3. SECTION STYLES
@@ -4419,6 +4423,28 @@ span.active {
   border: none;
 }
 
+.sendEnquiry-date-time-container  {
+  width: 45% !important;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.sendEnquiry-date-time-container > input {
+  width: 70% !important;
+  border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  padding: 12px 10px;
+  outline: none;
+  border: none;
+}
+
+.sendEnquiry-date-time-container:nth-child(2){
+  margin-left: 34px;
+}
+
+
 .select-date-icon {
   display: inline-block;
 }
@@ -5669,6 +5695,10 @@ span.active {
 }
 
 @media only screen and (max-width: 767px) {
+
+  .sendEnquiry-date-time-container {
+    width: 42% !important;
+  }
 
 
   .carousel-image-br {

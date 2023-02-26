@@ -543,7 +543,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
         "deviceId": "angularWS"
       };
       var url = webSiteName + sendRequestURL;
-
+      $('.template-sendbtn').addClass('hasBeenSend');
       //return $http.post(url, dataString);
       return $http({
         method: 'POST',
@@ -759,6 +759,97 @@ indexApp.controller("indexController", function($scope, $http, $window) {
     };
 
 
+
+ //Get Start button click 
+    $scope.chkGetTemplateStarted = function() {
+        if (!$scope.formMail.email.$valid) {
+          return false;
+        }
+
+
+     if ( $("#idDevicesTypeColor").css("color") === "rgb(128, 0, 0)") {
+       deviceType = 'mobile';
+     }
+     else if ( $("#idDevicesTypeColor").css("color") === "rgb(255, 192, 203)") {
+       deviceType = "iPadPortrait";
+     }
+     else if ( $("#idDevicesTypeColor").css("color") === "rgb(0, 255, 0)") {
+       deviceType = "iPadLandscape";
+     }
+     else {
+       deviceType = 'web';
+     }
+
+
+        //Require to check email validation
+        if ($("#cf-email").val() === "" || $("#cf-email").val() === "Enter your Email") {
+            alert("Please enter you valid Email Id...");
+            return false;
+        }
+
+        //Require to check is present locally, which is sent already to the web
+        var lstEmail = [];
+        if (localStorage.getItem("localEmailDetails") !== null) {
+          lstEmail = JSON.parse(localStorage.getItem("localEmailDetails"));
+        }
+
+        var flg = false;
+        var cntSender = 0;
+        var nameSender = "";
+        var commentsSender = "";
+
+        if (localStorage.getItem("localEmailDetails") !== null) {
+            $.each(lstEmail, function(aryIdx, aryVal) {
+                console.log(aryVal.emailId);
+                if (aryVal.emailId === $("#cf-email").val()) {
+                    flg = true;
+                    cntSender = aryVal.senderCount;
+                    nameSender = aryVal.senderName;
+                    commentsSender = aryVal.senderComments;
+                    return false;
+                }
+            });
+        }
+
+      if ( deviceType === 'mobile') {
+        $("#cf-email").val($("#cf-emailM").val());
+      }
+      else if ( deviceType === 'iPadPortrait') {
+        $("#cf-email").val($("#cf-emailP").val());
+      }
+      else if ( deviceType === 'iPadLandscape') {
+        $("#cf-email").val($("#cf-emailL").val());
+      }
+
+
+
+        if (flg && cntSender > 4) {
+          return;
+        }
+        else {
+            lstEmail.push({ "emailId": $("#cf-email").val(),
+                "senderName": nameSender,
+                "senderComments": commentsSender,
+                "senderCount": cntSender + 1
+            });
+            localStorage.setItem("localEmailDetails", JSON.stringify(lstEmail));
+        }
+
+        var jsonStr = {
+            "sendUpdateRequest":
+                                { "emailId": $("#cf-email").val(),
+                                    "senderName": nameSender,
+                                    "senderComments": commentsSender
+                                }
+        };
+
+        console.log(JSON.stringify(jsonStr));
+        callingWS("sendMail", jsonStr);
+    };
+
+  
+
+
     //Get Start button click 
     $scope.chkGetStarted = function() {
         if (!$scope.formMail.email.$valid) {
@@ -855,6 +946,70 @@ indexApp.controller("indexController", function($scope, $http, $window) {
 
         console.log(JSON.stringify(jsonStr));
         callingWS("sendMail", jsonStr);
+    };
+
+
+    $scope.saveNamePhoneComments = function() {
+      if ( deviceType === 'mobile') {
+        $("#cf-email").val($("#cf-emailM").val());
+        $("#cf-name").val($("#cf-nameM").val());
+        $("#sendEnquiry_message").val($("#cf-phoneM").val());
+      }
+      else if ( deviceType === 'iPadPortrait') {
+        $("#cf-email").val($("#cf-emailP").val());
+        $("#cf-name").val($("#cf-nameP").val());
+        $("#sendEnquiry_message").val($("#cf-phoneP").text());
+      }
+      else if ( deviceType === 'iPadLandscape') {
+        $("#cf-email").val($("#cf-emailL").val());
+        $("#cf-name").val($("#cf-nameL").val());
+        $("#sendEnquiry_message").val($("#cf-phoneL").text());
+      }
+
+
+        var jsonStr = {
+            "sendUpdateRequest":
+                                { "emailId": $("#cf-email").val(),
+                                    "senderName": $("#cf-name").val(),
+                                    "senderComments": $("#sendEnquiry_message").val(),
+                                    "demoDate": $scope.demoDate,
+                                    "demoTime": $scope.demoTime
+
+                                }
+        };
+
+        //Require to check is present locally, which is sent already to the web
+        let lstEmail = [];
+        if (localStorage.getItem("localEmailDetails") !== null) {
+          lstEmail = JSON.parse(localStorage.getItem("localEmailDetails"));
+        }
+
+        let flg = false;
+        let cntSender = 0;
+        if (localStorage.getItem("localEmailDetails") !== null) {
+            $.each(lstEmail, function(aryIdx, aryVal) {
+                console.log(aryVal.emailId);
+                if (aryVal.emailId === $("#cf-email").val() && aryVal.senderName === $("#cf-name").val() && aryVal.senderComments === $("#sendEnquiry_message").val()) {
+                    flg = true;
+                    cntSender = aryVal.senderCount;
+                    return false;
+                }
+            });
+        }
+
+        if (flg) {
+          return;
+        }
+        else {
+            lstEmail.push({ "emailId": $("#cf-email").val(),
+                "senderName": $("#cf-name").val(),
+                "senderComments": $("#sendEnquiry_message").val(),
+                "senderCount": (cntSender + 1)
+            });
+            localStorage.setItem("localEmailDetails", JSON.stringify(lstEmail));
+        }
+
+        callingWS("sendMailForDemo", jsonStr);
     };
 
     $scope.saveNamePhone = function() {
@@ -971,7 +1126,6 @@ indexApp.controller("indexController", function($scope, $http, $window) {
         callingWS("contactUs", jsonStr);
 
         $("#divContactUsThankyou").removeClass("hide");
-        $('.template-sendbtn').addClass('hasBeenSend');
         // $("#divContactUs").addClass("hide");
     };
 
