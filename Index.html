@@ -123,19 +123,19 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navLinks">
 				<ul class="navbar-nav ml-auto nav navbar-right small-text pr-2">
-					<li class="nav-item activeNav custom-menu menuBarItem homes-menu">
+					<li class="nav-item activeNav custom-menu menuBarItem homes-menu generic-menu">
 						<a href="#home" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Home</a>
 					</li>
-					<li class="nav-item custom-menu menuBarItem features-menu" ng-click="linkClick('features')">
+					<li class="nav-item custom-menu menuBarItem features-menu generic-menu" ng-click="linkClick('features')">
 						<a href="#features" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Features</a>
 					</li>
-					<li class="nav-item custom-menu menuBarItem team-menu" ng-click="linkClick('team')">
+					<li class="nav-item custom-menu menuBarItem team-menu generic-menu" ng-click="linkClick('team')">
 						<a href="#team" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Team</a>
 					</li>
-					<li class="nav-item custom-menu menuBarItem news-menu" ng-click="linkClick('news')">
+					<li class="nav-item custom-menu menuBarItem news-menu generic-menu" ng-click="linkClick('news')">
 						<a href="#news" class="nav-link poppins-FontFamily font-weight-500-poppins">News</a>
 					</li>
-					<li class="nav-item custom-menu menuBarItem contactus-menu" ng-click="linkClick('contactus')">
+					<li class="nav-item custom-menu menuBarItem contactus-menu generic-menu" ng-click="linkClick('contactus')">
 						<a href="#contactus"
 							class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Contact Us</a>
 					</li>
@@ -3276,6 +3276,11 @@ data-keyboard="false" data-backdrop="static">
 			$('html, body').animate({
 				scrollTop: $(".best_pratices").offset().top
 			}, 2000);
+		});
+
+		var i = 0; //index of the panel 
+		$(document).on('click', '.generic-menu', function () {   
+			$('.home-carousel,.team-carousel').carousel(i);
 		});
 
 
