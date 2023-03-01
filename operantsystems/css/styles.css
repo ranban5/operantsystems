@@ -4423,7 +4423,7 @@ span.active {
   border: none;
 }
 
-.sendEnquiry-date-time-container  {
+.sendEnquiry-date-time-container {
   width: 45% !important;
   display: inline-block;
   margin-top: 15px;
@@ -4440,10 +4440,9 @@ span.active {
   border: none;
 }
 
-.sendEnquiry-date-time-container:nth-child(2){
+.sendEnquiry-date-time-container:nth-child(2) {
   margin-left: 34px;
 }
-
 
 .select-date-icon {
   display: inline-block;
@@ -4934,7 +4933,7 @@ span.active {
 }
 
 .personalized_tech_img_pdf img {
-  width: 80%;
+  width: 100%;
 }
 
 .home-navbar .showWithScroll {
@@ -5695,11 +5694,9 @@ span.active {
 }
 
 @media only screen and (max-width: 767px) {
-
   .sendEnquiry-date-time-container {
     width: 42% !important;
   }
-
 
   .carousel-image-br {
     display: block;
