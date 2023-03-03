@@ -5694,6 +5694,12 @@ span.active {
 }
 
 @media only screen and (max-width: 767px) {
+
+  .horizontal-subscribe-form .close-button {
+    right: 0px;
+    top: 8px;
+  }
+
   .sendEnquiry-date-time-container {
     width: 42% !important;
   }
