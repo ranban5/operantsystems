@@ -2157,6 +2157,13 @@ body .progress_inner__step label {
   position: relative;
   cursor: pointer;
 }
+
+
+body .progress_inner__step:nth-child(1):before {
+  color: white;
+  background: #1ea4ec;
+}
+
 body .progress_inner__step:hover {
   color: white;
 }
