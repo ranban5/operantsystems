@@ -2581,7 +2581,7 @@ data-keyboard="false" data-backdrop="static">
 					<p class="font-weight-500-poppins font-12 poppins-FontFamily orange-color text-center">To explore more, click the progress steps #</p>
 					<div class='progress custom-progress'>
 						<div class='progress_inner'>
-						  <div class='progress_inner__step font-weight-normal-poppins font-14 poppins-FontFamily blue-color'>
+						  <div class='progress_inner__step font-weight-normal-poppins font-14 poppins-FontFamily blue-color activeProgress'>
 							<label for='step-1'>Select Template</label>
 						  </div>
 						  <div class='progress_inner__step font-weight-normal-poppins font-14 poppins-FontFamily blue-color'>
@@ -3193,13 +3193,10 @@ data-keyboard="false" data-backdrop="static">
 		});
 
 		$(function() {
-
 		var minimized_elements = $('p.minimize');
-
 		minimized_elements.each(function() {
 		var t = $(this).text();
 		if (t.length < 197) return;
-
 		$(this).html(
 			t.slice(0, 197) + '<span>... </span><a href="#" class="more">Read more</a>' +
 			'<span style="display:none;">' + t.slice(100, t.length) + ' <a href="#" class="less">Read less</a></span>'
@@ -3208,21 +3205,19 @@ data-keyboard="false" data-backdrop="static">
 		});
 
 		$('a.more', minimized_elements).click(function(event) {
-		event.preventDefault();
-		$(this).hide().prev().hide();
-		$(this).next().show();
+			event.preventDefault();
+			$(this).hide().prev().hide();
+			$(this).next().show();
 		});
 
 		$('a.less', minimized_elements).click(function(event) {
-		event.preventDefault();
-		$(this).parent().hide().prev().show().prev().show();
+			event.preventDefault();
+			$(this).parent().hide().prev().show().prev().show();
 		});
 
 		});
 
 		$(document).on('click', '.teamplates-box-shadow', function () {
-			debugger;
-			
 			if($(this).children('img').hasClass('d-none')) {
 				var img_to_load = $(this).find('img')[0].src;
 				// var imgWindow = window.open(img_to_load, 'imgWindow');
@@ -3289,6 +3284,11 @@ data-keyboard="false" data-backdrop="static">
 		var i = 0; //index of the panel 
 		$(document).on('click', '.generic-menu', function () {   
 			$('.home-carousel,.team-carousel').carousel(i);
+		});
+
+		$(document).on('click', '.progress_inner__step', function () {
+			$(".progress_inner__step").removeClass("activeProgress");
+			$(this).addClass('activeProgress');
 		});
 
 
