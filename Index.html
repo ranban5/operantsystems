@@ -2814,7 +2814,7 @@ data-keyboard="false" data-backdrop="static">
 		<!-- Modal Header -->
 		<div class="modal-header templates-modal-header">
 			<h4 class="modal-title poppins-FontFamily  text-center m-0 blue-color w-100">Save time and money for billing</h4> 
-		  <span id="idModalHome3Close" class="close blue-color ml-0" data-dismiss="modal">×</span>
+		  <span id="idModalHome3Close" class="close blue-color ml-0 save-time-modal-close" data-dismiss="modal">×</span>
 		</div>
   
 		<!-- Modal body -->
@@ -2823,11 +2823,11 @@ data-keyboard="false" data-backdrop="static">
 				<div class="col-md-12 mb-4">
 					<p class="poppins-FontFamily font-weight-normal-poppins font-14 text-center blue-color sampleTemplate-links">
 						<span class="mt-3 d-inline-block pb-1">
-							<input type="radio" id="billclient" name="templates" class="radiobutton billingFormRadiobutton" value="billclient" datasrc="Bill Client">
+							<input type="radio" id="billclient" name="formtemplates" class="radiobutton billingFormRadiobutton" value="billclient" datasrc="Bill Client">
 							<label for="billclient">Bill Client</label></span>
 						<span class="d-inline-block">Bill Insurance</span>
 						<span class="mt-3 d-inline-block pb-1">
-							<input type="radio" id="form1500" name="templates" class="radiobutton billingFormRadiobutton" value="form1500" datasrc="Use Form 1500">
+							<input type="radio" id="form1500" name="formtemplates" class="radiobutton billingFormRadiobutton" value="form1500" datasrc="Use Form 1500">
 							<label for="form1500">Use Form 1500</label></span>
 					</p>
 				</div>
@@ -3307,14 +3307,25 @@ data-keyboard="false" data-backdrop="static">
 			if ($(this).prop('checked')) {
 				
 				if(name.trim().toLowerCase() === "bill client") {
-					$(".form-1500").addClass('showHideTemplateImages');
-					$(".bill-form").removeClass('showHideTemplateImages');
+					$(".form-1500.showHideTemplateImages").css('display', 'none');
+					$(".bill-form.showHideTemplateImages").css('display', 'block');
+					// $(".form-1500").addClass('showHideTemplateImages');
+					// $(".bill-form").removeClass('showHideTemplateImages');
 				} else {
-					$(".bill-form").addClass('showHideTemplateImages');
-					 $(".form-1500").toggleClass('showHideTemplateImages');
+					$(".form-1500.showHideTemplateImages").css('display', 'block');
+					$(".bill-form.showHideTemplateImages").css('display', 'none');
+					// $(".bill-form").addClass('showHideTemplateImages');
+					//  $(".form-1500").toggleClass('showHideTemplateImages');
 				}
 			}
 		});
+
+		$(document).on('click', '.save-time-modal-close', function () {
+			$("[name=formtemplates]").prop("checked",false);
+			$('.bill-form, .form-1500').addClass('showHideTemplateImages').css('display', 'none');
+		});
+
+		
 
 
 	</script>
