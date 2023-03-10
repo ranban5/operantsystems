@@ -877,12 +877,12 @@
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
-													<input type="text" class="form-control poppins-FontFamily font-weight-normal-poppins" placeholder="Name *" name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;">
+													<input type="text" class="form-control poppins-FontFamily font-weight-normal-poppins" placeholder="Name *" name="contactUs_yourName" id="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;">
 												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
-													<input type="email" class="form-control poppins-FontFamily font-weight-normal-poppins" placeholder="Email *" name="contactUs_emailId" ng-model="contactUs_emailId" required onpaste="return false;">
+													<input type="email" class="form-control poppins-FontFamily font-weight-normal-poppins" placeholder="Email *" name="contactUs_emailId" id="contactUs_emailId"  ng-model="contactUs_emailId" required onpaste="return false;">
 												</div>
 
 												<div class="error-container"
@@ -906,10 +906,12 @@
 												<button type="submit" class="btn navbar-register-button">Send</button>
 											</div>
 										</div>
+										<button type="button" ng-click='resetForm()' class="resetContactUs d-none">Reset</button>
 									</form>
 								</div>
 								<div class="row hide" id="divContactUsThankyou" style="color:#fff">
 									<p class="text-left poppins-FontFamily font-weight-normal-poppins">Thank you for contacting us.  We will get back to you by close of next business day.</p>
+									
 								</div>
 							</div>
 							<div class="col-12 mobileView mt-4">
