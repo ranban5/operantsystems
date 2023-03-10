@@ -1121,12 +1121,27 @@ indexApp.controller("indexController", function($scope, $http, $window) {
                             "message": $scope.contactUs_message
                         }
         };
-
-        console.log(JSON.stringify(jsonStr));
         callingWS("contactUs", jsonStr);
 
+        $("#divContactUsThankyou1").removeClass("hide");
         $("#divContactUsThankyou").removeClass("hide");
+
+        setTimeout(function () {
+          $("#divContactUsThankyou1").addClass("hide");
+          $("#divContactUsThankyou").addClass("hide");
+          $('.resetContactUs').trigger('click');
+
+      }, 3000);
+
         // $("#divContactUs").addClass("hide");
     };
+
+    $scope.resetForm = function() {
+      var original = $scope.contactUs_yourName;
+      $scope.contactUs_yourName= angular.copy("");
+      $scope.contactUs_message= angular.copy("");
+      $scope.contactUs_emailId= angular.copy("")
+      $scope.formContactUs.$setPristine()
+  };
 
 });
