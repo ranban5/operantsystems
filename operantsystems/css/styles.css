@@ -336,8 +336,8 @@ strong,
   margin: 0px 15px;
 }
 
-
-.bill-form.showHideTemplateImages , .form-1500.showHideTemplateImages {
+.bill-form.showHideTemplateImages,
+.form-1500.showHideTemplateImages {
   display: none;
 }
 
@@ -5710,7 +5710,6 @@ span.active {
 }
 
 @media only screen and (max-width: 767px) {
-
   .horizontal-subscribe-form .close-button {
     right: 0px;
     top: 8px;
@@ -6949,4 +6948,8 @@ span.active {
   left: 10%;
   font-family: "Poppins";
   font-size: 30px;
+}
+#btnLoingSubmit:hover {
+  background-color: #ff6600 !important;
+  color: #fff !important;
 }
