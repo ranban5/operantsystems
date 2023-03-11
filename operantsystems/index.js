@@ -4,19 +4,21 @@ var indexApp = angular.module('indexApp',  ['moment-picker']);
 
 indexApp.controller("indexController", function($scope, $http, $window) {
 
-    let webSiteName= "";
+  let webSiteName= "";
 
-    if ( location.host.indexOf("localhost") >= 0){
-      webSiteName = "https://www.autism311.com";
-    }
-    else{
-      webSiteName = location.protocol + "//" + location.host;
-    }
+  if ( location.host.indexOf("localhost") >= 0){
+    webSiteName = "https://www.trackingprogress.com";
+  }
+  else{
+    webSiteName = location.protocol + "//" + location.host;
+  }
 
-    let sendRequestURL = "/html/sendMailHomePage.asmx/sendUpdateRequest";
-    //let loginURL = "/html/getSharedInfo.asmx/login";
-    let loginURL = "/htmlNew/api/getSharedInfo/login/";
-    let imgIntervalTime = 4000;
+  let sendRequestURL = "/htmlNew/api/sendABAUpdates/sendUpdateRequestDB";// "/html/sendMailHomePage.asmx/sendUpdateRequest";
+
+
+  //let loginURL = "/html/getSharedInfo.asmx/login";
+  let loginURL = "/htmlNew/api/getSharedInfo/login/";
+  let imgIntervalTime = 4000;
 
   let numGrp = 1;
   let numApp = 1;
@@ -52,7 +54,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
       $(".p2r2 div").removeClass("hide");
     }
 
-      numGrp++;
+    numGrp++;
   }, imgIntervalTime);
 
   setInterval(function() {
@@ -159,33 +161,33 @@ indexApp.controller("indexController", function($scope, $http, $window) {
 
 
 
-    //$(".divFooter").fadeOut(1100);
-    $scope.urlName = webSiteName;
-    $scope.urlNameForMobile = webSiteName + "/mobile/Home.aspx/Login";
-    $scope.emailId = "";
+  //$(".divFooter").fadeOut(1100);
+  $scope.urlName = webSiteName;
+  $scope.urlNameForMobile = webSiteName + "/mobile/Home.aspx/Login";
+  $scope.emailId = "";
 
-    var dt = new Date();
-    dt.setTime(dt.getTime() + (24 * 60 * 60 * 1000));
-    var d1 = dt.getDate();
-    var m1 = dt.getMonth() + 1;
-    var y1 = dt.getFullYear();
-    var h1 = dt.getHours();
-    var mm1 = dt.getMinutes();      //Increasing last behavior click by one minute
-    var s1 = dt.getSeconds();
+  var dt = new Date();
+  dt.setTime(dt.getTime() + (24 * 60 * 60 * 1000));
+  var d1 = dt.getDate();
+  var m1 = dt.getMonth() + 1;
+  var y1 = dt.getFullYear();
+  var h1 = dt.getHours();
+  var mm1 = dt.getMinutes();      //Increasing last behavior click by one minute
+  var s1 = dt.getSeconds();
 
-    dt = (m1 < 10 ? '0' + m1 : m1) + '/' + (d1 < 10 ? '0' + d1 : d1) + '/' + y1;
+  dt = (m1 < 10 ? '0' + m1 : m1) + '/' + (d1 < 10 ? '0' + d1 : d1) + '/' + y1;
 
-    $scope.demoDate = dt;
-    $scope.demoTime = (h1 < 10 ? '0' + h1 : h1) + ":00";
+  $scope.demoDate = dt;
+  $scope.demoTime = (h1 < 10 ? '0' + h1 : h1) + ":00";
 
-    if ($window.location.search.indexOf('login=1')>= 0) {
-      console.log("to hide 65");
-        $(".login-container").removeClass("hide");
-      $(".login-container").attr("style","display:block");
-    }
-    else{
-      $(".login-container").addClass("hide");
-    }
+  if ($window.location.search.indexOf('login=1')>= 0) {
+    console.log("to hide 65");
+    $(".login-container").removeClass("hide");
+    $(".login-container").attr("style","display:block");
+  }
+  else{
+    $(".login-container").addClass("hide");
+  }
 
   if ($window.location.search.indexOf('param=hipaa') >= 0 ){
     $("#myModal").addClass("in");
@@ -246,8 +248,8 @@ indexApp.controller("indexController", function($scope, $http, $window) {
   function hideModal(clsName){
     setTimeout(
       function(){
-          $("#idModalHome3" ).fadeOut(1100);
-        }, ($("." + clsName).length * imgIntervalTime) );
+        $("#idModalHome3" ).fadeOut(1100);
+      }, ($("." + clsName).length * imgIntervalTime) );
   }
 
   $scope.conferenceDot = function(num){
@@ -296,7 +298,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
         }, imgIntervalTime);
 
       hideModal("planDot");
-     }
+    }
     else if (btnType === "Observe"){
       $("#idModal3HeaderDetails").text("Manage in real-time the results of your skills acquisition and behavior management plans aligned with your Functional Behavior Assessments and Behavior Intervention Plans.");
       $("#idModal3HeaderImg").attr("src", "operantsystems/images/background-images/home3-2.jpg");
@@ -391,7 +393,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
     });
   }
 
-  $scope.functionLike = function(param){
+ /* $scope.functionLike = function(param){
 
     let url = webSiteName + "/html/getABAdetails.asmx/getIpAddress";
     let data ={ "likeOrDislike" : param};
@@ -407,7 +409,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
 
     $("#myModalLike" ).fadeOut(1100);
 
-  };
+  };*/
 
   // function returnResult(url, data){
   //   return $http({
@@ -458,7 +460,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
 
       let wH = location.href.indexOf('#');
       //if (location.href.length > location.href.indexOf('#')){
-        location.href = location.href.substr(0, wH) + '#';
+      location.href = location.href.substr(0, wH) + '#';
       //}
     }
     else if (linkName === "features"){
@@ -510,7 +512,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
   };
 
   //Login button re-direct to home page of site
-  $scope.loginPage = function () {
+  $scope.loginPage = function() {
     $(".enrollment-link").hide();
     $(".enroll-link").removeClass('addBgColor addPaddingTop');
     $(".enrollment-link").hide();
@@ -524,7 +526,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
       
 
       $("#stamp-navigation").addClass("in");
-      $("#stamp-navigation").attr("aria-expanded", "true");
+      $("#stamp-navigation").attr("aria-expanded","true");
     }
     else {
       $('.user-login-menu > a').removeClass("addBgColor");
@@ -532,16 +534,18 @@ indexApp.controller("indexController", function($scope, $http, $window) {
       $(".login-container").attr("style","display:none !important");
       $("#stamp-navigation").removeClass("in");
       $("#stamp-navigation").attr("aria-expanded","false");
-        }
-    };
+    }
+  };
 
   function callingWS(serviceName, data) {
     if (serviceName === "sendMail" || serviceName === "sendMailForDemo" || serviceName === "contactUs") {
       var dataString = {
         "serviceType": serviceName,
         "strServiceData": JSON.stringify(data),
+        "dbName":"SharedDB",
         "deviceId": "angularWS"
       };
+
       var url = webSiteName + sendRequestURL;
       $('.template-sendbtn').addClass('hasBeenSend');
       //return $http.post(url, dataString);
@@ -564,7 +568,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
         "UserId": "barry1@teachme.com",
         "Pwd": "director"
       };*/
-      
+
       console.log("i m here - " + data);
       console.log("i m here - " + url);
       //return $http.post(url, data);
@@ -583,173 +587,173 @@ indexApp.controller("indexController", function($scope, $http, $window) {
     }
   }
 
-    $scope.loginPage_CheckUserIdPassword = function() {
-        console.log($("#login_UserId").val().trim() + ":" + $("#login_Psd").val());
+  $scope.loginPage_CheckUserIdPassword = function() {
+    console.log($("#login_UserId").val().trim() + ":" + $("#login_Psd").val());
 
-        if ($("#login_UserId").val().trim() === "" || $("#login_Psd").val() === "" ||
-           $("#login_UserId").val().trim() === "User ID" || $("#login_Psd").val() === "Password") {
-            console.log($(".login-container .error").attr("class"));
-            $(".login-container .error").removeClass("hide");
-            return;
-        }
+    if ($("#login_UserId").val().trim() === "" || $("#login_Psd").val() === "" ||
+      $("#login_UserId").val().trim() === "User ID" || $("#login_Psd").val() === "Password") {
+      console.log($(".login-container .error").attr("class"));
+      $(".login-container .error").removeClass("hide");
+      return;
+    }
         $(".login-container .error").removeClass("hide");
         $(".login-container").removeClass("hide");
         $(".login-container").attr("style","display:block !important");
-        $(".imgProcess").removeClass("hide");
+    $(".imgProcess").removeClass("hide");
 
-        var jsonStr = { "userId": $("#login_UserId").val(),
-            "psd": $("#login_Psd").val(),
-            "deviceId": "loginFromNewWebPage"
-        };
+    var jsonStr = { "userId": $("#login_UserId").val(),
+      "psd": $("#login_Psd").val(),
+      "deviceId": "loginFromNewWebPage"
+    };
 
-        callingWS("login", jsonStr)
-            .success(function(responseData) {
-                let result = JSON.parse(responseData);
-                result[0] = result.loginDetails[0];
+    callingWS("login", jsonStr)
+      .success(function(responseData) {
+        let result = JSON.parse(responseData);
+        result[0] = result.loginDetails[0];
 
-                if (result.length === 0) {
-                  $(".login-container .error").removeClass("hide");
-                }
-                else {
-                  if (result[0].accountStatus === "enable" && result[0].loginStatus === true) {
-                      console.log("can login");
+        if (result.length === 0) {
+          $(".login-container .error").removeClass("hide");
+        }
+        else {
+          if (result[0].accountStatus === "enable" && result[0].loginStatus === true) {
+            console.log("can login");
 
-                      $.cookie("accountStatus", result[0].accountStatus, {expires: 7, path: '/'});
-                      $.cookie("loginStatus", result[0].loginStatus, {expires: 7, path: '/'});
-                      $.cookie("updateNeeded", result[0].updateNeeded, {expires: 7, path: '/'});
-                      $.cookie("userId", result[0].userId, {expires: 7, path: '/'});
-                      $.cookie("organizationId", result[0].organizationId, {expires: 7, path: '/'});
-                      $.cookie("roleName", result[0].roleName, {expires: 7, path: '/'});
-                      $.cookie("modifyEnabled", result[0].modifyEnabled, {expires: 7, path: '/'});
-                      $.cookie("firstName", result[0].firstName, {expires: 7, path: '/'});
-                      $.cookie("lastName", result[0].lastName, {expires: 7, path: '/'});
-                      $.cookie("organizationName", result[0].organizationName, {expires: 7, path: '/'});
-                      $.cookie("roleTypeID", result[0].roleTypeID, {expires: 7, path: '/'});
+            $.cookie("accountStatus", result[0].accountStatus, {expires: 7, path: '/'});
+            $.cookie("loginStatus", result[0].loginStatus, {expires: 7, path: '/'});
+            $.cookie("updateNeeded", result[0].updateNeeded, {expires: 7, path: '/'});
+            $.cookie("userId", result[0].userId, {expires: 7, path: '/'});
+            $.cookie("organizationId", result[0].organizationId, {expires: 7, path: '/'});
+            $.cookie("roleName", result[0].roleName, {expires: 7, path: '/'});
+            $.cookie("modifyEnabled", result[0].modifyEnabled, {expires: 7, path: '/'});
+            $.cookie("firstName", result[0].firstName, {expires: 7, path: '/'});
+            $.cookie("lastName", result[0].lastName, {expires: 7, path: '/'});
+            $.cookie("organizationName", result[0].organizationName, {expires: 7, path: '/'});
+            $.cookie("roleTypeID", result[0].roleTypeID, {expires: 7, path: '/'});
 
-                      $.cookie("address1", result[0].address1, {expires: 7, path: '/'});
-                      $.cookie("address2", result[0].address2, {expires: 7, path: '/'});
-                      $.cookie("city", result[0].city, {expires: 7, path: '/'});
-                      $.cookie("stateId", result[0].stateId, {expires: 7, path: '/'});
-                      $.cookie("postalCode", result[0].postalCode, {expires: 7, path: '/'});
+            $.cookie("address1", result[0].address1, {expires: 7, path: '/'});
+            $.cookie("address2", result[0].address2, {expires: 7, path: '/'});
+            $.cookie("city", result[0].city, {expires: 7, path: '/'});
+            $.cookie("stateId", result[0].stateId, {expires: 7, path: '/'});
+            $.cookie("postalCode", result[0].postalCode, {expires: 7, path: '/'});
 
-                      $.cookie("timeZoneId", result[0].timeZoneId, {expires: 7, path: '/'});
+            $.cookie("timeZoneId", result[0].timeZoneId, {expires: 7, path: '/'});
 
-                      $.cookie("isCreatedOrUpdated", result[0].isCreatedOrUpdated, {expires: 7, path: '/'});
+            $.cookie("isCreatedOrUpdated", result[0].isCreatedOrUpdated, {expires: 7, path: '/'});
 
-                      $.cookie("activity_Trials", result[0].activity_Trials, {expires: 7, path: '/'});
-                      $.cookie("activity_MaxPerDay", result[0].activity_MaxPerDay, {expires: 7, path: '/'});
-                      $.cookie("activity_ResponseSetID", result[0].activity_ResponseSetID, {expires: 7, path: '/'});
-                      $.cookie("activity_FormulaForSuccessID", result[0].activity_FormulaForSuccessID, {
-                        expires: 7,
-                        path: '/'
-                      });
-                      $.cookie("activity_FormulaForSuccessParams", result[0].activity_FormulaForSuccessParams, {
-                        expires: 7,
-                        path: '/'
-                      });
-
-                      $.cookie("dbName", result[0].dbName, {expires: 7, path: '/'});
-                      $.cookie("parentDBName", result[0].parentDBName, {expires: 7, path: '/'});
-
-                      $.cookie("threeLevelOrg", threeLevelOrg, {expires: 7, path: '/'});
-
-                      //location.href = "operantsystems/app/#/home";
-                      var orgToWhomTabIsNotVisible = "ef6fd0f8-506d-44bd-af3a-d6b1a1279a26";
-
-
-                    if (result[0].roleName !== "Director" && result[0].roleName !== "Therapist" && result[0].roleName !== "Therapist Assistant" && result[0].roleName !== "Supervisor"){
-                        threeLevelOrg = "";
-                      }
-
-                    //threeLevelOrg.indexOf(result[0].dbName) >= 0 &&
-                    if (result[0].roleName === "Director") {
-                      location.href = "operantsystems/app/#/home/dashboard";
-                    } else if (result[0].organizationId.toLowerCase().indexOf(orgToWhomTabIsNotVisible) >= 0) {
-                      location.href = "operantsystems/app/#/home/people";
-                    } else if (result[0].roleName === "Therapist Assistant") {
-                      //location.href = "operantsystems/app/#/home/lesson";
-                      if (result[0].isCreatedOrUpdated === false && result[0].parentDBName === "") {
-                        location.href = "operantsystems/app/#/home/user";
-                      } else {
-                        location.href = "operantsystems/app/#/home/reportsHtml";
-                      }
-                    } else if (result[0].roleName === "Therapist") {
-                      if (result[0].isCreatedOrUpdated === false && result[0].parentDBName === "") {
-                        location.href = "operantsystems/app/#/home/user";
-                      } else {
-                        location.href = "operantsystems/app/#/home/dashboard";
-                      }
-                    } else if (result[0].roleName === "IT Person") {
-                      location.href = "operantsystems/app/#/home/people";
-                    } else {
-                      location.href = "operantsystems/app/#/home/reportsHtml";
-                    }
-
-                      $(".login-container .error").addClass("hide");
-                      $(".login-container").addClass("hide");
-                    } else {
-                      $(".login-container .error").removeClass("hide");
-                    }
-
-                }
-                  $(".imgProcess").addClass("hide");
-            })
-            .error(function() {
-                alert("Please check your internet connection...");
-                $(".imgProcess").addClass("hide");
+            $.cookie("activity_Trials", result[0].activity_Trials, {expires: 7, path: '/'});
+            $.cookie("activity_MaxPerDay", result[0].activity_MaxPerDay, {expires: 7, path: '/'});
+            $.cookie("activity_ResponseSetID", result[0].activity_ResponseSetID, {expires: 7, path: '/'});
+            $.cookie("activity_FormulaForSuccessID", result[0].activity_FormulaForSuccessID, {
+              expires: 7,
+              path: '/'
+            });
+            $.cookie("activity_FormulaForSuccessParams", result[0].activity_FormulaForSuccessParams, {
+              expires: 7,
+              path: '/'
             });
 
-    };
+            $.cookie("dbName", result[0].dbName, {expires: 7, path: '/'});
+            $.cookie("parentDBName", result[0].parentDBName, {expires: 7, path: '/'});
 
-    $scope.loginPage_Hide = function() {
-        console.log("to hide");
-        $(".login-container .error").addClass("hide");
-        $(".login-container").addClass("hide");
-        $("#stamp-navigation").removeClass("in");
-        $("#stamp-navigation").attr("aria-expanded","false");
-      $("#stamp-navigation").attr("style","");
-      $(".login-container").attr("style","display:none !important");
+            $.cookie("threeLevelOrg", threeLevelOrg, {expires: 7, path: '/'});
 
-    };
+            //location.href = "operantsystems/app/#/home";
+            var orgToWhomTabIsNotVisible = "ef6fd0f8-506d-44bd-af3a-d6b1a1279a26";
 
-    //Different links present in the product drop down
-    $scope.availableLink = function(link) {
-        if (link === "ios_sb_ipad") {
-          window.open("https://itunes.apple.com/in/app/aba-data-notebook-skills-behaviors/id1008564477?mt=8", '_blank');
+
+            if (result[0].roleName !== "Director" && result[0].roleName !== "Therapist" && result[0].roleName !== "Therapist Assistant" && result[0].roleName !== "Supervisor"){
+              threeLevelOrg = "";
+            }
+
+            //threeLevelOrg.indexOf(result[0].dbName) >= 0 &&
+            if (result[0].roleName === "Director" || result[0].roleName === "Supervisor") {
+              location.href = "operantsystems/app/#/home/dashboard";
+            } else if (result[0].organizationId.toLowerCase().indexOf(orgToWhomTabIsNotVisible) >= 0) {
+              location.href = "operantsystems/app/#/home/people";
+            } else if (result[0].roleName === "Therapist Assistant") {
+              //location.href = "operantsystems/app/#/home/lesson";
+              if (result[0].isCreatedOrUpdated === false && result[0].parentDBName === "") {
+                location.href = "operantsystems/app/#/home/user";
+              } else {
+                location.href = "operantsystems/app/#/home/reportsHtml";
+              }
+            } else if (result[0].roleName === "Therapist") {
+              if (result[0].isCreatedOrUpdated === false && result[0].parentDBName === "") {
+                location.href = "operantsystems/app/#/home/user";
+              } else {
+                location.href = "operantsystems/app/#/home/dashboard";
+              }
+            } else if (result[0].roleName === "IT Person") {
+              location.href = "operantsystems/app/#/home/people";
+            } else {
+              location.href = "operantsystems/app/#/home/reportsHtml";
+            }
+
+            $(".login-container .error").addClass("hide");
+            $(".login-container").addClass("hide");
+          } else {
+            $(".login-container .error").removeClass("hide");
+          }
+
         }
-        else if (link === "android_sb_ipad") {
+        $(".imgProcess").addClass("hide");
+      })
+      .error(function() {
+        alert("Please check your internet connection...");
+        $(".imgProcess").addClass("hide");
+      });
+
+  };
+
+  $scope.loginPage_Hide = function() {
+    console.log("to hide");
+    $(".login-container .error").addClass("hide");
+    $(".login-container").addClass("hide");
+    $("#stamp-navigation").removeClass("in");
+    $("#stamp-navigation").attr("aria-expanded","false");
+    $("#stamp-navigation").attr("style","");
+    $(".login-container").attr("style","display:none !important");
+
+  };
+
+  //Different links present in the product drop down
+  $scope.availableLink = function(link) {
+    if (link === "ios_sb_ipad") {
+          window.open("https://itunes.apple.com/in/app/aba-data-notebook-skills-behaviors/id1008564477?mt=8", '_blank');
+    }
+    else if (link === "android_sb_ipad") {
           window.open("https://play.google.com/store/apps/details?id=com.operantsystems.abanotebook", '_blank');
             // location.href = "https://play.google.com/store/apps/details?id=com.operantsystems.abanotebook";
-        }
-        else if (link === "ios_sb_iphone") {
+    }
+    else if (link === "ios_sb_iphone") {
           window.open("https://itunes.apple.com/in/app/teachme-skills-platinum/id598392255?mt=8", '_blank');
             // location.href = "https://itunes.apple.com/in/app/teachme-skills-platinum/id598392255?mt=8";
-        }
-        else if (link === "web") {
-            location.href = $scope.urlNameForMobile;
-        }
-        else if (link === "ios_sb_skills") {
+    }
+    else if (link === "web") {
+      location.href = $scope.urlNameForMobile;
+    }
+    else if (link === "ios_sb_skills") {
           window.open("hhttps://itunes.apple.com/us/app/aba-data-notepad-skills/id1248744125", '_blank');
-        }
-        else if (link === "ios_sb_behaviors") {
+    }
+    else if (link === "ios_sb_behaviors") {
           window.open("https://itunes.apple.com/us/app/aba-data-notepad-behaviors/id1248782710", '_blank');
-        }
-        else if (link === "ios_sb_iphone_language") {
+    }
+    else if (link === "ios_sb_iphone_language") {
           window.open("https://itunes.apple.com/in/app/speech-language-notepad-tracking/id1076457868?mt=8", '_blank');
-        }
-        else if (link === "ios_sb_pecshome") {
+    }
+    else if (link === "ios_sb_pecshome") {
           window.open("https://itunes.apple.com/us/app/pecs-data-sheet-home/id1216665162", '_blank');
-        }
-        else if (link === "ios_sb_pecsschool") {
+    }
+    else if (link === "ios_sb_pecsschool") {
             window.open("https://itunes.apple.com/us/app/pecs-data-sheet-school/id1314334951", '_blank');
-        }
-        else if (link === "ios_sb_sessions") {
+    }
+    else if (link === "ios_sb_sessions") {
           window.open("https://apps.apple.com/in/app/aba-pocketbook/id1513788097", '_blank');
-        }
-        else if (link === "android_sb_sessions") {
+    }
+    else if (link === "android_sb_sessions") {
           window.open("https://play.google.com/store/apps/details?id=com.operantsystems.abanotebookphoneappoffline", '_blank');
-        }
-        else if (link === "amazon_fire") {
+    }
+    else if (link === "amazon_fire") {
           window.open("https://www.amazon.com/gp/product/B0839FJD2D", '_blank');
         } else if (link === "amazon_orange_fire") {
           window.open("https://www.amazon.com/Operant-Systems-Inc-ABA-Pocketbook/dp/B08LGQMF5N/ref=sr_1_2?qid=1676010664&refinements=p_4%3AOperant+Systems+Inc&s=mobile-apps&search-type=ss&sr=1-2", '_blank');
@@ -833,7 +837,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
                 "senderCount": cntSender + 1
             });
             localStorage.setItem("localEmailDetails", JSON.stringify(lstEmail));
-        }
+    }
 
         var jsonStr = {
             "sendUpdateRequest":
@@ -841,7 +845,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
                                     "senderName": nameSender,
                                     "senderComments": commentsSender
                                 }
-        };
+  };
 
         console.log(JSON.stringify(jsonStr));
         callingWS("sendMail", jsonStr);
@@ -850,103 +854,103 @@ indexApp.controller("indexController", function($scope, $http, $window) {
   
 
 
-    //Get Start button click 
-    $scope.chkGetStarted = function() {
-        if (!$scope.formMail.email.$valid) {
+  //Get Start button click
+  $scope.chkGetStarted = function() {
+    if (!$scope.formMail.email.$valid) {
+      return false;
+    }
+
+
+    if ( $("#idDevicesTypeColor").css("color") === "rgb(128, 0, 0)") {
+      deviceType = 'mobile';
+    }
+    else if ( $("#idDevicesTypeColor").css("color") === "rgb(255, 192, 203)") {
+      deviceType = "iPadPortrait";
+    }
+    else if ( $("#idDevicesTypeColor").css("color") === "rgb(0, 255, 0)") {
+      deviceType = "iPadLandscape";
+    }
+    else {
+      deviceType = 'web';
+    }
+
+
+    //Require to check email validation
+    if ($("#cf-email").val() === "" || $("#cf-email").val() === "Enter your Email") {
+      alert("Please enter you valid Email Id...");
+      return false;
+    }
+    $("#gs1").addClass("hide");
+    $("#gs2").removeClass("hide");
+
+    $("#gs1M").addClass("hide");
+    $("#gs2M").removeClass("hide");
+
+    $("#gs1P").addClass("hide");
+    $("#gs2P").removeClass("hide");
+
+    $("#gs1L").addClass("hide");
+    $("#gs2L").removeClass("hide");
+
+    //Require to check is present locally, which is sent already to the web
+    var lstEmail = [];
+    if (localStorage.getItem("localEmailDetails") !== null) {
+      lstEmail = JSON.parse(localStorage.getItem("localEmailDetails"));
+    }
+
+    var flg = false;
+    var cntSender = 0;
+    var nameSender = "";
+    var phoneSender = "";
+
+    if (localStorage.getItem("localEmailDetails") !== null) {
+      $.each(lstEmail, function(aryIdx, aryVal) {
+        console.log(aryVal.emailId);
+        if (aryVal.emailId === $("#cf-email").val()) {
+          flg = true;
+          cntSender = aryVal.senderCount;
+          nameSender = aryVal.senderName;
+          phoneSender = aryVal.senderPhone;
           return false;
         }
+      });
+    }
+
+    if ( deviceType === 'mobile') {
+      $("#cf-email").val($("#cf-emailM").val());
+    }
+    else if ( deviceType === 'iPadPortrait') {
+      $("#cf-email").val($("#cf-emailP").val());
+    }
+    else if ( deviceType === 'iPadLandscape') {
+      $("#cf-email").val($("#cf-emailL").val());
+    }
 
 
-     if ( $("#idDevicesTypeColor").css("color") === "rgb(128, 0, 0)") {
-       deviceType = 'mobile';
-     }
-     else if ( $("#idDevicesTypeColor").css("color") === "rgb(255, 192, 203)") {
-       deviceType = "iPadPortrait";
-     }
-     else if ( $("#idDevicesTypeColor").css("color") === "rgb(0, 255, 0)") {
-       deviceType = "iPadLandscape";
-     }
-     else {
-       deviceType = 'web';
-     }
 
+    if (flg && cntSender > 4) {
+      return;
+    }
+    else {
+      lstEmail.push({ "emailId": $("#cf-email").val(),
+        "senderName": nameSender,
+        "senderPhone": phoneSender,
+        "senderCount": cntSender + 1
+      });
+      localStorage.setItem("localEmailDetails", JSON.stringify(lstEmail));
+    }
 
-        //Require to check email validation
-        if ($("#cf-email").val() === "" || $("#cf-email").val() === "Enter your Email") {
-            alert("Please enter you valid Email Id...");
-            return false;
+    var jsonStr = {
+      "sendUpdateRequest":
+        { "emailId": $("#cf-email").val(),
+          "senderName": nameSender,
+          "senderPhone": phoneSender
         }
-        $("#gs1").addClass("hide");
-        $("#gs2").removeClass("hide");
-
-      $("#gs1M").addClass("hide");
-      $("#gs2M").removeClass("hide");
-
-      $("#gs1P").addClass("hide");
-      $("#gs2P").removeClass("hide");
-
-      $("#gs1L").addClass("hide");
-      $("#gs2L").removeClass("hide");
-
-        //Require to check is present locally, which is sent already to the web
-        var lstEmail = [];
-        if (localStorage.getItem("localEmailDetails") !== null) {
-          lstEmail = JSON.parse(localStorage.getItem("localEmailDetails"));
-        }
-
-        var flg = false;
-        var cntSender = 0;
-        var nameSender = "";
-        var phoneSender = "";
-
-        if (localStorage.getItem("localEmailDetails") !== null) {
-            $.each(lstEmail, function(aryIdx, aryVal) {
-                console.log(aryVal.emailId);
-                if (aryVal.emailId === $("#cf-email").val()) {
-                    flg = true;
-                    cntSender = aryVal.senderCount;
-                    nameSender = aryVal.senderName;
-                    phoneSender = aryVal.senderPhone;
-                    return false;
-                }
-            });
-        }
-
-      if ( deviceType === 'mobile') {
-        $("#cf-email").val($("#cf-emailM").val());
-      }
-      else if ( deviceType === 'iPadPortrait') {
-        $("#cf-email").val($("#cf-emailP").val());
-      }
-      else if ( deviceType === 'iPadLandscape') {
-        $("#cf-email").val($("#cf-emailL").val());
-      }
-
-
-
-        if (flg && cntSender > 4) {
-          return;
-        }
-        else {
-            lstEmail.push({ "emailId": $("#cf-email").val(),
-                "senderName": nameSender,
-                "senderPhone": phoneSender,
-                "senderCount": cntSender + 1
-            });
-            localStorage.setItem("localEmailDetails", JSON.stringify(lstEmail));
-        }
-
-        var jsonStr = {
-            "sendUpdateRequest":
-                                { "emailId": $("#cf-email").val(),
-                                    "senderName": nameSender,
-                                    "senderPhone": phoneSender
-                                }
-        };
-
-        console.log(JSON.stringify(jsonStr));
-        callingWS("sendMail", jsonStr);
     };
+
+    console.log(JSON.stringify(jsonStr));
+    callingWS("sendMail", jsonStr);
+  };
 
 
     $scope.saveNamePhoneComments = function() {
@@ -1012,87 +1016,87 @@ indexApp.controller("indexController", function($scope, $http, $window) {
         callingWS("sendMailForDemo", jsonStr);
     };
 
-    $scope.saveNamePhone = function() {
-      if ( deviceType === 'mobile') {
-        $("#cf-email").val($("#cf-emailM").val());
-        $("#cf-name").val($("#cf-nameM").val());
-        $("#cf-phone").val($("#cf-phoneM").val());
-      }
-      else if ( deviceType === 'iPadPortrait') {
-        $("#cf-email").val($("#cf-emailP").val());
-        $("#cf-name").val($("#cf-nameP").val());
-        $("#cf-phone").val($("#cf-phoneP").val());
-      }
-      else if ( deviceType === 'iPadLandscape') {
-        $("#cf-email").val($("#cf-emailL").val());
-        $("#cf-name").val($("#cf-nameL").val());
-        $("#cf-phone").val($("#cf-phoneL").val());
-      }
+  $scope.saveNamePhone = function() {
+    if ( deviceType === 'mobile') {
+      $("#cf-email").val($("#cf-emailM").val());
+      $("#cf-name").val($("#cf-nameM").val());
+      $("#cf-phone").val($("#cf-phoneM").val());
+    }
+    else if ( deviceType === 'iPadPortrait') {
+      $("#cf-email").val($("#cf-emailP").val());
+      $("#cf-name").val($("#cf-nameP").val());
+      $("#cf-phone").val($("#cf-phoneP").val());
+    }
+    else if ( deviceType === 'iPadLandscape') {
+      $("#cf-email").val($("#cf-emailL").val());
+      $("#cf-name").val($("#cf-nameL").val());
+      $("#cf-phone").val($("#cf-phoneL").val());
+    }
 
 
-        var jsonStr = {
-            "sendUpdateRequest":
-                                { "emailId": $("#cf-email").val(),
-                                    "senderName": $("#cf-name").val(),
-                                    "senderPhone": $("#cf-phone").val(),
-                                    "demoDate": $scope.demoDate,
-                                    "demoTime": $scope.demoTime
+    var jsonStr = {
+      "sendUpdateRequest":
+        { "emailId": $("#cf-email").val(),
+          "senderName": $("#cf-name").val(),
+          "senderPhone": $("#cf-phone").val(),
+          "demoDate": $scope.demoDate,
+          "demoTime": $scope.demoTime
 
-                                }
-        };
-
-        //Require to check is present locally, which is sent already to the web
-        let lstEmail = [];
-        if (localStorage.getItem("localEmailDetails") !== null) {
-          lstEmail = JSON.parse(localStorage.getItem("localEmailDetails"));
         }
-
-        let flg = false;
-        let cntSender = 0;
-        if (localStorage.getItem("localEmailDetails") !== null) {
-            $.each(lstEmail, function(aryIdx, aryVal) {
-                console.log(aryVal.emailId);
-                if (aryVal.emailId === $("#cf-email").val() && aryVal.senderName === $("#cf-name").val() && aryVal.senderPhone === $("#cf-phone").val()) {
-                    flg = true;
-                    cntSender = aryVal.senderCount;
-                    return false;
-                }
-            });
-        }
-
-        $("#gs1").addClass("hide");
-        $("#gs2").addClass("hide");
-        $("#gs3").removeClass("hide");
-    
-
-      $("#gs1M").addClass("hide");
-      $("#gs2M").addClass("hide");
-      $("#gs3M").removeClass("hide");
-
-      $("#gs1P").addClass("hide");
-      $("#gs2P").addClass("hide");
-      $("#gs3P").removeClass("hide");
-
-      $("#gs1L").addClass("hide");
-      $("#gs2L").addClass("hide");
-      $("#gs3L").removeClass("hide");
-
-        if (flg) {
-          return;
-        }
-        else {
-            lstEmail.push({ "emailId": $("#cf-email").val(),
-                "senderName": $("#cf-name").val(),
-                "senderPhone": $("#cf-phone").val(),
-                "senderCount": (cntSender + 1)
-            });
-            localStorage.setItem("localEmailDetails", JSON.stringify(lstEmail));
-        }
-
-        callingWS("sendMailForDemo", jsonStr);
-
-
     };
+
+    //Require to check is present locally, which is sent already to the web
+    let lstEmail = [];
+    if (localStorage.getItem("localEmailDetails") !== null) {
+      lstEmail = JSON.parse(localStorage.getItem("localEmailDetails"));
+    }
+
+    let flg = false;
+    let cntSender = 0;
+    if (localStorage.getItem("localEmailDetails") !== null) {
+      $.each(lstEmail, function(aryIdx, aryVal) {
+        console.log(aryVal.emailId);
+        if (aryVal.emailId === $("#cf-email").val() && aryVal.senderName === $("#cf-name").val() && aryVal.senderPhone === $("#cf-phone").val()) {
+          flg = true;
+          cntSender = aryVal.senderCount;
+          return false;
+        }
+      });
+    }
+
+    $("#gs1").addClass("hide");
+    $("#gs2").addClass("hide");
+    $("#gs3").removeClass("hide");
+
+
+    $("#gs1M").addClass("hide");
+    $("#gs2M").addClass("hide");
+    $("#gs3M").removeClass("hide");
+
+    $("#gs1P").addClass("hide");
+    $("#gs2P").addClass("hide");
+    $("#gs3P").removeClass("hide");
+
+    $("#gs1L").addClass("hide");
+    $("#gs2L").addClass("hide");
+    $("#gs3L").removeClass("hide");
+
+    if (flg) {
+      return;
+    }
+    else {
+      lstEmail.push({ "emailId": $("#cf-email").val(),
+        "senderName": $("#cf-name").val(),
+        "senderPhone": $("#cf-phone").val(),
+        "senderCount": (cntSender + 1)
+      });
+      localStorage.setItem("localEmailDetails", JSON.stringify(lstEmail));
+    }
+
+    callingWS("sendMailForDemo", jsonStr);
+
+
+  };
 
     $scope.reset = function() {
       var original = $scope.email;
@@ -1100,31 +1104,31 @@ indexApp.controller("indexController", function($scope, $http, $window) {
       $scope.formMail.$setPristine()
   };
 
-    //In different links are present according to which tab should be open
-    $scope.footerLinkClick = function(tabName) {
-        $('.nav-tabs a[href="#' + tabName + '"]').tab('show');
-    };
+  //In different links are present according to which tab should be open
+  $scope.footerLinkClick = function(tabName) {
+    $('.nav-tabs a[href="#' + tabName + '"]').tab('show');
+  };
 
-    //Contact us validation 
-    $scope.chkContactUs = function() {
-        //alert('before contact us');
-        console.log($scope.formContactUs.contactUs_emailId);
-        if (!$scope.formContactUs.contactUs_emailId.$valid) {
-            return false;
+  //Contact us validation
+  $scope.chkContactUs = function() {
+    //alert('before contact us');
+    console.log($scope.formContactUs.contactUs_emailId);
+    if (!$scope.formContactUs.contactUs_emailId.$valid) {
+      return false;
+    }
+
+    //{"sendUpdateRequest": {"yourName": "salim","emailId": "sh092us@yahoo.com","message": "from web service"}}
+    var jsonStr = {
+      "sendUpdateRequest":
+        { "yourName": $scope.contactUs_yourName,
+          "emailId": $scope.contactUs_emailId,
+          "message": $scope.contactUs_message
         }
-
-        //{"sendUpdateRequest": {"yourName": "salim","emailId": "sh092us@yahoo.com","message": "from web service"}}
-        var jsonStr = {
-            "sendUpdateRequest":
-                        { "yourName": $scope.contactUs_yourName,
-                            "emailId": $scope.contactUs_emailId,
-                            "message": $scope.contactUs_message
-                        }
-        };
-        callingWS("contactUs", jsonStr);
+    };
+    callingWS("contactUs", jsonStr);
 
         $("#divContactUsThankyou1").removeClass("hide");
-        $("#divContactUsThankyou").removeClass("hide");
+    $("#divContactUsThankyou").removeClass("hide");
 
         setTimeout(function () {
           $("#divContactUsThankyou1").addClass("hide");

@@ -6953,3 +6953,37 @@ span.active {
   background-color: #ff6600 !important;
   color: #fff !important;
 }
+
+.carousel-img01 {
+  background-image: url("../images/new_images/home-team-bg-images/Group_2174.png") !important;
+}
+.carousel-img02 {
+  background-image: url("../images/new_images/home-team-bg-images/Group 2116.png") !important;
+}
+.carousel-img03 {
+  background-image: url("../images/new_images/home-team-bg-images/Group 2117.png") !important;
+}
+.carousel-img04 {
+  background-image: url("../images/new_images/home-team-bg-images/Group_2118_new.png") !important;
+}
+.carousel-img05 {
+  background-image: url("../images/new_images/home-team-bg-images/Group 2115.png") !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel-img01 {
+    background-image: url("../images/new_images/home-team-bg-images/masked_mobile01.png") !important;
+  }
+  .carousel-img02 {
+    background-image: url("../images/new_images/home-team-bg-images/masked_mobile04.png") !important;
+  }
+  .carousel-img03 {
+    background-image: url("../images/new_images/home-team-bg-images/masked_mobile03.png") !important;
+  }
+  .carousel-img04 {
+    background-image: url("../images/new_images/home-team-bg-images/masked_mobile02.png") !important;
+  }
+  .carousel-img05 {
+    background-image: url("../images/new_images/home-team-bg-images/masked_mobile05.png") !important;
+  }
+}
