@@ -594,6 +594,7 @@ strong,
 .home-navbar.scrolled .login-container {
   top: 54px;
   right: 52px;
+  left: auto;
 }
 
 .addFixedStyling {
@@ -6619,8 +6620,10 @@ span.active {
 
   .login-container {
     display: none !important;
-    top: 0%;
-    left: -217px;
+    /* top: 0%;
+    left: -217px; */
+    top: 90%;
+    left: auto;
   }
 
   section {
