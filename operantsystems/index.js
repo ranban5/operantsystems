@@ -596,7 +596,7 @@ indexApp.controller("indexController", function($scope, $http, $window) {
       $(".login-container .error").removeClass("hide");
       return;
     }
-        $(".login-container .error").removeClass("hide");
+        // $(".login-container .error").removeClass("hide");
         $(".login-container").removeClass("hide");
         $(".login-container").attr("style","display:block !important");
     $(".imgProcess").removeClass("hide");
@@ -1118,26 +1118,49 @@ indexApp.controller("indexController", function($scope, $http, $window) {
     }
 
     //{"sendUpdateRequest": {"yourName": "salim","emailId": "sh092us@yahoo.com","message": "from web service"}}
+    $(".imgProcessSend").removeClass("hide");
+    setTimeout(function () {
     var jsonStr = {
       "sendUpdateRequest":
-        { "yourName": $scope.contactUs_yourName,
+        {
+          "yourName": $scope.contactUs_yourName,
           "emailId": $scope.contactUs_emailId,
           "message": $scope.contactUs_message
         }
     };
+      console.log(JSON.stringify(jsonStr));
     callingWS("contactUs", jsonStr);
-
-        $("#divContactUsThankyou1").removeClass("hide");
     $("#divContactUsThankyou").removeClass("hide");
-
+      $("#divContactUs").addClass("hide");
+      $(".imgProcessSend").addClass("hide");
+    }, 1000);
         setTimeout(function () {
           $("#divContactUsThankyou1").addClass("hide");
           $("#divContactUsThankyou").addClass("hide");
+          $("#divContactUs").removeClass("hide");
           $('.resetContactUs').trigger('click');
-
       }, 3000);
-
         // $("#divContactUs").addClass("hide");
+    // var jsonStr = {
+    //   "sendUpdateRequest":
+    //     { "yourName": $scope.contactUs_yourName,
+    //       "emailId": $scope.contactUs_emailId,
+    //       "message": $scope.contactUs_message
+    //     }
+    // };
+    // callingWS("contactUs", jsonStr);
+
+    //     $("#divContactUsThankyou1").removeClass("hide");
+    // $("#divContactUsThankyou").removeClass("hide");
+
+    //     setTimeout(function () {
+    //       $("#divContactUsThankyou1").addClass("hide");
+    //       $("#divContactUsThankyou").addClass("hide");
+    //       $('.resetContactUs').trigger('click');
+
+    //   }, 3000);
+
+    //     // $("#divContactUs").addClass("hide");
     };
 
     $scope.resetForm = function() {
