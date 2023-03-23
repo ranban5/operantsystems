@@ -291,6 +291,13 @@ strong,
   display: block;
 }
 
+/* Mask the input as password */
+.password-mask {
+  -webkit-text-security: disc;
+  -moz-webkit-text-security: disc;
+  -moz-text-security: disc;
+}
+
 .white-line {
   background: #ffffff;
   margin: auto;
