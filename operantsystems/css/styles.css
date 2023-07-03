@@ -1940,7 +1940,7 @@ strong,
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,900");
 body
   .progress_inner
-  #step-1:checked
+  input[id^=step-1]:checked
   + input
   + input
   + input
@@ -1949,10 +1949,10 @@ body
   + div
   + div
   > .box_base,
-body .progress_inner #step-4:checked + div + div + div + div > .box_base,
+body .progress_inner input[id^=step-4]:checked + div + div + div + div > .box_base,
 body
   .progress_inner
-  #step-3:checked
+  input[id^=step-3]:checked
   + input
   + div
   + div
@@ -1961,7 +1961,7 @@ body
   > .box_base,
 body
   .progress_inner
-  #step-2:checked
+  input[id^=step-2]:checked
   + input
   + input
   + div
@@ -1976,7 +1976,7 @@ body
 
 body
   .progress_inner
-  #step-1:checked
+  input[id^=step-1]:checked
   + input
   + input
   + input
@@ -1985,10 +1985,10 @@ body
   + div
   + div
   > .box_item,
-body .progress_inner #step-4:checked + div + div + div + div > .box_item,
+body .progress_inner input[id^=step-4]:checked + div + div + div + div > .box_item,
 body
   .progress_inner
-  #step-3:checked
+  input[id^=step-3]:checked
   + input
   + div
   + div
@@ -1997,7 +1997,7 @@ body
   > .box_item,
 body
   .progress_inner
-  #step-2:checked
+  input[id^=step-2]:checked
   + input
   + input
   + div
@@ -2012,7 +2012,7 @@ body
 
 body
   .progress_inner
-  #step-2:checked
+  input[id^=step-2]:checked
   + input
   + input
   + div
@@ -2020,7 +2020,7 @@ body
   + div
   + div
   > .box_lid,
-body .progress_inner #step-4:checked + div + div + div + div > .box_lid {
+body .progress_inner input[id^=step-4]:checked + div + div + div + div > .box_lid {
   top: -20px;
   left: 0px;
   opacity: 0;
@@ -2028,7 +2028,7 @@ body .progress_inner #step-4:checked + div + div + div + div > .box_lid {
 
 body
   .progress_inner
-  #step-2:checked
+  input[id^=step-2]:checked
   + input
   + input
   + div
@@ -2036,7 +2036,7 @@ body
   + div
   + div
   > .box_item,
-body .progress_inner #step-4:checked + div + div + div + div > .box_item {
+body .progress_inner input[id^=step-4]:checked + div + div + div + div > .box_item {
   top: -10px;
   left: 0px;
   opacity: 1;
@@ -2044,21 +2044,21 @@ body .progress_inner #step-4:checked + div + div + div + div > .box_item {
 
 body
   .progress_inner
-  #step-3:checked
+  input[id^=step-3]:checked
   + input
   + div
   + div
   + div
   + div
   > .box_item,
-body .progress_inner #step-4:checked + div + div + div + div > .box_item {
+body .progress_inner input[id^=step-4]:checked + div + div + div + div > .box_item {
   top: 10px;
   left: 0px;
   opacity: 1;
 }
 
-body .progress_inner #step-3:checked + input + div + div + div + div > .box_lid,
-body .progress_inner #step-4:checked + div + div + div + div > .box_lid {
+body .progress_inner input[id^=step-3]:checked + input + div + div + div + div > .box_lid,
+body .progress_inner input[id^=step-4]:checked + div + div + div + div > .box_lid {
   top: -1px;
   left: 0px;
   opacity: 1;
@@ -2066,33 +2066,33 @@ body .progress_inner #step-4:checked + div + div + div + div > .box_lid {
 
 body
   .progress_inner
-  #step-3:checked
+  input[id^=step-3]:checked
   + input
   + div
   + div
   + div
   + div
   > .box_ribbon,
-body .progress_inner #step-4:checked + div + div + div + div > .box_ribbon {
+body .progress_inner input[id^=step-4]:checked + div + div + div + div > .box_ribbon {
   top: 70%;
   left: 0px;
   opacity: 0;
 }
 
-body .progress_inner #step-3:checked + input + div + div + div + div > .box_bow,
-body .progress_inner #step-4:checked + div + div + div + div > .box_bow {
+body .progress_inner input[id^=step-3]:checked + input + div + div + div + div > .box_bow,
+body .progress_inner input[id^=step-4]:checked + div + div + div + div > .box_bow {
   top: 0px;
   left: 0px;
   opacity: 0;
 }
 
-body .progress_inner #step-4:checked + div + div + div + div > .box_ribbon {
+body .progress_inner input[id^=step-4]:checked + div + div + div + div > .box_ribbon {
   top: 50%;
   left: 0px;
   opacity: 1;
 }
 
-body .progress_inner #step-4:checked + div + div + div + div > .box_bow {
+body .progress_inner input[id^=step-4]:checked + div + div + div + div > .box_bow {
   top: -10px;
   left: 0px;
   opacity: 1;
@@ -2175,6 +2175,10 @@ body .progress_inner__step.activeProgress:before {
   color: white;
   background: #1ea4ec;
 }
+body .progress_inner__step.activeProgressConsult:before {
+  color: white;
+  background: #1ea4ec;
+}
 
 /* body .progress_inner__step:nth-child(1):before {
   color: white;
@@ -2195,22 +2199,22 @@ body .progress_inner {
   width: 60%;
 }
 
-body .progress_inner #step-4:checked + div {
+body .progress_inner input[id^=step-4]:checked + div {
   width: 45%;
 }
-body .progress_inner #step-4:checked div + div + div > .tab:nth-of-type(4) {
+body .progress_inner input[id^=step-4]:checked div + div + div > .tab:nth-of-type(4) {
   opacity: 1;
   top: 0;
 }
-body .progress_inner #step-4:checked + div + div + div + div {
+body .progress_inner input[id^=step-4]:checked + div + div + div + div {
   right: 30%;
 }
-body .progress_inner #step-3:checked + input + div {
+body .progress_inner input[id^=step-4]:checked + input + div {
   width: 30%;
 }
 body
   .progress_inner
-  #step-3:checked
+  input[id^=step-3]:checked
   + input
   + div
   + div
@@ -2219,15 +2223,15 @@ body
   opacity: 1;
   top: 0;
 }
-body .progress_inner #step-3:checked + input + div + div + div + div {
+body .progress_inner input[id^=step-3]:checked + input + div + div + div + div {
   right: 50%;
 }
-body .progress_inner #step-2:checked + input + input + div {
+body .progress_inner input[id^=step-2]:checked + input + input + div {
   width: 15%;
 }
 body
   .progress_inner
-  #step-2:checked
+  input[id^=step-2]:checked
   + input
   + input
   + div
@@ -2237,15 +2241,15 @@ body
   opacity: 1;
   top: 0;
 }
-body .progress_inner #step-2:checked + input + input + div + div + div + div {
+body .progress_inner input[id^=step-2]:checked + input + input + div + div + div + div {
   right: 70%;
 }
-body .progress_inner #step-1:checked + input + input + input + div {
+body .progress_inner input[id^=step-1]:checked + input + input + input + div {
   width: 0%;
 }
 body
   .progress_inner
-  #step-1:checked
+  input[id^=step-1]:checked
   + input
   + input
   + input
@@ -2258,7 +2262,7 @@ body
 }
 body
   .progress_inner
-  #step-1:checked
+  input[id^=step-1]:checked
   + input
   + input
   + input
@@ -2607,23 +2611,23 @@ body .progress_inner__step:hover:before {
   background: #1ea4ec;
 }
 
-body .progress_inner #step-4:checked + div {
+body .progress_inner input[id^=step-4]:checked + div {
   width: 74%;
 }
-body .progress_inner #step-4:checked + div + div + div > .tab:nth-of-type(4) {
+body .progress_inner input[id^=step-4]:checked + div + div + div > .tab:nth-of-type(4) {
   opacity: 1;
   top: 0;
 }
-body .progress_inner #step-4:checked + div + div + div {
+body .progress_inner input[id^=step-4]:checked + div + div + div {
   /* right: 30%; */
   right: 10%;
 }
-body .progress_inner #step-3:checked + input + div {
+body .progress_inner input[id^=step-3]:checked + input + div {
   width: 50%;
 }
 body
   .progress_inner
-  #step-3:checked
+  input[id^=step-3]:checked
   + input
   + div
   + div
@@ -2632,15 +2636,15 @@ body
   opacity: 1;
   top: 0;
 }
-body .progress_inner #step-3:checked + input + div + div + div + div {
+body .progress_inner input[id^=step-3]:checked + input + div + div + div + div {
   right: 50%;
 }
-body .progress_inner #step-2:checked + input + input + div {
+body .progress_inner input[id^=step-2]:checked + input + input + div {
   width: 25%;
 }
 body
   .progress_inner
-  #step-2:checked
+  input[id^=step-2]:checked
   + input
   + input
   + div
@@ -2650,15 +2654,28 @@ body
   opacity: 1;
   top: 0;
 }
-body .progress_inner #step-2:checked + input + input + div + div + div + div {
+body .progress_inner input[id^=step-2]:checked + input + input + div + div + div + div {
   right: 70%;
 }
-body .progress_inner #step-1:checked + input + input + input + div {
+body .progress_inner input[id^=step-1]:checked + input + input + input + div {
   width: 0%;
 }
 body
   .progress_inner
-  #step-1:checked
+  input[id^=step-1]:checked
+  + input
+  + input
+  + input
+  + div
+  + div
+  + div
+  > .tab:nth-of-type(1) {
+  opacity: 1;
+  top: 0;
+}
+body
+  .progress_inner.consultSection
+  input[id^=step-1]:checked
   + input
   + input
   + input
@@ -2671,7 +2688,7 @@ body
 }
 body
   .progress_inner
-  #step-1:checked
+  input[id^=step-1]:checked
   + input
   + input
   + input
@@ -5355,6 +5372,9 @@ span.active {
 }
 
 /* Content */
+.imageLists.consult_service_section a{
+	text-decoration:none;
+}
 .imageLists .content {
   background-color: white;
   padding: 0px 10px 10px 10px;
@@ -5363,13 +5383,30 @@ span.active {
   line-height: 21px;
   height: 178px;
 }
-
+.imageLists.consult_service_section .content{
+	height: 190px;
+}
 .imageLists .content > .content-image > img {
   max-width: 100%;
   height: 100%;
   width: 100px;
   height: 90px;
 }
+.imageLists.consult_service_section .content > .content-image > img {
+  max-width: 100%;
+  height: 100%;
+  width: 80px;
+  height: 90px;
+}
+.imageLists.consult_service_section a .content > .content-image > img {
+ -webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+.imageLists.consult_service_section a:hover .content > .content-image > img {
+	-webkit-filter: grayscale(0) ;
+	filter: grayscale(0);
+}
+
 .imageLists .content > .content-image {
   padding: 10px;
   line-height: 26px;
@@ -5377,6 +5414,9 @@ span.active {
   display: block;
   width: 100%;
   height: 125px;
+}
+.imageLists.consult_service_section .content > .content-image{
+	height: 115px;
 }
 
 .staff_timesheet_img {
@@ -6979,6 +7019,9 @@ span.active {
 .carousel-img05 {
   background-image: url("../images/new_images/home-team-bg-images/Group 2115.png") !important;
 }
+.carousel-img06 {
+  background-image: url("../images/new_images/home-team-bg-images/Group 2194.png") !important;
+}
 
 @media only screen and (max-width: 767px) {
   .carousel-img01 {
@@ -6996,4 +7039,85 @@ span.active {
   .carousel-img05 {
     background-image: url("../images/new_images/home-team-bg-images/masked_mobile05.png") !important;
   }
+}
+
+body .progress_inner__tabs.newSection .tab {
+	box-shadow: none;
+    text-align: left;
+    left: 0;
+}
+.coming_soon {
+    -webkit-transform:rotate(-20deg);
+    -moz-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+   transform: rotate(-20deg);
+    font-size: 104px;
+    color: #ccc;
+    font-weight: bold;
+    letter-spacing: 4px;
+    position: absolute;
+    z-index: 1000;
+    top: 95px;
+    left: 11%;
+    opacity: 0.7;   
+    filter:alpha(opacity=70);
+}
+.imageLists.consult_service_section{
+	position:relative;
+}
+.progress_inner.consultSection .tab{
+	width: 100%;
+}
+.arrowSection{
+	    display: inline-block;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+	  position:relative;
+	left:10%;
+}
+.arrowContainer{
+	width: 35%;
+	float:left;
+}
+.arrowContainer p{
+	font-size: 10px;
+    padding: 0 20px 0 30px;
+    color: #333;
+	line-height: 1.5;
+	opacity: 1;
+}
+.arrowNavFrist{
+	
+	background-image: url(../images/new_images/arrow01.png);
+ height: 100px;
+    display: inline-block;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: 321px;
+    padding: 22px 23px 10px 5px;
+    color: #fff;
+    line-height: 2;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+.arrowNavSecond{
+	
+	background-image: url(../images/new_images/arrow02.png);
+ height: 100px;
+    display: inline-block;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: 321px;
+    padding: 22px 23px 10px 5px;
+    color: #fff;
+    line-height: 2;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+	position:relative;
+	left:-55px;
+}
+.modal-body.consulting_services{
+	height:580px;
 }

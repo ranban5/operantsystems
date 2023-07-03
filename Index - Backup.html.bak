@@ -1,0 +1,3553 @@
+﻿<!doctype html>
+<html lang="en" ng-app="indexApp">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Simple, Yet Powerful Practice Management Solution">
+	<meta name="Operant Systems description"
+		content="Operant Systems provides a Practice Management Solution that run across multiple hardware platforms which is used by 
+		therapists who care for children and adults with special needs like autism. Operant Systems allows you to implement skills 
+		acquisition programs, behavior management strategies, and behavior management plans. Operant Systems autism software tools 
+		can be used by behavior analysts, speech therapists, occupational therapists, and physical therapists. Operant Systems has 
+		a dynamic curriculum and behavior management library. Operant Systems is software has an open flexible design that supports 
+		all behavior therapies. The data collection solution records both in a one-on-one and group settings and generates billing. 
+		Patent 8,182,267">
+	<meta name="keywords"
+		content="Stamp, Startup, Multipurpose, Bootstrap, Landing page, Template, Registration, Landing">
+	<meta name="author" content="operantSys">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="Pragma" content="no-cache">
+	<!-- SITE TITLE -->
+	<title>Operant Systems Inc.</title>
+
+	<!-- =========================
+     FAV AND TOUCH ICONS AND FONT
+    ============================== -->
+	<link rel="icon" href="operantsystems/images/favicons/Favicon-1.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="operantsystems/images/favicons/favicon-152.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="operantsystems/images/favicons/favicon-120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="operantsystems/images/favicons/favicon-72.png">
+	<link rel="apple-touch-icon-precomposed" href="operantsystems/images/favicons/favicon-57.png">
+
+	<!-- =========================
+     STYLESHEETS
+    ============================== -->
+	<!-- BOOTSTRAP AND ANIMATION AND COLORS-->
+
+
+	<link rel="stylesheet" href="operantsystems/css/colors/orange.css">
+	<link rel="stylesheet" href="operantsystems/css/w3.css">
+	<!-- <link rel="stylesheet" href="operantsystems/css/bootstrap.min.css"> -->
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link href="operantsystems/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="stylesheet" href="operantsystems/css/styles.css?ver=Oct232021">
+
+	<!-- <link rel="stylesheet" href="operantsystems/css/animate.min.css"> -->
+	<link rel="stylesheet" href="operantsystems/css/animate.min.css">
+	
+
+	<!-- FONT ICONS -->
+	<link rel="stylesheet" href="operantsystems/assets/icons/icons.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<!-- <link rel="stylesheet" href="operantsystems/css/all.css"> -->
+
+	<!-- CAROUSEL AND LIGHTBOX -->
+	<!--<link rel="stylesheet" href="operantsystems/css/owl.theme.css">
+	Access-Control-Allow-Origin: *
+	<link rel="stylesheet" href="operantsystems/css/owl.carousel.css">
+	<link rel="stylesheet" href="operantsystems/css/nivo-lightbox.css">
+	<link rel="stylesheet" href="operantsystems/css/nivo_themes/default/default.css"-->
+
+	<!-- RESPONSIVE FIXES -->
+	<link rel="stylesheet" href="operantsystems/css/responsive.css">
+
+	<!-- CUSTOM STYLESHEETS -->
+
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="operantsystems/fonts/poppins-font.css"
+		rel="stylesheet">
+
+
+	<!--[if lt IE 9]>
+	<script src="operantsystems/js/html5shiv.min.js"></script>
+	<![endif]-->
+	<!--[if gte IE 9]>
+	<style type="text/css">
+		.standard-button,
+		.navbar-register-button {
+			filter: none;
+		}
+	</style>
+	<![endif]-->
+	<!-- ****************
+      After neccessary customization/modification, Please minify HTML/CSS according to http://browserdiet.com/en/ for better performance
+     **************** -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="operantsystems/css/angular-moment-picker.min.css"
+		rel="stylesheet">
+	<!-- End of datepicker -->
+
+
+</head>
+
+<body ng-controller="indexController" class="top-ribbon">
+
+	<!-- =========================
+ PRE LOADER
+============================== -->
+	<div class="preloader">
+	<div class="status">
+		&nbsp;
+	</div>
+</div>
+
+	<!-- =========================
+ SECTION: HOME / HEADER
+============================== -->
+	<!-- <a id="scroll-button"><i class="fas fa-arrow-circle-up"></i></a> -->
+	<!-- COLOR OVER IMAGE -->
+	<nav id="mainNavbar" class="navbar navbar-dark  navbar-expand-md py-0 fixed-top home-navbar home1" id="home" data-stellar-background-ratio="3.5">
+		<div class="container home-menu px-0">
+			<a href="#" class="navbar-brand goToHome" ><img src="operantsystems/images/new_images/Log1.png" class="showWithScroll"/>
+				<img src="operantsystems/images/new_images/transparent_logos/logo_carosuel.png" class="showWithoutScroll"/></a>
+			<button class="navbar-toggler navBar-menu" data-toggle="collapse" data-target="#navLinks">
+				<!-- <span class="icon-software-layout-header-bar"></span> -->
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navLinks">
+				<ul class="navbar-nav ml-auto nav navbar-right small-text pr-2">
+					<li class="nav-item activeNav custom-menu menuBarItem homes-menu generic-menu">
+						<a href="#home" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Home</a>
+					</li>
+					<li class="nav-item custom-menu menuBarItem features-menu generic-menu" ng-click="linkClick('features')">
+						<a href="#features" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Features</a>
+					</li>
+					<li class="nav-item custom-menu menuBarItem team-menu generic-menu" ng-click="linkClick('team')">
+						<a href="#team" class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Team</a>
+					</li>
+					<li class="nav-item custom-menu menuBarItem news-menu generic-menu" ng-click="linkClick('news')">
+						<a href="#news" class="nav-link poppins-FontFamily font-weight-500-poppins">News</a>
+					</li>
+					<li class="nav-item custom-menu menuBarItem contactus-menu generic-menu" ng-click="linkClick('contactus')">
+						<a href="#contactus"
+							class="nav-link poppins-FontFamily text-white font-weight-500-poppins">Contact Us</a>
+					</li>
+					<!-- <li class="nav-item" id="goToContactUs">
+							<a class="nav-link poppins-FontFamily text-white font-weight-bold">Contact Us</a>
+						</li> -->
+					<li class="nav-item enrollment-menu custom-menu">
+						<a href=""
+							class="nav-link poppins-FontFamily blue-color font-weight-500-poppins enroll-link">Demo</a>
+						<!-- <span class="nav-link poppins-FontFamily text-white font-size-14 font-weight-500-poppin enroll-link">Enroll
+							Know</span> -->
+
+						<div class="enrollment-link">
+							<div class="formCSS">
+								<div class="horizontal-subscribe-form">
+									<span id="idModalHome3Close" class="close close-button blue-color">×</span>
+									<form name="formMail"
+										class="form-inline  ng-pristine ng-valid-email ng-invalid ng-invalid-required"
+										ng-submit="chkGetStarted()">
+
+										<div id="gs1" class="">
+											<label class="poppins-FontFamily text-left font-12 font-weight-normal-poppins" style="width: 100%;display: block;">Enter E-Mail ID for Enroll</label>
+											<input type="email" id="cf-email" name="email" ng-model="emailId"
+												class="form-control input-box  placeholder ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required"
+												 required="">
+												 <div class="error-container ng-hide"
+											ng-show="formMail.email.$dirty &amp;&amp; formMail.email.$invalid">
+											<small class="text-danger" ng-show="formMail.email.$error.required">
+												Your email is required.
+											</small>
+											<small class="text-danger ng-hide" ng-show="formMail.email.$error.email">
+												Your email is not valid
+											</small>
+										</div>
+											<button type="submit" class="btn btn-primary standard-button">Get
+												Started</button>
+										</div>
+										
+										<div id="gs2" class="hide">
+											<p class="poppins-FontFamily font-12 text-dark"><strong class="mb-1 d-block poppins-FontFamily text-dark font-size-14">Thanks! We will contact you soon.</strong>
+												<small class="poppins-FontFamily font-12 text-dark">
+													To schedule a DEMO please enter the data and time below.
+												</small></p>
+												<label class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins d-block">Name</label>
+											<input type="text" id="cf-name" class="form-control placeholder enroll-know-form-fields">
+												<label class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins d-block">Phone Number</label>
+											<input type="text" id="cf-phone" class="form-control placeholder enroll-know-form-fields">
+											<br>
+											<p class="input-group ng-isolate-scope demo-date-time-container"
+												moment-picker="demoDate" format="MM-DD-YYYY">
+												<label class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins d-block mb-1">Select Date</label>
+												<input
+													class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins form-control placeholder ng-pristine ng-untouched ng-valid ng-scope moment-picker-input poppins-FontFamily font-12 text-dark font-weight-normal-poppins select-date-field"
+													placeholder="Demo Date" ng-model="demoDate"
+													ng-model-options="{ updateOn: 'blur' }" tabindex="0">
+												<span class="input-group-btn ng-scope select-date-icon">
+													<button type="button" class="btn btn-default">
+														<i class="material-icons">event</i>
+													</button>
+												</span>
+												
+											</p>
+
+											<p class="input-group ng-isolate-scope demo-date-time-container"
+												moment-picker="demoTime" format="HH:mm">
+												<label class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins d-block mb-1">Select Date</label>
+												<input
+													class="form-control placeholder ng-pristine ng-untouched ng-valid ng-scope moment-picker-input select-date-fieldpoppins-FontFamily font-12 text-dark font-weight-normal-poppins"
+													placeholder="Demo Time" ng-model="demoTime"
+													ng-model-options="{ updateOn: 'blur' }" tabindex="0">
+												<span class="input-group-btn ng-scope select-date-icon">
+													<button type="button" class="btn btn-default">
+														<i class="material-icons">access_time</i>
+													</button>
+												</span>
+
+												
+											</p>
+											<div>
+											<span style="color:#ffffff" class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins d-block"><strong>EST time Only</strong></span>
+											<button class="btn poppins-FontFamily font-12 white-colorfont-weight-normal-poppins" type="button" ng-click="saveNamePhone()">SUBMIT</button>
+											</div>
+										</div>
+										<div id="gs3" class="hide" style="width:100%">
+											<p class="poppins-FontFamily font-12 text-dark font-weight-normal-poppins d-block">Thanks! <br>We will get back to you soon.</p>
+											<button  class="btn btn-primary standard-button button-reset text-center" type="reset"
+                								ng-click="reset()" padding-top="true">Close</button>
+										</div>
+									</form>
+									<p class="mailchimp-success white-text"><span
+											class="icon-check-alt2 colored-text"></span>Thanks! Please confirm your
+										subscription from your email inbox</p>
+									<p class="mailchimp-error white-text"><span class="icon-close-alt2"></span>Error!
+										Please enter correct email</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="nav-item user-login-menu custom-menu">
+						<a href="" class="nav-link poppins-FontFamily text-white font-weight-500-poppins user-login-btn" ng-click="loginPage()">User Login</a>
+
+						<div class="login-container hide  p-3" style="display: none;">
+							<span id="idModalHome3Close" class="close close-button blue-color">×</span>
+							<form class="form-horizontal" method="post" accept-charset="UTF-8">
+								<p class="error hide poppins-FontFamily font-12 font-weight-normal-poppins text-left">Invalid User Id and Password</p>
+								<div class="form-group text-left">
+									<label class="poppins-FontFamily font-12 font-weight-normal-poppins m-0">Enter User ID</label>
+									<input id="login_UserId" type="text" class="form-control poppins-FontFamily font-weight-normal-poppins font-12">
+								</div>
+								<div class="form-group mb-0 text-left">
+									<label class="poppins-FontFamily font-12 font-weight-normal-poppins m-0">Enter Password</label>
+									<input id="login_Psd" type="text" class="form-control poppins-FontFamily font-weight-normal-poppins font-12 password-mask" autocomplete="current-password">
+								</div>
+								<br>
+								<div class="text-center">
+                                    <!--<input type="submit" id="btnLoingSubmit"
+										class="btn btn-primary navbar-register-button btn-lg btn-block poppins-FontFamily font-14" value="login"
+                                           ng-click="loginPage_CheckUserIdPassword()">-->
+                                    <button type="submit" id="btnLoingSubmit" name="btnLogin" class="btn btn-primary navbar-register-button btn-lg btn-block poppins-FontFamily font-14 "
+                                            value="btn_was_clicked" ng-click="loginPage_CheckUserIdPassword()">
+                                        Login
+                                        <img class="imgProcess hide" src="images/in-progress.gif" style="float:right">
+                                    </button>
+								</div>
+								<!-- <div class="text-center">
+									<input type="submit" id="btnLoingSubmit"
+										class="btn btn-primary navbar-register-button btn-lg btn-block poppins-FontFamily font-14" value="login"
+										ng-click="loginPage_CheckUserIdPassword()">
+								</div> -->
+							</form>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+
+
+	<section class="home2 subSections" id="home">
+
+		<header class="header  home1" data-stellar-background-ratio="3.5">
+			<div id="indicators" class="carousel slide home-carousel" data-ride="carousel" data-interval="5000" data-pause="false">
+				<ol class="carousel-indicators">
+					<li data-target="#indicators" data-slide-to="0" class="active"></li>
+					<li data-target="#indicators" data-slide-to="1"></li>
+					<li data-target="#indicators" data-slide-to="2"></li>
+					<li data-target="#indicators" data-slide-to="3"></li>
+					<li data-target="#indicators" data-slide-to="4"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<!-- Slide One - Set the background image for this slide in the line below -->
+					<div class="carousel-item active carousel-img01">
+
+						
+						<!-- <div class="carousel-caption">
+							<h2 class="my-1 poppins-FontFamily blue-color">Customize Your Skills & <br />Behavior
+								Programs</h2>
+							<p class="poppins-FontFamily blue-color mt-3">Define Operational Definition And Sends Assign
+								Program To Multiple Students View Frequency Duration & Interval Data Add Unlimited
+								Programs</p>
+							<button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg">Explore More
+								&nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button>
+						</div> -->
+						<div class="carousel-caption carouselPad">
+							<!-- <div class="simple-logo"> -->
+								<!-- <img src="operantsystems/images/new_images/transparent_logos/Logo_homePage_carousel.png"
+									class="img-fluid" /> -->
+									<!-- <h1 class="pb-1 poppins-FontFamily m-0 blue-color child_pripority_title">Making Your child is our priority</h1>
+								</div> -->
+							<h1 class="pb-1 poppins-FontFamily m-0 blue-color child_pripority_title">Your child <br class="carousel-image-br"/> is our priority</h1>
+							<p class="my-2 poppins-FontFamily m-0 orange-color font-weight-bold-poppins d-none d-lg-block d-md-block">Simple, Yet Powerful</p>
+							<p class="poppins-FontFamily m-0 text-dark font-weight-bold-poppins d-none d-lg-block d-md-block">ABA Practice Management
+								Solution</p>
+							<!-- <p class="text-right  mb-1 font-italic child-priority text-dark font-bold"> Making your
+								child our priority</p> -->
+							<div class="simple-logos-list">
+								<span class="d-inline-block pr-1"><img
+										src="operantsystems/images//new_images/microsoft_health_logo.jpg" class="img-fluid" style="width:100px" /></span>
+								<span class="d-inline-block pr-1"><img
+										src="operantsystems/images/new_images/SIIA-logo.png" class="img-fluid" /></span>
+								<span class="d-inline-block"><img
+										src="operantsystems/images/new_images/pma-logo-shirnked.png"
+										class="img-fluid" /></span>
+							</div>
+						</div>
+					</div>
+						<!-- Slide two- Set the background image for this slide in the line below -->
+					<div class="carousel-item carousel-img02">
+											
+						<div class="carousel-caption" style="margin-top:90px">
+							<h2 class="pb-2 poppins-FontFamily blue-color">Data <br class="carousel-image-br"/> Collection</h2>
+							<ul class="poppins-FontFamily data-collection-list d-none d-lg-block d-md-block">
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+										class="d-inline-block align-middle">Collect-session data on ipad,<br />phone or
+										laptop</span></li>
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+										class="d-inline-block align-middle">Record data without internet <br />using pad
+										and phone</span></li>
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+										class="d-inline-block align-middle">Resume unsaved data on ABA <br />Pocketbook
+										app</span></li>
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+										class="d-inline-block align-middle">Edit & Update data using the<br />WEB
+										app</span></li>
+							</ul>
+							<!-- <button class="btn poppins-FontFamily orange-bg white-color schedule-demo-btn">Schedule a Demo</button> -->
+							<!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+						</div>
+					</div>
+					<!-- Slide three- Set the background image for this slide in the line below -->
+					<div class="carousel-item carousel-img03">
+						<div class="carousel-caption">
+							<h2 class="pb-2 poppins-FontFamily blue-color">Dynamic<br />Dashboard</h2>
+							<ul class="poppins-FontFamily d-none d-lg-block d-md-block">
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Instantly
+									view daily sessions</li>
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Access to
+									previous session data</li>
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>View
+									skills and behavior graph</li>
+								<li class="blue-color font-weight-regular-poppins"><span
+										class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Export
+									session data to excel</li>
+							</ul>
+							<!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+						</div>
+					</div>
+					<!-- Slide four- Set the background image for this slide in the line below -->
+					<div class="carousel-item carousel-img04">
+						<div class="carousel-caption">
+							<h2 class="my-1 poppins-FontFamily blue-color">Customize Your Skills & <br />Behavior
+								Programs</h2>
+							<p class="poppins-FontFamily blue-color mt-3 d-none d-lg-block d-md-block">Define Operational Definition And Sends Assign
+								Program To Multiple Students View Frequency Duration & Interval Data Add Unlimited
+								Programs</p>
+							<!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Explore More
+								&nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button> -->
+						</div>
+					</div>
+					<!-- Slide five - Set the background image for this slide in the line below -->
+					<div class="carousel-item carousel-img05">
+						<div class="carousel-caption">
+							<h2 class="pb-2 poppins-FontFamily blue-color">Built-In <br />Scheduling <br />System</h2>
+							<p class="poppins-FontFamily blue-color d-none d-lg-block d-md-block">Manage time using our built-in <br /> single
+								entry scheduling system</p>
+							<!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+						</div>
+					</div>
+					
+				</div>
+				<a class="carousel-control-prev hideInMobile" href="#indicators" role="button" data-slide="prev">
+					<i class="fas fa-chevron-left" aria-hidden="true" style="font-size:32px;"></i>
+					<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next hideInMobile" href="#indicators" role="button" data-slide="next">
+					<i class="fas fa-chevron-right" aria-hidden="true" style="font-size:32px;"></i>
+					<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</header>
+		<!-- Page Content -->
+		<a class="arrow-wrap bounce-arrow"><span class="arrow"></span></a>
+
+		<div class="py-5 medium-grey home-sections best_pratices">
+			<div class="container px-0">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing mt-4">
+						<h2 class="text-center">Consulting Services Support</h2>
+						<p class="text-center">Access Actionable, Objective and Deliverable Services To Start, Develop and Grow, 
+Your ABA Clinical Business
+</p>
+					</div>
+				</div>
+
+				<div class="imageLists">
+
+					<div class="row">
+						<div class="column rounded-border">
+						<a href=":;" data-toggle="modal" data-target="#consulting_service_modal">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 15.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+								
+									<p class="my-0 imageLists-content">Starting or Growing Your Business</p>
+								</div>
+							</div>
+							</a>
+						</div>
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 16.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Compliance, Audit, and Accreditation.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 17.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Compliance, Audit, and Accreditation.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 18.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Recruitment</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 19.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Assessment Training, Verbal Behavior and Social Skills</p>
+								</div>
+							</div>
+
+						</div>
+
+						
+
+						
+
+						
+
+						
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+		
+		<div class="py-5 medium-grey home-sections best_pratices">
+			<div class="container px-0">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing mt-4">
+						<h2 class="text-center">Best Practice. Powerful Insights. Hundreds Of Features</h2>
+						<p class="text-center">ABA Pocketbook Comes With A Bundle Of Clinical And Educational Features
+							In A Data Driven Process</p>
+					</div>
+				</div>
+
+				<div class="imageLists">
+
+					<div class="row">
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 15.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Skills Acquisition</p>
+								</div>
+							</div>
+						</div>
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 16.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Curriculum (Customizable)</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 17.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Behavior Duration</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 18.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Interval Data</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 19.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Phase Change Line</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 14.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Advanced Reporting</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 13.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Session Notes</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 14.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Signatures</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 11.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Time Tracking & Attendance</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column rounded-border">
+							<div class="content">
+								<div class="content-image">
+									<img src="operantsystems/images/new_images/Image 10.png" alt="Mountains"
+										class="img-fluid">
+								</div>
+								<div class="image-content pb-4">
+									<p class="my-0 imageLists-content">Auto Sync/ Auto Recovery</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<p class="pl-3 mt-lg-3 py-lg-3 py-sm-0 mt-sm-3 text-center d-block"> <button
+					class="btn poppins-FontFamily more-buttons white-bg text-center goToFeaturesFirstSection">Learn More&nbsp;<img
+							src="operantsystems/images/arrow-right.svg"
+							style="width: 30px;margin-left:15px" /></button></p>
+			</div>
+		</div>
+
+		<div class="py-5 personalized_tech home-sections">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-md-12 text-center margin-bottom-spacing">
+						<h2 class="text-center">Setting You Up For Success</h2>
+						<p class="text-center mb-0">We build Your Dream Website</p>
+						<p class="text-center mb-5">Customize fillable forms for billing and more</p>
+					</div>
+
+						<!-- progress bar santosh -->
+					<div class="col-md-12 text-center">
+						
+					</div>
+
+					<div class="col-md-6  personalized_tech_img">
+						<!--<a href=":;" data-toggle="modal" data-target="#exploreMore-NewModal"><img src="operantsystems/images/new_images/Image 20.png" class="img-fluid" /></a>-->
+						<img src="operantsystems/images/new_images/Image 20.png" class="img-fluid" />
+						<p class="pt-5"> <button class="btn poppins-FontFamily more-buttons white-bg text-center" data-toggle="modal" data-target="#exploreMore-NewModal">
+							Learn More&nbsp;<img src="operantsystems/images/arrow-right.svg"
+									style="width: 30px;margin-left:15px" /></button></p> 
+									<p class="pt-5"> <button class="btn poppins-FontFamily more-buttons white-bg text-center">
+							Coming soon&nbsp;<img src="operantsystems/images/arrow-right.svg"
+									style="width: 30px;margin-left:15px" /></button></p>
+					</div>
+					<div
+						class="col-md-6 personalized_tech_img text-left personalized_tech_img_pdf  personalized-image-right-padding">
+						<!--<p class="pt-0"> <button class="btn poppins-FontFamily more-buttons white-bg text-center" data-toggle="modal" data-target="#learnMore-NewModal">
+							Coming Soon&nbsp;<img src="operantsystems/images/arrow-right.svg"
+									style="width: 30px;margin-left:15px" /></button></p> -->
+									<p class="pt-0"> <button class="btn poppins-FontFamily more-buttons white-bg text-center">
+							Coming Soon&nbsp;<img src="operantsystems/images/arrow-right.svg"
+									style="width: 30px;margin-left:15px" /></button></p>
+						<img src="operantsystems/images/new_images/Billing_new.png" class="img-fluid" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="py-4 engaging_videos medium-grey home-sections">
+
+			<div class="container">
+				<div class="row  my-4">
+
+					<div id="first" class="col-md-12 col-sm-12  text-center margin-bottom-spacing order-shift">
+						<h2 class="text-center mt-3 mb-3 pt-4 poppins-FontFamily">Engaging Entertaining Videos</h2>
+						<!--<p class="text-center pt-0 poppins-FontFamily">Lorem ipsum is Simply Dummy Text of the Printing And Typesetting Industry.</p>-->
+					</div>
+					<div id="second" class="col-md-6 col-sm-12 order-shift ">
+						<!-- <div class="embed-responsive embed-responsive-16by9"> 
+						<video width="320" height="240" controls controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar" poster=
+						"images/new_images/Group 1998.png">
+							<source src="operantsystems/images/video.mp4" type="video/mp4">
+						</video>
+					</div>  -->
+						<div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+							<img src="operantsystems/images/new_images/features/Image 34/Group 1998.png"
+								style="cursor:pointer" class="img-fluid" />
+						</div>
+
+						<div class="embed-responsive embed-responsive-16by9" style="display:none">
+							<iframe class="embed-responsive-item"
+								src="https://www.youtube.com/embed/scmj3D8UeNM?&modestbranding=0&rel=0&autoplay=1"></iframe>
+						</div>
+					</div>
+
+					<div id="third" class="col-md-6 col-sm-12 pl-5 mt-sm-1 mt-lg-0 mg-md-0 order-shift">
+
+						<ul
+							class="list-group engaging-videos-list text-lg-left text-md-left text-sm-left home-sections-list">
+							<li class="list-group-item pt-0 pb-2"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Motivating & Customizable Training Programs</li>
+							<li class="list-group-item pb-2"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Reduce Training Time</li>
+							<li class="list-group-item pb-2"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Improve Care</li>
+							<li class="list-group-item pb-2"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Eliminate Staff Turnover</li>
+						</ul>
+						 <p class="pl-3 mt-lg-5 py-lg-5  py-sm-0 mt-sm-3"> <button
+								class="btn text-center poppins-FontFamily more-buttons white-bg openEnrollmentBox">Schedule a
+								Demo&nbsp;<img src="operantsystems/images/arrow-right.svg"
+									style="width: 30px;margin-left:15px" /></button></p> 
+									<!--<p class="pl-3 mt-lg-5 py-lg-5  py-sm-0 mt-sm-3"> <button
+										class="btn text-center poppins-FontFamily more-buttons white-bg" data-toggle="modal" data-target="#engaginglearnMore-modal">Learn More&nbsp;<img src="operantsystems/images/arrow-right.svg"
+											style="width: 30px;margin-left:15px" /></button></p> -->
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="py-5 dynamic_curriculum home-sections">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing order-shift">
+						<h2 class="text-center">Dynamic Curriculum & Behavior Programs</h2>
+						<!-- <p class="text-center">Lorem ipsum is Simply Dummy Text of the Printing And Typesetting
+							Industry.</p> -->
+					</div>
+
+					<div class="col-md-6 order-shift ">
+
+						<ul
+							class="list-group engaging-videos-list  text-lg-left text-md-left text-sm-left home-sections-list">
+							<li class="list-group-item pt-0 pb-2"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Build And Integrate With Your Current Programs</li>
+							<li class="list-group-item pb-2"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Modify Programs To Meet Each Students Needs.</li>
+							<li class="list-group-item pb-2"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Manage Criteria of Success On Individual Targets Or
+								Standardized Criteria Across All Targets.</li>
+							<li class="list-group-item pb-2"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Define Levels Of Intensity Changes in Behavior.</li>
+						</ul>
+						<p class="pl-3 mt-lg-3 py-lg-3 py-sm-0 mt-sm-3"> <button
+								class="btn poppins-FontFamily more-buttons white-bg text-center blue-color read-more-anchor openEnrollmentBox">
+									Schedule a Demo&nbsp;<img
+										src="operantsystems/images/arrow-right.svg"
+										style="width: 30px;margin-left:15px" /></button></p>
+					</div>
+					<div class="col-md-6 order-shift mb-sm-4 home-sections-img-container no-zindex">
+						<img src="operantsystems/images/new_images/features/Image 34/Group 2001.png"
+							class="img-fluid dynamic_curriculum_img" alt="Responsive image">
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="py-5 staff_timesheet d-none d-md-block d-lg-block d-xl-block medium-blue home-sections">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing mt-4">
+						<h2 class="text-center poppins-FontFamily">Staff Timesheet - Compare V/S Actual Hours</h2>
+						<p class="text-center my-0 text-height-20 poppins-FontFamily"><small>Time Tracking Software For
+								Recording Actual Start Time, End Time, Service Type & Session Notes. Manage The
+								Payroll</small></p>
+						<p class="text-center my-0 text-height-20 poppins-FontFamily"><small>With Accurate Timesheets &
+								Productivity Reports Get Actual Logs To Analyze Employee Performance. 40%
+								Improvement</small></p>
+						<p class="text-center my-0 text-height-20 poppins-FontFamily"><small>In Employee's Focus &
+								Productivity. Reduce Operational Cost By 35%</small></p>
+
+					</div>
+
+					<div class="col-md-12  staff_timesheet_img mt-3 mb-4">
+						<img src="operantsystems/images/new_images/Image 22.png" class="img-fluid" />
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="pt-5 pb-2 assessment_programs d-none d-md-block d-lg-block d-xl-block home-sections">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing">
+						<h2 class="text-center poppins-FontFamily">Assessment Programs</h2>
+						<h3 class="text-center poppins-FontFamily">Aligned With Common Assessment Tools</h3>
+						<p class="text-center my-0 poppins-FontFamily font-size-16">The Data Collected Demonstrates The
+							Progress An Individual Is Making In Areas Of Socialization Skills, Language</p>
+						<p class="text-center my-0 poppins-FontFamily font-size-16">Acuqistion, Basic Academic Areas,
+							Fine And Gross Motor Acitivies And Their IERP Goals</p>
+
+					</div>
+
+					<div class="col-md-6  assessment-programs-list mt-5">
+						<ul class="list-group home-sections-list">
+							<li class="list-group-item pt-0 poppins-FontFamily pb-1"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i> Ability To Create PCL And
+								Intervention Lines</li>
+							<li class="list-group-item pb-1 poppins-FontFamily"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i> Ability To Add Maintenance Levels</li>
+							<li class="list-group-item pb-1 poppins-FontFamily"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i> Can Also Be Used To Insert Daily
+								Session.</li>
+							<li class="list-group-item pb-1 poppins-FontFamily"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i> Add/Edit Session Data Using The WEB</li>
+							<li class="list-group-item pb-1 poppins-FontFamily"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i> Generate Unlimited Reports Like Skills,
+								Master Data, Weekly, Monthly</li>
+						</ul>
+					</div>
+
+					<div class="col-md-6  assessment-programs-list mt-4 personalized-image-right-padding">
+						<img src="operantsystems/images/new_images/Image 23.png" class="img-fluid" />
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="subSections home-sections aboutUs" id="home">
+		<div class="py-5 about-us d-none d-md-block d-lg-block d-xl-block medium-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing">
+						<h1 class="text-center poppins-FontFamily">Who We Are (About Us)</h1>
+						<h3 class="text-center poppins-FontFamily">Aligned With Common Assessment Tools</h3>
+					</div>
+
+					<div class="col-md-6 text-center aboutUs-image">
+						<img src="operantsystems/images/new_images/home-team-bg-images/Mask Group 30.png" alt="image"
+							class="img-fuild" />
+					</div>
+
+					<div class="col-md-6">
+						<p class="poppins-FontFamily font-size-16">
+							Operant Systems Provides A Practice Management Solution That
+							Run Across Multiple Hardware Platforms Which Is Used By
+							Therapists Who Care For Children And Adults With Special Needs
+							Like Autism.
+
+						</p>
+						<p class="poppins-FontFamily font-size-16">
+							Operant Systems Allows You To Implement Skills Acquisition
+							Programs, Behavior Management Strategies, And Behavior
+							Management Plans. Operant Systems Autism Software Tools Can
+							Be Used By Behavior Analysts, Speech Therapists, Occupational
+							Therapists, And Physical Therapists.
+						</p>
+
+						<p class="poppins-FontFamily font-size-16">
+							Operant Systems has a dynamic curriculum and behavior management library. Operant Systems is
+							software has
+							an open flexible design that supports all behavior therapies.
+							The data collection solution records both in a one-on-one and group settings and generates
+							billing.
+							Patent 8,182,267
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="home" class="subSections home-sections teamContainer" id="home">
+		<div class="py-5 our-team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center margin-bottom-spacing">
+						<h1 class="text-center poppins-FontFamily">Our Team</h1>
+						<div class="sub-team-tite">
+							<p class="text-center poppins-FontFamily font-weight-regular-poppins blue-color">
+								BOARD OF ADVISORS</p>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-lg-3  mx-1 text-center team-InnerContainer mb-4">
+								<div class="team-image">
+									<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Andy.png"
+										class="img-fluid" />
+								</div>
+								<div class="team-content">
+									<h3 class="poppins-FontFamily blue-color p-0 mb-0 mt-3">Andy Bondy</h3>
+									<p class="poppins-FontFamily blue-color p-0 m-0">Board of Advisors</p>
+								</div>
+							</div>
+							<div class="col-lg-2  mx-1 text-center team-InnerContainer mb-4">
+								<div class="team-image">
+									<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Cindy.png"
+										class="img-fluid" />
+								</div>
+								<div class="team-content">
+									<h3 class="poppins-FontFamily blue-color p-0 mb-0 mt-3">Cindy Aliterson</h3>
+									<p class="poppins-FontFamily blue-color p-0 m-0">Board Of Advisors</p>
+								</div>
+							</div>
+							<div class="col-lg-2  mx-1 text-center team-InnerContainer mb-4">
+								<div class="team-image">
+									<img src="operantsystems/images/new_images/home-team-bg-images/Photo-saul.png"
+										class="img-fluid" />
+								</div>
+								<div class="team-content">
+									<h3 class="poppins-FontFamily blue-color p-0 m-0 mb-0 mt-3">Saul Axelrod</h3>
+									<p class="poppins-FontFamily blue-color p-0 m-0">Board Of Advisors</p>
+								</div>
+							</div>
+							<div class="col-lg-2  mx-1 text-center team-InnerContainer mb-4">
+								<div class="team-image">
+									<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Kevin.png"
+										class="img-fluid" />
+								</div>
+								<div class="team-content">
+									<h3 class="poppins-FontFamily blue-color p-0 m-0 mb-0 mt-3">Kevin Custer</h3>
+									<p class="poppins-FontFamily blue-color p-0 m-0">Board Of Advisors</p>
+								</div>
+							</div>
+							<div class="col-lg-2  mx-1 text-center team-InnerContainer mb-4">
+								<div class="team-image">
+									<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Sarah.png"
+										class="img-fluid" />
+								</div>
+								<div class="team-content">
+									<h3 class="poppins-FontFamily blue-color p-0 m-0 mb-0 mt-3">Sarah Walker, BCBA</h3>
+									<p class="poppins-FontFamily blue-color p-0 m-0">Board Of Advisors</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="subSections contactUsContainer" id="home">
+		<div class="py-md-5 py-lg-5 contact-us">
+			<div class="container">
+				<div class="row  mx-sm-0">
+					<div class="col-md-12 margin-bottom-spacing">
+						<div class="row inner-contact-us poppins-FontFamily">
+							<div class="col-md-4 col-lg-5 contact-us-content">
+								<h3 class="text-white text-lg-left text-md-left text-sm-center">
+									Contact Us!
+								</h3>
+								<p
+									class="text-left small-text py-2 poppins-FontFamily text-lg-left text-md-left text-sm-center desktopView contactUs-text">
+									There are many variations of passages of Lorem Ipsum
+									but the majority have suffered alteration.</p>
+							</div>
+							<div class="col-md-8 col-lg-7">
+
+								<div class="contact-form" id="divContactUs">
+									<form name="formContactUs" class="form-horizontal" ng-submit="chkContactUs()" autocomplete="off">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control poppins-FontFamily font-weight-normal-poppins" placeholder="Name *" name="contactUs_yourName" id="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="email" class="form-control poppins-FontFamily font-weight-normal-poppins" placeholder="Email *" name="contactUs_emailId" id="contactUs_emailId"  ng-model="contactUs_emailId" required onpaste="return false;">
+												</div>
+
+												<div class="error-container"
+													ng-show="formContactUs.contactUs_emailId.$dirty && formContactUs.contactUs_emailId.$invalid">
+													<small class="text-danger" ng-show="formContactUs.contactUs_emailId.$error.required">
+														Your email is required.
+													</small>
+													<small class="text-danger" ng-show="formContactUs.contactUs_emailId.$error.email">
+														Your email is not valid
+													</small>
+												</div>
+											</div>
+			
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea class="form-control poppins-FontFamily font-weight-normal-poppins" id="exampleFormControlTextarea1" rows="3"
+														placeholder="Message *" name="contactUs_message" ng-model="contactUs_message" required onpaste="return false;"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12 text-right contact-us-send-btn">
+                                                <button type="submit" class="btn navbar-register-button">
+                                                    Send
+                                                    <img class="imgProcessSend hide" src="images/in-progress.gif" style="float:right">
+                                                </button>
+											</div>
+			
+											<!-- <div class="col-md-12 text-right contact-us-send-btn">
+												<button type="submit" class="btn navbar-register-button">Send</button>
+											</div> -->
+										</div>
+										<button type="button" ng-click='resetForm()' class="resetContactUs d-none">Reset</button>
+									</form>
+								</div>
+								<div class="row hide" id="divContactUsThankyou" style="color:#fff">
+									<p class="text-left poppins-FontFamily font-weight-normal-poppins">Thank you for contacting us.  We will get back to you by close of next business day.</p>
+									
+								</div>
+							</div>
+							<div class="col-12 mobileView mt-4">
+								<p class="text-center py-2 poppins-FontFamily contactUs-text">There are many variations
+									of passages of Lorem Ipsum
+									but the majority have suffered alteration.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="app-store-images pt-md-5 pt-lg-5 pt-sm-1 mt-3">
+							<ul class="text-center">
+								<li class="text-center">
+									<a href="#" ng-click="availableLink('android_sb_sessions')"><img
+									src="operantsystems/images/background-images/home2-1b.png" /></a></li>
+								<li class="text-center">
+									<a href="#" ng-click="availableLink('ios_sb_sessions')"><img
+										src="operantsystems/images/background-images/home2-1a1.png" /></a>
+									</li>
+								<li class="text-center">
+									<a href="#" ng-click="availableLink('amazon_orange_fire')"><img
+										src="operantsystems/images/background-images/home2-1c3.png" /></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="hide subSections" id="contactus">
+		<div class="contactUs-carousel-container">
+
+			<div id="contactuscarousel" class="carousel slide team-carousel" data-ride="carousel" data-interval="5000" data-pause="false">
+
+				<!-- Indicators -->
+				<!-- <ul class="carousel-indicators">
+				  <li data-target="#contactcarousel" data-slide-to="0" class="active"></li>
+				</ul> -->
+				<ol class="carousel-indicators">
+					<li data-target="#contactuscarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#contactuscarousel" data-slide-to="1"></li>
+					<li data-target="#contactuscarousel" data-slide-to="2"></li>
+					<li data-target="#contactuscarousel" data-slide-to="3"></li>
+					<li data-target="#contactuscarousel" data-slide-to="4"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<!-- The slideshow -->
+					 <!-- Slide One - Set the background image for this slide in the line below -->
+					 <div class="carousel-item active carousel-img01">
+
+					 <!-- <div class="carousel-caption">
+						 <h2 class="my-1 poppins-FontFamily blue-color">Customize Your Skills & <br />Behavior
+							 Programs</h2>
+						 <p class="poppins-FontFamily blue-color mt-3">Define Operational Definition And Sends Assign
+							 Program To Multiple Students View Frequency Duration & Interval Data Add Unlimited
+							 Programs</p>
+						 <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg">Explore More
+							 &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button>
+					 </div> -->
+					 <div class="carousel-caption carouselPad">
+						<!-- <div class="simple-logo"> -->
+							<!-- <img src="operantsystems/images/new_images/transparent_logos/Logo_homePage_carousel.png"
+								class="img-fluid" /> -->
+								<!-- <h1 class="pb-1 poppins-FontFamily m-0 blue-color child_pripority_title">Making Your child is our priority</h1>
+							</div> -->
+						<h1 class="pb-1 poppins-FontFamily m-0 blue-color child_pripority_title">Your child <br class="carousel-image-br"/> is our priority</h1>
+						<p class="my-2 poppins-FontFamily m-0 orange-color font-weight-bold-poppins d-none d-lg-block d-md-block">Simple, Yet Powerful</p>
+						<!-- <h2 class="pb-2 poppins-FontFamily m-0 orange-color">Simple, Yet Powerful</h2> -->
+						<p class="poppins-FontFamily m-0 text-dark font-weight-bold-poppins d-none d-lg-block d-md-block">ABA Practice Management
+							Solution</p>
+						<!-- <p class="text-right  mb-1 font-italic child-priority text-dark font-bold"> Making your
+							child our priority</p> -->
+						<div class="simple-logos-list">
+							<span class="d-inline-block pr-1"><img
+								src="operantsystems/images//new_images/microsoft_health_logo.jpg" class="img-fluid" style="width:100px" /></span>
+							<span class="d-inline-block pr-1"><img
+									src="operantsystems/images/new_images/SIIA-logo.png" class="img-fluid" /></span>
+							<span class="d-inline-block"><img
+									src="operantsystems/images/new_images/pma-logo-shirnked.png"
+									class="img-fluid" /></span>
+						</div>
+					</div>
+				 </div>
+
+				 <div class="carousel-item carousel-img02">
+				 <div class="carousel-caption">
+					 <h2 class="pb-2 poppins-FontFamily blue-color">Data <br class="carousel-image-br"/> Collection</h2>
+
+					 <ul class="poppins-FontFamily data-collection-list d-none d-lg-block d-md-block">
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+								 class="d-inline-block align-middle">Collect-session data on ipad,<br />phone or
+								 laptop</span></li>
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+								 class="d-inline-block align-middle">Record data without internet <br />using pad
+								 and phone</span></li>
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+								 class="d-inline-block align-middle">Resume unsaved data on ABA <br />Pocketbook
+								 app</span></li>
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+								 class="d-inline-block align-middle">Edit & Update data using the<br />WEB
+								 app</span></li>
+					 </ul>
+					 <!-- <button class="btn poppins-FontFamily orange-bg white-color schedule-demo-btn">Schedule a Demo</button> -->
+					 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+				 </div>
+			 </div>
+			 <div class="carousel-item carousel-img03">
+				 <div class="carousel-caption">
+					 <h2 class="pb-2 poppins-FontFamily blue-color">Dynamic<br />Dashboard</h2>
+					 <ul class="poppins-FontFamily d-none d-lg-block d-md-block">
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Instantly
+							 view daily sessions</li>
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Access to
+							 previous session data</li>
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>View
+							 skills and behavior graph</li>
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Export
+							 session data to excel</li>
+					 </ul>
+					 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+				 </div>
+			 </div>
+
+				 <!-- Slide fourth - Set the background image for this slide in the line below -->
+				 <div class="carousel-item carousel-img04">
+					 <div class="carousel-caption">
+						 <h2 class="my-1 poppins-FontFamily blue-color">Customize Your Skills & <br />Behavior
+							 Programs</h2>
+						 <p class="poppins-FontFamily blue-color mt-3 d-none d-lg-block d-md-block">Define Operational Definition And Sends Assign
+							 Program To Multiple Students View Frequency Duration & Interval Data Add Unlimited
+							 Programs</p>
+						 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Explore More
+							 &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button> -->
+					 </div>
+				 </div>
+				 <!-- Slide fifth - Set the background image for this slide in the line below -->
+				 <div class="carousel-item carousel-img05">
+					 <div class="carousel-caption">
+						 <h2 class="pb-2 poppins-FontFamily blue-color">Built-In <br />Scheduling <br />System</h2>
+						 <p class="poppins-FontFamily blue-color d-none d-lg-block d-md-block">Manage time using our built-in <br /> single
+							 entry scheduling system</p>
+						 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+					 </div>
+				 </div>
+				
+			 </div>
+
+					
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev hideInMobile" href="#contactuscarousel" data-slide="prev">
+						<i class="fas fa-chevron-left" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+					<a class="carousel-control-next hideInMobile" href="#contactuscarousel" data-slide="next">
+						<i class="fas fa-chevron-right" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+				</div>
+			<!-- <div id="contactcarousel" class="carousel slide contact-us-carousel" data-ride="carousel">
+
+
+				<ol class="carousel-indicators">
+					<li data-target="#contactcarousel" data-slide-to="0" class="active"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+				
+					<div class="carousel-item active"
+						style="background-image: url('operantsystems/images/new_images/home-team-bg-images/Group 2114.png')">
+						<div class="carousel-caption">
+							<h2 class="my-1 poppins-FontFamily blue-color">Contact Us</h2>
+							<p class="poppins-FontFamily blue-color mt-3 font-weight-normal-poppins">845 Third Avenue,
+								8th Flr Suite Osterlink,<br />
+								Max M., New York, NY 10022</p>
+							<p class="poppins-FontFamily blue-color font-weight-normal-poppins">Voice 737-261-0462</p>
+							<p class="poppins-FontFamily blue-color my-0 py-0 font-weight-normal-poppins">
+								Support@Operantsystems.Com</p>
+							<p class="poppins-FontFamily blue-color my-0 py-0 font-weight-normal-poppins">
+								Sales@Operantsystems.Com</p>
+						</div>
+					</div>
+
+
+
+					<a class="carousel-control-prev hideInMobile" href="#contactcarousel" data-slide="prev">
+						<i class="fas fa-chevron-left" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+					<a class="carousel-control-next hideInMobile" href="#contactcarousel" data-slide="next">
+						<i class="fas fa-chevron-right" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+				</div>
+			</div> -->
+		</div>
+
+		<div class="container my-4 contact-us-form-content">
+			<div class="row">
+				<div class="col-md-6 text-center my-4">
+					<div class="mapouter">
+						<div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+								marginheight="0" marginwidth="0"
+								src="https://maps.google.com/maps?width=600&amp;height=300&amp;hl=en&amp;q=845 Third Avenue, 8th Flr Suite Osterlink,&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+								href="https://pdflist.com/" alt="pdflist.com">Pdflist.com</a></div>
+					</div>
+				</div>
+
+				<div class="col-md-6 text-center my-4">
+					<div class="contact-form">
+						<form name="formContactUs" class="form-horizontal" ng-submit="chkContactUs()" autocomplete="off">
+						<!-- <form action="" autocomplete="off"> -->
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control poppins-FontFamily font-weight-normal-poppins" placeholder="Name *" name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="email" class="form-control poppins-FontFamily font-weight-normal-poppins" placeholder="Email *" name="contactUs_emailId" ng-model="contactUs_emailId" required onpaste="return false;">
+									</div>
+
+									<div class="error-container"
+									 ng-show="formContactUs.contactUs_emailId.$dirty && formContactUs.contactUs_emailId.$invalid">
+									<small class="text-danger"
+										   ng-show="formContactUs.contactUs_emailId.$error.required">
+										Your email is required.
+									</small>
+									<small class="text-danger"
+										   ng-show="formContactUs.contactUs_emailId.$error.email">
+										Your email is not valid
+									</small>
+								</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="form-control poppins-FontFamily font-weight-normal-poppins" id="exampleFormControlTextarea1" rows="4"
+											placeholder="Message *" name="contactUs_message" ng-model="contactUs_message" required onpaste="return false;"></textarea>
+									</div>
+								</div>
+								<div class="col-md-12 text-right contact-us-send-btn">
+									<button type="submit" class="btn navbar-register-button">Send</button>
+								</div>
+							</div>
+							<button type="button" ng-click='resetForm()' class="resetContactUs d-none">Reset</button>
+						</form>
+						<div class="row hide" id="divContactUsThankyou1" style="color:#fff">
+							<p class="text-left poppins-FontFamily font-weight-normal-poppins">Thank you for contacting us.  We will get back to you by close of next business day.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="app-store-images pt-md-5 pt-lg-5 pt-sm-1 mt-3">
+								<ul class="text-center">
+									<li class="text-center">
+										<a href="#" ng-click="availableLink('android_sb_sessions')"><img
+										src="operantsystems/images/background-images/home2-1b.png" /></a></li>
+									<li class="text-center">
+										<a href="#" ng-click="availableLink('ios_sb_sessions')"><img
+											src="operantsystems/images/background-images/home2-1a1.png" /></a>
+										</li>
+									<li class="text-center">
+										<a href="#" ng-click="availableLink('amazon_orange_fire')"><img
+											src="operantsystems/images/background-images/home2-1c3.png" /></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="hide subSections" id="news">
+		<div class="news-carousel-container">
+			<div id="newscarousel" class="carousel slide team-carousel" data-ride="carousel" data-interval="5000" data-pause="false">
+
+				<!-- Indicators -->
+
+				<ol class="carousel-indicators">
+					<li data-target="#newscarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#newscarousel" data-slide-to="1"></li>
+					<li data-target="#newscarousel" data-slide-to="2"></li>
+					<li data-target="#newscarousel" data-slide-to="3"></li>
+					
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<!-- The slideshow #1 -->
+					<div class="carousel-item active"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_1.png')">
+					</div>
+					<!-- The slideshow #2 -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_4.png')">
+					</div>
+
+					<!-- The slideshow #3 -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_7.png')">
+					</div>
+					<!-- The slideshow #4 -->
+					<div class="carousel-item"
+						style="background-image: url('operantsystems/images/new_images/news_images/news_8.png')">
+					</div>
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev hideInMobile" href="#newscarousel" data-slide="prev">
+						<i class="fas fa-chevron-left" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+					<a class="carousel-control-next hideInMobile" href="#newscarousel" data-slide="next">
+						<i class="fas fa-chevron-right" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="container my-5 new-container-content">
+			<div class="row">
+				<div class="col-md-6 col-lg-5 mt-2 mb-5">
+					<div class="border-black p-3 mb-2">
+						<span class="d-block text-center"><img src="operantsystems/images//new_images/microsoft_health_logo.jpg" alt="microsoft-logo" class="img-fluid"></span>
+					</div>
+					<div class="border-black p-3 poppins-FontFamily mb-2">
+						<div class="d-md-inline-block d-lg-inline-block text-lg-left text-md-left text-center col-md-3 px-0 align-top">
+							<span>
+								<a href="https://siia162.eduvision.tv/Default.aspx?q=h%252bbv42DLMWzyD9i65lI44Q%253d%253d">
+									<img id="imgBlueBanner" class="pull-left"  alt="Blue Ribbon Award"
+										 onclick="javascript:window.open('https://siia162.eduvision.tv/Default.aspx?q=h%252bbv42DLMWzyD9i65lI44Q%253d%253d','_blank')">
+								</a>
+							</span>
+						</div>
+
+						<div class="d-md-inline-block d-lg-inline-block text-lg-left text-md-left text-center mt-lg-0 mt-md-0 mt-2 col-md-8 px-0">
+							<h3 class="font-18-news-content blue-color">Blue Ribbon Award</h3>
+							<p class="font-16-news-content blue-color font-weight-400-poppins">this product has met or
+								exceeds the rigiorous standards of the international Board of Credentialing and
+								Continuing Education Standards (IBCCES) and has been recognized for its alignment to the
+								needs of special
+								education classrooms
+							</p>
+						</div>
+					</div>
+					<div class="border-black p-3 poppins-FontFamily mb-2">
+						<div class="d-md-inline-block d-lg-inline-block text-lg-left text-md-left text-center col-md-3 px-0 align-top">
+							<span>
+								<a href="http://www.abainternational.org/events/education.aspx">
+									<img id="imgInnovation" class="pull-left" alt="Innovation in education: Apps, Games, Technology, and the Science of Behavior Nov 8-10, Hyatt Regency, McCormick Place Chicago" >
+								</a>
+							</span>
+						</div>
+
+						<div class="d-md-inline-block d-lg-inline-block text-lg-left text-md-left text-center mt-lg-0 mt-md-0 mt-2 col-md-8 px-0">
+							<h3 class="font-18-news-content blue-color">Innovation in education</h3>
+							<p class="font-16-news-content blue-color font-weight-400-poppins">Apps, Games, Technology,
+								and the Science of Behaviour Nov 8-10, Hyatt Regency, McCormick Place Chicago
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7">
+					<div class="poppins-FontFamily text-lg-left text-md-left text-center">
+						<h3 class="font-18-news-content line-height-30 blue-color">ABAI CONVENTION - A COMPARISON OF TWO
+							DATA COLLECTION AND GRAPHING SYSTEMS: PAPER AND PENCIL AND TEACHME</h3>
+						<p class="font-16-news-content font-weight-400-poppins blue-color">A Comparison of Two Data
+							Collection and Graphing Systems: Paper and Pencil and Teach MeTM ERIN B. RICHARD
+							(Alpine Learning Group), Bridget A. Taylor (Alpine Learning Group), Jaime DeQuinzio (Alpine
+							Learning Group), Barry
+							Katz (Operant Systems, Inc.) Abstract: Data collection and graphing are an essential, yet
+							time consuming, component
+							of programs using Applied Behavior Analysis. It would be beneficial to investigate options
+							to decrease time spent
+							completing paperwork in order to increase time available to staff for other tasks such as
+							training and problem solving.
+							This study used an alternating treatment design to compare the duration of time spent
+							graphing data, analyzing
+							those data, and planning for the next teaching session using traditional paper and pencil
+							methods and the Teach
+							MeTM.</p>
+						<hr class="news-hr" />
+					</div>
+
+					<div class="poppins-FontFamily text-lg-left text-md-left text-center">
+						<h3 class="font-18-news-content line-height-30 blue-color">NOMINATED BY SIAA/ED TECH 2012 - TOP
+							10 INNOVATIVE SOFTWARE</h3>
+						<p class="font-16-news-content font-weight-400-poppins blue-color">On behalf of the SIIA
+							Education Division and the Innovation Incubator Program panel of judges, I am pleased to
+							inform
+							you that you have been selected as one of the 10 participants that will present their
+							innovation at this year's Ed Tech
+							Industry Summit.</p>
+						<hr class="news-hr" />
+					</div>
+
+					<div class="poppins-FontFamily text-lg-left text-md-left text-center">
+						<h3 class="font-18-news-content line-height-30 blue-color">TEMPLE UNIVERSITY PSYCHOLOGY
+							DEPARTMENT AND THE DELAWARE VALLEY ASSOCIATION FOR BEHAVIOR ANALYSIS (DVABA)</h3>
+						<p class="font-16-news-content font-weight-400-poppins blue-color">On behalf of the SIIA
+							Education Division and the Innovation Incubator Program panel of judges, I am pleased to
+							inform
+							you that you have been selected as one of the 10 participants that will present their
+							innovation at this year's Ed Tech
+							Industry Summit.</p>
+					</div>
+				</div>
+
+				<!-- <div class="col-md-12">
+					<div class="row news-form">
+						<div class="col-md-5 text-left">
+							<h3 class="poppins-FontFamily white-color">Contact Us!</h3>
+							<p class="poppins-FontFamily white-color font-weight-normal-poppins contactUs-text">There
+								are many variations of passages of Lorem Ipsum but the majority have suffered alteration
+							</p>
+						</div>
+						<div class="col-md-7">
+							<div class="" id="divContactUs">
+								<form name="formContactUs" class="form-horizontal" ng-submit="chkContactUs()">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Name *" id="name"
+												name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="email" class="form-control" placeholder="Email *"
+													id="email"  name="contactUs_emailId" ng-model="contactUs_emailId" required onpaste="return false;">
+											</div>
+
+											<div class="error-container"
+												ng-show="formContactUs.contactUs_emailId.$dirty && formContactUs.contactUs_emailId.$invalid">
+												<small class="text-danger" ng-show="formContactUs.contactUs_emailId.$error.required">
+													Your email is required.
+												</small>
+												<small class="text-danger" ng-show="formContactUs.contactUs_emailId.$error.email">
+													Your email is not valid
+												</small>
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+													placeholder="Message *" name="contactUs_message" ng-model="contactUs_message" required onpaste="return false;"></textarea>
+											</div>
+										</div>
+										<div class="col-md-12 text-right contact-us-send-btn">
+											<button type="submit" class="btn navbar-register-button" style="margin-top:5px;">Send</button>
+										</div>
+									</div>
+								</form>
+								<div class="row hide" id="divContactUsThankyou" style="color:#ea8825">
+									<p class="text-left">Thank you for contacting us.  We will get back to you by close of next business day.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="app-store-images pt-md-5 pt-lg-5 pt-sm-1 mt-3">
+								<ul class="text-center">
+									<li class="text-center"><img
+											src="operantsystems/images/background-images/home2-1b.png"></li>
+									<li class="text-center"><img
+											src="operantsystems/images/background-images/home2-1a1.png"></li>
+									<li class="text-center"><img
+											src="operantsystems/images/background-images/home2-1c3.png"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+	</section>
+
+	<section class="hide subSections" id="team">
+		<div class="team-carousel-container">
+			<div id="teamcarousel" class="carousel slide team-carousel" data-ride="carousel" data-interval="5000" data-pause="false">
+
+				<!-- Indicators -->
+				<!-- <ul class="carousel-indicators">
+				  <li data-target="#contactcarousel" data-slide-to="0" class="active"></li>
+				</ul> -->
+				<ol class="carousel-indicators">
+					<li data-target="#teamcarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#teamcarousel" data-slide-to="1"></li>
+					<li data-target="#teamcarousel" data-slide-to="2"></li>
+					<li data-target="#teamcarousel" data-slide-to="3"></li>
+					<li data-target="#teamcarousel" data-slide-to="4"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<!-- The slideshow -->
+					 <!-- Slide One - Set the background image for this slide in the line below -->
+					 <div class="carousel-item active carousel-img01">
+
+					 <!-- <div class="carousel-caption">
+						 <h2 class="my-1 poppins-FontFamily blue-color">Customize Your Skills & <br />Behavior
+							 Programs</h2>
+						 <p class="poppins-FontFamily blue-color mt-3">Define Operational Definition And Sends Assign
+							 Program To Multiple Students View Frequency Duration & Interval Data Add Unlimited
+							 Programs</p>
+						 <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg">Explore More
+							 &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button>
+					 </div> -->
+					 <div class="carousel-caption carouselPad">
+						<!-- <div class="simple-logo"> -->
+							<!-- <img src="operantsystems/images/new_images/transparent_logos/Logo_homePage_carousel.png"
+								class="img-fluid" /> -->
+								<!-- <h1 class="pb-1 poppins-FontFamily m-0 blue-color child_pripority_title">Making Your child is our priority</h1>
+							</div> -->
+						<h1 class="pb-1 poppins-FontFamily m-0 blue-color child_pripority_title">Your child <br class="carousel-image-br"/> is our priority</h1>
+						<p class="my-2 poppins-FontFamily m-0 orange-color font-weight-bold-poppins d-none d-lg-block d-md-block">Simple, Yet Powerful</p>
+						<!-- <h2 class="pb-2 poppins-FontFamily m-0 orange-color">Simple, Yet Powerful</h2> -->
+						<p class="poppins-FontFamily m-0 text-dark font-weight-bold-poppins d-none d-lg-block d-md-block">ABA Practice Management
+							Solution</p>
+						<!-- <p class="text-right  mb-1 font-italic child-priority text-dark font-bold"> Making your
+							child our priority</p> -->
+						<div class="simple-logos-list">
+							<span class="d-inline-block pr-1"><img
+								src="operantsystems/images//new_images/microsoft_health_logo.jpg" class="img-fluid" style="width:100px" /></span>
+							<span class="d-inline-block pr-1"><img
+									src="operantsystems/images/new_images/SIIA-logo.png" class="img-fluid" /></span>
+							<span class="d-inline-block"><img
+									src="operantsystems/images/new_images/pma-logo-shirnked.png"
+									class="img-fluid" /></span>
+						</div>
+					</div>
+				 </div>
+				 <div class="carousel-item carousel-img02">
+				 <div class="carousel-caption" >
+					 <h2 class="pb-2 poppins-FontFamily blue-color">Data <br class="carousel-image-br"/> Collection</h2>
+					 <ul class="poppins-FontFamily data-collection-list d-none d-lg-block d-md-block">
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+								 class="d-inline-block align-middle">Collect-session data on ipad,<br />phone or
+								 laptop</span></li>
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+								 class="d-inline-block align-middle">Record data without internet <br />using pad
+								 and phone</span></li>
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+								 class="d-inline-block align-middle">Resume unsaved data on ABA <br />Pocketbook
+								 app</span></li>
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2 align-top"><i class="fas fa-check"></i></span><span
+								 class="d-inline-block align-middle">Edit & Update data using the<br />WEB
+								 app</span></li>
+					 </ul>
+					 <!-- <button class="btn poppins-FontFamily orange-bg white-color schedule-demo-btn">Schedule a Demo</button> -->
+					 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+				 </div>
+			 </div>
+			 <div class="carousel-item carousel-img03">
+				 <div class="carousel-caption">
+					 <h2 class="pb-2 poppins-FontFamily blue-color">Dynamic<br />Dashboard</h2>
+					 <ul class="poppins-FontFamily d-none d-lg-block d-md-block">
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Instantly
+							 view daily sessions</li>
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Access to
+							 previous session data</li>
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>View
+							 skills and behavior graph</li>
+						 <li class="blue-color font-weight-regular-poppins"><span
+								 class="d-inline-block mr-2"><i class="far fa-check-square"></i></span>Export
+							 session data to excel</li>
+					 </ul>
+					 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+				 </div>
+			 </div>
+				 <!-- Slide fourth - Set the background image for this slide in the line below -->
+				 <div class="carousel-item carousel-img04">
+					 <div class="carousel-caption">
+						 <h2 class="my-1 poppins-FontFamily blue-color">Customize Your Skills & <br />Behavior
+							 Programs</h2>
+						 <p class="poppins-FontFamily blue-color mt-3 d-none d-lg-block d-md-block">Define Operational Definition And Sends Assign
+							 Program To Multiple Students View Frequency Duration & Interval Data Add Unlimited
+							 Programs</p>
+						 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Explore More
+							 &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;" /></button> -->
+					 </div>
+				 </div>
+				 <!-- Slide fifth - Set the background image for this slide in the line below -->
+				 <div class="carousel-item carousel-img05">
+					 <div class="carousel-caption">
+						 <h2 class="pb-2 poppins-FontFamily blue-color">Built-In <br />Scheduling <br />System</h2>
+						 <p class="poppins-FontFamily blue-color d-none d-lg-block d-md-block">Manage time using our built-in <br /> single
+							 entry scheduling system</p>
+						 <!-- <button class="btn navbar-btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons">Schedule a Demo &nbsp;<img src="operantsystems/images/arrow-right.svg" style="width: 30px;"/></button> -->
+					 </div>
+				 </div>
+				
+			 </div>
+
+					
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev hideInMobile" href="#teamcarousel" data-slide="prev">
+						<i class="fas fa-chevron-left" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+					<a class="carousel-control-next hideInMobile" href="#teamcarousel" data-slide="next">
+						<i class="fas fa-chevron-right" aria-hidden="true" style="font-size:32px;"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="container my-4 team-parent-container">
+			<div class="row">
+				<div class="col-md-6 text-center my-4 team-parent">
+					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2013.png" class="team-parent-image1"/>
+					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Andy.png" class="team-parent-image2"/>
+				</div>
+
+				<div class="col-md-6 my-4 text-md-left text-lg-left text-center">
+					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Andy Bondy</h4>
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
+
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily">Andy Bondy, Ph.D., has over 40 years of experience working with children and adults 
+						with autism and related developmental disabilities. He served as the 
+						Director of the Statewide Delaware Autistic Program for more than a 
+						dozen years. He and his wife, Lori Frost, pioneered the development 
+						of the Picture Exchange Communication System (PECS). He has designed 
+						the Pyramid Approach to Education (with Beth Sulzer-Azaroff) as a 
+						comprehensive combination of broad-spectrum behavior analysis and 
+						functional communication strategies.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 my-4 move-down text-md-left text-lg-left text-center">
+					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Cindy Alterson</h4>
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
+
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily">Cindy Alterson, Ph.D BCBA, has over 20 years experience working with 
+						children and adults who are diagnosed with autism spectrum disorders 
+						and other developmental disabilities across a wide range of settings. 
+						She is currently the Clinical Director of the Devereux Foundation in 
+						New York and the Principal of Devereux NY CARES. Dr. Alterson is a 
+						consultant for a school for the deaf, on the Advisory Board of Autism 
+						Spectrum News, and is a current board member of NYSABA. She has been 
+						an adjunct faculty teaching graduate coursework for Behavior Analysis 
+						in both on-site and on- line programs. Her expertise is in the area 
+						of assessment and treatment of behavior disorders as well as development 
+						of educational plans towards less restrictive settings.</p>
+				</div>
+
+				<div class="col-md-6 text-center  my-4 team-parent move-up">
+					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2012.png" class="team-parent-image1"/>
+					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Cindy.png" class="team-parent-image2"/>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6  text-center  my-4 team-parent">
+					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2013.png" class="team-parent-image1"/>
+					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Kevin.png" class="team-parent-image2"/>
+				</div>
+
+				<div class="col-md-6 my-4 text-md-left text-lg-left text-center">
+					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Kevin Custer</h4>
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
+
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily">Kevin Custer; Founding Principal, Arc Capital Development, an early stage venture firm 
+						for education and special needs healthcare markets. Arc has invested and been responsible 
+						for more than $8 million in 28 companies around the world that provide products and 
+						technology for educators and people with special needs or autism. Previously he was 
+						the primary architect of six startups all achieving $20 million in revenues, two 
+						went public. His products have been installed in more than half of the K-12 schools 
+						in the North America with more than 10 million online users weekly, generating over 
+						$100 million in revenue and serving over one million people with a disability. Over 
+						the last 10 years he has visited over 400 autism and special needs programs around 
+						the world and seen many of the best practices for people with disabilities. He has 
+						served on the national board for Autism Society of America and for over eighteen 
+						years as a volunteer ski instructor for the National Sports Center for the Disabled.</p>
+				</div>
+			</div>
+
+			<div class="row">
+
+
+				<div class="col-md-6 my-4 move-down text-md-left text-lg-left text-center">
+					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Sarah Walker</h4>
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
+
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily">Sarah Walker, BCBA, has over 10 years of experience working in the field of applied 
+						behavior analysis. Sarah obtained her Masters degree at Nicholls State University 
+						in Louisiana and gained extensive experience working in two of the UK's ABA schools. 
+						She is the founder and director of acornABA, an independent provider of ABA services 
+						in nurseries, schools and home settings.
+						Sarah specialises in children with autism spectrum disorder and actively oversees 
+						a caseload of programs, as well as providing supervision to aspiring BCBAs and practitioners. 
+						She is passionate about the dissemination of ABA in the UK, and supporting more families in 
+						England to access services.</p>
+				</div>
+				
+
+				<div class="col-md-6 text-center  my-4 team-parent move-up">
+					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2012.png" class="team-parent-image1"/>
+					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-Sarah.png" class="team-parent-image2"/>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 text-center  my-4 team-parent">
+					<img src="operantsystems/images/new_images/home-team-bg-images/Group 2013.png" class="team-parent-image1"/>
+					<img src="operantsystems/images/new_images/home-team-bg-images/Photo-saul.png" class="team-parent-image2"/>
+				</div>
+
+				<div class="col-md-6 my-4 text-md-left text-lg-left text-center">
+					<h4 class="blue-color poppins-FontFamily m-0 font-weight-normal-poppins font-size-18">Saul Axelrod</h4>
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily"><small>Board Of Advisors</small></p>
+
+					<p class="font-weight-normal-poppins blue-color poppins-FontFamily">Saul Axelrod is Professor of Education at Temple University. He received his 
+						doctorate from Florida State University in Special Education in 1970 His major 
+						interests include applying behavior analysis principles to behavioral problems 
+						exhibited by people with handicaps and increasing the academic development of 
+						children of poverty. Dr. Axelrod has served on the boards of editor of several 
+						journals, including Journal of Applied Behavior Analysis, Journal of Behavioral 
+						Education, and Behavior Modification. He has written numerous journal articles 
+						and book reviews. He is an author or editor of Behavior Modification for the 
+						Classroom Teacher, Behavior Analysis and Treatment, and How to Improve Classroom 
+						Behavior. In 2006, Dr. Axelrod was the first recipient of the Behavior Analyst
+						 Certification Board's Michael Hemingway Award for Distinguished Service to Behavior Analysis. 
+						 In 1991 he was elected Fellow of the American Psychological Association. In 2007, 
+						 he was elected Fellow of the Association for Behavior Analysis. In 2009, he received 
+						 Florida State University's Distinguished Alumnus Award, Distinguished Educator category.</p>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section id="features" class="hide subSections">
+
+		<div class="container-fluid features-banner-container px-0">
+			<div class="banner features-banner">
+				<div class="image-content row">
+					<div class="col-md-12">
+						<h1 class="poppins-FontFamily blue-color text-left optimize_tag">Optimize your time <br/> <span class="abaPocketBook d-block"> ABA Pocketbook</span></h1>
+					</div>
+					<!-- Placehoder for feature banner content -->
+					<!-- <div class="col-md-5 col-sm-8 col-8">
+						<h2 class="poppins-FontFamily white-color font-weight-bold-poppins">Product Features</h2>
+						<div class="blue-border my-4"></div>
+						<p class="m-0 poppins-FontFamily white-color font-weight-bold-poppins">Create Unlimited Behavior Intervention</p>
+						<p class="m-0 poppins-FontFamily white-color font-weight-bold-poppins">Lines Unlimited Access To Ipad/Android/Fire Tablets</p>
+						<p class="m-0 poppins-FontFamily white-color font-weight-bold-poppins">Define Unlimited ABC Data And Intensity Levels</p>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper features-margin white-bg">
+			<div class="container">
+				<div class="row features-padding">
+					<div class="col-md-6 mb-5">
+						<div class="banner-computer features-comp-section">
+							<img src="operantsystems/images/new_images/features/img-1.png " class="img-fluid openEnrollmentBox" />
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="features-links">
+							<!-- <img src="images/new_images/features/img-1.png" class="img-fluid"/> -->
+							<div class="app-store-images text-center  features-image-section">
+								<a href="#" ng-click="availableLink('ios_sb_sessions')"><img src="operantsystems/images/background-images/home2-2.png" class="img-fluid"></a>
+								<!-- <a href="#" ng-click="availableLink('ios_sb_ipad')"><img src="operantsystems/images/background-images/home2-1.png" class="img-fluid"></a> -->
+								
+								<ul class="text-center mt-3">
+									<li class="text-center">
+										<a href="#" ng-click="availableLink('android_sb_sessions')"><img
+										src="operantsystems/images/background-images/home2-1b.png" /></a></li>
+									<li class="text-center">
+										<a href="#" ng-click="availableLink('ios_sb_sessions')"><img
+											src="operantsystems/images/background-images/home2-1a1.png" /></a>
+										</li>
+									<li class="text-center">
+										<a href="#" ng-click="availableLink('amazon_orange_fire')"><img
+											src="operantsystems/images/background-images/home2-1c3.png" /></a>
+									</li>
+								</ul>
+								<!-- <img src="operantsystems/images/new_images/features/Group 2080.png" class="img-fluid" /> -->
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="features_thumbnail light-bg py-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="features-thumbnail text-center">
+								<div class="row">
+									<div class="col-md-4  equal margin-bottom-spacing ">
+										<div class="white-bg rounded borderRadiusFeaturePage mx-1 ">
+											<div class="content-image text-center">
+												<img src="operantsystems/images/new_images/features/PLAN.png"
+													alt="Mountains" class="img-fluid">
+											</div>
+											<div class="content">
+												<h2 class="pb-3 poppins-FontFamily">Plan</h2>
+												<p class="py-0 poppins-FontFamily">Assign Goals/Programs Based On A
+													Dynamic Curriculum Aligned With
+													Common Assessment Tools From</p>
+												<!-- <button type="button" class="read-more poppins-FontFamily white-bg">Read More >></button> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4  equal margin-bottom-spacing">
+										<div class="white-bg rounded borderRadiusFeaturePage mx-1">
+											<div class="content-image text-center">
+												<img src="operantsystems/images/new_images/features/OBSERVE.png"
+													alt="Mountains" class="img-fluid">
+											</div>
+											<div class="content">
+												<h2 class="pb-3 poppins-FontFamily">Observe</h2>
+												<p class="py-0 poppins-FontFamily">Manage In Real-Time The Results Of
+													Your Skills Acquisition And Behavior
+													Management Plans Aligned With Your</p>
+												<!-- <button type="button" class="read-more poppins-FontFamily white-bg">Read More >></button> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4  equal margin-bottom-spacing">
+										<div class="white-bg rounded borderRadiusFeaturePage mx-1">
+											<div class="content-image text-center">
+												<img src="operantsystems/images/new_images/features/RECORD.png"
+													alt="Mountains" class="img-fluid">
+											</div>
+											<div class="content">
+												<h2 class="pb-3 poppins-FontFamily">Record</h2>
+												<p class="py-0 poppins-FontFamily">Document The Results Of Your
+													Programs, Fluency, Accuracy, Prompt
+													Levels, Task Analysis, Baseline,</p>
+												<!-- <button type="button read-more poppins-FontFamily"  class="read-more poppins-FontFamily white-bg">Read More >></button> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4  equal margin-bottom-spacing">
+										<div class="white-bg rounded borderRadiusFeaturePage mx-1">
+											<div class="content-image text-center">
+												<img src="operantsystems/images/new_images/features/ANALYZE.png"
+													alt="Mountains" class="img-fluid">
+											</div>
+											<div class="content">
+												<h2 class="pb-3 poppins-FontFamily">Analyze</h2>
+												<p class="py-0 poppins-FontFamily">Provide Reports, Graphs, Session
+													Notes, Quarterly Progress Reports,
+													Billing Data To Your Educational,</p>
+												<!-- <button type="button" class="read-more poppins-FontFamily white-bg">Read More >></button> -->
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4 equal margin-bottom-spacing">
+										<div class="white-bg rounded borderRadiusFeaturePage mx-1">
+											<div class="content-image text-center">
+												<img src="operantsystems/images/new_images/features/MODIFY.png"
+													alt="Mountains" class="img-fluid">
+											</div>
+											<div class="content">
+												<h2 class="pb-3 poppins-FontFamily">Modify</h2>
+												<p class="py-0 poppins-FontFamily">Manage Educational And Clinical
+													Goals In A Timely And Reliable Way
+													Reducing Human Errors And Audit</p>
+												<!-- <button type="button" class="read-more poppins-FontFamily white-bg">Read More >></button> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 equal margin-bottom-spacing">
+										<div class="white-bg rounded borderRadiusFeaturePage mx-1">
+											<div class="content-image text-center">
+												<img src="operantsystems/images/new_images/features/REPORT.png"
+													alt="Mountains" class="img-fluid">
+											</div>
+											<div class="content">
+												<h2 class="pb-3 poppins-FontFamily">Report</h2>
+												<p class="py-0 poppins-FontFamily">Share Your Results With Parents And
+													Demonstrate Real Progress And
+													Achievements Of Your Students.</p>
+												<!-- <button type="button" class="read-more poppins-FontFamily white-bg">Read More >></button> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="features_list">
+				<div class="row">
+
+				</div>
+			</div>
+
+			<div class="skill_acquistion features-margin features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-5">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Skills Acquisition
+							</h2>
+							<p
+								class="poppins-FontFamily font-size-16 pt-4 mt-5 text-sm-center text-md-left text-lg-left">
+								A Skill Acquisition Plan Includes An Operational Definition Of The
+								Target Skill Being Taught, And The Materials Needed For The
+								Teaching Of A Skill, What Strategies Needs To Be Used And The
+								Consequences For Its Correct Or Incorrect Response Along With
+								Mastery Criteria And Reinforcing Strategies With A Plan For
+								Generalization And Maintenance.
+							</p>
+							<div
+								class="text-sm-center text-md-left  text-lg-left text-xl-left text-center margin-top-bottom-20 ">
+								<button class="btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg openEnrollmentBox">Schedule a
+									Demo &nbsp;<img src="operantsystems/images/arrow-right.svg"
+										style="width: 30px;" /></button>
+							</div>
+						</div>
+
+						<div class="col-md-6 text-center feature-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/skills.png" alt="skill acquistion"
+								class="img-fluid features-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="customizable_curriculum light-bg features-margin features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6 text-center order-3 feature-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/cirricumlum.png"
+								alt="customizable curriculum" class="img-fluid features-img" />
+						</div>
+
+						<div class="col-md-5 order-2 order-md-6 mt-4">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Customizable
+								Curriculum</h2>
+							<p
+								class="poppins-FontFamily font-size-16 pt-4 mt-3 text-sm-center text-md-left text-lg-left">
+								A Skill Acquisition Plan Includes An Operational Definition Of The
+								Target Skill Being Taught, And The Materials Needed For The
+								Teaching Of A Skill, What Strategies Needs To Be Used And The
+								Consequences For Its Correct Or Incorrect Response Along With
+								Mastery Criteria And Reinforcing Strategies With A Plan For
+								Generalization And Maintenance.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="duration_behaviour_graph features-margin features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Behavior Graph</h2>
+							<p
+								class="poppins-FontFamily font-size-16 mt-5 text-sm-left text-md-left text-lg-left blue-color">
+								Duration Recording Documents How Long A Student Engages In A
+								Specified Behavior. This Type Of Data Collection Is Appropriate For
+								Behaviors That Have A Distinct Beginning And Ending Or For Those That
+								Occur At Very High Rates (E.G., Tantrumming, Being Out Of Seat, Not
+								Completing A Task). To Collect Data On The Duration Of A Behavior:
+							</p>
+
+							<ul class="features-section-list text-md-left text-sm-left mt-5 pt-3">
+								<li class="mb-2"><span class="pr-1 "><i class="fas fa-check-circle" aria-hidden="true"
+											style="font-size:15px;"></i></span> Start The Stopwatch When The Behavior
+									Begins.</li>
+								<li class="mb-2"><span class="pr-1"><i class="fas fa-check-circle" aria-hidden="true"
+											style="font-size:15px;"></i></span>Stop The Stopwatch When The Behavior
+									Ends.</li>
+								<li class="mb-2"><span class="pr-1"><i class="fas fa-check-circle" aria-hidden="true"
+											style="font-size:15px;"></i></span>Automatically Records The Length Of Time
+									The Behavior Occurred.</li>
+								<li class="mb-2"><span class="pr-1"><i class="fas fa-check-circle" aria-hidden="true"
+											style="font-size:15px;"></i></span>Repeat The Above Steps Until The End Of
+									The Observation Period.</li>
+								<li class="mb-2"><span class="pr-1"><i class="fas fa-check-circle" aria-hidden="true"
+											style="font-size:15px;"></i></span>Automatically Calculates The Total
+									Duration By Adding The Duration Of
+									Each Episode During The Observation Period.</li>
+							</ul>
+
+							<div
+								class="text-sm-center text-md-left  text-lg-left text-xl-left text-center margin-top-bottom-20 ">
+								<button class="btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg openEnrollmentBox">Schedule a
+									Demo &nbsp;<img src="operantsystems/images/arrow-right.svg"
+										style="width: 30px;" /></button>
+							</div>
+						</div>
+
+						<div class="col-md-6 text-center text-sm-center middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/duration.png"
+								alt="duration behaviour graph" class="img-fluid features-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="interval_data features-margin light-bg features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6 text-center order-3 feature-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/interval-data.png" alt="interval data"
+								class="img-fluid features-img" />
+						</div>
+
+						<div class="col-md-6 order-2 order-md-6">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Interval Data</h2>
+							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left">
+								Interval Recording Documents Whether A Behavior Occurred During A
+								Particular Period. There Are Two Types Of Interval Recording: Whole
+								Interval (An Observer Indicates Whether The Behavior Occurred For The
+								Entire Time Interval) And Partial Interval (An Observer Indicates Whether
+								The Behavior Occurred At Any Point During The Time Interval). To Record
+								Interval Data:</p>
+							<p class="poppins-FontFamily font-size-16 text-lg-left text-md-left text-sm-center">Divide
+								The Observation Period Into Equal Intervals (Usually Between Five
+								And Fifteen Seconds Long).</p>
+
+							<p class="poppins-FontFamily font-size-16 text-lg-left text-md-left text-sm-center">At The
+								End Of Each Interval, Record Whether Or Not The Behavior
+								Occurred. Note: For Whole Interval Recording, The Behavior Must Occur For
+								The Entire Interval. For Partial Interval Recording, The Behavior Must Occur
+								During Some Portion Of The Interval.</p>
+
+							<p class="poppins-FontFamily font-size-16 text-lg-left text-md-left text-sm-center">After
+								The Session Is Over, It Automatically Counts The Number Of lIntervals
+								During Which The Behavior Occurred.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="phase_change_line features-margin features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-5">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Phase Change Line
+							</h2>
+							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left">
+								Monitor And View The Effects of Your Programs And
+								Interventions.
+								<br /><br />
+								Demonstration The Improvement Of Your Service.
+							</p>
+						</div>
+
+						<div class="col-md-6 text-center text-sm-center  feature-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/Image 34/Image 34.png"
+								alt="phase change line" class="img-fluid features-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="advance_reporting features-margin light-bg features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6 mt-5 text-center order-3 feature-xl-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/advance-reporting.png"
+								alt="advance reporting" class="img-fluid" />
+						</div>
+
+						<div
+							class="col-md-6 features-padding-left order-2 order-md-6 text-lg-left text-md-left text-sm-center">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Advance Reporting
+							</h2>
+							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-left text-md-left text-lg-left">
+								Custom Built Automated Reports & Easily Export Data</p>
+							<br />
+							<p class="my-0 poppins-FontFamily font-size-16 line-height-50 text-left"><i class="fas fa-check-circle advance-reporting-icons" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Skills Progress Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16 line-height-50 text-left"><i class="fas fa-check-circle advance-reporting-icons" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Session Note Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16 line-height-50 text-left"><i class="fas fa-check-circle advance-reporting-icons" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;ABC Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16 line-height-50 text-left"><i class="fas fa-check-circle advance-reporting-icons" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Monthly Behavior Session Note Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16 line-height-50 text-left"><i class="fas fa-check-circle advance-reporting-icons" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Monthly Behavior Summary Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16 line-height-50 text-left"><i class="fas fa-check-circle advance-reporting-icons" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Weekly Skills & Behavior Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16 line-height-50 text-left"><i class="fas fa-check-circle advance-reporting-icons" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Mastered History Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16 line-height-50 text-left"><i class="fas fa-check-circle advance-reporting-icons" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Weekly Session Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16 line-height-50 text-left"><i class="fas fa-check-circle advance-reporting-icons" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Interval Weekly Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16 line-height-50 text-left"><i class="fas fa-check-circle advance-reporting-icons" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Therapist Progress Report</p>
+							<p class="my-0 poppins-FontFamily font-size-16 line-height-50 text-left"><i class="fas fa-check-circle advance-reporting-icons" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Timesheet Report</p>
+
+							<div
+								class="text-sm-center text-md-left  text-lg-left text-xl-left text-center margin-top-bottom-20 ">
+								<button class="btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg openEnrollmentBox">Schedule a
+									Demo &nbsp;<img src="operantsystems/images/arrow-right.svg"
+										style="width: 30px;" /></button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="session_notes features-margin features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-5">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Session Notes</h2>
+							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left">
+								Staff Can Insert Detailed Notes For The Days Session Up To 1000
+								Characters Using WEB Or ABA Pocketbook.
+								<br /><br />
+								Session Notes Are Also Viewable On Dashboard For A Swift
+								Review.
+								<br /><br />
+								For Any Changes Or Corrections, Therapists Can Also Edit And
+								Update Session Notes Using The WEB.
+							</p>
+						</div>
+
+						<div
+							class="col-md-6 text-center text-sm-center feature-xl-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/sesssion-notes.png" alt="session notes"
+								class="img-fluid features-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="signatures features-margin light-bg features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6 text-center  order-3 feature-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/signature.png" alt="signatures"
+								class="img-fluid features-img" />
+						</div>
+
+						<div class="col-md-5  order-2  order-md-6">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Signature</h2>
+							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left">
+								Smart Feature That Was Much Awaited By Any Parent Or
+								Caregiver, Especially During Their Service At Home.
+								<br /><br />
+								This Feature To Record Signature, Comes In Handy To The
+								Caregivers. No Hassle Of Printing, Then Signing, And Scanning To
+								Upload It Back To The Web. Just One Scribble, Updates The
+								Session With Staff And Parents Acknowledgment.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="time_tracking_attendance features-margin features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Time Tracking &
+								Attendance</h2>
+							<p class="poppins-FontFamily font-size-16 mt-5 text-sm-center text-md-left text-lg-left">
+								Time Tracking System Built In Our Application Helps Supervisor
+								To Tracking Time Spent By The Staff Spent With Their Respective
+								Client. And The Attendance Tracker Keeps An Update On The
+								Clients Presence/Absence For The Session Which I Later Produce
+								In The Form A Report And Graph.
+								<br /><br />
+								Also Reduces Administrative Costs, Time And Paperwork Spent
+								Managing Session Data.
+								<br /><br />
+								And Reduces Preparation Time For Government And Regulatory
+								Audits.
+							</p>
+
+							<div
+								class="text-sm-center text-md-left  text-lg-left text-xl-left text-center margin-top-bottom-20 ">
+								<button class="btn poppins-FontFamily mt-lg-4 mt-md-4 more-buttons white-bg openEnrollmentBox">Schedule a
+									Demo &nbsp;<img src="operantsystems/images/arrow-right.svg"
+										style="width: 30px;" /></button>
+							</div>
+						</div>
+
+						<div class="col-md-6 text-center feature-md-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/time-tracking.png"
+								alt="time tracking attendance" class="img-fluid features-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="auto_sync_recovery features-margin light-bg features-section">
+				<div class="container">
+					<div class="row features-padding">
+						<div class="col-md-6 text-center order-3 feature-image-container middle-aligned-image">
+							<img src="operantsystems/images/new_images/features/recovery.png" alt="auto sync recovery"
+								class="img-fluid features-img" />
+						</div>
+
+						<div class="col-md-5  order-2 order-md-6">
+							<h2 class="poppins-FontFamily text-sm-center text-md-left text-lg-left">Auto Sync / Auto
+								Recovery</h2>
+							<br />
+							<br />
+							<p class="poppins-FontFamily font-size-16 text-sm-center text-md-left text-lg-left">
+								From The End User Stand Point Our Business Team In Operant
+								Systems Gathered A Use Case Where The Staff Are Losing Data
+								And Unable To Recover It In A Timely Manner. That Is When "Sync"
+								Feature In ABA Pocketbook Was Implemented.
+								<br /><br />
+								Most Of The Missing Data And Recovery Issues Are Caused By
+								User Error. In Order To Over Come The Problem, The Sync And
+								Auto Recovery Features Was Introduced.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-12 footer-container">
+						<div class="footer-pad text-lg-left text-md-left text-sm-center">
+
+							<p class="m-0 footer-logo goToHome"><img src="operantsystems/images/Operant-1.png"
+									class="img-fluid" /></p>
+							<ul class="list-inline footer-list">
+								<li class="list-inline-item"><a
+										class="social-icon text-xs-center rounded-circle border border-secondary facebook-icon-padding"
+										target="_blank" href="#"><i class='fab fa-facebook-f'
+											style='font-size:16px'></i></a></li>
+								<li class="list-inline-item"><a
+										class="social-icon text-xs-center rounded-circle border border-secondary twitter-icon-padding"
+										target="_blank" href="#"><i class='fab fa-twitter'
+											style='font-size:16px'></i></a></li>
+								<li class="list-inline-item"><a
+										class="social-icon text-xs-center rounded-circle border border-secondary linkedin-icon-padding"
+										target="_blank" href="#"><i class='fab fa-linkedin-in'
+											style='font-size:16px'></i></a></li>
+								<li class="list-inline-item"><a
+										class="social-icon text-xs-center rounded-circle border border-secondary pincest-icon-padding"
+										target="_blank" href="#"><i class='fab fa-pinterest-p'
+											style='font-size:16px'></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-6 col-6">
+						<div class="footer-pad" id="footerNavLinks">
+
+							<ul
+								class="list-unstyled footer-list text-lg-left text-md-left text-sm-center poppins-FontFamily">
+								<li class="py-1"><a  href="#home"> Home</a> </li>
+								<li class="py-1"><a href="#news">News</a> </li>
+								<li class="py-1"><a href="#team">Team</a></li>
+								<li class="py-1 goToAboutUs"><a href="">About Us</a> </li>
+							</ul>
+						</div>
+					</div>
+					<div
+						class="col-lg-3 col-md-2 col-sm-6 col-6  text-lg-left text-md-left text-sm-center text-xs-center">
+						<div class="footer-pad" id="footerNavLinks">
+							<ul class="list-unstyled footer-list poppins-FontFamily blue-color">
+								<!-- <li class="py-1"> <a href="#"> FAQ </a> </li>
+								<li class="py-1"> <a href="#"> How it Work </a> </li> -->
+								<li class="py-1"> <a href="#features">Features</a> </li>
+								<li class="py-1"> <a href="#contactus"> Contact Us </a> </li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-3 footer-addr text-lg-left text-md-left text-sm-center">
+						<p class="poppins-FontFamily">
+							845 Third Avenue, 8Th FIr Suite Osterlink,
+							Max M., New York, NY 10022</p>
+						<p class="poppins-FontFamily">Voice 737-261-0462</p>
+						<p class="py-0 my-0 poppins-FontFamily">support<span>&#64;</span>operantsystems.com</p>
+						<p class="mb-sm-5 poppins-FontFamily">sales<span>&#64;</span>operantsystems.com</p>
+						</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="row copyRight">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 copy">
+							<p class="text-lg-left text-md-center text-sm-center mb-0 poppins-FontFamily"> <small
+									class="copyRight-text">© 8,182,267 Operant Systems. All Rights Reserved</small> </p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 text-lg-right text-md-right text-sm-center">
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item poppins-FontFamily"><small
+										class="border-right border-secondary pr-2 copyRight-text blue-color">
+										<a href="" data-toggle="modal" data-target="#myModal" ng-click="footerLinkClick('terms')" class="text-decoration-none blue-color">Terms of Use</a></small>
+								</li>
+								<li class="list-inline-item poppins-FontFamily"><small
+										class="border-right border-secondary pr-2 copyRight-text"><a href="" data-toggle="modal" data-target="#myModal" ng-click="footerLinkClick('privacy')" class="text-decoration-none blue-color">Privacy</a></small></li>
+								<li class="list-inline-item poppins-FontFamily"><small class="copyRight-text"><a href="" data-toggle="modal" data-target="#myModal" ng-click="footerLinkClick('hipaa')" class="text-decoration-none blue-color">HIPAA Information</a></small></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="container mt-4">
+		<div class="row">
+			<div class="col-md-12 text-lg-left text-md-left text-sm-center text-center px-2">
+				<p class="poppins-FontFamily blue-color font-12 font-weight-normal-poppins more mb-2 minimize">Operant Systems provides a Practice Management Solution that run across multiple hardware platforms which is used by 
+					therapists who care for children and adults with special needs like autism.Operant Systems allows you to implement
+					 skills acquisition programs, behavior management strategies, and behavior management plans. Operant Systems autism 
+					 software tools can be used by behavior analysts, speech therapists, occupational therapists, and physical therapists.
+					  Operant Systems has a dynamic curriculum and behavior management library. Operant Systems is software has an open 
+					  flexible design that supports all behavior therapies. The data collection solution records both in a one-on-one and
+					   group settings and generates billing. Patent 8,182,267</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- santosh -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<ul class="nav nav-tabs w-100" role="tablist" id="tabLinkName">
+						<li role="presentation" class="nav-item poppins-FontFamily font-weight-normal-poppins font-14">
+							<a href="#terms" aria-controls="terms" role="tab" data-toggle="tab" class="nav-link active">Terms of Use</a>
+						</li>
+						<li role="presentation" class="nav-item poppins-FontFamily font-weight-normal-poppins font-14">
+							<a href="#privacy" aria-controls="privacy" role="tab" data-toggle="tab" class="nav-link">Privacy</a>
+						</li>
+						<li role="presentation" class="nav-item poppins-FontFamily font-weight-normal-poppins font-14">
+							<a href="#hipaa" aria-controls="hipaa" role="tab" data-toggle="tab" class="nav-link">HIPAA Information</a>
+						</li>
+					</ul>
+					<button type="button" class="close poppins-FontFamily" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	
+				</div>
+				<div class="modal-body">
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="terms" >
+							<div class="post poppins-FontFamily">
+								<h2>Terms and Use</h2>
+	
+								<h3>General Provisions</h3>
+								<p class="font-weight-normal-poppins font-14">
+									By using this Internet web site you agree to be subject to and agree to be bound by the following Internet Web Site Terms of Use and Conditions.  You represent that you are of legal age to form a binding contract.
+								</p>
+								<p class="font-weight-normal-poppins font-14">
+									If you do not agree to all of the terms and conditions set forth in this Internet Web Site Terms of Use and Conditions, you may not use this Internet web site.  Operant Systems, INC., (“COMPANY”) owner of this Internet web site, reserves the right, at any time, to modify, alter, or update these Internet Web Site Terms of Use and Conditions.  By accepting these Internet Web Site Terms of Use and Conditions, you agree to be bound by such modifications, alterations, or updates.
+								</p>
+								<p class="font-weight-normal-poppins font-14">
+									This Internet web site may include hyperlinks to third party Internet web sites that are not owned or operated by COMPANY  Those Internet web sites may have respective Terms of Use and Conditions, and visitors to those pages may be required to agree to those respective Terms of Use and Conditions.  COMPANY is not responsible for the content, terms of use or privacy practices of other Internet web sites to which this Internet web site may link to or is linked from.
+								</p>
+	
+	
+								<h3>Description of Services</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									The purpose of this Internet web site is to provide information in connection with services and products offered by and for COMPANY.
+								</p>
+	
+	
+								<h3>Intellectual Property</h3>
+	
+								<u>Patent</u>
+								<p class="font-weight-normal-poppins font-14">
+									COMPANY is the owner of one or more issued U.S. Patents and/or pending U.S. Patent Applications, which may apply to one or more parts of this Internet web site.
+								</p>
+								<p class="font-weight-normal-poppins font-14">
+									<b>Confidential Information:</b> For the purpose of this agreement, the term ‘Confidential Information’ shall mean the following:
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									Any information or know how, idea, application data, process technique, program, design drawing formula or test data work in  process, engineering, manufacturing, marketing, financial or personal matter, sales information, suppliers, customer, employees, investors, or business plan, whether in oral, written form, graphic or electronic form, or any document, diagram, drawing, computer program or other communication which is either marked confidential or reasonably known by the licensee to be confidential, or is of a proprietary nature and is learned or disclosed in the course of discussions, studies, or work undertaken between the parties.  (including the terms and conditions of this Agreement), will be treated as confidential by the receiving party. The receiving party will not disclose to a third party any of such information, or use such information other than for the purpose for which it was provided, without the prior written consent of the other party.
+								</p>
+	
+								<u>Copyright</u>
+								<p class="font-weight-normal-poppins font-14">
+									Except as otherwise set forth and provided herein, all material including but not limited to text, pictures, graphics and flash animations, data, icons and arrangement thereof that is displayed, and any hypertext markup language or any programming code included in or as a function of this Internet web site, is protected under the copyright laws of the United States of America and international conventions.  It is the exclusive property of COMPANY, COMPANY’s content suppliers and/or other respective owners, and any exclusive property of COMPANY may not be copied, modified or distributed in any form or for any reason without the express written consent of COMPANY.
+								</p>
+	
+	
+								<u>Trademarks</u>
+								<p class="font-weight-normal-poppins font-14">
+									The trademarks TeachMe are registered trademarks of COMPANY.  All trademarks, service marks, and trade names appearing in this Internet web site (collectively, the “Marks”) are trademarks or registered trademarks of and are proprietary to COMPANY, or other respective owners that have granted COMPANY the right and license to use the Marks.  Any trademarks, service marks, trade names, trade dress and products appearing in this Internet web site are reserved by the respective owners and may be afforded protection in the United States and internationally.
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									You expressly understand and agree that any of COMPANY’s Marks are the property of COMPANY.
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									Any questions concerning the use of these trademarks or whether a trademark that does not appear on this list is a trademark of COMPANY should be referred to COMPANY at  support@operantsystems.com.
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									No license or right to use is granted to you in any way in connection with any of the above trademarks, or with any other trademark appearing in connection with this Internet web site in any manner or for any purpose.
+								</p>
+	
+	
+								<h3>Warranty</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									COMPANY provides this Internet web site and its contents exclusively on an “as is” basis.  COMPANY makes no representations or warranties of any kind, express or implied, as to the operation of this Internet web site, or any information regarding COMPANY or any service or product described in this Internet web site with regard to the accuracy and completeness of the information.
+								</p>
+	
+								<h3>
+									COMPANY EXPRESSLY DISCLAIMS AND YOU EXPRESSLY UNDERSTAND AND AGREE THAT ALL WARRANTIES, INCLUDING WARRANTIES OF MERCHANTABILITY AND FITNESS OF THIS INTERNET WEB SITE FOR ANY PURPOSE, TO THE EXTENT PERMITTED BY LAW.  COMPANY EXPRESSLY DISCLAIMS ANY AND ALL LIABILITY FOR ANY DAMAGE OF ANY KIND FROM USE OF THIS INTERNET WEB SITE, INCLUDING BUT NOT LIMITED TO DIRECT AND INDIRECT DAMAGES, CONSEQUENTIAL DAMAGES, SPECIAL DAMAGES AND PUNITIVE DAMAGES.
+								</h3>
+	
+	
+								<h3>User Registration</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									Users may be required to submit identifying information, for example, to receive information about COMPANY, to receive information about services we provide, or about upcoming scheduled events.  COMPANY does not knowingly collect any personally identifiable information from anyone under eighteen (18) years of age.
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									All submissions to this Internet web site are governed by these Internet Web Site Terms of Use and Conditions and/or the COMPANY Privacy Policy, which is incorporated by reference in its entirety herein.
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									COMPANY reserves the right to block or otherwise take down any advertisement or promotion from this Internet web site, at COMPANY’s discretion.
+								</p>
+	
+	
+								<h3>Intellectual Property Protection</h3>
+	
+								<p>
+									COMPANY takes its intellectual property very seriously, and will take any and all measures necessary to protect its intellectual property, including but not limited to inventions (whether patentable or not), trademarks, copyright and trade secret.  This Internet web site and COMPANY grants no license rights for any intellectual property owned or licensed by COMPANY.
+								</p>
+	
+	
+								<h3>Governing Law</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									These Internet Web Site Terms of Use and Conditions shall be interpreted and enforced in accordance with the laws of the State of New York, with no regard to conflicts of law principles.  By using this Internet site, you agree that any dispute, claim or cause of action in connection with use of this Internet web site be resolved without resorting to a class action or any form thereof.  Each user of this Internet web site consents to exclusive jurisdiction of the Courts of the State of New York, and, when applicable, the Southern District of New York.
+								</p>
+	
+	
+								<h3>User Supplied Content and Submissions</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									Users hereby grant to COMPANY a nonexclusive, irrevocable, worldwide, perpetual, unlimited, assignable, sublicenseable, fully paid up and royalty-free right license to use, copy, make derivative works of, distribute, publish, commercialize, retain, and/or save in any way now known or in the future discovered, any content that is submitted to COMPANY, without any further consent, notice and/or compensation to you or to any third parties.
+								</p>
+	
+								<p class="font-weight-normal-poppins font-14">
+									You hereby warrant and represent to COMPANY that any information you provide or submit in connection with this Internet web site, including information which may be posted on this Internet web site is accurate, is truthful, and does not violate any confidentiality rights, contractual restrictions, including related rights of any other third party, and/or any law.  You also warrant that all information you submit about yourself is truthful, and that you will not provide any false personal information on this Internet web site.  You also agree to modify any information you have submitted that is no longer accurate or is obsolete, including any information that relates to any registration information you have submitted to COMPANY.
+								</p>
+	
+	
+								<h3>Control Over Content</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									COMPANY exercises no control over any content any user submits.  COMPANY has no obligation to supervise any content submitted by any users.  You agree to inform COMPANY of any misappropriated content, or any inappropriate or illegal of any content posted on or by COMPANY that you are or become aware of.
+								</p>
+	
+	
+								<h3>Indemnification</h3>
+	
+								<p class="font-weight-normal-poppins font-14">
+									You agree to indemnify COMPANY and to hold COMPANY harmless from any damages, losses and costs (including, but not limited to, reasonable attorneys’ fees), including any charges that relate to any claims by any third party, or any charge related to your non-compliance with these Internet web site Terms and Conditions.
+								</p>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="privacy">
+							<div class="post poppins-FontFamily">
+								<h2>Privacy</h2>
+								<h3>
+									General Provisions:  </h3>
+	
+								<p class="font-weight-normal-poppins font-14">Operant Systems INC. (“COMPANY”) is committed to respecting the privacy of users of this Internet web site.</p>
+	
+								<p class="font-weight-normal-poppins font-14">Data collected and used by COMPANY, its affiliates, and agents (collectively “COMPANY”), including all personal information COMPANY collects that pertains to and identifies a person in connection with this Internet web site, are governed by and subject to this Internet Web Site Privacy Policy (the “Privacy Policy”), as amended from time to time.  </p>
+	
+								<p class="font-weight-normal-poppins font-14">Accordingly, data collected and used by COMPANY may or may not be subject to previous versions of any privacy policy that may have been in effect at the time that such data were collected.</p>
+	
+								<p class="font-weight-normal-poppins font-14">COMPANY reserves the right change the Privacy Policy from time to time at its sole discretion and will provide link(s) to the most current version of the Privacy Policy on this Internet web site.  By using this Internet web site, you agree to accept the terms set forth in the Privacy Policy, and you agree to be bound by modifications, alterations, or updates made to the Privacy Policy over time.  Please regularly review the Privacy Policy.  </p>
+	
+								<p class="font-weight-normal-poppins font-14">If, as the result of modifications, alterations, or updates made to the Privacy Policy, you want to alter information COMPANY may have regarding you, you may do so by following the procedure described in the section below entitled “Updating Your Personal Information And Privacy Preferences.”  </p>
+	
+								<p class="font-weight-normal-poppins font-14">By using this Internet web site, you agree to be subject to and agree to be bound by the Privacy Policy.  You represent that you are of legal age to form a binding contract.</p>
+	
+								<p class="font-weight-normal-poppins font-14">If you have objections to the Privacy Policy, you should immediately discontinue use of this Internet web site.  </p>
+	
+								<p class="font-weight-normal-poppins font-14">The Privacy Policy does not govern practices associated with activities provided by Internet web sites other than this Internet web site, or associated with products and services not available or enabled via this Internet web site. </p>
+	
+								<p class="font-weight-normal-poppins font-14">To the extent that any term of the Privacy Policy conflicts with the terms of an existing written (including electronic) agreement between you and COMPANY regarding the use of specific areas of the Internet web site or specific products, offers and promotions (including specific promotion rules, offers, terms of use, or privacy disclosures), the terms of the respective agreement(s) shall govern.</p>
+	
+								<p class="font-weight-normal-poppins font-14">This Internet web site is intended for adult audiences, and COMPANY does not knowingly collect any personal information from anyone under eighteen (18) years of age.</p>
+	
+								<p class="font-weight-normal-poppins font-14">If COMPANY sells assets (or the assets of a division or subsidiary) to another entity, or COMPANY (or a division or subsidiary) is acquired by or merged with another entity, you agree that COMPANY may provide to such entity personal information that is related to that part of COMPANY business that was sold to or merged with the other entity without obtaining your further consent.</p>
+	
+	
+								<h3>Updating Your Personal Information and Privacy Preferences:  </h3>
+	
+								<p class="font-weight-normal-poppins font-14">You may request access to and may correct your personal information and privacy preferences at any time.  </p>
+	
+								<p class="font-weight-normal-poppins font-14">Please e-mail your request to access and correct your personal information to: support@operantsystems.com.  Please include your name, address, and e-mail address when you contact us.  No specific form is required to notify COMPANY of changes to your personal information.  </p>
+	
+	
+								<h3>Collection of Personal Information:  </h3>
+	
+								<p class="font-weight-normal-poppins font-14">COMPANY may ask that you provide personally identifiable information, such as your first and last name, mailing address (including zip code), country of residence, e-mail address, telephone and facsimile numbers, and other personally identifying information (collectively, “personal information”).  By submitting personal information to COMPANY, you agree and acknowledge that such personal information may be transferred across national boundaries.  You also acknowledge that in certain countries or with respect to certain activities, the collection, transfer, storage, and processing of your personal information may be undertaken by third parties.  </p>
+	
+	
+								<h3>How Your Personal Information Is Used:   </h3>
+	
+								<p class="font-weight-normal-poppins font-14">COMPANY collects your personal information in order to record, support and facilitate services provided in this Internet web site.  For example, your personal information is used to provide you with information that you have indicated that you would like sent to you by COMPANY.</p>
+	
+	
+								<h3>Your Choices With Respect To Personal Information: </h3>
+	
+								<p class="font-weight-normal-poppins font-14">COMPANY recognizes and appreciates the importance of responsible use of personal information collected, such as in connection with providing services and information, or in connection with promotion(s) or special offer(s).  COMPANY respects your legal rights regarding access to and correction and deletion of your personal information.  COMPANY may communicate information to you regarding products, services, and special offers available from COMPANY or selected third parties.</p>
+	
+								<p class="font-weight-normal-poppins font-14">There are other instances in which COMPANY may divulge your personal information, such as where required by law, regulation, or litigation.  COMPANY may also disclose personal information about you in a determination made solely by COMPANY that such disclosure should be made for reasons of national security, law enforcement, or other issues of public importance.</p>
+	
+								<p class="font-weight-normal-poppins font-14">Access by you to your personal may be provided upon request, subject to COMPANY’s sole and exclusive granting of such request.  COMPANY expressly reserves the right to deny any request for your personal information for any purpose. </p>
+	
+	
+								<h3>Protection of Your Personal Information:</h3>
+	
+								<p class="font-weight-normal-poppins font-14">The personal information that you provide in connection with this Internet web site is protected in several ways.  Your personal information resides on secure servers that only selected COMPANY personnel and contractors have access to via password.  COMPANY strives to prevent unauthorized parties from viewing such personal information when it is transmitted to and stored by COMPANY</p>
+	
+	
+								<h3>Privacy complaints:</h3>
+	
+								<p class="font-weight-normal-poppins font-14">COMPANY takes its users’ privacy concerns seriously.  If you believe that COMPANY has not complied with the Privacy Policy with respect to your personal information, please contact COMPANY and report such non-compliance.</p>
+	
+								<p class="font-weight-normal-poppins font-14">COMPANY is not responsible for the content or privacy practices of other web sites to which this Internet web site may link to or is linked from.  You should review the privacy policy of such Internet web sites before using the sites.</p>
+	
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade poppins-FontFamily" id="hipaa"><div class="post">
+							<h2>HIPAA Information</h2>
+	
+	
+							<p class="font-weight-normal-poppins font-14">The Standards for Privacy of Individually Identifiable Health Information (“Privacy Rule”) establishes, for the first time, a set of national standards for the protection of certain health information. The U.S. Department of Health and Human Services (“HHS”) issued the Privacy Rule to implement the requirement of the Health Insurance Portability and Accountability Act of 1996 (“HIPAA”). The Privacy Rule standards address the use and disclosure of individuals’ health information—called “protected health information” by organizations subject to the Privacy Rule — called “covered entities,” as well as standards for individuals’ privacy rights to understand and control how their health information is used. Within HHS, the Office for Civil Rights (“OCR”) has responsibility for implementing and enforcing the Privacy Rule with respect to voluntary compliance activities and civil money penalties.</p>
+							<h2>What Information is Protected</h2>
+							<p class="font-weight-normal-poppins font-14">
+								<strong>Protected Health Information</strong>. The Privacy Rule protects all “individually identifiable health information” held or transmitted by a covered entity or its business associate, in any form or media, whether electronic, paper, or oral. The Privacy Rule calls this information “protected health information (PHI).”
+							</p>
+							<p class="font-weight-normal-poppins font-14">“Individually identifiable health information” is information, including demographic data, that relates to:</p>
+							<ul class="font-weight-normal-poppins font-14">
+								<li> the individual’s past, present or future physical or mental health or condition,</li>
+								<li>the provision of health care to the individual, or</li>
+								<li>the past, present, or future payment for the provision of health care to the individual,</li>
+							</ul>
+							<p class="font-weight-normal-poppins font-14">and that identifies the individual or for which there is a reasonable basis to believe it can be used to identify the individual.  Individually identifiable health information includes many common identifiers (e.g., name, address, birth date, Social Security Number).</p>
+							<p class="font-weight-normal-poppins font-14">The Privacy Rule excludes from protected health information employment records that a covered entity maintains in its capacity as an employer and education and certain other records subject to, or defined in, the Family Educational Rights and Privacy Act, 20 U.S.C. §1232g.</p>
+							<p class="font-weight-normal-poppins font-14">
+								<strong>De-Identified Health Information</strong>. There are no restrictions on the use or disclosure of de-identified health information.14 De-identified health information neither identifies nor provides a reasonable basis to identify an individual. There are two ways to de-identify information; either: (1) a formal determination by a qualified statistician; or (2) the removal of specified identifiers of the individual and of the individual’s relatives, household members, and employers is required, and is adequate only if the covered entity has no actual knowledge that the remaining information could be used to identify the individual.
+							</p>
+	
+	
+						</div>
+	
+						</div>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+<!-- Consulting Service Modal Start -->
+
+<div class="modal fade" id="consulting_service_modal" tabindex="-1" role="dialog" aria-labelledby="consulting_service_modal" aria-hidden="true"
+data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-scrollable mw-100 custom-templates-w-95 modal-dialog-centered" role="document">
+	  <div class="modal-content">
+  
+		<!-- Modal Header -->
+		<div class="modal-header templates-modal-header">
+		   <h4 class="modal-title websiteBuilderHeading">Starting or Growing Your Business</h4> 
+		  <span id="idModalHome3Close" class="close resetSelectedRadioButtons blue-color" data-dismiss="modal">×</span>
+		  <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+		</div>
+  
+		<!-- Modal body -->
+		<div class="modal-body container-fluid">
+			<div class="row">
+
+				<!-- santosh -->
+				<div class="col-md-12 mb-4">
+					<p class="font-weight-500-poppins font-12 poppins-FontFamily orange-color text-center">To explore more, click the progress steps #</p>
+					<div class='progress custom-progress'>
+						<div class='progress_inner consultSection'>
+						  <div class='progress_inner__step consult-start font-weight-normal-poppins font-14 poppins-FontFamily blue-color activeProgressConsult'>
+							<label for='step-1-start-consult'>Meet consutant</label>
+						  </div>
+						  <div class='progress_inner__step consult-start font-weight-normal-poppins font-14 poppins-FontFamily blue-color'>
+							<label for='step-2-start-consult'>Review services</label>
+						  </div>
+						  <div class='progress_inner__step consult-start font-weight-normal-poppins font-14 poppins-FontFamily blue-color'>
+							<label for='step-3-start-consult'>Complete Intake Form </label>
+						  </div>
+						  <div class='progress_inner__step consult-start font-weight-normal-poppins font-14 poppins-FontFamily blue-color'>
+							<label for='step-4-start-consult'>Schedule an Appointment</label>
+						  </div>
+						  <input checked='checked' id='step-1-start-consult' name='step' type='radio'>
+						  <input id='step-2-start-consult' name='step' type='radio'>
+						  <input id='step-3-start-consult' name='step' type='radio'>
+						  <input id='step-4-start-consult' name='step' type='radio'>
+						  <div class='progress_inner__bar'></div>
+						  <div class='progress_inner__bar--set'></div>
+						  <div class='progress_inner__tabs newSection '>
+							<div class='tab tab-0'>
+							<div style="float:left;width: 30%">LOGO</div>
+							<div>
+								<h1 class="font-weight-normal-poppins poppins-FontFamily blue-color mb-4">Meet Consultant</h1>
+							  <p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Select a template to customize.</p>
+							  <p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Send name and email address</p>
+							  <p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Select a date & time to meet our consultant</p>
+								</div>
+							</div>
+							<div class='tab tab-1'>
+								<h1 class="font-weight-normal-poppins poppins-FontFamily blue-color mb-4">Meet our Consultant</h1>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Review the template</p>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Select domain name for your website</p>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Get pricing details & order</p>
+									<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Pay an invoice</p>
+							</div>
+							<div class='tab tab-2'>
+								<h1 class="font-weight-normal-poppins poppins-FontFamily blue-color mb-4">Send Content</h1>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Share texts picture and logo (optional) for your website</p>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Sample PPT will be returned describing the new content</p>
+							</div>
+							<div class='tab tab-3'>
+								<h1 class="font-weight-normal-poppins poppins-FontFamily blue-color mb-4">Go Live</h1>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Review the website before launching</p>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Set a go-live date for the website</p>
+									<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+										style="font-size:15px;"></i>&nbsp;Get started with your practice management program "ABA Pocketbook"</p>
+							</div>
+						  </div>
+						  <!-- <div class='progress_inner__status'>
+							<div class='box_base'></div>
+							<div class='box_lid'></div>
+							<div class='box_ribbon'></div>
+							<div class='box_bow'>
+							  <div class='box_bow__left'></div>
+							  <div class='box_bow__right'></div>
+							</div>
+							<div class='box_item'></div>
+							<div class='box_tag'></div>
+							<div class='box_string'></div>
+						  </div> -->
+						</div>
+					  </div>
+					  
+				</div>
+
+				
+			</div>
+		 
+		</div>
+  
+		<!-- Modal footer -->
+		<!-- <div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div> -->
+  
+	  </div>
+	</div>
+  </div>
+
+<!-- Consulting service Modal END -->
+
+	<!-- The Modal -->
+
+	
+<div class="modal fade" id="exploreMore-NewModal" tabindex="-1" role="dialog" aria-labelledby="exploreMoreModalLabel" aria-hidden="true"
+data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-scrollable mw-100 custom-templates-w-95 modal-dialog-centered" role="document">
+	  <div class="modal-content">
+  
+		<!-- Modal Header -->
+		<div class="modal-header templates-modal-header">
+		   <h4 class="modal-title websiteBuilderHeading">We build your dream website</h4> 
+		  <span id="idModalHome3Close" class="close resetSelectedRadioButtons blue-color" data-dismiss="modal">×</span>
+		  <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+		</div>
+  
+		<!-- Modal body -->
+		<div class="modal-body container-fluid">
+			<div class="row">
+
+				<!-- santosh -->
+				<div class="col-md-12 mb-4">
+					<p class="font-weight-500-poppins font-12 poppins-FontFamily orange-color text-center">To explore more, click the progress steps #</p>
+					<div class='progress custom-progress'>
+						<div class='progress_inner'>
+						  <div class='progress_inner__step template_select font-weight-normal-poppins font-14 poppins-FontFamily blue-color activeProgress'>
+							<label for='step-1-template'>Select Template</label>
+						  </div>
+						  <div class='progress_inner__step template_select font-weight-normal-poppins font-14 poppins-FontFamily blue-color'>
+							<label for='step-2-template'>Meet Consultant</label>
+						  </div>
+						  <div class='progress_inner__step template_select font-weight-normal-poppins font-14 poppins-FontFamily blue-color'>
+							<label for='step-3-template'>Send Content</label>
+						  </div>
+						  <div class='progress_inner__step template_select font-weight-normal-poppins font-14 poppins-FontFamily blue-color'>
+							<label for='step-4-template'>Go Live</label>
+						  </div>
+						  <input checked='checked' id='step-1-template' name='step' type='radio'>
+						  <input id='step-2-template' name='step' type='radio'>
+						  <input id='step-3-template' name='step' type='radio'>
+						  <input id='step-4-template' name='step' type='radio'>
+						  <div class='progress_inner__bar'></div>
+						  <div class='progress_inner__bar--set'></div>
+						  <div class='progress_inner__tabs'>
+							<div class='tab tab-start-0'>
+								<h1 class="font-weight-normal-poppins poppins-FontFamily blue-color mb-4">Select Template</h1>
+							  <p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Select a template to customize.</p>
+							  <p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Send name and email address</p>
+							  <p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+								style="font-size:15px;"></i>&nbsp;Select a date & time to meet our consultant</p>
+							</div>
+							<div class='tab tab-start-1'>
+								<h1 class="font-weight-normal-poppins poppins-FontFamily blue-color mb-4">Meet our Consultant</h1>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Review the template</p>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Select domain name for your website</p>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Get pricing details & order</p>
+									<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Pay an invoice</p>
+							</div>
+							<div class='tab tab-start-2'>
+								<h1 class="font-weight-normal-poppins poppins-FontFamily blue-color mb-4">Send Content</h1>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Share texts picture and logo (optional) for your website</p>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Sample PPT will be returned describing the new content</p>
+							</div>
+							<div class='tab tab-start-3'>
+								<h1 class="font-weight-normal-poppins poppins-FontFamily blue-color mb-4">Go Live</h1>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Review the website before launching</p>
+								<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+									style="font-size:15px;"></i>&nbsp;Set a go-live date for the website</p>
+									<p class="font-weight-normal-poppins font-14 poppins-FontFamily blue-color text-left my-0"><i class="fas fa-check-circle" aria-hidden="true"
+										style="font-size:15px;"></i>&nbsp;Get started with your practice management program "ABA Pocketbook"</p>
+							</div>
+						  </div>
+						  <!-- <div class='progress_inner__status'>
+							<div class='box_base'></div>
+							<div class='box_lid'></div>
+							<div class='box_ribbon'></div>
+							<div class='box_bow'>
+							  <div class='box_bow__left'></div>
+							  <div class='box_bow__right'></div>
+							</div>
+							<div class='box_item'></div>
+							<div class='box_tag'></div>
+							<div class='box_string'></div>
+						  </div> -->
+						</div>
+					  </div>
+					  
+				</div>
+
+				<div class="custom-thumbnailSelection row mx-2">
+					<input type="hidden" class="selectedTemplate"/>
+					<div class="col-md-4 col-lg-4 my-2 gallery mb-4">
+						<div class="thumbnails">
+							<span class="mt-3 d-inline-block pb-1">
+								<input type="radio" id="check1" name="templates" class="radiobutton templateRadiobutton" value="check1" datasrc="Template 1">
+								<label for="check1">Template 1</label></span>
+							<div class="teamplates-box-shadow">
+								<img src="operantsystems/images/new_images/templates/Template01.jpg" class="img-fluid d-none"/>
+								<img src="operantsystems/images/new_images/templates/Template01_small.jpg" class="img-fluid"/>
+							</div>
+							
+							
+								<!-- <input type="radio" class="radiobutton" id="check1" name="templates" value="check1" 
+								datasrc="Template 1" /> <span>Template 1</span></span> -->
+						</div>
+						
+					</div>
+					<div class="col-md-4 col-lg-4  my-2 gallery">
+						<div class="thumbnails">
+							<span class="mt-3 d-inline-block pb-1">
+								<input type="radio" id="check2" name="templates" class="radiobutton templateRadiobutton" value="check2" datasrc="Template 2">
+								<label for="check2">Template 2</label></span>
+							<div class="teamplates-box-shadow">
+								<img src="operantsystems/images/new_images/templates/Template02.jpg" class="img-fluid d-none"/>
+								<img src="operantsystems/images/new_images/templates/Template02_small.jpg" class="img-fluid"/>
+							</div>
+							
+						
+								<!-- <input type="radio" class="radiobutton" id="check2" name="templates" value="check2" datasrc="Template 2"/>
+								 <span>Template 2</span> -->
+								</span>
+						</div>
+						
+					</div>
+					<div class="col-md-4 col-lg-4  my-2 gallery">
+						<div class="thumbnails">
+							<span class="mt-3 d-inline-block pb-1">
+								<input type="radio" id="check3" name="templates" class="radiobutton templateRadiobutton" value="check3" datasrc="Template 3">
+								<label for="check3">Template 3</label></span>
+							<div class="teamplates-box-shadow">
+								<img src="operantsystems/images/new_images/templates/Template03.jpg" class="img-fluid d-none"/>
+								<img src="operantsystems/images/new_images/templates/Template03_small.jpg" class="img-fluid"/>
+							</div>
+							
+							
+								<!-- <input type="radio" class="radiobutton" id="check3" name="templates" value="check3" datasrc="Template 3"/>
+								 <span>Template 3</span> -->
+								</span>
+						</div>
+						
+					</div>
+	
+					<div class="col-md-4 col-lg-4  my-2 gallery">
+						<div class="thumbnails">
+							<span class="mt-3 d-inline-block pb-1">
+								<input type="radio" id="check4" name="templates" class="radiobutton templateRadiobutton" value="check4" datasrc="Template 4">
+								<label for="check4">Template 4</label></span>
+							<div class="teamplates-box-shadow">
+								<img src="operantsystems/images/new_images/templates/Template04.jpg" class="img-fluid d-none"/>
+								<img src="operantsystems/images/new_images/templates/Template04.png" class="img-fluid"/>
+							</div>
+							
+							
+								<!-- <input type="radio" class="radiobutton" id="check4" name="templates" value="check4" datasrc="Template 4"/>
+								 <span>Template 4</span> -->
+								</span>
+						</div>
+						
+					</div>
+	
+					<div class="col-md-4 col-lg-4  my-2 gallery">
+						<div class="thumbnails">
+							<span class="mt-3 d-inline-block pb-1">
+								<input type="radio" id="check5" name="templates" class="radiobutton templateRadiobutton" value="check5" datasrc="Template 5">
+								<label for="check5">Template 5</label></span>
+							<div class="teamplates-box-shadow">
+								<img src="operantsystems/images/new_images/templates/Template05.jpg" class="img-fluid d-none"/>
+								<img src="operantsystems/images/new_images/templates/Template05_small.jpg" class="img-fluid"/>
+							</div>
+							
+							
+								<!-- <input type="radio" class="radiobutton" id="check5" name="templates" value="check5" datasrc="Template 5"/>
+								 <span>Template 5</span> -->
+								</span>
+						</div>
+						
+					</div>
+	
+					<div class="col-md-4 col-lg-4  my-2 gallery">
+						<div class="thumbnails">
+							<span class="mt-3 d-inline-block pb-1">
+								<input type="radio" id="check6" name="templates" class="radiobutton templateRadiobutton" value="check6" datasrc="Template 6">
+								<label for="check6">Template 6</label></span>
+							<div class="teamplates-box-shadow">
+								<img src="operantsystems/images/new_images/templates/Template06.jpg" class="img-fluid d-none"/>
+								<img src="operantsystems/images/new_images/templates/Template06_small.jpg" class="img-fluid"/>
+							</div>
+							
+							
+								<!-- <input type="radio" class="radiobutton" id="check6" name="templates" value="check6" datasrc="Template 6"/> 
+								<span>Template 6</span> -->
+							</span>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		 
+		</div>
+  
+		<!-- Modal footer -->
+		<!-- <div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div> -->
+  
+	  </div>
+	</div>
+  </div>
+
+
+  	<!-- The Modal -->
+<div class="modal fade" id="engaginglearnMore-modal" tabindex="-1" role="dialog" aria-labelledby="EngaginglearnMoreModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable  modal-lg modal-dialog-centered" role="document">
+	  <div class="modal-content">
+  
+		<!-- Modal Header -->
+		<div class="modal-header templates-modal-header">
+		  <span id="idModalHome3Close" class="close blue-color" data-dismiss="modal">×</span>
+		</div>
+  
+		<!-- Modal body -->
+		<div class="modal-body container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="poppins-FontFamily font-weight-normal-poppins font-16-news-content text-center mb-3 blue-color">Easy and simple entertaining training video for staffs and parents</h2>
+					<p class="poppins-FontFamily font-weight-normal-poppins font-14 text-center blue-color">Subject-&nbsp;The most FAQ's from staffs and parents</p>
+					<p class="poppins-FontFamily font-weight-normal-poppins font-14 text-center blue-color">Script-&nbsp;Brief script that doesn't take more than 2-3 min video</p>
+					<p class="poppins-FontFamily font-weight-normal-poppins font-14 text-center blue-color">All videos will be caption based.</p>
+				</div>
+			</div>
+		</div>
+  
+		<!-- Modal footer -->
+		<!-- <div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div> -->
+  
+	  </div>
+	</div>
+  </div>
+
+    	<!-- The Modal -->
+<div class="modal fade" id="learnMore-NewModal" tabindex="-1" role="dialog" aria-labelledby="LearnMoreModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered" role="document">
+	  <div class="modal-content">
+  
+		<!-- Modal Header -->
+		<div class="modal-header templates-modal-header">
+			<h4 class="modal-title poppins-FontFamily  text-center m-0 blue-color w-100">Save time and money for billing</h4> 
+		  <span id="idModalHome3Close" class="close blue-color ml-0 save-time-modal-close" data-dismiss="modal">×</span>
+		</div>
+  
+		<!-- Modal body -->
+		<div class="modal-body container-fluid">
+			<div class="row">
+				<div class="col-md-12 mb-4">
+					<p class="poppins-FontFamily font-weight-normal-poppins font-14 text-center blue-color sampleTemplate-links">
+						<span class="mt-3 d-inline-block pb-1">
+							<input type="radio" id="billclient" name="formtemplates" class="radiobutton billingFormRadiobutton" value="billclient" datasrc="Bill Client">
+							<label for="billclient">Bill Client</label></span>
+						<span class="d-inline-block">Bill Insurance</span>
+						<span class="mt-3 d-inline-block pb-1">
+							<input type="radio" id="form1500" name="formtemplates" class="radiobutton billingFormRadiobutton" value="form1500" datasrc="Use Form 1500">
+							<label for="form1500">Use Form 1500</label></span>
+					</p>
+				</div>
+
+				<div class="col-md-12 sampleTemplate-images bill-form showHideTemplateImages text-center">
+					<img src="operantsystems/images/new_images/home-team-bg-images/PDF_Form01.png" class="img-fluid"/>
+				</div>
+
+				<div class="col-md-12 sampleTemplate-images form-1500 showHideTemplateImages text-center">
+					<img src="operantsystems/images/new_images/home-team-bg-images/PDF_Form02.png" class="img-fluid"/>
+				</div>
+			</div>
+		</div>
+  
+		<!-- Modal footer -->
+		<!-- <div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div> -->
+  
+	  </div>
+	</div>
+  </div>
+
+
+  
+  <!-- Modal Popup -->
+  <div id="MyTemplateForm" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog engaginglearnMore-modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header templates-modal-header">
+				<h4 class="modal-title websiteBuilderHeading white-color">Send Inquiry</h4> 
+			   <span id="idModalHome3Close" class="close resetSelectedRadioButtons white-color sendEnquiryBtn" data-dismiss="modal">×</span>
+			   <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+			 </div>
+			<div class="modal-body">
+				<form name="formMail"
+				class="form-inline  ng-pristine ng-valid-email ng-invalid ng-invalid-required"
+				ng-submit="chkGetTemplateStarted()" autocomplete="off">
+				<!-- <form name="formContactUs" class="form-horizontal templateForm" ng-submit="chkContactUs()" autocomplete="off"> -->
+					<div class="row">
+						<div class="col-md-6 white-color">
+							<div class="form-group">
+								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Selected Template:</label>
+								<input type="text" class="form-control sendEnquiryfields poppins-FontFamily font-weight-normal-poppins templateName font-14" placeholder="Name *" name="contactUs_yourName" ng-model="contactUs_yourName" required onpaste="return false;" readonly>
+							</div>
+						</div>
+
+						<div class="col-md-6 white-color">
+							<div class="form-group">
+								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Email<span class="red-color pl-1">*</span>:</label>
+								<input type="email" class="form-control  sendEnquiryfields poppins-FontFamily font-weight-normal-poppins font-14" placeholder="Email *"  id="cf-email" name="email" ng-model="emailId" required onpaste="return false;">
+							</div>
+
+							<div class="error-container"
+							ng-show="formMail.email.$dirty &amp;&amp; formMail.email.$invalid">
+								<small class="text-danger" ng-show="formMail.email.$error.required">
+									Your email is required.
+								</small>
+								<small class="text-danger"  ng-show="formMail.email.$error.email">
+									Your email is not valid
+								</small>
+							</div>
+						</div>
+
+						<div class="col-md-12 white-color">
+
+							<div class=" input-group ng-isolate-scope sendEnquiry-date-time-container"
+							moment-picker="demoDate" format="MM-DD-YYYY">
+							<label class="poppins-FontFamily font-12 white-color font-weight-normal-poppins d-block mb-1">Select Date</label>
+							<input
+								class="d-inline poppins-FontFamily font-12 text-dark font-weight-normal-poppins form-control placeholder ng-pristine ng-untouched ng-valid ng-scope moment-picker-input poppins-FontFamily font-12 text-dark font-weight-normal-poppins select-date-field"
+								placeholder="Demo Date" ng-model="demoDate"
+								ng-model-options="{ updateOn: 'blur' }" tabindex="0">
+							<span class="input-group-btn ng-scope select-date-icon">
+								<button type="button" class="btn btn-default">
+									<i class="material-icons">event</i>
+								</button>
+							</span>
+							
+						</div>
+
+						<div class=" input-group ng-isolate-scope sendEnquiry-date-time-container"
+							moment-picker="demoTime" format="HH:mm">
+							<label class="poppins-FontFamily font-12 white-color font-weight-normal-poppins d-block mb-1">Select Date</label>
+							<input
+								class="d-inline form-control placeholder ng-pristine ng-untouched ng-valid ng-scope moment-picker-input select-date-fieldpoppins-FontFamily font-12 text-dark font-weight-normal-poppins"
+								placeholder="Demo Time" ng-model="demoTime"
+								ng-model-options="{ updateOn: 'blur' }" tabindex="0">
+							<span class="input-group-btn ng-scope select-date-icon">
+								<button type="button" class="btn btn-default">
+									<i class="material-icons">access_time</i>
+								</button>
+							</span>	
+						</div>
+						</div>
+
+						
+
+						<div class="col-md-12 white-color">
+							<div class="form-group">
+								<label class="poppins-FontFamily font-12 font-weight-normal-poppins">Comments:<span class="red-color pl-1">*</span></label>
+								<textarea class="form-control sendEnquiryfields poppins-FontFamily font-weight-normal-poppins font-14" id="sendEnquiry_message" rows="3"
+									placeholder="Enter your website names that you would like to have eg. operantsystems.com" name="message" ng-model="sendEnquiry_message" required onpaste="return false;"></textarea>
+							</div>
+						</div>
+						<div class="col-md-12 text-right mt-3">
+							<button type="button" class="btn btn-primary  poppins-FontFamily template-sendbtn font-14 white-color" ng-click="saveNamePhoneComments()">Send</button>
+							<!-- <button type="submit" class="btn btn-primary template-sendbtn poppins-FontFamily font-14 white-color">Send</button> -->
+							<!-- <button type="submit" class="btn navbar-register-button">Send</button> -->
+						</div>
+					</div>
+				</form>
+
+			</div>
+			<!-- <div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">
+					Close</button>
+			</div> -->
+		</div>
+	</div>
+</div>
+
+	<!-- =========================
+ SCRIPTS
+============================== -->
+	<!-- <script src="operantsystems/js/jquery.min.js"></script> -->
+	<!-- moment datepicker -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.js"></script>
+	<script
+		src="https://cdn.rawgit.com/indrimuska/angular-moment-picker/master/dist/angular-moment-picker.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+	<script>
+
+		/* PRE LOADER */
+		$(window).on("load", function () {
+			"use strict";
+			$(".status").fadeOut();
+			$(".preloader").delay(1000).fadeOut("slow");
+		});
+
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		};
+
+		$(".goToFeaturesFirstSection").click(function () {
+			$('.navbar-collapse').collapse('hide');
+			$(".nav").find(".activeNav").removeClass("activeNav");
+			$(".features-menu").addClass("activeNav");
+
+			$('#home,#news,.aboutUs').hide();
+			$('#features').show();
+
+			setTimeout($('html, body').animate({
+				scrollTop: $(".skill_acquistion").offset().top - 50
+			},
+				'slow'), 2000);
+		});
+		
+		$(".goToFeatures").click(function () {
+			$('.navbar-collapse').collapse('hide');
+			$(".nav").find(".activeNav").removeClass("activeNav");
+			$(".features-menu").addClass("activeNav");
+
+			$('#home,#news,.aboutUs').hide();
+			$('#features').show();
+
+			setTimeout($('html, body').animate({
+				scrollTop: $(".teamContainer").offset().top - 50
+			},
+				'slow'), 2000);
+		});
+
+		$(".goToAboutUs").click(function () {
+			$('.navbar-collapse').collapse('hide');
+			$("#navLinks > ul").find(".activeNav").removeClass("activeNav");
+			$(".homes-menu").addClass("activeNav");
+
+			$('#features,#news,#team,#contactus').hide();
+			$('#home,.aboutUs,.teamContainer').show();
+
+			setTimeout($('html, body').animate({
+				scrollTop: $(".aboutUs").offset().top - 50
+			},'slow'), 2000);
+		});
+
+		$(".goToHome").click(function () {
+			$('.navbar-collapse').collapse('hide');
+			$(".nav").find(".activeNav").removeClass("activeNav");
+			$(".homes-menu").addClass("activeNav");
+
+			$('#features,#news,#team,#contactus').hide();
+			$('#home, .teamContainer,.contactUsContainer').show();
+
+			setTimeout($('html, body').animate({
+				scrollTop: $("#home").offset().top
+			},'slow'), 2000);
+		});
+
+		$(function () {
+			$(document).scroll(function () {
+				var $nav = $("#mainNavbar");
+				$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+			});
+		});
+
+
+		$(".nav > .menuBarItem > a").on("click", function () {
+			$(".nav").find(".activeNav").removeClass("activeNav");
+			$(this).parent().addClass("activeNav");
+		});
+		
+
+		$(document).on('click', '#footerNavLinks > ul   > li a[href^="#"]', function (e) {
+			$('.navbar-collapse').collapse('hide');
+			// target element id
+			var id = $(this).attr('href');
+			if (id === "#home") $('#home').show();
+			if(id === "#enrolllink") return;
+			var _target = $(this).attr("href").split("#")[1];
+			$(".subSections").hide();
+			$(".subSections[id=" + _target + "]").show();
+			// target element
+			var $id = $(id);
+			if ($id.length === 0) {
+				return;
+			}
+			// prevent standard hash navigation (avoid blinking in IE)
+			e.preventDefault();
+			// top position relative to the document
+			var pos = $id.offset().top - 50;
+
+			if (id === "#team") {
+				$(".nav").find(".activeNav").removeClass("activeNav");
+				$(".team-menu").addClass("activeNav");
+			} else if (id === "#news") {
+				$(".nav").find(".activeNav").removeClass("activeNav");
+				$(".news-menu").addClass("activeNav");
+			} else if (id === "#home") {
+				$(".nav").find(".activeNav").removeClass("activeNav");
+				$(".homes-menu").addClass("activeNav");
+			} else if (id === "#features") {
+				$(".nav").find(".activeNav").removeClass("activeNav");
+				$(".features-menu").addClass("activeNav");
+			} else if (id === "#contactus") {
+				$(".nav").find(".activeNav").removeClass("activeNav");
+				$(".contactus-menu").addClass("activeNav");
+			}
+			
+
+			// animated top scrolling
+			$('body, html').animate({ scrollTop: pos });
+		});
+
+		$(document).on('click', '#navLinks > ul  a[href^="#"]', function (e) {
+			$('.navbar-collapse').collapse('hide');
+			// target element id
+			var id = $(this).attr('href');
+			if (id === "#home") $('#home').show();
+			if(id === "#enrolllink") return;
+			var _target = $(this).attr("href").split("#")[1];
+			$(".subSections").hide();
+			$(".subSections[id=" + _target + "]").show();
+			// target element
+			var $id = $(id);
+			if ($id.length === 0) {
+				return;
+			}
+			// prevent standard hash navigation (avoid blinking in IE)
+			e.preventDefault();
+			// top position relative to the document
+			var pos = $id.offset().top - 50;
+
+			// $(this).parent().parent().find(".activeNav").removeClass("activeNav");
+			// $(this).parent().addClass("activeNav");
+			if(id === '#team') {
+				setTimeout($('html, body').animate({
+				scrollTop: $(".team-parent-container").offset().top - 50
+			},'slow'), 2000);
+			} else if(id === '#contactus') {
+				setTimeout($('html, body').animate({
+				scrollTop: $(".contact-us-form-content").offset().top - 50
+			},'slow'), 2000);
+			} else {
+				// animated top scrolling
+				$('body, html').animate({ scrollTop: pos });
+			}
+
+			
+		});
+
+		var btn = $('#scroll-button');
+
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > 300) {
+				btn.addClass('show');
+			} else {
+				btn.removeClass('show');
+			}
+		});
+
+		btn.on('click', function (e) {
+			e.preventDefault();
+			$('html, body').animate({ scrollTop: 0 }, '300');
+		});
+
+		$(".enroll-link").click(function () {
+			
+			$('.user-login-menu > a').removeClass("addBgColor");
+			$(".login-container").addClass("hide");
+			$(".login-container").attr("style","display:none !important");
+			$("#stamp-navigation").removeClass("in");
+			$("#stamp-navigation").attr("aria-expanded","false");
+			$('.user-login-menu > a').removeClass('addBgColor');
+			
+			$('.enrollment-link').toggle();
+			// $(".enroll-link").toggleClass('addBgColor addPaddingTop');
+		});
+
+			$(".button-reset").click(function () {
+			$('#gs3').addClass('hide');
+			$('.enrollment-link').hide();
+			$("#gs1").removeClass("hide");
+		});
+		
+		$(".user-login-btn").click(function () {
+			$(this).toggleClass('addBgColor addPaddingTop');
+		});
+		
+		$(window).scroll(function(){
+			
+			if($(window).scrollTop() <= 1000){
+
+				$('.features-comp-section > img').addClass('animate__animated  animate__backInLeft');
+				$('.features-image-section img').addClass('animate__animated  animate__backInRight');
+			} else {
+				$('.features-comp-section > img').removeClass('animate__animated  animate__backInLeft');
+				$('.features-image-section img').removeClass('animate__animated  animate__backInRight');
+			}
+		});
+
+		$(document).on('click', '.openEnrollmentBox', function () {
+			$('.enrollment-link').toggle();
+			$('.navbar-collapse').collapse('show');
+			// $(".enroll-link").toggleClass('addBgColor addPaddingTop');
+		});
+
+		$('.templateRadiobutton').on('change', function() {
+			var $this = $(this),
+			name = $this.attr('datasrc');
+			if ($(this).prop('checked')) {
+				var selectedTemplateValue = $('.selectedTemplate').val(name);
+				$('.templateName').val(selectedTemplateValue.attr('value'));
+				$("#MyTemplateForm").modal("show");
+			}
+		});
+
+		$(document).on('click', '.resetSelectedRadioButtons', function () {
+			$("[name=templates]").prop("checked",false);
+			$('.selectedTemplate').val();
+			$('.templateName').val();
+		});
+
+		$(document).on('click', '.template-sendbtn', function () {
+			$("[name=templates]").prop("checked",false);
+			$('.selectedTemplate').val();
+			$('.templateName').val();
+			if($(this).hasClass('hasBeenSend')) {
+				$("#MyTemplateForm").modal("hide");
+			}
+		});
+
+		$(function() {
+		var minimized_elements = $('p.minimize');
+		minimized_elements.each(function() {
+		var t = $(this).text();
+		if (t.length < 197) return;
+		$(this).html(
+			t.slice(0, 197) + '<span>... </span><a href="#" class="more">Read more</a>' +
+			'<span style="display:none;">' + t.slice(100, t.length) + ' <a href="#" class="less">Read less</a></span>'
+		);
+
+		});
+
+		$('a.more', minimized_elements).click(function(event) {
+			event.preventDefault();
+			$(this).hide().prev().hide();
+			$(this).next().show();
+		});
+
+		$('a.less', minimized_elements).click(function(event) {
+			event.preventDefault();
+			$(this).parent().hide().prev().show().prev().show();
+		});
+
+		});
+
+		$(document).on('click', '.teamplates-box-shadow', function () {
+			if($(this).children('img').hasClass('d-none')) {
+				var img_to_load = $(this).find('img')[0].src;
+				// var imgWindow = window.open(img_to_load, 'imgWindow');
+				var imageName = img_to_load.split('/')[img_to_load.split('/').length - 1];           
+				var url = "template.html?image=" + encodeURIComponent(imageName);
+				window.open(url, '_blank');
+			} else {
+				var img_to_load = $(this).find('img')[0].src;
+				var imgWindow = window.open(img_to_load, 'imgWindow');
+				// var imageName = img_to_load.split('/')[img_to_load.split('/').length - 1];           
+				// var url = "templatePage.html?image=" + encodeURIComponent(imageName);
+				// window.open(url, '_blank');
+			}
+		});
+
+		$(document).on('click', '.navBar-menu', function () {
+			$('.enrollment-link').hide();
+			$('.user-login-menu > a').removeClass("addBgColor");
+			$(".login-container").attr("style","display:none !important");
+			$(".login-container").addClass("hide");
+		});
+
+		$(document).on('click', '.horizontal-subscribe-form .close-button', function () {
+			$(this).parent().parent().parent().hide();
+		});
+
+		$(document).on('click', '.login-container .close-button', function () {
+			$(".login-container").addClass("hide");
+			$('.user-login-menu > a').removeClass("addBgColor");
+			$(".login-container").attr("style","display:none !important");
+			$("#stamp-navigation").removeClass("in");
+			$("#stamp-navigation").attr("aria-expanded","false");
+			$('.user-login-menu > a').removeClass('addBgColor');
+		});
+
+				//this is where we apply opacity to the arrow
+		$(window).scroll( function(){
+
+		//get scroll position
+		var topWindow = $(window).scrollTop();
+		//multipl by 1.5 so the arrow will become transparent half-way up the page
+		var topWindow = topWindow * 1.5;
+
+		//get height of window
+		var windowHeight = $(window).height();
+			
+		//set position as percentage of how far the user has scrolled 
+		var position = topWindow / windowHeight;
+		//invert the percentage
+		position = 1 - position;
+
+		//define arrow opacity as based on how far up the page the user has scrolled
+		//no scrolling = 1, half-way up the page = 0
+		$('.arrow-wrap').css('opacity', position);
+
+		});
+
+		$(".arrow-wrap").click(function() {
+			$('html, body').animate({
+				scrollTop: $(".best_pratices").offset().top
+			}, 2000);
+		});
+
+		var i = 0; //index of the panel 
+		$(document).on('click', '.generic-menu', function () {   
+			$('.home-carousel,.team-carousel').carousel(i);
+		});
+
+		$(document).on('click', '.template_select', function () {
+			$(".template_select").removeClass("activeProgress");
+			$(this).addClass('activeProgress');
+		});
+		
+		$(document).on('click', '.consult-start', function () {
+			$(".consult-start").removeClass("activeProgressConsult");
+			$(this).addClass('activeProgressConsult');
+		});
+
+		$('.billingFormRadiobutton').on('change', function() {
+			var $this = $(this),
+			name = $this.attr('datasrc');
+			if ($(this).prop('checked')) {
+				
+				if(name.trim().toLowerCase() === "bill client") {
+					$(".form-1500.showHideTemplateImages").css('display', 'none');
+					$(".bill-form.showHideTemplateImages").css('display', 'block');
+					// $(".form-1500").addClass('showHideTemplateImages');
+					// $(".bill-form").removeClass('showHideTemplateImages');
+				} else {
+					$(".form-1500.showHideTemplateImages").css('display', 'block');
+					$(".bill-form.showHideTemplateImages").css('display', 'none');
+					// $(".bill-form").addClass('showHideTemplateImages');
+					//  $(".form-1500").toggleClass('showHideTemplateImages');
+				}
+			}
+		});
+
+		$(document).on('click', '.save-time-modal-close', function () {
+			$("[name=formtemplates]").prop("checked",false);
+			$('.bill-form, .form-1500').addClass('showHideTemplateImages').css('display', 'none');
+		});
+
+		
+
+
+	</script>
+	<script src="operantsystems/js/smoothscroll.js"></script>
+	<script src="operantsystems/js/jquery.nav.js"></script>
+	<script src="operantsystems/js/wow.min.js"></script>
+	<!-- <script src="operantsystems/js/nivo-lightbox.min.js"></script>
+	<script src="operantsystems/js/owl.carousel.min.js"></script>
+	<script src="operantsystems/js/jquery.stellar.min.js"></script> -->
+	<!-- <script src="operantsystems/js/retina.min.js"></script> -->
+	<script src="operantsystems/js/jquery.ajaxchimp.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+	<!-- GOGLE MAP -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+
+	<!-- CUSTOM JS  -->
+	<!-- <script src="operantsystems/js/custom.js"></script> -->
+
+	<script src="operantsystems/index.js?ver=Dec312022"></script>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-25693049-2', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+</body>
+
+</html>

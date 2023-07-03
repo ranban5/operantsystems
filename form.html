@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+  </head>
+  <body>
+    <!--[if lt IE 9
+      ]><script
+        src="https://cdn01.jotfor.ms/js/vendor/flashcanvas.js?3.3.40010"
+        type="text/javascript"
+      ></script
+    ><![endif]-->
+    <script
+      src="https://cdn02.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.40010"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn03.jotfor.ms/js/vendor/jSignature.min.noconflict.js?3.3.40010"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn01.jotfor.ms/js/vendor/jotform.signaturepad.js?3.3.40010"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn02.jotfor.ms/static/prototype.forms.js?3.3.40010"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn03.jotfor.ms/static/jotform.forms.js?3.3.40010"
+      type="text/javascript"
+    ></script>
+    <script
+      defer
+      src="https://cdn01.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.40010"
+      type="text/javascript"
+    ></script>
+    <script
+      defer
+      src="https://cdn02.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.40010"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      JotForm.newDefaultTheme = true;
+      JotForm.extendsNewTheme = false;
+      JotForm.singleProduct = false;
+      JotForm.newPaymentUIForNewCreatedForms = true;
+      JotForm.newPaymentUI = true;
+      JotForm.clearFieldOnHide = "disable";
+      JotForm.submitError = "jumpToFirstError";
+
+      JotForm.init(function () {
+        /*INIT-START*/
+
+        JotForm.calendarMonths = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        JotForm.calendarDays = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ];
+        JotForm.calendarOther = { today: "Today" };
+        var languageOptions = document.querySelectorAll("#langList li");
+        for (
+          var langIndex = 0;
+          langIndex < languageOptions.length;
+          langIndex++
+        ) {
+          languageOptions[langIndex].on("click", function (e) {
+            setTimeout(function () {
+              JotForm.setCalendar("4", false, {
+                days: {
+                  monday: true,
+                  tuesday: true,
+                  wednesday: true,
+                  thursday: true,
+                  friday: true,
+                  saturday: true,
+                  sunday: true,
+                },
+                future: true,
+                past: true,
+                custom: false,
+                ranges: false,
+                start: "",
+                end: "",
+              });
+            }, 0);
+          });
+        }
+        JotForm.onTranslationsFetch(function () {
+          JotForm.setCalendar("4", false, {
+            days: {
+              monday: true,
+              tuesday: true,
+              wednesday: true,
+              thursday: true,
+              friday: true,
+              saturday: true,
+              sunday: true,
+            },
+            future: true,
+            past: true,
+            custom: false,
+            ranges: false,
+            start: "",
+            end: "",
+          });
+        });
+        JotForm.displayLocalTime(
+          "input_6_hourSelect",
+          "input_6_minuteSelect",
+          "input_6_ampm",
+          "input_6_timeInput",
+          true
+        );
+        JotForm.displayLocalTime(
+          "input_7_hourSelect",
+          "input_7_minuteSelect",
+          "input_7_ampm",
+          "input_7_timeInput",
+          true
+        );
+        if (window.JotForm && JotForm.accessible)
+          $("input_11").setAttribute("tabindex", 0);
+        setTimeout(function () {
+          $("input_12").hint("e.g., 23");
+        }, 20);
+
+        JotForm.calendarMonths = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        JotForm.calendarDays = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ];
+        JotForm.calendarOther = { today: "Today" };
+        var languageOptions = document.querySelectorAll("#langList li");
+        for (
+          var langIndex = 0;
+          langIndex < languageOptions.length;
+          langIndex++
+        ) {
+          languageOptions[langIndex].on("click", function (e) {
+            setTimeout(function () {
+              JotForm.setCalendar("19", false, {
+                days: {
+                  monday: true,
+                  tuesday: true,
+                  wednesday: true,
+                  thursday: true,
+                  friday: true,
+                  saturday: true,
+                  sunday: true,
+                },
+                future: true,
+                past: true,
+                custom: false,
+                ranges: false,
+                start: "",
+                end: "",
+              });
+            }, 0);
+          });
+        }
+        JotForm.onTranslationsFetch(function () {
+          JotForm.setCalendar("19", false, {
+            days: {
+              monday: true,
+              tuesday: true,
+              wednesday: true,
+              thursday: true,
+              friday: true,
+              saturday: true,
+              sunday: true,
+            },
+            future: true,
+            past: true,
+            custom: false,
+            ranges: false,
+            start: "",
+            end: "",
+          });
+        });
+        if (window.JotForm && JotForm.accessible)
+          $("input_30").setAttribute("tabindex", 0);
+        if (window.JotForm && JotForm.accessible)
+          $("input_32").setAttribute("tabindex", 0);
+        if (window.JotForm && JotForm.accessible)
+          $("input_33").setAttribute("tabindex", 0);
+        if (window.JotForm && JotForm.accessible)
+          $("input_34").setAttribute("tabindex", 0);
+        if (window.JotForm && JotForm.accessible)
+          $("input_35").setAttribute("tabindex", 0);
+        if (window.JotForm && JotForm.accessible)
+          $("input_36").setAttribute("tabindex", 0);
+        if (window.JotForm && JotForm.accessible)
+          $("input_41").setAttribute("tabindex", 0);
+        JotForm.alterTexts(undefined);
+        /*INIT-END*/
+      });
+
+      JotForm.prepareCalculationsOnTheFly([
+        null,
+        null,
+        { name: "submit2", qid: "2", text: "Submit", type: "control_button" },
+        {
+          description: "",
+          name: "beneficiaryName",
+          qid: "3",
+          text: "Beneficiary Name",
+          type: "control_fullname",
+        },
+        {
+          description: "",
+          name: "dateOf",
+          qid: "4",
+          text: "Date of Service",
+          type: "control_datetime",
+        },
+        null,
+        {
+          description: "",
+          name: "startTime",
+          qid: "6",
+          text: "Start Time",
+          type: "control_time",
+        },
+        {
+          description: "",
+          name: "time7",
+          qid: "7",
+          text: "End Time",
+          type: "control_time",
+        },
+        null,
+        null,
+        null,
+        {
+          description: "",
+          name: "location",
+          qid: "11",
+          subLabel: "",
+          text: "Location",
+          type: "control_textbox",
+        },
+        {
+          description: "",
+          name: "lengthOf",
+          qid: "12",
+          subLabel: "",
+          text: "Length of Session",
+          type: "control_number",
+        },
+        null,
+        {
+          description: "",
+          name: "providerName",
+          qid: "14",
+          subLabel: "",
+          text: "Provider Name",
+          type: "control_dropdown",
+        },
+        {
+          description: "",
+          name: "typeA15",
+          qid: "15",
+          subLabel: "",
+          text: "Provider Type",
+          type: "control_dropdown",
+        },
+        {
+          description: "",
+          name: "signature",
+          qid: "16",
+          subLabel: "",
+          text: "Signature",
+          type: "control_signature",
+        },
+        null,
+        null,
+        {
+          description: "",
+          name: "date",
+          qid: "19",
+          text: "Date",
+          type: "control_datetime",
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          description: "",
+          name: "authorizedAba",
+          qid: "26",
+          subLabel: "",
+          text: "Authorized ABA Supervisor",
+          type: "control_dropdown",
+        },
+        null,
+        null,
+        null,
+        {
+          description: "",
+          name: "sessionParticipants",
+          qid: "30",
+          subLabel: "",
+          text: "Session Participants",
+          type: "control_textbox",
+        },
+        null,
+        {
+          description: "",
+          name: "beneficiaryCurrent",
+          qid: "32",
+          subLabel:
+            "Clinical status evidenced by the beneficiary’s signs and symptoms ",
+          text: "Beneficiary current clinical status (signs and symptoms)",
+          type: "control_textarea",
+        },
+        {
+          description: "",
+          name: "narrativeContent",
+          qid: "33",
+          subLabel: "Group session may contain a common summary ",
+          text: "Narrative content of the session",
+          type: "control_textarea",
+        },
+        {
+          description: "",
+          name: "summaryOf",
+          qid: "34",
+          subLabel: "Techniques attempted during the session ",
+          text: "Summary of Techniques Attempted",
+          type: "control_textarea",
+        },
+        {
+          description: "",
+          name: "narrativeDescription",
+          qid: "35",
+          subLabel:
+            "Group session notes must contain individualized responses to treatment",
+          text: "Narrative description of the response to the treatment, the outcome of the treatment, and the response to significant others",
+          type: "control_textarea",
+        },
+        {
+          description: "",
+          name: "narrativeStatement",
+          qid: "36",
+          subLabel: "",
+          text: "Narrative statement summarizing the beneficiary’s degree of progress towards the treatment goals ",
+          type: "control_textarea",
+        },
+        null,
+        {
+          description: "",
+          name: "cptCodes",
+          qid: "38",
+          subLabel: "",
+          text: "CPT Codes",
+          type: "control_dropdown",
+        },
+        null,
+        null,
+        {
+          description: "",
+          name: "progressSummary",
+          qid: "41",
+          subLabel: "",
+          text: "Progress Summary",
+          type: "control_textarea",
+        },
+        {
+          description: "",
+          name: "beneficiaryFull42",
+          qid: "42",
+          text: "Beneficiary Full Name",
+          type: "control_fullname",
+        },
+      ]);
+      setTimeout(function () {
+        JotForm.paymentExtrasOnTheFly([
+          null,
+          null,
+          { name: "submit2", qid: "2", text: "Submit", type: "control_button" },
+          {
+            description: "",
+            name: "beneficiaryName",
+            qid: "3",
+            text: "Beneficiary Name",
+            type: "control_fullname",
+          },
+          {
+            description: "",
+            name: "dateOf",
+            qid: "4",
+            text: "Date of Service",
+            type: "control_datetime",
+          },
+          null,
+          {
+            description: "",
+            name: "startTime",
+            qid: "6",
+            text: "Start Time",
+            type: "control_time",
+          },
+          {
+            description: "",
+            name: "time7",
+            qid: "7",
+            text: "End Time",
+            type: "control_time",
+          },
+          null,
+          null,
+          null,
+          {
+            description: "",
+            name: "location",
+            qid: "11",
+            subLabel: "",
+            text: "Location",
+            type: "control_textbox",
+          },
+          {
+            description: "",
+            name: "lengthOf",
+            qid: "12",
+            subLabel: "",
+            text: "Length of Session",
+            type: "control_number",
+          },
+          null,
+          {
+            description: "",
+            name: "providerName",
+            qid: "14",
+            subLabel: "",
+            text: "Provider Name",
+            type: "control_dropdown",
+          },
+          {
+            description: "",
+            name: "typeA15",
+            qid: "15",
+            subLabel: "",
+            text: "Provider Type",
+            type: "control_dropdown",
+          },
+          {
+            description: "",
+            name: "signature",
+            qid: "16",
+            subLabel: "",
+            text: "Signature",
+            type: "control_signature",
+          },
+          null,
+          null,
+          {
+            description: "",
+            name: "date",
+            qid: "19",
+            text: "Date",
+            type: "control_datetime",
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            description: "",
+            name: "authorizedAba",
+            qid: "26",
+            subLabel: "",
+            text: "Authorized ABA Supervisor",
+            type: "control_dropdown",
+          },
+          null,
+          null,
+          null,
+          {
+            description: "",
+            name: "sessionParticipants",
+            qid: "30",
+            subLabel: "",
+            text: "Session Participants",
+            type: "control_textbox",
+          },
+          null,
+          {
+            description: "",
+            name: "beneficiaryCurrent",
+            qid: "32",
+            subLabel:
+              "Clinical status evidenced by the beneficiary’s signs and symptoms ",
+            text: "Beneficiary current clinical status (signs and symptoms)",
+            type: "control_textarea",
+          },
+          {
+            description: "",
+            name: "narrativeContent",
+            qid: "33",
+            subLabel: "Group session may contain a common summary ",
+            text: "Narrative content of the session",
+            type: "control_textarea",
+          },
+          {
+            description: "",
+            name: "summaryOf",
+            qid: "34",
+            subLabel: "Techniques attempted during the session ",
+            text: "Summary of Techniques Attempted",
+            type: "control_textarea",
+          },
+          {
+            description: "",
+            name: "narrativeDescription",
+            qid: "35",
+            subLabel:
+              "Group session notes must contain individualized responses to treatment",
+            text: "Narrative description of the response to the treatment, the outcome of the treatment, and the response to significant others",
+            type: "control_textarea",
+          },
+          {
+            description: "",
+            name: "narrativeStatement",
+            qid: "36",
+            subLabel: "",
+            text: "Narrative statement summarizing the beneficiary’s degree of progress towards the treatment goals ",
+            type: "control_textarea",
+          },
+          null,
+          {
+            description: "",
+            name: "cptCodes",
+            qid: "38",
+            subLabel: "",
+            text: "CPT Codes",
+            type: "control_dropdown",
+          },
+          null,
+          null,
+          {
+            description: "",
+            name: "progressSummary",
+            qid: "41",
+            subLabel: "",
+            text: "Progress Summary",
+            type: "control_textarea",
+          },
+          {
+            description: "",
+            name: "beneficiaryFull42",
+            qid: "42",
+            text: "Beneficiary Full Name",
+            type: "control_fullname",
+          },
+        ]);
+      }, 20);
+    </script>
+    <style type="text/css">
+      @media print {
+        .form-section {
+          display: inline !important;
+        }
+        .form-pagebreak {
+          display: none !important;
+        }
+        .form-section-closed {
+          height: auto !important;
+        }
+        .page-section {
+          position: initial !important;
+        }
+      }
+    </style>
+    <link
+      id="custom-font"
+      type="text/css"
+      rel="stylesheet"
+      href="//cdn.jotfor.ms/fonts/?family=Tahoma"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.40010"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.40010"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.40010"
+    />
+    <style type="text/css" id="form-designer-style">
+      /* Injected CSS Code */
+      /*PREFERENCES STYLE*/
+      .form-all {
+        font-family: Tahoma, sans-serif;
+      }
+
+      .form-label.form-label-auto {
+        display: inline-block;
+        float: left;
+        text-align: left;
+      }
+
+      .form-line {
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+
+      .form-all {
+        max-width: 752px;
+        width: 100%;
+      }
+
+      .form-label.form-label-left,
+      .form-label.form-label-right,
+      .form-label.form-label-left.form-label-auto,
+      .form-label.form-label-right.form-label-auto {
+        width: 230px;
+      }
+
+      .form-all {
+        font-size: 16px;
+      }
+
+      .supernova .form-all,
+      .form-all {
+        background-color: #fff;
+      }
+
+      .form-all {
+        color: #2c3345;
+      }
+      .form-header-group .form-header {
+        color: #2c3345;
+      }
+      .form-header-group .form-subHeader {
+        color: #2c3345;
+      }
+      .form-label-top,
+      .form-label-left,
+      .form-label-right,
+      .form-html,
+      .form-checkbox-item label,
+      .form-radio-item label,
+      span.FITB .qb-checkbox-label,
+      span.FITB .qb-radiobox-label,
+      span.FITB .form-radio label,
+      span.FITB .form-checkbox label,
+      [data-blotid][data-type="checkbox"] [data-labelid],
+      [data-blotid][data-type="radiobox"] [data-labelid],
+      span.FITB-inptCont[data-type="checkbox"] label,
+      span.FITB-inptCont[data-type="radiobox"] label {
+        color: #2c3345;
+      }
+      .form-sub-label {
+        color: #464d5f;
+      }
+
+      .supernova {
+        background-color: #f3f3fe;
+      }
+      .supernova body {
+        background: transparent;
+      }
+
+      .form-textbox,
+      .form-textarea,
+      .form-dropdown,
+      .form-radio-other-input,
+      .form-checkbox-other-input,
+      .form-captcha input,
+      .form-spinner input {
+        background-color: #fff;
+      }
+
+      .supernova {
+        background-image: none;
+      }
+      #stage {
+        background-image: none;
+      }
+
+      .form-all {
+        background-image: none;
+      }
+
+      .ie-8 .form-all:before {
+        display: none;
+      }
+      .ie-8 {
+        margin-top: auto;
+        margin-top: initial;
+      }
+
+      /*PREFERENCES STYLE*/ /*__INSPECT_SEPERATOR__*/
+      .form-label.form-label-auto {
+        display: inline-block;
+        float: left;
+        text-align: left;
+      }
+      /* Injected CSS Code */
+    </style>
+
+    <form
+      class="jotform-form"
+      action="https://submit.jotform.com/submit/230640808573053"
+      method="post"
+      name="form_230640808573053"
+      id="230640808573053"
+      accept-charset="utf-8"
+      autocomplete="on"
+    >
+      <input type="hidden" name="formID" value="230640808573053" /><input
+        type="hidden"
+        id="JWTContainer"
+        value=""
+      /><input type="hidden" id="cardinalOrderNumber" value="" />
+      <div role="main" class="form-all">
+        <ul class="form-section page-section">
+          <li class="form-line" data-type="control_fullname" id="id_42">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_42"
+              for="first_42"
+            >
+              Beneficiary Full Name
+            </label>
+            <div id="cid_42" class="form-input" data-layout="full">
+              <div data-wrapper-react="true">
+                <span
+                  class="form-sub-label-container"
+                  style="vertical-align: top"
+                  data-input-type="first"
+                  ><input
+                    type="text"
+                    id="first_42"
+                    name="q42_beneficiaryFull42[first]"
+                    class="form-textbox"
+                    data-defaultvalue=""
+                    autocomplete="section-input_42 given-name"
+                    size="10"
+                    value=""
+                    data-component="first"
+                    aria-labelledby="label_42 sublabel_42_first"
+                  /><label
+                    class="form-sub-label"
+                    for="first_42"
+                    id="sublabel_42_first"
+                    style="min-height: 13px"
+                    aria-hidden="false"
+                    >First Name</label
+                  ></span
+                ><span
+                  class="form-sub-label-container"
+                  style="vertical-align: top"
+                  data-input-type="last"
+                  ><input
+                    type="text"
+                    id="last_42"
+                    name="q42_beneficiaryFull42[last]"
+                    class="form-textbox"
+                    data-defaultvalue=""
+                    autocomplete="section-input_42 family-name"
+                    size="15"
+                    value=""
+                    data-component="last"
+                    aria-labelledby="label_42 sublabel_42_last"
+                  /><label
+                    class="form-sub-label"
+                    for="last_42"
+                    id="sublabel_42_last"
+                    style="min-height: 13px"
+                    aria-hidden="false"
+                    >Last Name</label
+                  ></span
+                >
+              </div>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_datetime" id="id_4">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_4"
+              for="lite_mode_4"
+            >
+              Date of Service
+            </label>
+            <div id="cid_4" class="form-input" data-layout="half">
+              <div data-wrapper-react="true">
+                <div style="display: none">
+                  <span
+                    class="form-sub-label-container"
+                    style="vertical-align: top"
+                    ><input
+                      type="tel"
+                      class="form-textbox validate[limitDate]"
+                      id="month_4"
+                      name="q4_dateOf[month]"
+                      size="2"
+                      data-maxlength="2"
+                      data-age=""
+                      maxlength="2"
+                      value=""
+                      autocomplete="off"
+                      aria-labelledby="label_4 sublabel_4_month"
+                    /><span class="date-separate" aria-hidden="true"> -</span
+                    ><label
+                      class="form-sub-label"
+                      for="month_4"
+                      id="sublabel_4_month"
+                      style="min-height: 13px"
+                      aria-hidden="false"
+                      >Month</label
+                    ></span
+                  ><span
+                    class="form-sub-label-container"
+                    style="vertical-align: top"
+                    ><input
+                      type="tel"
+                      class="form-textbox validate[limitDate]"
+                      id="day_4"
+                      name="q4_dateOf[day]"
+                      size="2"
+                      data-maxlength="2"
+                      data-age=""
+                      maxlength="2"
+                      value=""
+                      autocomplete="off"
+                      aria-labelledby="label_4 sublabel_4_day"
+                    /><span class="date-separate" aria-hidden="true"> -</span
+                    ><label
+                      class="form-sub-label"
+                      for="day_4"
+                      id="sublabel_4_day"
+                      style="min-height: 13px"
+                      aria-hidden="false"
+                      >Day</label
+                    ></span
+                  ><span
+                    class="form-sub-label-container"
+                    style="vertical-align: top"
+                    ><input
+                      type="tel"
+                      class="form-textbox validate[limitDate]"
+                      id="year_4"
+                      name="q4_dateOf[year]"
+                      size="4"
+                      data-maxlength="4"
+                      data-age=""
+                      maxlength="4"
+                      value=""
+                      autocomplete="off"
+                      aria-labelledby="label_4 sublabel_4_year"
+                    /><label
+                      class="form-sub-label"
+                      for="year_4"
+                      id="sublabel_4_year"
+                      style="min-height: 13px"
+                      aria-hidden="false"
+                      >Year</label
+                    ></span
+                  >
+                </div>
+                <span
+                  class="form-sub-label-container"
+                  style="vertical-align: top"
+                  ><input
+                    type="text"
+                    class="form-textbox validate[limitDate, validateLiteDate]"
+                    id="lite_mode_4"
+                    size="12"
+                    data-maxlength="12"
+                    maxlength="12"
+                    data-age=""
+                    value=""
+                    data-format="mmddyyyy"
+                    data-seperator="-"
+                    placeholder="MM-DD-YYYY"
+                    autocomplete="off"
+                    aria-labelledby="label_4 sublabel_4_litemode"
+                  /><img
+                    class="newDefaultTheme-dateIcon icon-liteMode"
+                    alt="Pick a Date"
+                    id="input_4_pick"
+                    src="https://cdn.jotfor.ms/images/calendar.png"
+                    data-component="datetime"
+                    aria-hidden="true"
+                    data-allow-time="No"
+                    data-version="v2"
+                  /><label
+                    class="form-sub-label"
+                    for="lite_mode_4"
+                    id="sublabel_4_litemode"
+                    style="min-height: 13px"
+                    aria-hidden="false"
+                    >Date</label
+                  ></span
+                >
+              </div>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_time" id="id_6">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_6"
+              for="input_6_hourSelect"
+            >
+              Start Time
+            </label>
+            <div id="cid_6" class="form-input" data-layout="half">
+              <div data-wrapper-react="true">
+                <div class="time-wrapper">
+                  <span
+                    class="form-sub-label-container hasAMPM"
+                    style="vertical-align: top"
+                    ><input
+                      type="text"
+                      class="time-dropdown form-textbox"
+                      id="input_6_timeInput"
+                      name="q6_startTime[timeInput]"
+                      placeholder="HH : MM"
+                      aria-labelledby="label_6 sublabel_6_hour"
+                      data-mask="hh:MM"
+                      value=""
+                      data-version="v2"
+                    /><input
+                      type="hidden"
+                      class="form-hidden-time"
+                      id="input_6_hourSelect"
+                      name="q6_startTime[hourSelect]"
+                    /><input
+                      type="hidden"
+                      class="form-hidden-time"
+                      id="input_6_minuteSelect"
+                      name="q6_startTime[minuteSelect]"
+                    /><label
+                      data-seperate-translate="true"
+                      class="form-sub-label"
+                      for="input_6_timeInput"
+                      id="sublabel_6_hour"
+                      style="min-height: 13px"
+                      aria-hidden="false"
+                      >Hour Minutes</label
+                    ></span
+                  >
+                </div>
+                <div class="time-wrapper">
+                  <span
+                    class="form-sub-label-container"
+                    style="vertical-align: top"
+                    ><select
+                      class="time-dropdown form-dropdown"
+                      id="input_6_ampm"
+                      name="q6_startTime[ampm]"
+                      data-component="time-ampm"
+                      aria-labelledby="label_6 sublabel_6_ampm"
+                    >
+                      <option value="AM">AM</option>
+                      <option selected="" value="PM">PM</option></select
+                    ><label
+                      class="form-sub-label"
+                      for="input_6_ampm"
+                      id="sublabel_6_ampm"
+                      style="
+                        border: 0;
+                        clip: rect(0 0 0 0);
+                        height: 1px;
+                        margin: -1px;
+                        overflow: hidden;
+                        padding: 0;
+                        position: absolute;
+                        width: 1px;
+                        white-space: nowrap;
+                      "
+                      aria-hidden="false"
+                      >AM/PM Option</label
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_time" id="id_7">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_7"
+              for="input_7_hourSelect"
+            >
+              End Time
+            </label>
+            <div id="cid_7" class="form-input" data-layout="half">
+              <div data-wrapper-react="true">
+                <div class="time-wrapper">
+                  <span
+                    class="form-sub-label-container hasAMPM"
+                    style="vertical-align: top"
+                    ><input
+                      type="text"
+                      class="time-dropdown form-textbox"
+                      id="input_7_timeInput"
+                      name="q7_time7[timeInput]"
+                      placeholder="HH : MM"
+                      aria-labelledby="label_7 sublabel_7_hour"
+                      data-mask="hh:MM"
+                      value=""
+                      data-version="v2"
+                    /><input
+                      type="hidden"
+                      class="form-hidden-time"
+                      id="input_7_hourSelect"
+                      name="q7_time7[hourSelect]"
+                    /><input
+                      type="hidden"
+                      class="form-hidden-time"
+                      id="input_7_minuteSelect"
+                      name="q7_time7[minuteSelect]"
+                    /><label
+                      data-seperate-translate="true"
+                      class="form-sub-label"
+                      for="input_7_timeInput"
+                      id="sublabel_7_hour"
+                      style="min-height: 13px"
+                      aria-hidden="false"
+                      >Hour Minutes</label
+                    ></span
+                  >
+                </div>
+                <div class="time-wrapper">
+                  <span
+                    class="form-sub-label-container"
+                    style="vertical-align: top"
+                    ><select
+                      class="time-dropdown form-dropdown"
+                      id="input_7_ampm"
+                      name="q7_time7[ampm]"
+                      data-component="time-ampm"
+                      aria-labelledby="label_7 sublabel_7_ampm"
+                    >
+                      <option value="AM">AM</option>
+                      <option selected="" value="PM">PM</option></select
+                    ><label
+                      class="form-sub-label"
+                      for="input_7_ampm"
+                      id="sublabel_7_ampm"
+                      style="
+                        border: 0;
+                        clip: rect(0 0 0 0);
+                        height: 1px;
+                        margin: -1px;
+                        overflow: hidden;
+                        padding: 0;
+                        position: absolute;
+                        width: 1px;
+                        white-space: nowrap;
+                      "
+                      aria-hidden="false"
+                      >AM/PM Option</label
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_textbox" id="id_11">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_11"
+              for="input_11"
+            >
+              Location
+            </label>
+            <div id="cid_11" class="form-input" data-layout="half">
+              <input
+                type="text"
+                id="input_11"
+                name="q11_location"
+                data-type="input-textbox"
+                class="form-textbox"
+                data-defaultvalue=""
+                style="width: 310px"
+                size="310"
+                value=""
+                data-component="textbox"
+                aria-labelledby="label_11"
+              />
+            </div>
+          </li>
+          <li class="form-line" data-type="control_number" id="id_12">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_12"
+              for="input_12"
+            >
+              Length of Session
+            </label>
+            <div id="cid_12" class="form-input" data-layout="half">
+              <input
+                type="number"
+                id="input_12"
+                name="q12_lengthOf"
+                data-type="input-number"
+                class="form-number-input form-textbox"
+                data-defaultvalue=""
+                style="width: 310px"
+                size="310"
+                value=""
+                placeholder="e.g., 23"
+                data-component="number"
+                aria-labelledby="label_12"
+                step="any"
+              />
+            </div>
+          </li>
+          <li class="form-line" data-type="control_dropdown" id="id_14">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_14"
+              for="input_14"
+            >
+              Provider Name
+            </label>
+            <div id="cid_14" class="form-input" data-layout="half">
+              <select
+                class="form-dropdown"
+                id="input_14"
+                name="q14_providerName"
+                style="width: 310px"
+                data-component="dropdown"
+                aria-label="Provider Name"
+              >
+                <option value="">Please Select</option>
+                <option value="Jennifer">Jennifer</option>
+                <option value="Meghan">Meghan</option>
+                <option value="Randy">Randy</option>
+              </select>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_dropdown" id="id_15">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_15"
+              for="input_15"
+            >
+              Provider Type
+            </label>
+            <div id="cid_15" class="form-input" data-layout="half">
+              <select
+                class="form-dropdown"
+                id="input_15"
+                name="q15_typeA15"
+                style="width: 310px"
+                data-component="dropdown"
+                aria-label="Provider Type"
+              >
+                <option value="">Please Select</option>
+                <option value="Supervisor">Supervisor</option>
+                <option value="BCBA">BCBA</option>
+                <option value="RBT">RBT</option>
+              </select>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_signature" id="id_16">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_16"
+              for="input_16"
+            >
+              Signature
+            </label>
+            <div id="cid_16" class="form-input" data-layout="half">
+              <div data-wrapper-react="true">
+                <div
+                  id="signature_pad_16"
+                  class="signature-pad-wrapper"
+                  style="width: 312px; height: 116px"
+                >
+                  <div data-wrapper-react="true">
+                    <!--[if IE 7
+                      ]><script
+                        type="text/javascript"
+                        src="/js/vendor/json2.js"
+                      ></script
+                    ><![endif]-->
+                  </div>
+                  <div
+                    class="signature-line signature-wrapper signature-placeholder"
+                    data-component="signature"
+                    style="width: 312px; height: 116px"
+                  >
+                    <div
+                      id="sig_pad_16"
+                      data-width="310"
+                      data-height="114"
+                      data-id="16"
+                      data-required="false"
+                      class="pad"
+                      aria-labelledby="label_16"
+                    ></div>
+                    <input
+                      type="hidden"
+                      name="q16_signature"
+                      class="output4"
+                      id="input_16"
+                    />
+                  </div>
+                  <span
+                    class="clear-pad-btn clear-pad"
+                    role="button"
+                    tabindex="0"
+                    >Clear</span
+                  >
+                </div>
+                <div data-wrapper-react="true">
+                  <script type="text/javascript">
+                    window.signatureForm = true;
+                  </script>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_datetime" id="id_19">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_19"
+              for="lite_mode_19"
+            >
+              Date
+            </label>
+            <div id="cid_19" class="form-input" data-layout="half">
+              <div data-wrapper-react="true">
+                <div style="display: none">
+                  <span
+                    class="form-sub-label-container"
+                    style="vertical-align: top"
+                    ><input
+                      type="tel"
+                      class="form-textbox validate[limitDate]"
+                      id="month_19"
+                      name="q19_date[month]"
+                      size="2"
+                      data-maxlength="2"
+                      data-age=""
+                      maxlength="2"
+                      value=""
+                      autocomplete="off"
+                      aria-labelledby="label_19 sublabel_19_month"
+                    /><span class="date-separate" aria-hidden="true"> -</span
+                    ><label
+                      class="form-sub-label"
+                      for="month_19"
+                      id="sublabel_19_month"
+                      style="min-height: 13px"
+                      aria-hidden="false"
+                      >Month</label
+                    ></span
+                  ><span
+                    class="form-sub-label-container"
+                    style="vertical-align: top"
+                    ><input
+                      type="tel"
+                      class="form-textbox validate[limitDate]"
+                      id="day_19"
+                      name="q19_date[day]"
+                      size="2"
+                      data-maxlength="2"
+                      data-age=""
+                      maxlength="2"
+                      value=""
+                      autocomplete="off"
+                      aria-labelledby="label_19 sublabel_19_day"
+                    /><span class="date-separate" aria-hidden="true"> -</span
+                    ><label
+                      class="form-sub-label"
+                      for="day_19"
+                      id="sublabel_19_day"
+                      style="min-height: 13px"
+                      aria-hidden="false"
+                      >Day</label
+                    ></span
+                  ><span
+                    class="form-sub-label-container"
+                    style="vertical-align: top"
+                    ><input
+                      type="tel"
+                      class="form-textbox validate[limitDate]"
+                      id="year_19"
+                      name="q19_date[year]"
+                      size="4"
+                      data-maxlength="4"
+                      data-age=""
+                      maxlength="4"
+                      value=""
+                      autocomplete="off"
+                      aria-labelledby="label_19 sublabel_19_year"
+                    /><label
+                      class="form-sub-label"
+                      for="year_19"
+                      id="sublabel_19_year"
+                      style="min-height: 13px"
+                      aria-hidden="false"
+                      >Year</label
+                    ></span
+                  >
+                </div>
+                <span
+                  class="form-sub-label-container"
+                  style="vertical-align: top"
+                  ><input
+                    type="text"
+                    class="form-textbox validate[limitDate, validateLiteDate]"
+                    id="lite_mode_19"
+                    size="12"
+                    data-maxlength="12"
+                    maxlength="12"
+                    data-age=""
+                    value=""
+                    data-format="mmddyyyy"
+                    data-seperator="-"
+                    placeholder="MM-DD-YYYY"
+                    autocomplete="off"
+                    aria-labelledby="label_19 sublabel_19_litemode"
+                  /><img
+                    class="newDefaultTheme-dateIcon icon-liteMode"
+                    alt="Pick a Date"
+                    id="input_19_pick"
+                    src="https://cdn.jotfor.ms/images/calendar.png"
+                    data-component="datetime"
+                    aria-hidden="true"
+                    data-allow-time="No"
+                    data-version="v2"
+                  /><label
+                    class="form-sub-label"
+                    for="lite_mode_19"
+                    id="sublabel_19_litemode"
+                    style="min-height: 13px"
+                    aria-hidden="false"
+                    >Date</label
+                  ></span
+                >
+              </div>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_dropdown" id="id_26">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_26"
+              for="input_26"
+            >
+              Authorized ABA Supervisor
+            </label>
+            <div id="cid_26" class="form-input" data-layout="half">
+              <select
+                class="form-dropdown"
+                id="input_26"
+                name="q26_authorizedAba"
+                style="width: 310px"
+                data-component="dropdown"
+                aria-label="Authorized ABA Supervisor"
+              >
+                <option value="">Please Select</option>
+                <option value="Jane">Jane</option>
+                <option value="Rich">Rich</option>
+                <option value="David">David</option>
+              </select>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_textbox" id="id_30">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_30"
+              for="input_30"
+            >
+              Session Participants
+            </label>
+            <div id="cid_30" class="form-input" data-layout="half">
+              <input
+                type="text"
+                id="input_30"
+                name="q30_sessionParticipants"
+                data-type="input-textbox"
+                class="form-textbox"
+                data-defaultvalue=""
+                style="width: 310px"
+                size="310"
+                value=""
+                data-component="textbox"
+                aria-labelledby="label_30"
+              />
+            </div>
+          </li>
+          <li class="form-line" data-type="control_textarea" id="id_32">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_32"
+              for="input_32"
+            >
+              Beneficiary current clinical status (signs and symptoms)
+            </label>
+            <div id="cid_32" class="form-input" data-layout="full">
+              <span
+                class="form-sub-label-container"
+                style="vertical-align: top"
+              >
+                <textarea
+                  id="input_32"
+                  class="form-textarea"
+                  name="q32_beneficiaryCurrent"
+                  style="width: 648px; height: 163px"
+                  data-component="textarea"
+                  aria-labelledby="label_32 sublabel_input_32"
+                ></textarea
+                ><label
+                  class="form-sub-label"
+                  for="input_32"
+                  id="sublabel_input_32"
+                  style="min-height: 13px"
+                  aria-hidden="false"
+                  >Clinical status evidenced by the beneficiary’s signs and
+                  symptoms
+                </label></span
+              >
+            </div>
+          </li>
+          <li class="form-line" data-type="control_textarea" id="id_33">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_33"
+              for="input_33"
+            >
+              Narrative content of the session
+            </label>
+            <div id="cid_33" class="form-input" data-layout="full">
+              <span
+                class="form-sub-label-container"
+                style="vertical-align: top"
+              >
+                <textarea
+                  id="input_33"
+                  class="form-textarea"
+                  name="q33_narrativeContent"
+                  style="width: 648px; height: 163px"
+                  data-component="textarea"
+                  aria-labelledby="label_33 sublabel_input_33"
+                ></textarea
+                ><label
+                  class="form-sub-label"
+                  for="input_33"
+                  id="sublabel_input_33"
+                  style="min-height: 13px"
+                  aria-hidden="false"
+                  >Group session may contain a common summary
+                </label></span
+              >
+            </div>
+          </li>
+          <li class="form-line" data-type="control_textarea" id="id_34">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_34"
+              for="input_34"
+            >
+              Summary of Techniques Attempted
+            </label>
+            <div id="cid_34" class="form-input" data-layout="full">
+              <span
+                class="form-sub-label-container"
+                style="vertical-align: top"
+              >
+                <textarea
+                  id="input_34"
+                  class="form-textarea"
+                  name="q34_summaryOf"
+                  style="width: 648px; height: 163px"
+                  data-component="textarea"
+                  aria-labelledby="label_34 sublabel_input_34"
+                ></textarea
+                ><label
+                  class="form-sub-label"
+                  for="input_34"
+                  id="sublabel_input_34"
+                  style="min-height: 13px"
+                  aria-hidden="false"
+                  >Techniques attempted during the session
+                </label></span
+              >
+            </div>
+          </li>
+          <li class="form-line" data-type="control_textarea" id="id_35">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_35"
+              for="input_35"
+            >
+              Narrative description of the response to the treatment, the
+              outcome of the treatment, and the response to significant others
+            </label>
+            <div id="cid_35" class="form-input" data-layout="full">
+              <span
+                class="form-sub-label-container"
+                style="vertical-align: top"
+              >
+                <textarea
+                  id="input_35"
+                  class="form-textarea"
+                  name="q35_narrativeDescription"
+                  style="width: 648px; height: 163px"
+                  data-component="textarea"
+                  aria-labelledby="label_35 sublabel_input_35"
+                ></textarea
+                ><label
+                  class="form-sub-label"
+                  for="input_35"
+                  id="sublabel_input_35"
+                  style="min-height: 13px"
+                  aria-hidden="false"
+                  >Group session notes must contain individualized responses to
+                  treatment</label
+                ></span
+              >
+            </div>
+          </li>
+          <li class="form-line" data-type="control_textarea" id="id_36">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_36"
+              for="input_36"
+            >
+              Narrative statement summarizing the beneficiary’s degree of
+              progress towards the treatment goals
+            </label>
+            <div id="cid_36" class="form-input" data-layout="full">
+              <textarea
+                id="input_36"
+                class="form-textarea"
+                name="q36_narrativeStatement"
+                style="width: 648px; height: 163px"
+                data-component="textarea"
+                aria-labelledby="label_36"
+              ></textarea>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_dropdown" id="id_38">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_38"
+              for="input_38"
+            >
+              CPT Codes
+            </label>
+            <div id="cid_38" class="form-input" data-layout="half">
+              <select
+                class="form-dropdown"
+                id="input_38"
+                name="q38_cptCodes"
+                style="width: 310px"
+                data-component="dropdown"
+                aria-label="CPT Codes"
+              >
+                <option value="">Please Select</option>
+                <option
+                  value="• CPT 97151: Document what activity, measures, observations were administered during the assessment"
+                >
+                  • CPT 97151: Document what activity, measures, observations
+                  were administered during the assessment
+                </option>
+                <option
+                  value="• CPT 97153: Include the domains targeted in the TP, examples of targets addressed, and highlight progress and barriers on"
+                >
+                  • CPT 97153: Include the domains targeted in the TP, examples
+                  of targets addressed, and highlight progress and barriers on
+                </option>
+                <option value="individual targets as appropriate">
+                  individual targets as appropriate
+                </option>
+                <option
+                  value="• CPT 97155: Document modifications in the program during the session (for example, changes to acquisition charts, progression of"
+                >
+                  • CPT 97155: Document modifications in the program during the
+                  session (for example, changes to acquisition charts,
+                  progression of
+                </option>
+                <option
+                  value="objectives/benchmarks, modification to procedures, and behavior intervention plan) and modeling of new or modified protocols"
+                >
+                  objectives/benchmarks, modification to procedures, and
+                  behavior intervention plan) and modeling of new or modified
+                  protocols
+                </option>
+                <option value="to the BT and/or parents/caregivers">
+                  to the BT and/or parents/caregivers
+                </option>
+                <option
+                  value="• CPT 97156: Document ABA principles covered with the parent/guardian and progress toward parent/guardian goals. The note should describe recommendations the ABA supervisor or assistant behavior analyst provided to the parent/guardian on improving"
+                >
+                  • CPT 97156: Document ABA principles covered with the
+                  parent/guardian and progress toward parent/guardian goals. The
+                  note should describe recommendations the ABA supervisor or
+                  assistant behavior analyst provided to the parent/guardian on
+                  improving
+                </option>
+                <option
+                  value="performance on parent goals, implementation of the behavior intervention plans and generalization of mastered skills outside of programming. When the beneficiary is present during parent training, the note should document what was modeled for the parent or what the parent implemented during the session and the feedback provided."
+                >
+                  performance on parent goals, implementation of the behavior
+                  intervention plans and generalization of mastered skills
+                  outside of programming. When the beneficiary is present during
+                  parent training, the note should document what was modeled for
+                  the parent or what the parent implemented during the session
+                  and the feedback provided.
+                </option>
+                <option
+                  value="• CPT 97157: Describe session content to include what ABA principles were covered in the group parent training, the specific skill acquisition and behavior reduction techniques that were reviewed, what was modeled and the feedback provided (if relevant)"
+                >
+                  • CPT 97157: Describe session content to include what ABA
+                  principles were covered in the group parent training, the
+                  specific skill acquisition and behavior reduction techniques
+                  that were reviewed, what was modeled and the feedback provided
+                  (if relevant)
+                </option>
+                <option
+                  value="• CPT 97158: Describe what social deficit areas, skill acquisition targets and problem behaviors were addressed in the group session"
+                >
+                  • CPT 97158: Describe what social deficit areas, skill
+                  acquisition targets and problem behaviors were addressed in
+                  the group session
+                </option>
+                <option
+                  value="• CPT 99366 and 99368: Report participants’ with documentation of their role in the medical conference, contributed information"
+                >
+                  • CPT 99366 and 99368: Report participants’ with documentation
+                  of their role in the medical conference, contributed
+                  information
+                </option>
+                <option value="and subsequent treatment recommendations">
+                  and subsequent treatment recommendations
+                </option>
+                <option value=""></option>
+              </select>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_textarea" id="id_41">
+            <label
+              class="form-label form-label-left form-label-auto"
+              id="label_41"
+              for="input_41"
+            >
+              Progress Summary
+            </label>
+            <div id="cid_41" class="form-input" data-layout="full">
+              <textarea
+                id="input_41"
+                class="form-textarea"
+                name="q41_progressSummary"
+                style="width: 648px; height: 163px"
+                data-component="textarea"
+                aria-labelledby="label_41"
+              ></textarea>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_button" id="id_2">
+            <div id="cid_2" class="form-input-wide" data-layout="full">
+              <div
+                data-align="auto"
+                class="form-buttons-wrapper form-buttons-auto jsTest-button-wrapperField"
+              >
+                <button
+                  id="input_2"
+                  type="submit"
+                  class="form-submit-button submit-button jf-form-buttons jsTest-submitField"
+                  data-component="button"
+                  data-content=""
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </li>
+          <li style="display: none">
+            Should be Empty: <input type="text" name="website" value="" />
+          </li>
+        </ul>
+      </div>
+      <script>
+        JotForm.showJotFormPowered = "new_footer";
+      </script>
+      <script>
+        JotForm.poweredByText = "Powered by Jotform";
+      </script>
+      <input
+        type="hidden"
+        class="simple_spc"
+        id="simple_spc"
+        name="simple_spc"
+        value="230640808573053"
+      />
+      <script type="text/javascript">
+        var all_spc = document.querySelectorAll(
+          "form[id='230640808573053'] .si" + "mple" + "_spc"
+        );
+        for (var i = 0; i < all_spc.length; i++) {
+          all_spc[i].value = "230640808573053-230640808573053";
+        }
+      </script>
+    </form>
+    <script type="text/javascript">
+      JotForm.ownerView = true;
+    </script>
+    <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.40010"></script>
+    <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.40010"></script>
+  </body>
+</html>
